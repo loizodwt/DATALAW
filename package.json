@@ -1,0 +1,31 @@
+{
+  "name": "@dwmaj/workflow",
+  "version": "1.1.0",
+  "description": "",
+  "main": "src/index.html",
+  "scripts": {
+    "build": "npm run clean && npx mix --production",
+    "start": "npx mix watch",
+    "watch": "npx mix watch",
+    "clean": "rimraf dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwmaj/workflow.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dwmaj/workflow/issues"
+  },
+  "homepage": "https://github.com/dwmaj/workflow#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "laravel-mix": "^6.0.41",
+    "rimraf": "^3.0.2",
+    "sass": "^1.49.0",
+    "sass-loader": "^12.4.0"
+  }
+}
