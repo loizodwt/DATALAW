@@ -1,10 +1,18 @@
-body {
-  font-family: sans-serif;
-  font-size: $size-text;
-  line-height: 1.5;
-  color: $c-text;
+// Fonts nécessaires
+@font-face {
+  font-family: "Livingstone";
+  src: url("assets/fonts/Livingstone.ttf");
 }
 
-.title {
-  color: $c-alt;
+@font-face {
+  font-family: "Ortica Angular";
+  src: url("assets/fonts/OrticaAngular-Bold.woff2") format("woff2");
 }
+
+@font-face {
+  font-family: "Prince Valiant";
+  src: url("assets/fonts/Princevaliant.ttf");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDMincho&display=swap')
+
