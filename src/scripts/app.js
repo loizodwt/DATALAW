@@ -1,4 +1,4 @@
-console.info("Hello world");
+"use strict"
 
 document.addEventListener("DOMContentLoaded", function () {
   const questionElement = document.getElementById("question");
