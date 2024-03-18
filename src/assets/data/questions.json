@@ -1,0 +1,52 @@
+[
+    {
+      "question": "La Terre est plate.",
+      "reponse": false,
+      "anecdote": "La Terre est en réalité une sphère. Cette idée a été prouvée dès l'Antiquité."
+    },
+    {
+      "question": "Le soleil tourne autour de la Terre.",
+      "reponse": false,
+      "anecdote": "C'est la Terre qui tourne autour du soleil. Cette théorie a été démontrée par Copernic."
+    },
+    {
+      "question": "La lune est un satellite naturel de la Terre.",
+      "reponse": true,
+      "anecdote": "Effectivement, la Lune est un satellite naturel de la Terre, et elle est en orbite autour d'elle."
+    },
+    {
+      "question": "L'eau bout à 100 degrés Fahrenheit.",
+      "reponse": false,
+      "anecdote": "L'eau bout à 100 degrés Celsius (212 degrés Fahrenheit)."
+    },
+    {
+      "question": "La vitesse de la lumière est infinie.",
+      "reponse": false,
+      "anecdote": "La vitesse de la lumière est d'environ 299 792 458 mètres par seconde dans le vide."
+    },
+    {
+      "question": "Le code binaire utilise seulement les chiffres 0 et 1.",
+      "reponse": true,
+      "anecdote": "C'est exact. Le code binaire est un système de numération qui utilise seulement les chiffres 0 et 1 pour représenter l'information."
+    },
+    {
+      "question": "La photosynthèse est le processus par lequel les plantes produisent de l'oxygène.",
+      "reponse": true,
+      "anecdote": "Oui, la photosynthèse est un processus biologique vital où les plantes utilisent la lumière pour convertir le dioxyde de carbone en oxygène."
+    },
+    {
+      "question": "La Guerre de Troie a eu lieu en Grèce.",
+      "reponse": false,
+      "anecdote": "La Guerre de Troie a eu lieu en Anatolie, l'actuelle Turquie."
+    },
+    {
+      "question": "Le désert du Sahara est le plus grand désert du monde.",
+      "reponse": true,
+      "anecdote": "Oui, le Sahara est le plus grand désert chaud du monde, couvrant une superficie d'environ 9 200 000 kilomètres carrés."
+    },
+    {
+      "question": "Les dauphins sont des poissons.",
+      "reponse": false,
+      "anecdote": "Les dauphins sont des mammifères marins, pas des poissons. Ils sont plus étroitement liés aux baleines et aux marsouins qu'aux poissons."
+    }
+  ]
