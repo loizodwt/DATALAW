@@ -4,19 +4,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quizz</title>
+  <meta name="description" content=".">
+
+  <!-- Open Graph data -->
+  <meta property="og:site_name" content="DataLaws" />
+  <meta property="og:title" content="DataLaws" />
+  <meta property="og:description" content="" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="/assets/images/share.png" />
+  <meta property="og:image:width" content="1800" />
+  <meta property="og:image:height" content="945" />
+
+  <title>Quiz | DataLaws</title>
   <script src="scripts/app.js"></script>
   <link rel="stylesheet" href="styles/app.css">
 </head>
 
 <body>
-  <h1>Quiz</h1>
-  <div class="quiz-container">
-    <p>Vous incarnez un législateur devant se prononcer sur des propositions de lois étranges, parmi lesquelles se sont glissées des légendes urbaines fausses. À vous de juger si vous les approuvez et décidez de les mettre en place officiellement !</p>
-    <button class="btn">Commencer le quiz</button>
-  </div>
 
-  <div class="quiz-container">
+  <header>
+    <nav class="nav">
+      <ul class="nav__ul">
+        <li><a href="/index.html" class="nav__el">Accueil</a></li>
+        <li><a href="/quiz.html" class="nav__el">Quiz</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Quiz</h1>
+    <div class="quiz-container">
+      <p>Vous incarnez un législateur devant se prononcer sur des propositions de lois étranges, parmi lesquelles se sont glissées des légendes urbaines fausses. À vous de juger si vous les approuvez et décidez de les mettre en place officiellement !</p>
+      <button class="btn">Commencer le quiz</button>
+    </div>
+  </main>
+
+
+  <!-- <div class="quiz-container">
     <h2 id="question" class="quiz-container__question"></h2>
     <div class="quiz-container__buttons">
       <button id="vraiBtn" class="quiz-container__button quiz-container__button--vrai">VRAI</button>
@@ -24,7 +49,15 @@
       <button id="skipBtn" class="quiz-container__button quiz-container__button--skip">SKIP</button>
     </div>
     <div id="feedback" class="quiz-container__feedback"></div>
-  </div>
+  </div> -->
+
+  <footer class="footer">
+    <ul class="footer__ul">
+      <li class="footer__el"><a href="https://dwt.heaj.be/">DWT</a></li>
+      <li class="footer__el"><a href="/credits.html">Crédits</a></li>
+    </ul>
+    <small>© 2024, tous droits réservés.</small>
+  </footer>
 
 </body>
 
