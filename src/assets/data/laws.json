@@ -7,7 +7,7 @@
       "Peine": "200 couronnes (~15 €)",
       "Tag(s)": "Bouffe",
       "Lien": "https://de.wikipedia.org/wiki/Kriegswirtschaftliches_Erm%C3%A4chtigungsgesetz",
-      "Commentaires": "Le pain était un excellent ingrédient pour le nettoyage, mais à cause d’une famine, son utilisation a été fortement rationnée.",
+      "Commentaires": "Le pain était un outil parfait pour enlever les taches tenaces, mais à cause d’une famine, son utilisation a été fortement rationnée.",
       "Absurdité": 5
    },
    {
@@ -23,13 +23,13 @@
    },
    {
       "Pays": "Finlande",
-      "Loi": "Les chauffeurs de taxi doivent payer des redevances s’ils jouent de la musique sous copyright dans leur voiture.",
+      "Loi": "Les chauffeurs de taxi doivent payer des redevances s’ils jouent de la musique sous droit d'auteur dans leur voiture.",
       "Début": "2002",
       "Fin": "Actuel",
       "Peine": "Amende, confiscation de la musique",
       "Tag(s)": "Transports",
       "Lien": "https://finlex.fi/fi/laki/ajantasa/1961/19610404",
-      "Commentaires": "Le taxi est considéré comme un « lieu public ».",
+      "Commentaires": "Le taxi est considéré comme un « lieu public », malgré sa taille réduite.",
       "Absurdité": 3
    },
    {
@@ -40,7 +40,7 @@
       "Peine": "Sanction disciplinaire",
       "Tag(s)": "Bouffe",
       "Lien": "https://www.service-public.fr/particuliers/vosdroits/F34555",
-      "Commentaires": "",
+      "Commentaires": "Ah, les plaisirs du capitalisme !",
       "Absurdité": 2
    },
    {
@@ -95,7 +95,7 @@
       "Peine": "Aucune",
       "Tag(s)": "Animaux",
       "Lien": "https://www.rtbf.be/article/france-un-maire-interdit-l-entree-dans-sa-commune-aux-moustiques-9979302",
-      "Commentaires": "Petit problème, grande solution ?",
+      "Commentaires": "Chaque année, la commune est envahie par les moustiques. Petit problème, grande solution ?",
       "Absurdité": 4
    },
    {
@@ -128,7 +128,7 @@
       "Peine": "Aucune",
       "Tag(s)": "Bouffe, Culture",
       "Lien": "https://www.lemonde.fr/societe/article/2011/10/03/une-plus-grande-variete-alimentaire-dans-les-cantines-scolaires_1581260_3224.html#",
-      "Commentaires": "",
+      "Commentaires": "Le ketchup, une substance contrôlée ?",
       "Absurdité": 3
    },
    {
@@ -678,7 +678,7 @@
       "Sanction": "500 ₽ (~8 €)",
       "Tag(s)": "Hygiène, Transports",
       "Lien": "http://news.bbc.co.uk/2/hi/europe/4938256.stm",
-      "Commentaires": "La loi ne vise en réalité que la plaque d’immatriculation : trop de saleté la rend illisible. Des policiers corrompus aiment cependant exiger des bribes de conducteurs ignorants de ce détail.",
+      "Commentaires": "La loi ne vise en réalité que la plaque d’immatriculation: trop de saleté la rend illisible. Des policiers corrompus aiment cependant exiger des bribes de conducteurs ignorants de ce détail.",
       "Absurdité": 1
    },
    {
@@ -700,7 +700,7 @@
       "Sanction": "1 mois de prison",
       "Tag(s)": "Justice",
       "Lien": "https://legalresource.ph/unjust-vexation-a287-revised-penal-code/",
-      "Commentaires": "Sont considérés comme de la vexation injuste : se plaindre d’un voisin sur les réseaux sociaux, insulter un policier, critiquer le gouvernement.",
+      "Commentaires": "Sont considérés comme de la vexation injuste: se plaindre d’un voisin sur les réseaux sociaux, insulter un policier, critiquer le gouvernement.",
       "Absurdité": 3
    }
 ]
