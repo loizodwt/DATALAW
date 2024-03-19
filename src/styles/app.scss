@@ -5,33 +5,67 @@ body {
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+// Timeline
 .timeline {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+
+  &__1,
+  &__2,
+  &__3,
+  &__4,
+  &__5 {
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+    height: 100vh;
+  }
+
   &__1 {
-    // background-color: blue;
     background-image: image-set(
       url(../assets/images/background_1.jpg) 1x,
       url(../assets/images/background_1@2x.jpg) 2x
     );
   }
   &__2 {
-    background-color: red;
+    background-color: rgb(173, 100, 100);
   }
   &__3 {
-    background-color: green;
+    background-color: rgb(110, 198, 110);
   }
   &__4 {
-    background-color: cyan;
+    background-color: rgb(123, 225, 225);
   }
   &__5 {
-    background-color: yellow;
+    background-color: rgb(221, 221, 114);
   }
 }
 
-.timeline-height {
+// Maque la scrollbar sur la timeline, ne laissant que celle du site de base
+.timeline::-webkit-scrollbar {
+  display: none; // Chrome
+}
+.timeline {
+  scrollbar-width: none; // Firefox
+  -ms-overflow-style: none; // IE et Edge
+}
+
+.test {
+  background-color: black;
   height: 100vh;
 }
 
 // Quizz
+.quizz {
+  scroll-snap-align: start;
+  height: 100vh;
+}
+
 .quiz-container {
   max-width: 600px;
   margin: 0 auto;
