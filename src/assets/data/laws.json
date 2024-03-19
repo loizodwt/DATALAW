@@ -7,12 +7,12 @@
       "Peine": "200 couronnes (~15 €)",
       "Tag(s)": "Bouffe",
       "Lien": "https://de.wikipedia.org/wiki/Kriegswirtschaftliches_Erm%C3%A4chtigungsgesetz",
-      "Commentaires": "Le pain était un outil parfait pour enlever les taches tenaces, mais à cause d’une famine, son utilisation a été fortement rationnée.",
+      "Commentaires": "Le pain était l'outil idéal pour enlever les taches tenaces, mais à cause d’une famine, son utilisation a été fortement rationnée.",
       "Absurdité": 5
    },
    {
       "Pays": "Belgique",
-      "Loi": "Lors d’une saisie de biens, on ne prend pas votre dernière vache, chèvres, cochons et vos derniers 24 poulets.",
+      "Loi": "Lors d’une saisie de biens, on ne prend pas votre dernière vache, chèvre, cochon et vos 24 derniers poulets.",
       "Début": "1993",
       "Fin": "2023",
       "Peine": "",
@@ -29,12 +29,12 @@
       "Peine": "Amende, confiscation de la musique",
       "Tag(s)": "Transports",
       "Lien": "https://finlex.fi/fi/laki/ajantasa/1961/19610404",
-      "Commentaires": "Le taxi est considéré comme un « lieu public », malgré sa taille réduite.",
+      "Commentaires": "Le taxi est considéré comme un « lieu public » malgré sa taille réduite, et les règles du droit d'auteur en lieu public l'affectent donc.",
       "Absurdité": 3
    },
    {
       "Pays": "France",
-      "Loi": "Interdiction de manger sur le lieu de travail sans autorisation de l’employeur.",
+      "Loi": "Il est interdit de manger sur le lieu de travail sans autorisation de l’employeur.",
       "Début": "20ᵉ siècle",
       "Fin": "Actuel",
       "Peine": "Sanction disciplinaire",
@@ -51,18 +51,18 @@
       "Peine": "1 an de prison, 15 000 €",
       "Tag(s)": "Hygiène",
       "Lien": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000021796946",
-      "Commentaires": "Si votre voisin vous espionne sortant de la douche, vous risquez gros.",
+      "Commentaires": "Si votre voisin vous espionne en sortant de la douche, vous commettez une atteinte à la pudeur…",
       "Absurdité": 2
    },
    {
       "Pays": "France",
-      "Loi": "Les radios ont l’obligation de passer au minimum 35% de musiques françaises.",
+      "Loi": "Les radios ont l’obligation de passer au minimum 35% de chansons françaises.",
       "Début": "1986",
       "Fin": "Actuel",
       "Peine": "3% du chiffre d'affaires annuel",
       "Tag(s)": "Culture",
       "Lien": "https://www.arcom.fr/nous-connaitre-nos-missions/promouvoir-et-proteger-la-creation/les-quotas-de-chansons-la-radio",
-      "Commentaires": "Cette loi sert à promouvoir le patrimoine français.",
+      "Commentaires": "Cette loi sert à promouvoir le patrimoine français. Les radios dites « de patrimoine » doivent diffuser 60% de chansons françaises.",
       "Absurdité": 1
    },
    {
@@ -166,7 +166,7 @@
    },
    {
       "Pays": "Grèce",
-      "Loi": "Il est illégal de jouer aux jeux-vidéos.",
+      "Loi": "Jouer aux jeux-vidéos est illégal.",
       "Début": "2002",
       "Fin": "2011",
       "Peine": "300 €, confiscation du jeu.",
@@ -177,7 +177,7 @@
    },
    {
       "Pays": "Grèce",
-      "Loi": "Il est interdit de porter des talons hauts sur divers sites historiques, dont l’Acropole.",
+      "Loi": "Porter des talons hauts est interdit sur divers sites historiques, dont l’Acropole.",
       "Début": "2009",
       "Fin": "Actuel",
       "Peine": "120 €",
@@ -216,7 +216,7 @@
       "Peine": "500 €",
       "Tag(s)": "Culture",
       "Lien": "https://en.wikivoyage.org/wiki/Eraclea",
-      "Commentaires": "Les châteaux peuvent être considérés un obstacle à la circulation.",
+      "Commentaires": "Les châteaux peuvent être considérés comme un obstacle à la circulation.",
       "Absurdité": 3
    },
    {
@@ -276,7 +276,7 @@
    },
    {
       "Pays": "Royaume-Uni",
-      "Loi": "Interdiction de porter des chaussures longues et pointues.",
+      "Loi": "Porter des chaussures longues et pointues est interdit.",
       "Début": "1363",
       "Fin": "16ème siècle",
       "Peine": "100 £ (~115 €)",
@@ -315,7 +315,7 @@
       "Peine": "10 000 francs (~9 300 €)",
       "Tag(s)": "Alcool",
       "Lien": "https://www.admin.ch/gov/de/start/dokumentation/medienmitteilungen.msg-id-3770.html",
-      "Commentaires": "Autrement dit, si vous obtenez de l’absinthe, il faut tout consomme d’une traite, car vous ne pourrez pas la stocker.",
+      "Commentaires": "Autrement dit, si vous obtenez de l’absinthe, il faut tout boire d’une traite, car vous ne pourrez pas la stocker.",
       "Absurdité": 2
    },
    {
@@ -474,7 +474,7 @@
    },
    {
       "Pays": "USA (Pennsylvanie)",
-      "Loi": "Un mariage est non-valide si l’un des époux est saoul pendant la demande du certificat de mariage.",
+      "Loi": "Un mariage est non-valide si l’un des époux est ivre pendant la demande du certificat de mariage.",
       "Début": "1923",
       "Fin": "Actuel",
       "Sanction": "",
@@ -491,7 +491,7 @@
       "Sanction": "1 mois de prison, 500 $ (~460 €)",
       "Tag(s)": "Animaux, Arme",
       "Lien": "https://www.tn.gov/twra/fishing-regs/statewide-creel-length-limits.html",
-      "Commentaires": "Pas truite au plomb pour le souper…",
+      "Commentaires": "Pas de truite au plomb pour le souper…",
       "Absurdité": 5
    },
    {
@@ -529,7 +529,7 @@
    },
    {
       "Pays": "Canada",
-      "Loi": "Vous ne pouvez pas traîner un cheval mort sur une voie publique le dimanche.",
+      "Loi": "On ne peut pas traîner un cheval mort sur une voie publique le dimanche.",
       "Début": "1959",
       "Fin": "Actuel",
       "Sanction": "Aucune",
@@ -562,7 +562,7 @@
    },
    {
       "Pays": "Singapour",
-      "Loi": "Le chewing-gum est interdit, sauf si ramené d’un autre pays.",
+      "Loi": "Le chewing-gum est interdit, sauf s'il est ramené d’un autre pays.",
       "Début": "1992",
       "Fin": "Actuel",
       "Sanction": "1 an de prison, 5 500 $ (~5 060 €)",
@@ -601,7 +601,7 @@
       "Sanction": "2 000 $ (~1 800 €)",
       "Tag(s)": "Tabac",
       "Lien": "https://en.wikipedia.org/wiki/Smoking_in_Singapore",
-      "Commentaires": "En 2018, il y a eu une tentative d’interdire la cigarette même dans les lieux privés, mais la loi n’a pas été retenue.",
+      "Commentaires": "En 2018, il y a eu une tentative d’interdire la cigarette même dans les domiciles privés, mais la loi n’a pas été retenue.",
       "Absurdité": 1
    },
    {
@@ -661,7 +661,7 @@
    },
    {
       "Pays": "Émirats arabes unis",
-      "Loi": "Une licence est nécessaire pour boire de l’alcool.",
+      "Loi": "Une licence est nécessaire pour consommer de l’alcool.",
       "Début": "1966",
       "Fin": "Actuel",
       "Sanction": "20 000 dirhams (~5 000 €)",
@@ -694,7 +694,7 @@
    },
    {
       "Pays": "Philippines",
-      "Loi": "La vexation injuste est un crime.",
+      "Loi": "La « vexation injuste » est un crime.",
       "Début": "1930",
       "Fin": "Actuel",
       "Sanction": "1 mois de prison",
