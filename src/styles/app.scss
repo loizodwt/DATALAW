@@ -33,7 +33,11 @@ html {
     );
   }
   &__2 {
-    background-color: rgb(173, 100, 100);
+    background-image: image-set(
+        url(../assets/images/background_2.jpg) 1x,
+        url(../assets/images/background_2@2x.png) 2x
+    );
+    font-family: "BIZ UDMincho", serif;
   }
   &__3 {
     background-color: rgb(110, 198, 110);
@@ -53,11 +57,6 @@ html {
 .timeline {
   scrollbar-width: none; // Firefox
   -ms-overflow-style: none; // IE et Edge
-}
-
-.test {
-  background-color: black;
-  height: 100vh;
 }
 
 // Quizz

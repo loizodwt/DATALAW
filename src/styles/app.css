@@ -1,14 +1,16 @@
-body {
-  font-family: sans-serif;
-  font-size: 18px;
-  line-height: 1.5;
-  color: #444;
+@import url("https://fonts.googleapis.com/css2?family=BIZ+UDMincho&display=swap");
+@font-face {
+  font-family: "Livingstone";
+  src: url("assets/fonts/Livingstone.ttf");
 }
-
-.title {
-  color: #e41612;
+@font-face {
+  font-family: "Ortica Angular";
+  src: url("assets/fonts/OrticaAngular-Bold.woff2") format("woff2");
 }
-
+@font-face {
+  font-family: "Prince Valiant";
+  src: url("assets/fonts/Princevaliant.ttf");
+}
 body {
   margin: 0;
 }
@@ -33,7 +35,9 @@ html {
   background-image: image-set(url(../assets/images/background_1.jpg) 1x, url(../assets/images/background_1@2x.jpg) 2x);
 }
 .timeline__2 {
-  background-color: rgb(173, 100, 100);
+  background-image: -webkit-image-set(url(../assets/images/background_2.jpg) 1x, url(../assets/images/background_2@2x.png) 2x);
+  background-image: image-set(url(../assets/images/background_2.jpg) 1x, url(../assets/images/background_2@2x.png) 2x);
+  font-family: "BIZ UDMincho", serif;
 }
 .timeline__3 {
   background-color: rgb(110, 198, 110);
@@ -52,11 +56,6 @@ html {
 .timeline {
   scrollbar-width: none;
   -ms-overflow-style: none;
-}
-
-.test {
-  background-color: black;
-  height: 100vh;
 }
 
 .quizz {
