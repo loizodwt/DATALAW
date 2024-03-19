@@ -1,0 +1,379 @@
+[
+ {
+   "Pays": "Autriche",
+   "Loi": "Il est interdit de nettoyer le papier peint ou le sol avec du pain.",
+   "Début": "1917",
+   "Fin": "1946",
+   "Peine": "200 couronnes (~15 €)",
+   "Tag(s)": "Bouffe",
+   "Lien": "https://de.wikipedia.org/wiki/Kriegswirtschaftliches_Erm%C3%A4chtigungsgesetz",
+   "Commentaires": "Le pain était un excellent ingrédient pour le nettoyage, mais à cause d’une famine, son utilisation a été fortement rationnée.",
+   "Absurdité (": {
+      "5)": 5
+   }
+},
+ {
+   "Pays": "Belgique",
+   "Loi": "Lors d’une saisie de biens, on ne prend pas votre dernière vache, chèvres, cochons et vos derniers 24 poulets.",
+   "Début": "1993",
+   "Fin": "2023",
+   "Peine": "",
+   "Tag(s)": "Animaux",
+   "Lien": "https://www.ejustice.just.fgov.be/cgi_loi/change_lg.pl?language=fr&la=F&cn=1967101005&table_name=loi",
+   "Commentaires": "Dommage si vous aviez 25 poulets…",
+   "Absurdité (": {
+      "5)": 3
+   }
+},
+ {
+   "Pays": "Finlande",
+   "Loi": "Les chauffeurs de taxi doivent payer des redevances s’ils jouent de la musique sous copyright dans leur voiture.",
+   "Début": "2002",
+   "Fin": "Actuel",
+   "Peine": "Amende, confiscation de la musique",
+   "Tag(s)": "Transports",
+   "Lien": "https://finlex.fi/fi/laki/ajantasa/1961/19610404",
+   "Commentaires": "Le taxi est considéré comme un « lieu public ».",
+   "Absurdité (": {
+      "5)": 3
+   }
+},
+ {
+   "Pays": "France",
+   "Loi": "Interdiction de manger sur le lieu de travail sans autorisation de l’employeur.",
+   "Début": "20ᵉ siècle",
+   "Fin": "Actuel",
+   "Peine": "Sanction disciplinaire",
+   "Tag(s)": "Bouffe",
+   "Lien": "https://www.service-public.fr/particuliers/vosdroits/F34555",
+   "Commentaires": "",
+   "Absurdité (": {
+      "5)": 2
+   }
+},
+ {
+   "Pays": "France",
+   "Loi": "Il est interdit d’être nu chez soi s’il y a un risque d’être vu.",
+   "Début": "1994",
+   "Fin": "Actuel",
+   "Peine": "1 an de prison, 15 000 €",
+   "Tag(s)": "Hygiène",
+   "Lien": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000021796946",
+   "Commentaires": "Si votre voisin vous espionne sortant de la douche, vous risquez gros.",
+   "Absurdité (": {
+      "5)": 2
+   }
+},
+ {
+   "Pays": "France",
+   "Loi": "Les radios ont l’obligation de passer au minimum 35% de musiques françaises.",
+   "Début": "1986",
+   "Fin": "Actuel",
+   "Peine": "3% du chiffre d'affaires annuel",
+   "Tag(s)": "Culture",
+   "Lien": "https://www.arcom.fr/nous-connaitre-nos-missions/promouvoir-et-proteger-la-creation/les-quotas-de-chansons-la-radio",
+   "Commentaires": "Cette loi sert à promouvoir le patrimoine français.",
+   "Absurdité (": {
+      "5)": 1
+   }
+},
+ {
+   "Pays": "France",
+   "Loi": "Il est légal de se marier avec un mort si la personne décédée avait exprimé le désir de se marier avant sa mort.",
+   "Début": "1959",
+   "Fin": "Actuel",
+   "Peine": "",
+   "Tag(s)": "Mort",
+   "Lien": "https://fr.wikipedia.org/wiki/Mariage_posthume",
+   "Commentaires": "Dans la vie et dans la mort…",
+   "Absurdité (": {
+      "5)": 4
+   }
+},
+ {
+   "Pays": "France",
+   "Loi": "À Essarts-en-Bocage, il est obligatoire d’être « en joie » entre 8 et 22 heures et de faire sourire 10 personnes par jour.",
+   "Début": "5 octobre 2019",
+   "Fin": "11 octobre 2019",
+   "Peine": "Aucune",
+   "Tag(s)": "Culture",
+   "Lien": "https://france3-regions.francetvinfo.fr/pays-de-la-loire/vendee/herbiers/essarts-bocage-vendee-arrete-municipal-oblige-population-etre-joie-du-5-au-10-octobre-1724277.html",
+   "Commentaires": "Cela rappelle un peu Brave New World, le livre dystopique de Aldous Huxley…",
+   "Absurdité (": {
+      "5)": 5
+   }
+},
+ {
+   "Pays": "France",
+   "Loi": "Dans la commune de Briollay, les moustiques sont interdits.",
+   "Début": "2018",
+   "Fin": "Actuel",
+   "Peine": "Aucune",
+   "Tag(s)": "Animaux",
+   "Lien": "https://www.rtbf.be/article/france-un-maire-interdit-l-entree-dans-sa-commune-aux-moustiques-9979302",
+   "Commentaires": "Grand problème, grande solution ?",
+   "Absurdité (": {
+      "5)": 4
+   }
+},
+ {
+   "Pays": "France",
+   "Loi": "La consommation d’alcool est interdite sur le lieu de travail, sauf pour le cidre, la bière, le vin et le poiré, et seulement lors d’un repas.",
+   "Début": "2014",
+   "Fin": "Actuel",
+   "Peine": "Sanction disciplinaire",
+   "Tag(s)": "Alcool",
+   "Lien": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000029184975/2014-07-04",
+   "Commentaires": "Pas de vodka avec votre sandwich, donc.",
+   "Absurdité (": {
+      "5)": 2
+   }
+},
+ {
+   "Pays": "France",
+   "Loi": "à Châteauneuf-du-Pape, les OVNI sont interdits de survol, d'atterrissage et de décollage.",
+   "Début": "1954",
+   "Fin": "Actuel",
+   "Peine": "Mise en fourrière de l’aéronef.",
+   "Tag(s)": "Culture",
+   "Lien": "https://fr.wikipedia.org/wiki/Ch%C3%A2teauneuf-du-Pape",
+   "Commentaires": "La commune a avoué que cette loi était un coup de pub. Elle est malgré tout toujours d’application. On respecte le dévouement.",
+   "Absurdité (": {
+      "5)": 5
+   }
+},
+ {
+   "Pays": "France",
+   "Loi": "La distribution libre de ketchup est interdite dans les cantines.",
+   "Début": "2011",
+   "Fin": "Actuel",
+   "Peine": "Aucune",
+   "Tag(s)": "Bouffe, Culture",
+   "Lien": "https://www.lemonde.fr/societe/article/2011/10/03/une-plus-grande-variete-alimentaire-dans-les-cantines-scolaires_1581260_3224.html#",
+   "Commentaires": "",
+   "Absurdité (": {
+      "5)": 3
+   }
+},
+ {
+   "Pays": "France",
+   "Loi": "Les animaux peuvent être jugés devant les tribunaux pour des délits criminels.",
+   "Début": "14ᵉ siècle",
+   "Fin": "2016",
+   "Peine": "",
+   "Tag(s)": "Animaux, Moyen-Âge",
+   "Lien": "https://www.radiofrance.fr/franceculture/truie-condamnee-a-mort-dauphins-exorcises-les-etranges-proces-d-animaux-au-moyen-age-8722242",
+   "Commentaires": "Le plus ancien procès d’un animal retrouvé date du 14ᵉ siècle, une truie a été pendue pour avoir mangé un nouveau-né. Il est possible que d’autres procès aient eu lieu avant cela cependant.",
+   "Absurdité (": {
+      "5)": 4
+   }
+},
+ {
+   "Pays": "France",
+   "Loi": "Il est illégal de montrer un policier ou une voiture de police sur une photo, même en arrière-plan.",
+   "Début": "2020",
+   "Fin": "Actuel",
+   "Peine": "1 an de prison, 45 000 €",
+   "Tag(s)": "Transports",
+   "Lien": "https://www.lemonde.fr/societe/article/2020/11/20/diffusion-des-images-des-forces-de-l-ordre-l-article-24-de-la-loi-securite-globale-adopte-a-l-assemblee-nationale_6060577_3224.html",
+   "Commentaires": "C’est un peu dystopique, tout ça.",
+   "Absurdité (": {
+      "5)": 3
+   }
+},
+ {
+   "Pays": "France",
+   "Loi": "Toute femme désirant s’habiller en homme doit se présenter à la Préfecture de police pour en obtenir l’autorisation.",
+   "Début": "1800",
+   "Fin": "2013",
+   "Peine": "200 francs (~30 €)",
+   "Tag(s)": "Culture, Femme",
+   "Lien": "https://www.senat.fr/questions/base/2012/qSEQ120700692.html",
+   "Commentaires": "La loi visait à empêcher les femmes à faire un travail d’homme, et puis a semble-t-il été oubliée jusqu’en 2013.",
+   "Absurdité (": {
+      "5)": 4
+   }
+},
+ {
+   "Pays": "Grèce",
+   "Loi": "Il est illégal de jouer aux jeux-vidéos.",
+   "Début": "2002",
+   "Fin": "2011",
+   "Peine": "300 €, confiscation du jeu.",
+   "Tag(s)": "Culture",
+   "Lien": "https://en.wikipedia.org/wiki/Law_3037/2002",
+   "Commentaires": "Visant la lutte contre les jeux d’argent en ligne, mais jugée inconstitutionnelle, la loi a été remaniée en 2003 pour uniquement interdire les jeux dans les cybercafés.",
+   "Absurdité (": {
+      "5)": 3
+   }
+},
+ {
+   "Pays": "Grèce",
+   "Loi": "Il est interdit de porter des talons hauts sur divers sites historiques, dont l’Acropole.",
+   "Début": "2009",
+   "Fin": "Actuel",
+   "Peine": "120 €",
+   "Tag(s)": "Vêtements",
+   "Lien": "https://www.dailymail.co.uk/travel/article-1185063/Women-banned-wearing-stilettos-Ancient-Greek-sites-new-plan.html",
+   "Commentaires": "Les talons aiguilles dégradent les monuments, il vaut mieux donc venir avec des sandales confortables ou des baskets.",
+   "Absurdité (": {
+      "5)": 3
+   }
+},
+ {
+   "Pays": "Italie",
+   "Loi": "Il est interdit de s’asseoir sur les marches espagnoles à Rome.",
+   "Début": "2019",
+   "Fin": "Actuel",
+   "Peine": "400 €",
+   "Tag(s)": "Culture",
+   "Lien": "https://www.nytimes.com/2019/08/07/world/europe/rome-spanish-steps-sit.html",
+   "Commentaires": "De la même manière, il est également interdit de s’asseoir par terre à Venise.",
+   "Absurdité (": {
+      "5)": 3
+   }
+},
+ {
+   "Pays": "Italie",
+   "Loi": "À Turin, il est obligatoire de promener son chien trois fois par jour.",
+   "Début": "2005",
+   "Fin": "Actuel",
+   "Peine": "250 €",
+   "Tag(s)": "Animaux",
+   "Lien": "https://www.nbcnews.com/id/wbna7601359",
+   "Commentaires": "Le promener à vélo est autorisé, mais seulement si cela n’épuise pas l’animal.",
+   "Absurdité (": {
+      "5)": 2
+   }
+},
+ {
+   "Pays": "Italie",
+   "Loi": "À Eraclea, il est interdit de construire des châteaux de sable sur les plages.",
+   "Début": "2020",
+   "Fin": "Actuel",
+   "Peine": "500 €",
+   "Tag(s)": "Culture",
+   "Lien": "https://en.wikivoyage.org/wiki/Eraclea",
+   "Commentaires": "Les châteaux peuvent être considérés un obstacle à la circulation.",
+   "Absurdité (": {
+      "5)": 3
+   }
+},
+ {
+   "Pays": "Italie",
+   "Loi": "Les prostituées de Venise doivent porter une écharpe jaune.",
+   "Début": "1412",
+   "Fin": "1797",
+   "Peine": "",
+   "Tag(s)": "Métiers, Sexe",
+   "Lien": "https://en.wikipedia.org/wiki/Ponte_delle_Tette",
+   "Commentaires": "Une femme « à marier », elle, portait une écharpe blanche.",
+   "Absurdité (": {
+      "5)": 3
+   }
+},
+ {
+   "Pays": "Norvège",
+   "Loi": "Il est interdit de stériliser un animal sans raison médicale valable.",
+   "Début": "2009",
+   "Fin": "Actuel",
+   "Peine": "15 000 €",
+   "Tag(s)": "Animaux",
+   "Lien": "https://www.regjeringen.no/en/dokumenter/animal-welfare-act/id571188/",
+   "Commentaires": "Les chiens sont stérilisés pour raisons médicales uniquement. Les chats, plus nombreux à l’état sauvage, le sont bien plus souvent afin d’éviter une surpopulation.",
+   "Absurdité (": {
+      "5)": 2
+   }
+},
+ {
+   "Pays": "Pays-Bas",
+   "Loi": "S’enfuir de prison est légal et n’allongera pas la peine tant qu’aucun dégât matériel et/ou acte de violence n’est constaté.",
+   "Début": "1983",
+   "Fin": "Actuel",
+   "Peine": "Aucune",
+   "Tag(s)": "Justice",
+   "Lien": "https://en.wikipedia.org/wiki/Prison_escape#Punishment",
+   "Commentaires": "La philosophie qu’il est naturel pour un être humain de vouloir prendre sa liberté est partagée par plusieurs autres pays Européens, dont la Belgique, l’Allemagne et la Suède.",
+   "Absurdité (": {
+      "5)": 3
+   }
+},
+ {
+   "Pays": "Pays-Bas",
+   "Loi": "Il est interdit de fumer une cigarette dans un coffeeshop, mais pas du canabis.",
+   "Début": "2008",
+   "Fin": "Actuel",
+   "Peine": "300 €",
+   "Tag(s)": "Drogue",
+   "Lien": "https://en.wikipedia.org/wiki/Coffeeshop_(Netherlands)",
+   "Commentaires": "Blaze it.",
+   "Absurdité (": {
+      "5)": 3
+   }
+},
+ {
+   "Pays": "Roumanie",
+   "Loi": "Si on est déclaré mort alors qu’on est en vie, il faut faire appel avant le délai imparti.",
+   "Début": "1996",
+   "Fin": "Actuel",
+   "Peine": "Perte de droits, difficultés administratives",
+   "Tag(s)": "Justice, Mort",
+   "Lien": "https://www.theguardian.com/world/2018/mar/16/romanian-court-tells-man-he-is-not-alive",
+   "Commentaires": "Un homme en a fait les frais en 2003. Ayant fait appel trop tard, il est légalement mort et n’a plus de droits.",
+   "Absurdité (": {
+      "5)": 5
+   }
+},
+ {
+   "Pays": "Royaume-Uni",
+   "Loi": "Interdiction de porter des chaussures longues et pointues.",
+   "Début": "1363",
+   "Fin": "16ème siècle",
+   "Peine": "100 £ (~115 €)",
+   "Tag(s)": "Moyen-Âge",
+   "Lien": "https://www.theguardian.com/science/2021/jun/11/medieval-fashion-for-pointy-shoes-linked-to-rise-in-bunions",
+   "Commentaires": "Ces chaussures étaient considérées comme un symbole de statut social élevé. Plus les chaussures étaient longues, plus haut était le statut de celui qui les porte…et plus hauts étaient ses risques de trébucher.",
+   "Absurdité (": {
+      "5)": 4
+   }
+},
+ {
+   "Pays": "Royaume-Uni",
+   "Loi": "Il est interdit de porter une armure au Parlement de Londres.",
+   "Début": "1313",
+   "Fin": "Actuel",
+   "Peine": "100 £ (~115 €)",
+   "Tag(s)": "Arme, Moyen-Âge, Vêtements",
+   "Lien": "https://en.wikipedia.org/wiki/Statute_forbidding_Bearing_of_Armour",
+   "Commentaires": "Bien que la loi soit techniquement toujours d’application, aucun arrêt n’a plus été fait depuis fort longtemps.",
+   "Absurdité (": {
+      "5)": 3
+   }
+},
+ {
+   "Pays": "Royaume-Uni",
+   "Loi": "Être ivre à cheval ou dans un établissement ayant un permis de vente d’alcool constitue un délit.",
+   "Début": "1872",
+   "Fin": "Actuel",
+   "Peine": "1 mois de prison, 100 £ (~115 €)",
+   "Tag(s)": "Alcool, Animaux",
+   "Lien": "https://www.legislation.gov.uk/ukpga/Vict/35-36/94",
+   "Commentaires": "Vous ne pouvez pas non plus être ivre en conduisant de bétail.",
+   "Absurdité (": {
+      "5)": 3
+   }
+},
+ {
+   "Pays": "Suisse",
+   "Loi": "Il est illégal de produire, stocker, vendre ou échanger de l’absinthe, mais légal d’en consommer",
+   "Début": "1915",
+   "Fin": "2005",
+   "Peine": "10 000 francs (~9 300 €)",
+   "Tag(s)": "Alcool",
+   "Lien": "https://www.admin.ch/gov/de/start/dokumentation/medienmitteilungen.msg-id-3770.html",
+   "Commentaires": "Autrement dit, si vous obtenez de l’absinthe, il faut tout consomme d’une traite, car vous ne pourrez pas la stocker.",
+   "Absurdité (": {
+      "5)": 2
+   }
+}
+]
