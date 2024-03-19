@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quizz</title>
-    <script src="scripts/app.js"></script>
-    <link rel="stylesheet" href="styles/app.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quizz</title>
+  <script src="scripts/app.js"></script>
+  <link rel="stylesheet" href="styles/app.css">
 </head>
+
 <body>
-    <div class="quiz-container">
-        <h2 id="question" class="quiz-container__question"></h2>
-        <div class="quiz-container__buttons">
-          <button id="vraiBtn" class="quiz-container__button quiz-container__button--vrai">VRAI</button>
-          <button id="fauxBtn" class="quiz-container__button quiz-container__button--faux">FAUX</button>
-          <button id="skipBtn" class="quiz-container__button quiz-container__button--skip">SKIP</button> 
-        </div>
-        <div id="feedback" class="quiz-container__feedback"></div>
-      </div>
+  <h1>Quiz</h1>
+  <div class="quiz-container">
+    <p>Vous incarnez un législateur devant se prononcer sur des propositions de lois étranges, parmi lesquelles se sont glissées des légendes urbaines fausses. À vous de juger si vous les approuvez et décidez de les mettre en place officiellement !</p>
+    <button class="btn">Commencer le quiz</button>
+  </div>
+
+  <div class="quiz-container">
+    <h2 id="question" class="quiz-container__question"></h2>
+    <div class="quiz-container__buttons">
+      <button id="vraiBtn" class="quiz-container__button quiz-container__button--vrai">VRAI</button>
+      <button id="fauxBtn" class="quiz-container__button quiz-container__button--faux">FAUX</button>
+      <button id="skipBtn" class="quiz-container__button quiz-container__button--skip">SKIP</button>
+    </div>
+    <div id="feedback" class="quiz-container__feedback"></div>
+  </div>
+
 </body>
+
 </html>
