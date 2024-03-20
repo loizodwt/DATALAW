@@ -1,38 +1,8 @@
 @import "utils/variables";
 @import "components/type";
 
-body {
-  margin: 0;
-}
-
-.timeline {
-  &__1 {
-    // background-color: blue;
-    background-image: image-set(
-      url(../assets/images/background_1.jpg) 1x,
-      url(../assets/images/background_1@2x.jpg) 2x
-    );
-  }
-  &__2 {
-    background-color: red;
-  }
-  &__3 {
-    background-color: green;
-  }
-  &__4 {
-    background-color: cyan;
-  }
-  &__5 {
-    background-color: yellow;
-  }
-}
-
-.timeline-height {
-  height: 100vh;
-}
-
 // Quizz
-.quiz-container {
+.quizz-container {
   max-width: 600px;
   margin: 0 auto;
   text-align: center;

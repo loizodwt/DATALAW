@@ -1,0 +1,33 @@
+.quizz-container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+.quizz-container__question {
+  margin-bottom: 20px;
+  font-size: 25px;
+  color: black;
+}
+.quizz-container__buttons {
+  margin-top: 20px;
+}
+.quizz-container__button {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+.quizz-container__button:hover {
+  background-color: rgb(106, 106, 106);
+}
+.quizz-container__button--vrai {
+  background-color: rgb(71, 179, 71);
+  color: white;
+}
+.quizz-container__button--faux {
+  background-color: rgb(193, 0, 0);
+  color: white;
+}
+.quizz-container__feedback {
+  margin-top: 20px;
+  font-size: 20px;
+}/*# sourceMappingURL=app.css.map */
