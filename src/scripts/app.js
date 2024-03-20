@@ -1,5 +1,9 @@
 "use strict"
 
+
+
+// test initial
+/*
 document.addEventListener("DOMContentLoaded", function () {
   const questionElement = document.getElementById("question");
   const vraiBtn = document.getElementById("vraiBtn");
@@ -73,3 +77,4 @@ document.addEventListener("DOMContentLoaded", function () {
     feedbackElement.textContent = "";
   }
 });
+*/
