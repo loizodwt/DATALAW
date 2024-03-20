@@ -7,7 +7,7 @@
       "Peine": "200 couronnes (~15 €)",
       "Tag(s)": "Bouffe",
       "Lien": "https://de.wikipedia.org/wiki/Kriegswirtschaftliches_Erm%C3%A4chtigungsgesetz",
-      "Commentaires": "Le pain était l’outil idéal pour enlever les taches tenaces, mais à cause d’une famine, son utilisation a été fortement rationnée.",
+      "Commentaire": "Le pain était l’outil idéal pour enlever les taches tenaces, mais à cause d’une famine, son utilisation a été fortement rationnée.",
       "Absurdité": 5
    },
    {
@@ -15,10 +15,10 @@
       "Loi": "Lors d’une saisie de biens, on ne prend pas votre dernière vache, chèvre, cochon et vos 24 derniers poulets.",
       "Début": "1993",
       "Fin": "2023",
-      "Peine": "",
+      "Peine": "Aucune",
       "Tag(s)": "Animaux",
       "Lien": "https://www.ejustice.just.fgov.be/cgi_loi/change_lg.pl?language=fr&la=F&cn=1967101005&table_name=loi",
-      "Commentaires": "Dommage si vous aviez 25 poulets…",
+      "Commentaire": "Dommage si vous aviez 25 poulets…",
       "Absurdité": 3
    },
    {
@@ -29,7 +29,7 @@
       "Peine": "Amende, confiscation de la musique",
       "Tag(s)": "Transports",
       "Lien": "https://finlex.fi/fi/laki/ajantasa/1961/19610404",
-      "Commentaires": "Le taxi est considéré comme un «  lieu public  » malgré sa taille réduite, et les règles du droit d’auteur en lieu public l’affectent donc.",
+      "Commentaire": "Le taxi est considéré comme un «  lieu public  » malgré sa taille réduite, et les règles du droit d’auteur en lieu public l’affectent donc.",
       "Absurdité": 3
    },
    {
@@ -40,7 +40,7 @@
       "Peine": "Sanction disciplinaire",
       "Tag(s)": "Bouffe",
       "Lien": "https://www.service-public.fr/particuliers/vosdroits/F34555",
-      "Commentaires": "Ah, les plaisirs du capitalisme !",
+      "Commentaire": "Ah, les plaisirs du capitalisme !",
       "Absurdité": 2
    },
    {
@@ -51,7 +51,7 @@
       "Peine": "1 an de prison, 15 000 €",
       "Tag(s)": "Hygiène",
       "Lien": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000021796946",
-      "Commentaires": "Si votre voisin vous espionne en sortant de la douche, vous commettez une atteinte à la pudeur…",
+      "Commentaire": "Si votre voisin vous espionne en sortant de la douche, vous commettez une atteinte à la pudeur…",
       "Absurdité": 2
    },
    {
@@ -62,7 +62,7 @@
       "Peine": "3% du chiffre d'affaires annuel",
       "Tag(s)": "Culture",
       "Lien": "https://www.arcom.fr/nous-connaitre-nos-missions/promouvoir-et-proteger-la-creation/les-quotas-de-chansons-la-radio",
-      "Commentaires": "Cette loi sert à promouvoir le patrimoine français. Les radios dites «  de patrimoine  » doivent diffuser 60% de chansons françaises.",
+      "Commentaire": "Cette loi sert à promouvoir le patrimoine français. Les radios dites «  de patrimoine  » doivent diffuser 60% de chansons françaises.",
       "Absurdité": 1
    },
    {
@@ -70,10 +70,10 @@
       "Loi": "Il est légal de se marier avec un mort si la personne décédée avait exprimé le désir de se marier avant sa mort.",
       "Début": "1959",
       "Fin": "Actuel",
-      "Peine": "",
+      "Peine": "Aucune",
       "Tag(s)": "Mort",
       "Lien": "https://fr.wikipedia.org/wiki/Mariage_posthume",
-      "Commentaires": "Dans la vie et dans la mort…",
+      "Commentaire": "Dans la vie et dans la mort…",
       "Absurdité": 4
    },
    {
@@ -84,7 +84,7 @@
       "Peine": "Aucune",
       "Tag(s)": "Culture",
       "Lien": "https://france3-regions.francetvinfo.fr/pays-de-la-loire/vendee/herbiers/essarts-bocage-vendee-arrete-municipal-oblige-population-etre-joie-du-5-au-10-octobre-1724277.html",
-      "Commentaires": "Cela rappelle un peu Brave New World, le livre dystopique de Aldous Huxley…",
+      "Commentaire": "Cela rappelle un peu Brave New World, le livre dystopique de Aldous Huxley…",
       "Absurdité": 5
    },
    {
@@ -95,7 +95,7 @@
       "Peine": "Aucune",
       "Tag(s)": "Animaux",
       "Lien": "https://www.rtbf.be/article/france-un-maire-interdit-l-entree-dans-sa-commune-aux-moustiques-9979302",
-      "Commentaires": "Chaque année, la commune est envahie par les moustiques. Petit problème, grande solution ?",
+      "Commentaire": "Chaque année, la commune est envahie par les moustiques. Petit problème, grande solution ?",
       "Absurdité": 4
    },
    {
@@ -106,7 +106,7 @@
       "Peine": "Sanction disciplinaire",
       "Tag(s)": "Alcool",
       "Lien": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000029184975/2014-07-04",
-      "Commentaires": "Pas de vodka avec votre sandwich, donc.",
+      "Commentaire": "Pas de vodka avec votre sandwich, donc.",
       "Absurdité": 2
    },
    {
@@ -117,7 +117,7 @@
       "Peine": "Mise en fourrière de l’aéronef.",
       "Tag(s)": "Culture",
       "Lien": "https://fr.wikipedia.org/wiki/Ch%C3%A2teauneuf-du-Pape",
-      "Commentaires": "La commune a avoué que cette loi était un coup de pub. Elle est malgré tout toujours d’application. On respecte le dévouement.",
+      "Commentaire": "La commune a avoué que cette loi était un coup de pub. Elle est malgré tout toujours d’application. On respecte le dévouement.",
       "Absurdité": 5
    },
    {
@@ -128,7 +128,7 @@
       "Peine": "Aucune",
       "Tag(s)": "Bouffe, Culture",
       "Lien": "https://www.lemonde.fr/societe/article/2011/10/03/une-plus-grande-variete-alimentaire-dans-les-cantines-scolaires_1581260_3224.html#",
-      "Commentaires": "Le ketchup, une substance contrôlée ?",
+      "Commentaire": "Le ketchup, une substance contrôlée ?",
       "Absurdité": 3
    },
    {
@@ -136,10 +136,10 @@
       "Loi": "Les animaux peuvent être jugés devant les tribunaux pour des délits criminels.",
       "Début": "14ᵉ siècle",
       "Fin": "2016",
-      "Peine": "",
+      "Peine": "Dépend du crime commis",
       "Tag(s)": "Animaux, Moyen-Âge",
       "Lien": "https://www.radiofrance.fr/franceculture/truie-condamnee-a-mort-dauphins-exorcises-les-etranges-proces-d-animaux-au-moyen-age-8722242",
-      "Commentaires": "Le plus ancien procès d’un animal retrouvé date du 14ᵉ siècle, une truie a été pendue pour avoir mangé un nouveau-né. Il est possible que d’autres procès aient eu lieu avant cela cependant.",
+      "Commentaire": "Le plus ancien procès d’un animal retrouvé date du 14ᵉ siècle, une truie a été pendue pour avoir mangé un nouveau-né. Il est possible que d’autres procès aient eu lieu avant cela cependant.",
       "Absurdité": 4
    },
    {
@@ -150,7 +150,7 @@
       "Peine": "1 an de prison, 45 000 €",
       "Tag(s)": "Transports",
       "Lien": "https://www.lemonde.fr/societe/article/2020/11/20/diffusion-des-images-des-forces-de-l-ordre-l-article-24-de-la-loi-securite-globale-adopte-a-l-assemblee-nationale_6060577_3224.html",
-      "Commentaires": "C’est un peu dystopique, tout ça.",
+      "Commentaire": "C’est un peu dystopique, tout ça.",
       "Absurdité": 3
    },
    {
@@ -161,7 +161,7 @@
       "Peine": "200 francs (~30 €)",
       "Tag(s)": "Culture, Femme",
       "Lien": "https://www.senat.fr/questions/base/2012/qSEQ120700692.html",
-      "Commentaires": "La loi visait à empêcher les femmes à faire un travail d’homme, et puis a semble-t-il été oubliée jusqu’en 2013.",
+      "Commentaire": "La loi visait à empêcher les femmes à faire un travail d’homme, et puis a semble-t-il été oubliée jusqu’en 2013.",
       "Absurdité": 4
    },
    {
@@ -172,7 +172,7 @@
       "Peine": "300 €, confiscation du jeu.",
       "Tag(s)": "Culture",
       "Lien": "https://en.wikipedia.org/wiki/Law_3037/2002",
-      "Commentaires": "Visant la lutte contre les jeux d’argent en ligne, mais jugée inconstitutionnelle, la loi a été remaniée en 2003 pour uniquement interdire les jeux dans les cybercafés.",
+      "Commentaire": "Visant la lutte contre les jeux d’argent en ligne, mais jugée inconstitutionnelle, la loi a été remaniée en 2003 pour uniquement interdire les jeux dans les cybercafés.",
       "Absurdité": 3
    },
    {
@@ -183,7 +183,7 @@
       "Peine": "120 €",
       "Tag(s)": "Vêtements",
       "Lien": "https://www.dailymail.co.uk/travel/article-1185063/Women-banned-wearing-stilettos-Ancient-Greek-sites-new-plan.html",
-      "Commentaires": "Les talons aiguilles dégradent les monuments, il vaut mieux donc venir avec des sandales confortables ou des baskets.",
+      "Commentaire": "Les talons aiguilles dégradent les monuments, il vaut mieux donc venir avec des sandales confortables ou des baskets.",
       "Absurdité": 3
    },
    {
@@ -194,7 +194,7 @@
       "Peine": "400 €",
       "Tag(s)": "Culture",
       "Lien": "https://www.nytimes.com/2019/08/07/world/europe/rome-spanish-steps-sit.html",
-      "Commentaires": "De la même manière, il est également interdit de s’asseoir par terre à Venise.",
+      "Commentaire": "De la même manière, il est également interdit de s’asseoir par terre à Venise.",
       "Absurdité": 3
    },
    {
@@ -205,7 +205,7 @@
       "Peine": "250 €",
       "Tag(s)": "Animaux",
       "Lien": "https://www.nbcnews.com/id/wbna7601359",
-      "Commentaires": "Le promener à vélo est autorisé, mais seulement si cela n’épuise pas l’animal.",
+      "Commentaire": "Le promener à vélo est autorisé, mais seulement si cela n’épuise pas l’animal.",
       "Absurdité": 2
    },
    {
@@ -216,7 +216,7 @@
       "Peine": "500 €",
       "Tag(s)": "Culture",
       "Lien": "https://en.wikivoyage.org/wiki/Eraclea",
-      "Commentaires": "Les châteaux peuvent être considérés comme un obstacle à la circulation.",
+      "Commentaire": "Les châteaux peuvent être considérés comme un obstacle à la circulation.",
       "Absurdité": 3
    },
    {
@@ -224,10 +224,10 @@
       "Loi": "Les prostituées de Venise doivent porter une écharpe jaune.",
       "Début": "1412",
       "Fin": "1797",
-      "Peine": "",
+      "Peine": "Amende, arrêt",
       "Tag(s)": "Métiers, Sexe",
       "Lien": "https://en.wikipedia.org/wiki/Ponte_delle_Tette",
-      "Commentaires": "Une femme « à marier », elle, portait une écharpe blanche.",
+      "Commentaire": "Une femme « à marier », elle, portait une écharpe blanche.",
       "Absurdité": 3
    },
    {
@@ -238,7 +238,7 @@
       "Peine": "15 000 €",
       "Tag(s)": "Animaux",
       "Lien": "https://www.regjeringen.no/en/dokumenter/animal-welfare-act/id571188/",
-      "Commentaires": "Les chiens sont stérilisés pour raisons médicales uniquement. Les chats, plus nombreux à l’état sauvage, le sont bien plus souvent afin d’éviter une surpopulation.",
+      "Commentaire": "Les chiens sont stérilisés pour raisons médicales uniquement. Les chats, plus nombreux à l’état sauvage, le sont bien plus souvent afin d’éviter une surpopulation.",
       "Absurdité": 2
    },
    {
@@ -249,7 +249,7 @@
       "Peine": "Aucune",
       "Tag(s)": "Justice",
       "Lien": "https://en.wikipedia.org/wiki/Prison_escape#Punishment",
-      "Commentaires": "La philosophie qu’il est naturel pour un être humain de vouloir prendre sa liberté est partagée par plusieurs autres pays Européens, dont la Belgique, l’Allemagne et la Suède.",
+      "Commentaire": "La philosophie qu’il est naturel pour un être humain de vouloir prendre sa liberté est partagée par plusieurs autres pays Européens, dont la Belgique, l’Allemagne et la Suède.",
       "Absurdité": 3
    },
    {
@@ -260,7 +260,7 @@
       "Peine": "300 €",
       "Tag(s)": "Drogue",
       "Lien": "https://en.wikipedia.org/wiki/Coffeeshop_(Netherlands)",
-      "Commentaires": "Blaze it.",
+      "Commentaire": "Blaze it.",
       "Absurdité": 3
    },
    {
@@ -271,7 +271,7 @@
       "Peine": "Perte de droits, difficultés administratives",
       "Tag(s)": "Justice, Mort",
       "Lien": "https://www.theguardian.com/world/2018/mar/16/romanian-court-tells-man-he-is-not-alive",
-      "Commentaires": "Un homme en a fait les frais en 2003. Ayant fait appel trop tard, il est légalement mort et n’a plus de droits.",
+      "Commentaire": "Un homme en a fait les frais en 2003. Ayant fait appel trop tard, il est légalement mort et n’a plus de droits.",
       "Absurdité": 5
    },
    {
@@ -282,7 +282,7 @@
       "Peine": "100 £ (~115 €)",
       "Tag(s)": "Moyen-Âge",
       "Lien": "https://www.theguardian.com/science/2021/jun/11/medieval-fashion-for-pointy-shoes-linked-to-rise-in-bunions",
-      "Commentaires": "Ces chaussures étaient considérées comme un symbole de statut social élevé. Plus les chaussures étaient longues, plus haut était le statut de celui qui les porte…et plus hauts étaient ses risques de trébucher.",
+      "Commentaire": "Ces chaussures étaient considérées comme un symbole de statut social élevé. Plus les chaussures étaient longues, plus haut était le statut de celui qui les porte…et plus hauts étaient ses risques de trébucher.",
       "Absurdité": 4
    },
    {
@@ -293,7 +293,7 @@
       "Peine": "100 £ (~115 €)",
       "Tag(s)": "Arme, Moyen-Âge, Vêtements",
       "Lien": "https://en.wikipedia.org/wiki/Statute_forbidding_Bearing_of_Armour",
-      "Commentaires": "Bien que la loi soit techniquement toujours d’application, aucun arrêt n’a plus été fait depuis fort longtemps.",
+      "Commentaire": "Bien que la loi soit techniquement toujours d’application, aucun arrêt n’a plus été fait depuis fort longtemps.",
       "Absurdité": 3
    },
    {
@@ -304,7 +304,7 @@
       "Peine": "1 mois de prison, 100 £ (~115 €)",
       "Tag(s)": "Alcool, Animaux",
       "Lien": "https://www.legislation.gov.uk/ukpga/Vict/35-36/94",
-      "Commentaires": "Vous ne pouvez pas non plus être ivre en conduisant de bétail.",
+      "Commentaire": "Vous ne pouvez pas non plus être ivre en conduisant de bétail.",
       "Absurdité": 3
    },
    {
@@ -315,7 +315,7 @@
       "Peine": "10 000 francs (~9 300 €)",
       "Tag(s)": "Alcool",
       "Lien": "https://www.admin.ch/gov/de/start/dokumentation/medienmitteilungen.msg-id-3770.html",
-      "Commentaires": "Autrement dit, si vous obtenez de l’absinthe, il faut tout boire d’une traite, car vous ne pourrez pas la stocker.",
+      "Commentaire": "Autrement dit, si vous obtenez de l’absinthe, il faut tout boire d’une traite, car vous ne pourrez pas la stocker.",
       "Absurdité": 2
    },
    {
@@ -323,10 +323,10 @@
       "Loi": "Les batailles de boules de neige sont interdites au Wisconsin.",
       "Début": "1962",
       "Fin": "2019",
-      "Sanction": "114 $ (~104 €)",
+      "Peine": "114 $ (~104 €)",
       "Tag(s)": "Culture",
       "Lien": "https://www.theguardian.com/us-news/2019/dec/24/game-on-wisconsin-town-to-legalize-snowball-fights-after-50-year-ban",
-      "Commentaires": "Les boules de neiges étaient considérées comme des projectiles. Clairement des armes de destruction massive.",
+      "Commentaire": "Les boules de neiges étaient considérées comme des projectiles. Clairement des armes de destruction massive.",
       "Absurdité": 4
    },
    {
@@ -334,10 +334,10 @@
       "Loi": "En Californie, il est illégal de tirer au fusil sur un animal depuis un véhicule motorisé.",
       "Début": "1957",
       "Fin": "Actuel",
-      "Sanction": "1 an de prison, 1 000 $ (~920 €)",
+      "Peine": "1 an de prison, 1 000 $ (~920 €)",
       "Tag(s)": "Animaux, Arme",
       "Lien": "https://california.public.law/codes/ca_fish_and_game_code_section_3002",
-      "Commentaires": "Mais à vélo, faites-vous plaisir.",
+      "Commentaire": "Mais à vélo, faites-vous plaisir.",
       "Absurdité": 3
    },
    {
@@ -345,10 +345,10 @@
       "Loi": "À Pacific Grove en Californie, il est interdit de déloger des papillons monarques sans autorisation de la police.",
       "Début": "1952",
       "Fin": "Actuel",
-      "Sanction": "1 000 $ (~920 €)",
+      "Peine": "1 000 $ (~920 €)",
       "Tag(s)": "Animaux",
       "Lien": "https://www.codepublishing.com/CA/PacificGrove/html/PacificGrove11/PacificGrove1148.html",
-      "Commentaires": "Pacific Grove est un lieu de migration privilégié par les monarques. Ils y sont protégés et les perturber pendant leur migration est interdite.",
+      "Commentaire": "Pacific Grove est un lieu de migration privilégié par les monarques. Ils y sont protégés et les perturber pendant leur migration est interdite.",
       "Absurdité": 3
    },
    {
@@ -356,10 +356,10 @@
       "Loi": "En Alabama, seule la position du missionnaire est autorisée. La sodomie, comme dans de nombreux États du Sud, est passible de prison.",
       "Début": "2003",
       "Fin": "2019",
-      "Sanction": "6 mois de prison",
+      "Peine": "6 mois de prison",
       "Tag(s)": "Sexe",
       "Lien": "https://en.wikipedia.org/wiki/Sodomy_laws_in_the_United_States",
-      "Commentaires": "La loi visait tout acte sexuel à but non reproductif, et pas seulement les hommes homosexuels.",
+      "Commentaire": "La loi visait tout acte sexuel à but non reproductif, et pas seulement les hommes homosexuels.",
       "Absurdité": 5
    },
    {
@@ -367,10 +367,10 @@
       "Loi": "En Arizona, il est interdit de tirer des coups de fusil sur des cactus.",
       "Début": "1928",
       "Fin": "Actuel",
-      "Sanction": "25 ans de prison, confiscation de l’arme",
+      "Peine": "25 ans de prison, confiscation de l’arme",
       "Tag(s)": "Arme",
       "Lien": "https://shuncy.com/article/is-saguaro-cactus-protected-in-arizona-legal-code",
-      "Commentaires": "Le cactus Saguaro est une espèce protégée, l’endommager peut vous coûter gros.",
+      "Commentaire": "Le cactus Saguaro est une espèce protégée, l’endommager peut vous coûter gros.",
       "Absurdité": 3
    },
    {
@@ -378,10 +378,10 @@
       "Loi": "Au Kentucky, il est illégal pour une femme d’apparaître en maillot de bain sur une autoroute, sauf si escortée par au moins 2 policiers, blessée, qu’elle pèse moins de 45 Kg ou plus de 100 kg.",
       "Début": "1938",
       "Fin": "1975",
-      "Sanction": "",
+      "Peine": "Amende, arrêt",
       "Tag(s)": "Discrimination, Femme",
       "Lien": "https://law.justia.com/codes/kentucky/2022/chapter-436/section-436-140/",
-      "Commentaires": "Et si elle n’est escortée que par un seul policier ?",
+      "Commentaire": "Et si elle n’est escortée que par un seul policier ?",
       "Absurdité": 5
    },
    {
@@ -389,10 +389,10 @@
       "Loi": "En Utah, le mariage entre cousins est autorisé si les mariés ont aux moins 55 ans et au moins l’un d’eux est stérile.",
       "Début": "1852",
       "Fin": "Actuel",
-      "Sanction": "Aucune",
+      "Peine": "Aucune",
       "Tag(s)": "Culture, Famille",
       "Lien": "https://en.wikipedia.org/wiki/Cousin_marriage_law_in_the_United_States",
-      "Commentaires": "Ça, c’est ce qu’on appelle être proche de sa famille.",
+      "Commentaire": "Ça, c’est ce qu’on appelle être proche de sa famille.",
       "Absurdité": 5
    },
    {
@@ -400,10 +400,10 @@
       "Loi": "Au texas, il est illégal de traire la vache d’un voisin.",
       "Début": "1866",
       "Fin": "1973",
-      "Sanction": "10 $ (~9 €)",
+      "Peine": "10 $ (~9 €)",
       "Tag(s)": "Animaux",
       "Lien": "https://www.nationalgeographic.com/science/article/140117-weird-state-laws-nature-texas-science-bizarre-wild-west-united-states-geography",
-      "Commentaires": "Trayez vos propres vaches !",
+      "Commentaire": "Trayez vos propres vaches !",
       "Absurdité": 3
    },
    {
@@ -411,10 +411,10 @@
       "Loi": "Il est interdit de laisser des pissenlits pousser dans les limites de la ville de Pueblo, au Colorado.",
       "Début": "1974",
       "Fin": "Actuel",
-      "Sanction": "100 $ (~90 €), travaux d’intérêt général",
+      "Peine": "100 $ (~90 €), travaux d’intérêt général",
       "Tag(s)": "Culture",
       "Lien": "https://county.pueblo.org/county-attorney/chapter-820-management-noxious-weeds",
-      "Commentaires": "Cette loi s’applique également à toutes les mauvaises herbes.",
+      "Commentaire": "Cette loi s’applique également à toutes les mauvaises herbes.",
       "Absurdité": 3
    },
    {
@@ -422,10 +422,10 @@
       "Loi": "Au Delaware, Une union peut être annulée si faite suite à un pari.",
       "Début": "1973",
       "Fin": "Actuel",
-      "Sanction": "",
+      "Peine": "Annulation de l'union",
       "Tag(s)": "Mariage",
       "Lien": "https://delcode.delaware.gov/title13/c015/index.html#1506",
-      "Commentaires": "Fiou, c’en est passé de peu !",
+      "Commentaire": "Fiou, c’en est passé de peu !",
       "Absurdité": 1
    },
    {
@@ -433,10 +433,10 @@
       "Loi": "Il est illégal de posséder une mangouste sans permis à Hawaii.",
       "Début": "1919",
       "Fin": "Actuel",
-      "Sanction": "1 an de prison, 25 000 $ (~23 000 €)",
+      "Peine": "1 an de prison, 25 000 $ (~23 000 €)",
       "Tag(s)": "Animaux",
       "Lien": "https://expliquant.com/la-mangouste-fait-elle-de-bons-animaux-de-compagnie/",
-      "Commentaires": "Elles ont l’air mignonnes, mais elles mangent même des serpents !",
+      "Commentaire": "Elles ont l’air mignonnes, mais elles mangent même des serpents !",
       "Absurdité": 2
    },
    {
@@ -444,10 +444,10 @@
       "Loi": "Au Mississippi, un maître a le droit de tuer ses domestiques.",
       "Début": "18ᵉ siècle",
       "Fin": "1985",
-      "Sanction": "",
+      "Peine": "Aucune",
       "Tag(s)": "Mort",
       "Lien": "https://www.upi.com/Archives/1985/02/13/Accidental-servant-child-killings-to-be-outlawed/9046477118800/",
-      "Commentaires": "La loi du maître et du serviteur pardonnait un maître s’il tuait «  accidentellement  » un serviteur en le punissant.",
+      "Commentaire": "La loi du maître et du serviteur pardonnait un maître s’il tuait «  accidentellement  » un serviteur en le punissant.",
       "Absurdité": 5
    },
    {
@@ -455,10 +455,10 @@
       "Loi": "En Oregon, une porte de voiture ne peut pas rester ouverte plus longtemps que nécessaire.",
       "Début": "1953",
       "Fin": "Actuel",
-      "Sanction": "50 $ (~45 €)",
+      "Peine": "50 $ (~45 €)",
       "Tag(s)": "Transports",
       "Lien": "https://oregon.public.law/statutes/ors_811.490",
-      "Commentaires": "Allez hop, dans la voiture et plus vite que ça !",
+      "Commentaire": "Allez hop, dans la voiture et plus vite que ça !",
       "Absurdité": 1
    },
    {
@@ -466,10 +466,10 @@
       "Loi": "En Oregon, il est interdit de chasser avec des chiens, sauf en chassant l’écureuil gris occidental.",
       "Début": "1939",
       "Fin": "Actuel",
-      "Sanction": "1 500 $ (~1 400 €)",
+      "Peine": "1 500 $ (~1 400 €)",
       "Tag(s)": "Animaux",
       "Lien": "https://oregon.public.law/rules/oar_635-065-0745",
-      "Commentaires": "Mais qu’est-ce qu’il vous a fait, cet écureuil ?",
+      "Commentaire": "Mais qu’est-ce qu’il vous a fait, cet écureuil ?",
       "Absurdité": 3
    },
    {
@@ -477,10 +477,10 @@
       "Loi": "En Pennsylvanie, un mariage est non-valide si l’un des époux est ivre pendant la demande du certificat de mariage.",
       "Début": "1923",
       "Fin": "Actuel",
-      "Sanction": "",
+      "Peine": "Annulation de l'union",
       "Tag(s)": "Mariage",
       "Lien": "https://www.legis.state.pa.us/cfdocs/legis/LI/consCheck.cfm?txtType=HTM&ttl=23&div=0&chpt=13",
-      "Commentaires": "Un conseil: attendez d’avoir obtenu le certificat avant de faire la fête.",
+      "Commentaire": "Un conseil: attendez d’avoir obtenu le certificat avant de faire la fête.",
       "Absurdité": 1
    },
    {
@@ -488,10 +488,10 @@
       "Loi": "Au Tennessee, il est illégal de pêcher à l'arme à feu.",
       "Début": "1974",
       "Fin": "Actuel",
-      "Sanction": "1 mois de prison, 500 $ (~460 €)",
+      "Peine": "1 mois de prison, 500 $ (~460 €)",
       "Tag(s)": "Animaux, Arme",
       "Lien": "https://www.tn.gov/twra/fishing-regs/statewide-creel-length-limits.html",
-      "Commentaires": "Pas de truite au plomb pour le souper…",
+      "Commentaire": "Pas de truite au plomb pour le souper…",
       "Absurdité": 5
    },
    {
@@ -499,10 +499,10 @@
       "Loi": "Une ordonnance à Newcastle, Wyoming, interdit spécifiquement les couples de faire l'amour à l'intérieur du congélateur à viande d'un magasin.",
       "Début": "1966",
       "Fin": "Actuel",
-      "Sanction": "Aucune",
+      "Peine": "Aucune",
       "Tag(s)": "Sexe",
       "Lien": "https://kingfm.com/wyomings-weirdest-sex-law/",
-      "Commentaires": "Ça sent le vécu, ça.",
+      "Commentaire": "Ça sent le vécu, ça.",
       "Absurdité": 5
    },
    {
@@ -510,10 +510,10 @@
       "Loi": "Il est illégal de tuer une personne malade en lui faisant peur.",
       "Début": "1892",
       "Fin": "Actuel",
-      "Sanction": "Prison à vie",
+      "Peine": "Prison à vie",
       "Tag(s)": "Mort",
       "Lien": "https://laws-lois.justice.gc.ca/fra/lois/C-46/section-222.html",
-      "Commentaires": "Les jumpscares, on va éviter donc.",
+      "Commentaire": "Les jumpscares, on va éviter donc.",
       "Absurdité": 3
    },
    {
@@ -521,10 +521,10 @@
       "Loi": "Il est illégal de prétendre faire de la sorcellerie ou de lire l’avenir.",
       "Début": "1892",
       "Fin": "2018",
-      "Sanction": "1 an de prison",
+      "Peine": "1 an de prison",
       "Tag(s)": "Culture",
       "Lien": "https://laws-lois.justice.gc.ca/eng/acts/C-46/section-365-20030101.html",
-      "Commentaires": "Le plus surprenant, c’est que la loi fût abrogée si tard.",
+      "Commentaire": "Le plus surprenant, c’est que la loi fût abrogée si tard.",
       "Absurdité": 4
    },
    {
@@ -532,10 +532,10 @@
       "Loi": "On ne peut pas traîner un cheval mort sur une voie publique le dimanche.",
       "Début": "1959",
       "Fin": "Actuel",
-      "Sanction": "Aucune",
+      "Peine": "Aucune",
       "Tag(s)": "Animaux, Mort",
       "Lien": "https://www.toronto.ca/legdocs/municode/1184_349.pdf",
-      "Commentaires": "Le lundi par contre, allez donc.",
+      "Commentaire": "Le lundi par contre, allez donc.",
       "Absurdité": 4
    },
    {
@@ -543,10 +543,10 @@
       "Loi": "Il est interdit de porter des tenues camouflage si on est pas dans l'armée.",
       "Début": 1980,
       "Fin": "Actuel",
-      "Sanction": "1 000 $ (~920 €) à 20 000 $ (~18 000 €)",
+      "Peine": "1 000 $ (~920 €) à 20 000 $ (~18 000 €)",
       "Tag(s)": "Vêtements",
       "Lien": "https://en.wikipedia.org/wiki/List_of_countries_that_prohibit_camouflage_clothing",
-      "Commentaires": "Si vous aimez l’esthétique Camo, il va falloir prendre sur soi.",
+      "Commentaire": "Si vous aimez l’esthétique Camo, il va falloir prendre sur soi.",
       "Absurdité": 1
    },
    {
@@ -554,10 +554,10 @@
       "Loi": "Il est illégal d’oublier d’accrocher le drapeau national à votre maison le Jour de l’Indépendance.",
       "Début": 1912,
       "Fin": "Actuel",
-      "Sanction": "15 000 $ (~14 000 €)",
+      "Peine": "15 000 $ (~14 000 €)",
       "Tag(s)": "Culture",
       "Lien": "https://www.chilivoyages.com/drapeau-du-chili-devise-blason-symbole/",
-      "Commentaires": "L’amende est doublement plus salée si le drapeau se retrouve la tête en bas.",
+      "Commentaire": "L’amende est doublement plus salée si le drapeau se retrouve la tête en bas.",
       "Absurdité": 3
    },
    {
@@ -565,10 +565,10 @@
       "Loi": "Le chewing-gum est interdit, sauf s'il est ramené d’un autre pays.",
       "Début": "1992",
       "Fin": "Actuel",
-      "Sanction": "1 an de prison, 5 500 $ (~5 060 €)",
+      "Peine": "1 an de prison, 5 500 $ (~5 060 €)",
       "Tag(s)": "Bouffe, Justice",
       "Lien": "https://singapourlive.com/les-regles-a-connaitre-a-singapour/",
-      "Commentaires": "Vous croyez qu’il y a un commerce illégal de chewing-gum importé ?",
+      "Commentaire": "Vous croyez qu’il y a un commerce illégal de chewing-gum importé ?",
       "Absurdité": 3
    },
    {
@@ -576,10 +576,10 @@
       "Loi": "Oublier de tirer la chasse en public est interdit.",
       "Début": "1987",
       "Fin": "Actuel",
-      "Sanction": "1 000 $ (~920 €)",
+      "Peine": "1 000 $ (~920 €)",
       "Tag(s)": "Justice, Toilettes",
       "Lien": "https://sso.agc.gov.sg//SL/95-RG3?DocDate=20240131#pr16-",
-      "Commentaires": "Vu l’état de nos toilettes publiques, on pourrait en faire de même.",
+      "Commentaire": "Vu l’état de nos toilettes publiques, on pourrait en faire de même.",
       "Absurdité": 4
    },
    {
@@ -587,10 +587,10 @@
       "Loi": "Importer du tabac nécessite une licence.",
       "Début": "2020",
       "Fin": "Actuel",
-      "Sanction": "50 000 $ (~46 000 €)",
+      "Peine": "50 000 $ (~46 000 €)",
       "Tag(s)": "Tabac",
       "Lien": "https://www.customs.gov.sg/individuals/going-through-customs/arrivals/declaration-and-payment-of-taxes/",
-      "Commentaires": "Il vaut mieux vous préparer si vous êtes un fumeur en vacances à Singapour.",
+      "Commentaire": "Il vaut mieux vous préparer si vous êtes un fumeur en vacances à Singapour.",
       "Absurdité": 3
    },
    {
@@ -598,10 +598,10 @@
       "Loi": "Il est illégal de fumer dans la plupart des lieux publics.",
       "Début": "1970",
       "Fin": "Actuel",
-      "Sanction": "2 000 $ (~1 800 €)",
+      "Peine": "2 000 $ (~1 800 €)",
       "Tag(s)": "Tabac",
       "Lien": "https://en.wikipedia.org/wiki/Smoking_in_Singapore",
-      "Commentaires": "En 2018, il y a eu une tentative d’interdire la cigarette même dans les domiciles privés, mais la loi n’a pas été retenue.",
+      "Commentaire": "En 2018, il y a eu une tentative d’interdire la cigarette même dans les domiciles privés, mais la loi n’a pas été retenue.",
       "Absurdité": 1
    },
    {
@@ -609,10 +609,10 @@
       "Loi": "La coupe mulet est interdite.",
       "Début": "2010",
       "Fin": "Actuel",
-      "Sanction": "Avertissement verbal, arrêt",
+      "Peine": "Avertissement verbal, arrêt",
       "Tag(s)": "Culture",
       "Lien": "https://www.telegraph.co.uk/news/worldnews/middleeast/iran/7873621/Iran-government-issues-style-guide-for-mens-hair.html",
-      "Commentaires": "L’Iran suit la Charia, qui interdit aux hommes d’avoir leurs cheveux trop courts, en dégradé, ou trop «  occidentaux  » en général.",
+      "Commentaire": "L’Iran suit la Charia, qui interdit aux hommes d’avoir leurs cheveux trop courts, en dégradé, ou trop «  occidentaux  » en général.",
       "Absurdité": 3
    },
    {
@@ -620,10 +620,10 @@
       "Loi": "Promener son chien en public est interdit.",
       "Début": "2019",
       "Fin": "Actuel",
-      "Sanction": "Mise en fourrière de l’animal",
+      "Peine": "Mise en fourrière de l’animal",
       "Tag(s)": "Animaux",
       "Lien": "https://www.bbc.com/news/blogs-news-from-elsewhere-47041611",
-      "Commentaires": "La justification est que la présence de chiens en public cause de l’anxiété et de la peur auprès des habitants.",
+      "Commentaire": "La justification est que la présence de chiens en public cause de l’anxiété et de la peur auprès des habitants.",
       "Absurdité": 4
    },
    {
@@ -631,10 +631,10 @@
       "Loi": "Interdiction de jeter son chewing-gum à terre.",
       "Début": "1992",
       "Fin": "Actuel",
-      "Sanction": "2 000 ฿ (~50 €)",
+      "Peine": "2 000 ฿ (~50 €)",
       "Tag(s)": "Bouffe",
       "Lien": "https://toutelathailande.fr/ce-que-les-touristes-ne-doivent-jamais-faire-en-thailande/#penci-Jeter-des-dechets",
-      "Commentaires": "Utilisez les poubelles !",
+      "Commentaire": "Utilisez les poubelles !",
       "Absurdité": 2
    },
    {
@@ -642,10 +642,10 @@
       "Loi": "Il est illégal de poser le pied sur la monnaie nationale.",
       "Début": "19ᵉ siècle",
       "Fin": "Actuel",
-      "Sanction": "3 ans de prison",
+      "Peine": "3 ans de prison",
       "Tag(s)": "Justice",
       "Lien": "https://fr.wikipedia.org/wiki/Crime_de_l%C3%A8se-majest%C3%A9_(Tha%C3%AFlande)",
-      "Commentaires": "Les visages de la famille royale étant présents sur la monnaie nationale, leur marcher dessus est considéré un crime de lèse-majesté.",
+      "Commentaire": "Les visages de la famille royale étant présents sur la monnaie nationale, leur marcher dessus est considéré un crime de lèse-majesté.",
       "Absurdité": 4
    },
    {
@@ -653,10 +653,10 @@
       "Loi": "Critiquer la famille royale est interdit.",
       "Début": "1908",
       "Fin": "Actuel",
-      "Sanction": "15 ans de prison",
+      "Peine": "15 ans de prison",
       "Tag(s)": "Justice",
       "Lien": "https://fr.wikipedia.org/wiki/Crime_de_l%C3%A8se-majest%C3%A9_(Tha%C3%AFlande)",
-      "Commentaires": "Le crime de lèse-majesté est considéré comme grave en Thaïlande.",
+      "Commentaire": "Le crime de lèse-majesté est considéré comme grave en Thaïlande.",
       "Absurdité": 4
    },
    {
@@ -664,10 +664,10 @@
       "Loi": "Il est interdit pour un couple de s’embrasser en public.",
       "Début": "Inconnu",
       "Fin": "Actuel",
-      "Sanction": "15 000 dirhams (~3 700 €)",
+      "Peine": "15 000 dirhams (~3 700 €)",
       "Tag(s)": "Famille",
       "Lien": "https://www.thenationalnews.com/uae/heritage/2023/03/06/the-rules-are-clear-says-lawyer-no-kissing-allowed-in-dubai/",
-      "Commentaires": "Les EAU suivent la Charia islamique, il est donc attendu autant des habitants que des touristes de la respecter.",
+      "Commentaire": "Les EAU suivent la Charia islamique, il est donc attendu autant des habitants que des touristes de la respecter.",
       "Absurdité": 3
    },
    {
@@ -675,10 +675,10 @@
       "Loi": "Une licence est nécessaire pour consommer de l’alcool.",
       "Début": "1966",
       "Fin": "Actuel",
-      "Sanction": "20 000 dirhams (~5 000 €)",
+      "Peine": "20 000 dirhams (~5 000 €)",
       "Tag(s)": "Alcool",
       "Lien": "https://retail.mmidubai.com/liquor-licence/",
-      "Commentaires": "Depuis 2023, la licence peut être obtenue gratuitement (valable 1 an pour les résidents, un mois pour les touristes) pour toute personne ayant au moins 21 ans.",
+      "Commentaire": "Depuis 2023, la licence peut être obtenue gratuitement (valable 1 an pour les résidents, un mois pour les touristes) pour toute personne ayant au moins 21 ans.",
       "Absurdité": 3
    },
    {
@@ -686,10 +686,10 @@
       "Loi": "Il est interdit d’avoir une voiture sale.",
       "Début": "2013",
       "Fin": "Actuel",
-      "Sanction": "500 ₽ (~8 €)",
+      "Peine": "500 ₽ (~8 €)",
       "Tag(s)": "Hygiène, Transports",
       "Lien": "http://news.bbc.co.uk/2/hi/europe/4938256.stm",
-      "Commentaires": "La loi ne vise en réalité que la plaque d’immatriculation: trop de saleté la rend illisible. Des policiers corrompus aiment cependant extorquer les conducteurs ignorants de ce détail.",
+      "Commentaire": "La loi ne vise en réalité que la plaque d’immatriculation: trop de saleté la rend illisible. Des policiers corrompus aiment cependant extorquer les conducteurs ignorants de ce détail.",
       "Absurdité": 1
    },
    {
@@ -697,10 +697,10 @@
       "Loi": "Il est interdit pour un couple non-marié de vivre ensemble.",
       "Début": "2022",
       "Fin": "Actuel",
-      "Sanction": "6 mois à 1 an de prison",
+      "Peine": "6 mois à 1 an de prison",
       "Tag(s)": "Famille, Mariage",
       "Lien": "https://www.bbc.com/news/world-asia-63869078",
-      "Commentaires": "Cette loi s’applique également aux touristes. Un couple non-marié devra dormir dans des chambres d’hôtel séparées.",
+      "Commentaire": "Cette loi s’applique également aux touristes. Un couple non-marié devra dormir dans des chambres d’hôtel séparées.",
       "Absurdité": 4
    },
    {
@@ -708,10 +708,10 @@
       "Loi": "La « vexation injuste » est un crime.",
       "Début": "1930",
       "Fin": "Actuel",
-      "Sanction": "1 mois de prison",
+      "Peine": "1 mois de prison",
       "Tag(s)": "Justice",
       "Lien": "https://legalresource.ph/unjust-vexation-a287-revised-penal-code/",
-      "Commentaires": "Sont considérés comme de la vexation injuste: se plaindre d’un voisin sur les réseaux sociaux, insulter un policier, critiquer le gouvernement.",
+      "Commentaire": "Sont considérés comme de la vexation injuste: se plaindre d’un voisin sur les réseaux sociaux, insulter un policier, critiquer le gouvernement.",
       "Absurdité": 3
    }
 ]
