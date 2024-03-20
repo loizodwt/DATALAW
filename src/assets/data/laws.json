@@ -1,5 +1,6 @@
 [
    {
+      "Continent": "Europe",
       "Pays": "Autriche",
       "Loi": "Il est interdit de nettoyer le papier peint ou le sol avec du pain.",
       "Début": "1917",
@@ -11,6 +12,7 @@
       "Absurdité": 5
    },
    {
+      "Continent": "Europe",
       "Pays": "Belgique",
       "Loi": "Lors d’une saisie de biens, on ne prend pas votre dernière vache, chèvre, cochon et vos 24 derniers poulets.",
       "Début": "1993",
@@ -22,6 +24,7 @@
       "Absurdité": 3
    },
    {
+      "Continent": "Europe",
       "Pays": "Finlande",
       "Loi": "Les chauffeurs de taxi doivent payer des redevances s’ils jouent de la musique sous droit d’auteur dans leur voiture.",
       "Début": "2002",
@@ -33,6 +36,7 @@
       "Absurdité": 3
    },
    {
+      "Continent": "Europe",
       "Pays": "France",
       "Loi": "Il est interdit de manger sur le lieu de travail sans autorisation de l’employeur.",
       "Début": "20ᵉ siècle",
@@ -44,6 +48,7 @@
       "Absurdité": 2
    },
    {
+      "Continent": "Europe",
       "Pays": "France",
       "Loi": "Il est interdit d’être nu chez soi s’il y a un risque d’être vu.",
       "Début": "1994",
@@ -55,6 +60,7 @@
       "Absurdité": 2
    },
    {
+      "Continent": "Europe",
       "Pays": "France",
       "Loi": "Les radios ont l’obligation de passer au minimum 35% de chansons françaises.",
       "Début": "1986",
@@ -66,6 +72,7 @@
       "Absurdité": 1
    },
    {
+      "Continent": "Europe",
       "Pays": "France",
       "Loi": "Il est légal de se marier avec un mort si la personne décédée avait exprimé le désir de se marier avant sa mort.",
       "Début": "1959",
@@ -77,6 +84,7 @@
       "Absurdité": 4
    },
    {
+      "Continent": "Europe",
       "Pays": "France",
       "Loi": "À Essarts-en-Bocage, il est obligatoire d’être «  en joie  » entre 8 et 22 heures et de faire sourire 10 personnes par jour.",
       "Début": "5 octobre 2019",
@@ -88,6 +96,7 @@
       "Absurdité": 5
    },
    {
+      "Continent": "Europe",
       "Pays": "France",
       "Loi": "Dans la commune de Briollay, les moustiques sont interdits.",
       "Début": "2018",
@@ -99,6 +108,7 @@
       "Absurdité": 4
    },
    {
+      "Continent": "Europe",
       "Pays": "France",
       "Loi": "La consommation d’alcool est interdite sur le lieu de travail, sauf pour le cidre, la bière, le vin et le poiré, et seulement lors d’un repas.",
       "Début": "2014",
@@ -110,6 +120,7 @@
       "Absurdité": 2
    },
    {
+      "Continent": "Europe",
       "Pays": "France",
       "Loi": "À Châteauneuf-du-Pape, les OVNI sont interdits de survol, d’atterrissage et de décollage.",
       "Début": "1954",
@@ -121,6 +132,7 @@
       "Absurdité": 5
    },
    {
+      "Continent": "Europe",
       "Pays": "France",
       "Loi": "La distribution libre de ketchup est interdite dans les cantines.",
       "Début": "2011",
@@ -132,6 +144,7 @@
       "Absurdité": 3
    },
    {
+      "Continent": "Europe",
       "Pays": "France",
       "Loi": "Les animaux peuvent être jugés devant les tribunaux pour des délits criminels.",
       "Début": "14ᵉ siècle",
@@ -143,6 +156,7 @@
       "Absurdité": 4
    },
    {
+      "Continent": "Europe",
       "Pays": "France",
       "Loi": "Il est illégal de montrer un policier ou une voiture de police sur une photo, même en arrière-plan.",
       "Début": "2020",
@@ -154,6 +168,7 @@
       "Absurdité": 3
    },
    {
+      "Continent": "Europe",
       "Pays": "France",
       "Loi": "Toute femme désirant s’habiller en homme doit se présenter à la Préfecture de police pour en obtenir l’autorisation.",
       "Début": "1800",
@@ -165,6 +180,7 @@
       "Absurdité": 4
    },
    {
+      "Continent": "Europe",
       "Pays": "Grèce",
       "Loi": "Jouer aux jeux-vidéos est illégal.",
       "Début": "2002",
@@ -176,6 +192,7 @@
       "Absurdité": 3
    },
    {
+      "Continent": "Europe",
       "Pays": "Grèce",
       "Loi": "Porter des talons hauts est interdit sur divers sites historiques, dont l’Acropole.",
       "Début": "2009",
@@ -187,6 +204,7 @@
       "Absurdité": 3
    },
    {
+      "Continent": "Europe",
       "Pays": "Italie",
       "Loi": "Il est interdit de s’asseoir sur les marches espagnoles à Rome.",
       "Début": "2019",
@@ -198,6 +216,7 @@
       "Absurdité": 3
    },
    {
+      "Continent": "Europe",
       "Pays": "Italie",
       "Loi": "À Turin, il est obligatoire de promener son chien trois fois par jour.",
       "Début": "2005",
@@ -209,6 +228,7 @@
       "Absurdité": 2
    },
    {
+      "Continent": "Europe",
       "Pays": "Italie",
       "Loi": "À Eraclea, il est interdit de construire des châteaux de sable sur les plages.",
       "Début": "2020",
@@ -220,6 +240,7 @@
       "Absurdité": 3
    },
    {
+      "Continent": "Europe",
       "Pays": "Italie",
       "Loi": "Les prostituées de Venise doivent porter une écharpe jaune.",
       "Début": "1412",
@@ -231,6 +252,7 @@
       "Absurdité": 3
    },
    {
+      "Continent": "Europe",
       "Pays": "Norvège",
       "Loi": "Il est interdit de stériliser un animal sans raison médicale valable.",
       "Début": "2009",
@@ -242,6 +264,7 @@
       "Absurdité": 2
    },
    {
+      "Continent": "Europe",
       "Pays": "Pays-Bas",
       "Loi": "S’enfuir de prison est légal et n’allongera pas la peine tant qu’aucun dégât matériel et/ou acte de violence n’est constaté.",
       "Début": "1983",
@@ -253,6 +276,7 @@
       "Absurdité": 3
    },
    {
+      "Continent": "Europe",
       "Pays": "Pays-Bas",
       "Loi": "Il est interdit de fumer une cigarette dans un coffeeshop, mais pas du canabis.",
       "Début": "2008",
@@ -264,6 +288,7 @@
       "Absurdité": 3
    },
    {
+      "Continent": "Europe",
       "Pays": "Roumanie",
       "Loi": "Si on est déclaré mort alors qu’on est en vie, il faut faire appel avant le délai imparti.",
       "Début": "1996",
@@ -275,6 +300,7 @@
       "Absurdité": 5
    },
    {
+      "Continent": "Europe",
       "Pays": "Royaume-Uni",
       "Loi": "Porter des chaussures longues et pointues est interdit.",
       "Début": "1363",
@@ -286,6 +312,7 @@
       "Absurdité": 4
    },
    {
+      "Continent": "Europe",
       "Pays": "Royaume-Uni",
       "Loi": "Il est interdit de porter une armure au Parlement de Londres.",
       "Début": "1313",
@@ -297,6 +324,7 @@
       "Absurdité": 3
    },
    {
+      "Continent": "Europe",
       "Pays": "Royaume-Uni",
       "Loi": "Être ivre à cheval ou dans un établissement ayant un permis de vente d’alcool constitue un délit.",
       "Début": "1872",
@@ -308,6 +336,7 @@
       "Absurdité": 3
    },
    {
+      "Continent": "Europe",
       "Pays": "Suisse",
       "Loi": "Il est illégal de produire, stocker, vendre ou échanger de l’absinthe, mais légal d’en consommer",
       "Début": "1915",
@@ -319,6 +348,7 @@
       "Absurdité": 2
    },
    {
+      "Continent": "Amérique",
       "Pays": "États-Unis",
       "Loi": "Les batailles de boules de neige sont interdites au Wisconsin.",
       "Début": "1962",
@@ -330,6 +360,7 @@
       "Absurdité": 4
    },
    {
+      "Continent": "Amérique",
       "Pays": "États-Unis",
       "Loi": "En Californie, il est illégal de tirer au fusil sur un animal depuis un véhicule motorisé.",
       "Début": "1957",
@@ -341,6 +372,7 @@
       "Absurdité": 3
    },
    {
+      "Continent": "Amérique",
       "Pays": "États-Unis",
       "Loi": "À Pacific Grove en Californie, il est interdit de déloger des papillons monarques sans autorisation de la police.",
       "Début": "1952",
@@ -352,6 +384,7 @@
       "Absurdité": 3
    },
    {
+      "Continent": "Amérique",
       "Pays": "États-Unis",
       "Loi": "En Alabama, seule la position du missionnaire est autorisée. La sodomie, comme dans de nombreux États du Sud, est passible de prison.",
       "Début": "2003",
@@ -363,6 +396,7 @@
       "Absurdité": 5
    },
    {
+      "Continent": "Amérique",
       "Pays": "États-Unis",
       "Loi": "En Arizona, il est interdit de tirer des coups de fusil sur des cactus.",
       "Début": "1928",
@@ -374,6 +408,7 @@
       "Absurdité": 3
    },
    {
+      "Continent": "Amérique",
       "Pays": "États-Unis",
       "Loi": "Au Kentucky, il est illégal pour une femme d’apparaître en maillot de bain sur une autoroute, sauf si escortée par au moins 2 policiers, blessée, qu’elle pèse moins de 45 Kg ou plus de 100 kg.",
       "Début": "1938",
@@ -385,6 +420,7 @@
       "Absurdité": 5
    },
    {
+      "Continent": "Amérique",
       "Pays": "États-Unis",
       "Loi": "En Utah, le mariage entre cousins est autorisé si les mariés ont aux moins 55 ans et au moins l’un d’eux est stérile.",
       "Début": "1852",
@@ -396,6 +432,7 @@
       "Absurdité": 5
    },
    {
+      "Continent": "Amérique",
       "Pays": "États-Unis",
       "Loi": "Au texas, il est illégal de traire la vache d’un voisin.",
       "Début": "1866",
@@ -407,6 +444,7 @@
       "Absurdité": 3
    },
    {
+      "Continent": "Amérique",
       "Pays": "États-Unis",
       "Loi": "Il est interdit de laisser des pissenlits pousser dans les limites de la ville de Pueblo, au Colorado.",
       "Début": "1974",
@@ -418,6 +456,7 @@
       "Absurdité": 3
    },
    {
+      "Continent": "Amérique",
       "Pays": "États-Unis",
       "Loi": "Au Delaware, Une union peut être annulée si faite suite à un pari.",
       "Début": "1973",
@@ -429,6 +468,7 @@
       "Absurdité": 1
    },
    {
+      "Continent": "Amérique",
       "Pays": "États-Unis",
       "Loi": "Il est illégal de posséder une mangouste sans permis à Hawaii.",
       "Début": "1919",
@@ -440,6 +480,7 @@
       "Absurdité": 2
    },
    {
+      "Continent": "Amérique",
       "Pays": "États-Unis",
       "Loi": "Au Mississippi, un maître a le droit de tuer ses domestiques.",
       "Début": "18ᵉ siècle",
@@ -451,6 +492,7 @@
       "Absurdité": 5
    },
    {
+      "Continent": "Amérique",
       "Pays": "États-Unis",
       "Loi": "En Oregon, une porte de voiture ne peut pas rester ouverte plus longtemps que nécessaire.",
       "Début": "1953",
@@ -462,6 +504,7 @@
       "Absurdité": 1
    },
    {
+      "Continent": "Amérique",
       "Pays": "États-Unis",
       "Loi": "En Oregon, il est interdit de chasser avec des chiens, sauf en chassant l’écureuil gris occidental.",
       "Début": "1939",
@@ -473,6 +516,7 @@
       "Absurdité": 3
    },
    {
+      "Continent": "Amérique",
       "Pays": "États-Unis",
       "Loi": "En Pennsylvanie, un mariage est non-valide si l’un des époux est ivre pendant la demande du certificat de mariage.",
       "Début": "1923",
@@ -484,6 +528,7 @@
       "Absurdité": 1
    },
    {
+      "Continent": "Amérique",
       "Pays": "États-Unis",
       "Loi": "Au Tennessee, il est illégal de pêcher à l'arme à feu.",
       "Début": "1974",
@@ -495,6 +540,7 @@
       "Absurdité": 5
    },
    {
+      "Continent": "Amérique",
       "Pays": "États-Unis",
       "Loi": "Une ordonnance à Newcastle, Wyoming, interdit spécifiquement les couples de faire l'amour à l'intérieur du congélateur à viande d'un magasin.",
       "Début": "1966",
@@ -506,6 +552,7 @@
       "Absurdité": 5
    },
    {
+      "Continent": "Amérique",
       "Pays": "Canada",
       "Loi": "Il est illégal de tuer une personne malade en lui faisant peur.",
       "Début": "1892",
@@ -517,6 +564,7 @@
       "Absurdité": 3
    },
    {
+      "Continent": "Amérique",
       "Pays": "Canada",
       "Loi": "Il est illégal de prétendre faire de la sorcellerie ou de lire l’avenir.",
       "Début": "1892",
@@ -528,6 +576,7 @@
       "Absurdité": 4
    },
    {
+      "Continent": "Amérique",
       "Pays": "Canada",
       "Loi": "On ne peut pas traîner un cheval mort sur une voie publique le dimanche.",
       "Début": "1959",
@@ -539,6 +588,7 @@
       "Absurdité": 4
    },
    {
+      "Continent": "Amérique",
       "Pays": "Caraïbes",
       "Loi": "Il est interdit de porter des tenues camouflage si on est pas dans l'armée.",
       "Début": 1980,
@@ -550,6 +600,7 @@
       "Absurdité": 1
    },
    {
+      "Continent": "Amérique",
       "Pays": "Chili",
       "Loi": "Il est illégal d’oublier d’accrocher le drapeau national à votre maison le Jour de l’Indépendance.",
       "Début": 1912,
@@ -561,6 +612,7 @@
       "Absurdité": 3
    },
    {
+      "Continent": "Asie",
       "Pays": "Singapour",
       "Loi": "Le chewing-gum est interdit, sauf s'il est ramené d’un autre pays.",
       "Début": "1992",
@@ -572,6 +624,7 @@
       "Absurdité": 3
    },
    {
+      "Continent": "Asie",
       "Pays": "Singapour",
       "Loi": "Oublier de tirer la chasse en public est interdit.",
       "Début": "1987",
@@ -583,6 +636,7 @@
       "Absurdité": 4
    },
    {
+      "Continent": "Asie",
       "Pays": "Singapour",
       "Loi": "Importer du tabac nécessite une licence.",
       "Début": "2020",
@@ -594,6 +648,7 @@
       "Absurdité": 3
    },
    {
+      "Continent": "Asie",
       "Pays": "Singapour",
       "Loi": "Il est illégal de fumer dans la plupart des lieux publics.",
       "Début": "1970",
@@ -605,6 +660,7 @@
       "Absurdité": 1
    },
    {
+      "Continent": "Asie",
       "Pays": "Iran",
       "Loi": "La coupe mulet est interdite.",
       "Début": "2010",
@@ -616,6 +672,7 @@
       "Absurdité": 3
    },
    {
+      "Continent": "Asie",
       "Pays": "Iran",
       "Loi": "Promener son chien en public est interdit.",
       "Début": "2019",
@@ -627,6 +684,7 @@
       "Absurdité": 4
    },
    {
+      "Continent": "Asie",
       "Pays": "Thaïlande",
       "Loi": "Interdiction de jeter son chewing-gum à terre.",
       "Début": "1992",
@@ -638,6 +696,7 @@
       "Absurdité": 2
    },
    {
+      "Continent": "Asie",
       "Pays": "Thaïlande",
       "Loi": "Il est illégal de poser le pied sur la monnaie nationale.",
       "Début": "19ᵉ siècle",
@@ -649,6 +708,7 @@
       "Absurdité": 4
    },
    {
+      "Continent": "Asie",
       "Pays": "Thaïlande",
       "Loi": "Critiquer la famille royale est interdit.",
       "Début": "1908",
@@ -660,6 +720,7 @@
       "Absurdité": 4
    },
    {
+      "Continent": "Asie",
       "Pays": "Émirats arabes unis",
       "Loi": "Il est interdit pour un couple de s’embrasser en public.",
       "Début": "Inconnu",
@@ -671,6 +732,7 @@
       "Absurdité": 3
    },
    {
+      "Continent": "Asie",
       "Pays": "Émirats arabes unis",
       "Loi": "Une licence est nécessaire pour consommer de l’alcool.",
       "Début": "1966",
@@ -682,6 +744,7 @@
       "Absurdité": 3
    },
    {
+      "Continent": "Asie",
       "Pays": "Russie",
       "Loi": "Il est interdit d’avoir une voiture sale.",
       "Début": "2013",
@@ -693,6 +756,7 @@
       "Absurdité": 1
    },
    {
+      "Continent": "Asie",
       "Pays": "Indonnésie",
       "Loi": "Il est interdit pour un couple non-marié de vivre ensemble.",
       "Début": "2022",
@@ -704,6 +768,7 @@
       "Absurdité": 4
    },
    {
+      "Continent": "Asie",
       "Pays": "Philippines",
       "Loi": "La « vexation injuste » est un crime.",
       "Début": "1930",
