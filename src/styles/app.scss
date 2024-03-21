@@ -35,6 +35,8 @@ html {
     );
     background-repeat: no-repeat;
   }
+
+
   &__2 {
     background-image: image-set(
       url(../assets/images/background_2.jpg) 1x,
@@ -42,6 +44,7 @@ html {
     );
     font-family: "BIZ UDMincho", serif;
   }
+
   &__3 {
     background-color: #008081;
   }
@@ -366,6 +369,7 @@ html {
     font-size: 16px;
     line-height: 1.6;
     font-family: "ortica";
+    max-width: 350px;
 
     &--adoptee {
       font-size: 16px;
@@ -386,7 +390,7 @@ html {
       margin-left: 50%;
       margin-top: -15%;
       position: absolute;
-      top: 55%;
+      top: 50%;
       right: 5%;
       transform: rotate3dy('180deg');
     }
@@ -443,9 +447,9 @@ html {
     margin-left: -33%;
 
     &--ville {
-    margin-left: -33%;
+    margin-left: -33px;
     z-index: -3;
-    margin-top: -25px;
+    margin-top: -10px;
     }
     &--papier {
       z-index: -2;
@@ -474,6 +478,7 @@ html {
 
 .singapour {
   padding: 5rem 33px;
+  position: relative;
 
   &__modal {
     background-color: #fafafa;
@@ -532,5 +537,16 @@ html {
     margin-top: 54px;
     font-family: "pix";
     line-height: 1.2;
+  }
+  &__folder {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    z-index: -1;
+    padding: 22px;
+
+    &--none {
+      display: none;
+    }
   }
 }
