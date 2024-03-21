@@ -87,7 +87,7 @@ function populateHTML(jsonData) {
     clone.querySelector('.top__loi').textContent = data.Loi;
     clone.querySelector('.top__date').textContent = `${data.Début} - ${data.Fin}`;
     clone.querySelector('.top__comment').textContent = data.Commentaire;
-    clone.querySelector('.top__rating').textContent = `${data.Absurdité} ♥`;
+    clone.querySelector('.top__rating').textContent = `${data.Absurdité} 🤡`;
 
     // Show cloned content
     clone.classList.remove('hidden');
