@@ -13,6 +13,7 @@
 }
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 html {
@@ -33,14 +34,10 @@ html {
 .timeline__1 {
   background-image: -webkit-image-set(url(../assets/images/background_1.jpg) 1x, url(../assets/images/background_1@2x.jpg) 2x);
   background-image: image-set(url(../assets/images/background_1.jpg) 1x, url(../assets/images/background_1@2x.jpg) 2x);
-}
-.timeline__2 {
-  background-image: -webkit-image-set(url(../assets/images/background_2.jpg) 1x, url(../assets/images/background_2@2x.png) 2x);
-  background-image: image-set(url(../assets/images/background_2.jpg) 1x, url(../assets/images/background_2@2x.png) 2x);
-  font-family: "BIZ UDMincho", serif;
+  background-repeat: no-repeat;
 }
 .timeline__3 {
-  background-color: rgb(110, 198, 110);
+  background-color: #008081;
 }
 .timeline__4 {
   background-color: rgb(123, 225, 225);
@@ -95,4 +92,138 @@ html {
 .quiz-container__feedback {
   margin-top: 20px;
   font-size: 20px;
+}
+
+@font-face {
+  font-family: "Ortica";
+  src: url("../assets/fonts/ortica/OrticaLinear-Regular.woff2");
+}
+@font-face {
+  font-family: "Valiant";
+  src: url("../assets/fonts/PrinceValiant.ttf");
+}
+@font-face {
+  font-family: "livingstone";
+  src: url("../assets/fonts/livingstone.regular.ttf");
+}
+:root {
+  --red-color: #B50008;
+}
+
+.MoyenAge {
+  padding: 17px 32px;
+  position: relative;
+}
+.MoyenAge__vert, .MoyenAge__hor {
+  display: none;
+}
+.MoyenAge__r {
+  height: 111px;
+}
+.MoyenAge__top {
+  display: flex;
+  position: relative;
+  margin-top: -7rem;
+}
+.MoyenAge__title {
+  align-content: baseline;
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  font-size: 33px;
+  font-family: "Valiant";
+  color: var(--red-color);
+}
+.MoyenAge__h3 {
+  font-size: 24px;
+  font-family: "valiant";
+  color: var(--red-color);
+  margin-top: 50px;
+}
+.MoyenAge__text {
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: "ortica";
+}
+.MoyenAge__text--adoptee {
+  font-size: 16px;
+}
+.MoyenAge__chiffre {
+  font-size: 122px;
+  font-family: "livingstone";
+  color: var(--red-color);
+  margin-left: 80%;
+  line-height: 0%;
+  margin-top: 60px;
+}
+.MoyenAge__img--lapin {
+  width: 100px;
+  margin-left: 50%;
+  margin-top: -15%;
+  position: absolute;
+  top: 55%;
+  right: 5%;
+  transform: rotate3dy("180deg");
+}
+
+@font-face {
+  font-family: "elite";
+  src: url("../assets/fonts/texas/SpecialElite.ttf");
+}
+@font-face {
+  font-family: "gensco";
+  src: url("../assets/fonts/gensco/GENSCO.otf");
+}
+.texas {
+  padding: 17px 32px;
+  overflow-x: hidden;
+}
+.texas__txt {
+  font-family: "elite";
+  font-size: 16px;
+  line-height: 1.6;
+}
+.texas__chiffre {
+  font-size: 122px;
+  line-height: 0%;
+  margin-left: 80%;
+  margin-top: -90vh;
+}
+.texas__title, .texas__h3 {
+  font-family: "gensco";
+  margin-top: 50px;
+  z-index: 8;
+}
+.texas__title {
+  font-size: 33px;
+  margin-top: -7rem;
+}
+.texas__h3 {
+  font-size: 24px;
+}
+.texas__img {
+  margin-left: -33%;
+}
+.texas__img--ville {
+  margin-left: -33%;
+  z-index: -3;
+  margin-top: -25px;
+}
+.texas__img--papier {
+  z-index: -2;
+  height: 100vh;
+  position: relative;
+}
+.texas__img__content {
+  position: absolute;
+  margin-top: -100vh;
+}
+
+@font-face {
+  font-family: "pix";
+  src: url("../assets/fonts/singapour/pixM8pt.ttf");
+}
+@font-face {
+  font-family: "w9";
+  src: url("../assets/fonts/singapour/W95FA.otf");
 }/*# sourceMappingURL=app.css.map */
