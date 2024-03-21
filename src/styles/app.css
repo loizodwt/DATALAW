@@ -46,7 +46,21 @@ html {
   background-color: rgb(123, 225, 225);
 }
 .timeline__5 {
-  background-color: rgb(221, 221, 114);
+  background-image: url(../assets/images/background_5.svg);
+}
+
+.bg-5 {
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 24px;
+  margin-right: 24px;
+  border-radius: 20px;
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  background-color: rgba(68, 67, 67, 0.4392156863);
+  border: 2px solid #888888;
+  padding: 32px;
 }
 
 .timeline::-webkit-scrollbar {
