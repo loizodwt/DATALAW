@@ -36,7 +36,6 @@ html {
     background-repeat: no-repeat;
   }
 
-
   &__2 {
     background-image: image-set(
       url(../assets/images/background_2.jpg) 1x,
@@ -304,38 +303,30 @@ html {
   }
 }
 
-
-
-
-
 @font-face {
   font-family: "Ortica";
-  src:
-      url("../assets/fonts/ortica/OrticaLinear-Regular.woff2");
-
+  src: url("../assets/fonts/ortica/OrticaLinear-Regular.woff2");
 }
 
 @font-face {
   font-family: "Valiant";
-  src:
-      url("../assets/fonts/PrinceValiant.ttf");
+  src: url("../assets/fonts/PrinceValiant.ttf");
 }
 
 @font-face {
   font-family: "livingstone";
-  src:
-      url("../assets/fonts/livingstone.regular.ttf");
+  src: url("../assets/fonts/livingstone.regular.ttf");
 }
 
 :root {
-  --red-color: #B50008;
+  --red-color: #b50008;
 }
 
 .MoyenAge {
   padding: 17px 32px;
   position: relative;
 
-  &__vert, 
+  &__vert,
   &__hor {
     display: none;
   }
@@ -392,21 +383,18 @@ html {
       position: absolute;
       top: 50%;
       right: 5%;
-      transform: rotate3dy('180deg');
+      transform: rotate3dy("180deg");
     }
   }
 }
 
-
 @font-face {
   font-family: "elite";
-  src:
-      url("../assets/fonts/texas/SpecialElite.ttf");
+  src: url("../assets/fonts/texas/SpecialElite.ttf");
 }
 @font-face {
   font-family: "gensco";
-  src:
-      url("../assets/fonts/gensco/GENSCO.otf");
+  src: url("../assets/fonts/gensco/GENSCO.otf");
 }
 
 .texas {
@@ -429,12 +417,11 @@ html {
     margin-left: 80%;
     margin-top: -90vh;
   }
-  &__title, 
+  &__title,
   &__h3 {
     font-family: "gensco";
     margin-top: 50px;
     z-index: 8;
-
   }
   &__title {
     font-size: 33px;
@@ -447,9 +434,9 @@ html {
     margin-left: -33%;
 
     &--ville {
-    margin-left: -33px;
-    z-index: -3;
-    margin-top: -10px;
+      margin-left: -33px;
+      z-index: -3;
+      margin-top: -10px;
     }
     &--papier {
       z-index: -2;
@@ -462,19 +449,6 @@ html {
     }
   }
 }
-
-
-@font-face {
-  font-family: "pix";
-  src:
-      url("../assets/fonts/singapour/pixM8pt.ttf");
-}
-@font-face {
-  font-family: "w9";
-  src:
-      url("../assets/fonts/singapour/W95FA.otf");
-}
-
 
 .singapour {
   padding: 5rem 33px;
@@ -490,7 +464,7 @@ html {
     background-color: #000080;
     padding: 3px;
     height: 25px;
-    border: 2px solid #C0C0C0;
+    border: 2px solid #c0c0c0;
   }
   &__txt {
     font-family: "w9";
