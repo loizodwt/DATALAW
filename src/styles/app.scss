@@ -1,44 +1,33 @@
 @import "utils/variables";
 @import "components/type";
 
-// Quizz
-.quizz-container {
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: center;
+/* ------ MEDIEVAL ------ */
 
-  &__question {
-    margin-bottom: 20px;
-    font-size: 25px;
-    color: black;
-  }
+.MoyenAge {
+  background-color: lightgreen;
+}
 
-  &__buttons {
-    margin-top: 20px;
-  }
+/* ------ 1900 ------ */
+.two {
+  background-color: aquamarine;
+}
 
-  &__button {
-    padding: 5px 10px;
-    border: none;
-    cursor: pointer;
+/* ------ 2000 ------ */
+.three {
+  background-color: lightcoral;
+}
 
-    &:hover {
-      background-color: rgb(106, 106, 106);
-    }
+/* ------ 2010 ------ */
+.four {
+  background-color: chocolate;
+}
 
-    &--vrai {
-      background-color: $quiz-primary-color;
-      color: white;
-    }
+/* ------ 2020 ------ */
+.five {
+  background-color: cornflowerblue;
+}
 
-    &--faux {
-      background-color: $quiz-secondary-color;
-      color: white;
-    }
-  }
-
-  &__feedback {
-    margin-top: 20px;
-    font-size: 20px;
-  }
+/* ------ EXTRA ------ */
+.hidden {
+  display: none;
 }

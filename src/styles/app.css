@@ -1,33 +1,57 @@
-.quizz-container {
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: center;
+@font-face {
+  font-family: "Pix";
+  src: url("../assets/fonts/singapour/pixM8pt.ttf");
 }
-.quizz-container__question {
-  margin-bottom: 20px;
-  font-size: 25px;
-  color: black;
+@font-face {
+  font-family: "W9";
+  src: url("../assets/fonts/singapour/W95FA.otf");
 }
-.quizz-container__buttons {
-  margin-top: 20px;
+@font-face {
+  font-family: "Elite";
+  src: url("../assets/fonts/texas/SpecialElite.ttf");
 }
-.quizz-container__button {
-  padding: 5px 10px;
-  border: none;
-  cursor: pointer;
+@font-face {
+  font-family: "Gensco";
+  src: url("../assets/fonts/gensco/GENSCO.otf");
 }
-.quizz-container__button:hover {
-  background-color: rgb(106, 106, 106);
+@font-face {
+  font-family: "Ortica";
+  src: url("../assets/fonts/ortica/OrticaLinear-Regular.woff2");
 }
-.quizz-container__button--vrai {
-  background-color: rgb(71, 179, 71);
-  color: white;
+@font-face {
+  font-family: "Valiant";
+  src: url("../assets/fonts/PrinceValiant.ttf");
 }
-.quizz-container__button--faux {
-  background-color: rgb(193, 0, 0);
-  color: white;
+@font-face {
+  font-family: "Livingstone";
+  src: url("../assets/fonts/livingstone.regular.ttf");
 }
-.quizz-container__feedback {
-  margin-top: 20px;
-  font-size: 20px;
+/* ------ MEDIEVAL ------ */
+.MoyenAge {
+  background-color: lightgreen;
+}
+
+/* ------ 1900 ------ */
+.two {
+  background-color: aquamarine;
+}
+
+/* ------ 2000 ------ */
+.three {
+  background-color: lightcoral;
+}
+
+/* ------ 2010 ------ */
+.four {
+  background-color: chocolate;
+}
+
+/* ------ 2020 ------ */
+.five {
+  background-color: cornflowerblue;
+}
+
+/* ------ EXTRA ------ */
+.hidden {
+  display: none;
 }/*# sourceMappingURL=app.css.map */
