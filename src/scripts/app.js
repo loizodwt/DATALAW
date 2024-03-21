@@ -2,7 +2,7 @@
 
 // Function to convert text formatted as "20ᵉ siècle" to its associated year (e.g., "20ᵉ siècle" -> 1900)
 function convertCenturyToYear(text) {
-  const century = parseInt(text);
+  let century = parseInt(text);
   if (!isNaN(century)) {
     return (century - 1) * 100;
   }
@@ -12,8 +12,8 @@ function convertCenturyToYear(text) {
 // Function to extract the year from a date string, ignoring the day and text (e.g., "5 octobre 2019" -> 2019)
 function extractYearFromDate(dateString) {
   if (typeof dateString === 'string') {
-    const yearRegex = /\b\d{4}\b/;
-    const match = dateString.match(yearRegex);
+    let yearRegex = /\b\d{4}\b/;
+    let match = dateString.match(yearRegex);
     if (match) {
       return parseInt(match[0]);
     }
@@ -45,7 +45,7 @@ function getClassForYear(year) {
 // Function to fetch JSON data
 async function fetchJSONData(url) {
   try {
-    const response = await fetch(url);
+    let response = await fetch(url);
     if (!response.ok) {
       throw new Error('Network response was not ok.');
     }
@@ -58,15 +58,15 @@ async function fetchJSONData(url) {
 
 // Function to populate HTML with JSON data
 function populateHTML(jsonData) {
-  const topContainer = document.querySelector('.top');
-  const template = document.querySelector('.top__container');
+  let topContainer = document.querySelector('.top');
+  let template = document.querySelector('.top__container');
 
   // Sort JSON data by "Absurdité" value in descending order
   jsonData.sort((a, b) => b.Absurdité - a.Absurdité);
 
   jsonData.forEach((data, index) => {
     // Clone template content
-    const clone = template.cloneNode(true);
+    let clone = template.cloneNode(true);
 
     // Extract year from "Début" value
     let year;
@@ -102,7 +102,7 @@ function populateHTML(jsonData) {
 
 
 // Fetch JSON data and populate HTML
-const lawsDataURL = '../assets/data/laws.json';
+let lawsDataURL = '../assets/data/laws.json';
 fetchJSONData(lawsDataURL)
   .then(data => populateHTML(data))
   .catch(error => console.error('Error fetching JSON data:', error));
@@ -111,11 +111,11 @@ fetchJSONData(lawsDataURL)
 // test initial
 /*
 document.addEventListener("DOMContentLoaded", function () {
-  const questionElement = document.getElementById("question");
-  const vraiBtn = document.getElementById("vraiBtn");
-  const fauxBtn = document.getElementById("fauxBtn");
-  const feedbackElement = document.getElementById("feedback"); // test a ignorer
-  const skipBtn = document.getElementById("skipBtn");
+  let questionElement = document.getElementById("question");
+  let vraiBtn = document.getElementById("vraiBtn");
+  let fauxBtn = document.getElementById("fauxBtn");
+  let feedbackElement = document.getElementById("feedback"); // test a ignorer
+  let skipBtn = document.getElementById("skipBtn");
 
   let currentQuestionIndex = 0;
   let score = 0;
@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function showQuestion() {
     // Modification ici
-    const currentQuestion = questionsData[currentQuestionIndex];
+    let currentQuestion = questionsData[currentQuestionIndex];
     questionElement.textContent = currentQuestion.question;
     feedbackElement.textContent = ""; // réinitialisation de la réponse
     vraiBtn.style.display = "inline"; // affichage et désaffichaaage des boutons
@@ -152,7 +152,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function checkAnswer(userAnswer, questions) {
-    const currentQuestion = questions[currentQuestionIndex];
+    let currentQuestion = questions[currentQuestionIndex];
     vraiBtn.disabled = true; // désactive les boutons pendant le delai chiant de la reponse
     fauxBtn.disabled = true;
     if (userAnswer === currentQuestion.reponse) {
