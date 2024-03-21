@@ -14,8 +14,7 @@
   src: url("assets/fonts/Princevaliant.ttf") format("truetype");
 }
 
-@import url('https://fonts.googleapis.com/css2?family=BIZ+UDMincho&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=BIZ+UDMincho&display=swap");
 
 @font-face {
   font-family: "Clash Display";
@@ -23,13 +22,23 @@
 }
 
 @font-face {
-  font-family: "Satoshi";
-  src: url("assets/fonts/Satoshi-Variable.ttf") format("truetype");
+  font-family: "Satoshi-Variable";
+  src: url("../assets/fonts/Satoshi-Variable.woff2") format("woff2"),
+    url("../assets/fonts/Satoshi-Variable.woff") format("woff"),
+    url("../assets/fonts/Satoshi-Variable.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "Satoshi Italic";
-  src: url("assets/fonts/Satoshi-VariableItalic.ttf") format("truetype");
+  font-family: "ClashDisplay-Variable";
+  src: url("../assets/fonts/ClashDisplay-Variable.woff2") format("woff2"),
+    url("../assets/fonts/ClashDisplay-Variable.woff") format("woff"),
+    url("../assets/fonts/ClashDisplay-Variable.ttf") format("truetype");
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
 }
 
 @font-face {
