@@ -1,5 +1,258 @@
 "use strict"
 
+document.addEventListener("DOMContentLoaded", function () {
+  const questionElement = document.getElementById("question");
+  const vraiBtn = document.getElementById("vraiBtn");
+  const fauxBtn = document.getElementById("fauxBtn");
+  const feedbackElement = document.getElementById("feedback");
+  const nextBtn = document.getElementById("nextBtn");
+  const counterElement = document.getElementById("counter");
+  const contexte = document.getElementById("contexte");
+
+  let currentQuestionIndex = 0;
+  let score = 0;
+  let questionsData = null;
+
+  fetch("../assets/data/questions.json")
+    .then((response) => response.json())
+    .then((data) => {
+      questionsData = data;
+      showQuestion();
+      vraiBtn.addEventListener("click", () => checkAnswer(true, questionsData[currentQuestionIndex]));
+      fauxBtn.addEventListener("click", () => checkAnswer(false, questionsData[currentQuestionIndex]));
+      nextBtn.addEventListener("click", () => {
+        currentQuestionIndex++;
+        if (currentQuestionIndex < questionsData.length) {
+          showQuestion();
+        } else {
+          showSummary();
+        }
+      });
+    });
+
+  function showQuestion() {
+    if (!questionElement || currentQuestionIndex >= questionsData.length) {
+      return;
+    }
+    const currentQuestion = questionsData[currentQuestionIndex];
+    questionElement.textContent = currentQuestion.question;
+    feedbackElement.textContent = "";
+    vraiBtn.style.display = "inline";
+    fauxBtn.style.display = "inline";
+    vraiBtn.disabled = false;
+    fauxBtn.disabled = false;
+    counterElement.textContent = `${currentQuestionIndex + 1}/${questionsData.length}`;
+  }
+
+  function checkAnswer(userAnswer, currentQuestion) {
+    vraiBtn.disabled = true;
+    fauxBtn.disabled = true;
+    if (userAnswer === currentQuestion.reponse) {
+      feedbackElement.textContent = "Vous avez voté comme le peuple de l'époque";
+      score++;
+    } else {
+      feedbackElement.textContent = `Vous n'avez pas voté comme le peuple de l'époque : ${currentQuestion.anecdote}`;
+    }
+  }
+
+  function showSummary() {
+    questionElement.textContent = `Récap score: ${score}/${questionsData.length}`;
+    vraiBtn.style.display = "none";
+    fauxBtn.style.display = "none";
+    nextBtn.style.display = "none";
+    counterElement.style.display = "none";
+    contexte.style.display = "none";
+    feedbackElement.textContent = "";
+  }
+
+
+
+
+  //GRAPHOU :3
+
+  //afficher de base europe
+  changeData('Europe');
+
+  document.getElementById('btnAfrique').addEventListener('click', function () {
+    changeData('Afrique');
+  });
+  document.getElementById('btnAsie').addEventListener('click', function () {
+    changeData('Asie');
+  });
+  document.getElementById('btnEurope').addEventListener('click', function () {
+    changeData('Europe');
+    console.log("europe")
+  });
+  document.getElementById('btnAmérique').addEventListener('click', function () {
+    changeData('Amérique');
+  });
+  document.getElementById('btnOcéanie').addEventListener('click', function () {
+    changeData('Océanie');
+  });
+
+
+
+
+
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+//GRAPHOU :3
+/*
+const ctx = document.getElementById('myChart').getContext('2d');
+const myChart = new Chart(ctx, {
+  type: 'bar',
+});
+
+
+// bloc pour le fetch
+async function fetchData() {
+  try {
+    const response = await fetch('../assets/data/laws.json');
+
+
+    if (!response.ok) {
+      throw new Error('Erreur lors de la récupération des données.');
+    }
+
+
+    const data = await response.json();
+
+
+    return data;
+  } catch (error) {
+
+    console.error('Erreur:', error.message);
+  }
+}
+
+
+
+function changeData(continent) {
+  fetchData()
+    .then(data => {
+      const continentData = data.continents[continent];
+      createChart(continentData, data.xAxisLabel, data.yAxisLabel);
+    });
+}
+
+function createChart(data, xAxisLabel, yAxisLabel) {
+  console.log(data)
+  console.log(data.map(entry => entry.pays))
+  console.log(data.map(entry => entry.Absurdité))
+
+  const chartData = {
+    labels: data.map(entry => entry.pays),
+    datasets: [{
+      label: "taux absurdité",
+      data: data.map(entry => entry.Absurdité),
+      backgroundColor: "red"
+    }]
+  };
+
+  const options = {
+    animation: {
+      duration: 1000,
+      easing: 'easeInOutQuart'
+    },
+    indexAxis: 'y',
+    scales: {
+      x: {
+        beginAtZero: true,
+        suggestedMax: 5,
+        ticks: {
+          font: {
+            family: 'Helvetica',
+            size: 20
+          },
+          color: 'black'
+        },
+        title: {
+          display: true,
+          text: xAxisLabel,
+          font: {
+            family: 'Helvetica',
+            size: 20
+          },
+          color: 'blue'
+        }
+      },
+      y: {
+        ticks: {
+          font: {
+            family: 'Helvetica',
+            size: 20
+          },
+          color: 'blue'
+        },
+        title: {
+          display: true,
+          text: yAxisLabel,
+          font: {
+            family: 'Helvetica',
+            size: 20
+          },
+          color: 'black'
+        }
+      }
+    },
+    plugins: {
+      tooltip: {
+        bodyFont: {
+          family: 'Helvetica',
+          size: 15
+        },
+        titleFont: {
+          family: 'Helvetica',
+          size: 15
+        }
+      }
+    },
+
+
+
+  };
+
+  myChart.data = chartData
+  myChart.options = options
+
+  myChart.update()
+
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 // Function to convert text formatted as "20ᵉ siècle" to its associated year (e.g., "20ᵉ siècle" -> 1900)
 function convertCenturyToYear(text) {
   let century = parseInt(text);
@@ -106,81 +359,4 @@ let lawsDataURL = '../assets/data/laws.json';
 fetchJSONData(lawsDataURL)
   .then(data => populateHTML(data))
   .catch(error => console.error('Error fetching JSON data:', error));
-
-
-// test initial
-/*
-document.addEventListener("DOMContentLoaded", function () {
-  let questionElement = document.getElementById("question");
-  let vraiBtn = document.getElementById("vraiBtn");
-  let fauxBtn = document.getElementById("fauxBtn");
-  let feedbackElement = document.getElementById("feedback"); // test a ignorer
-  let skipBtn = document.getElementById("skipBtn");
-
-  let currentQuestionIndex = 0;
-  let score = 0;
-  let isQuestionDisplayed = false;
-
-  let questionsData = null; // pour stocker les données hihi
-
-  // peuti fetch qui va chercher les infos sur le doc questions.json
-  fetch("/assets/data/questions.json")
-    .then((response) => response.json())
-    .then((data) => {
-      questionsData = data;
-      showQuestion();
-
-      vraiBtn.addEventListener("click", () => checkAnswer(true, questionsData));
-      fauxBtn.addEventListener("click", () =>
-        checkAnswer(false, questionsData)
-      );
-      skipBtn.addEventListener("click", showSummary);
-    });
-
-  function showQuestion() {
-    // Modification ici
-    let currentQuestion = questionsData[currentQuestionIndex];
-    questionElement.textContent = currentQuestion.question;
-    feedbackElement.textContent = ""; // réinitialisation de la réponse
-    vraiBtn.style.display = "inline"; // affichage et désaffichaaage des boutons
-    fauxBtn.style.display = "inline";
-    isQuestionDisplayed = true;
-
-    // Activer les boutons
-    vraiBtn.disabled = false;
-    fauxBtn.disabled = false;
-  }
-
-  function checkAnswer(userAnswer, questions) {
-    let currentQuestion = questions[currentQuestionIndex];
-    vraiBtn.disabled = true; // désactive les boutons pendant le delai chiant de la reponse
-    fauxBtn.disabled = true;
-    if (userAnswer === currentQuestion.reponse) {
-      feedbackElement.textContent = "YE!";
-      feedbackElement.style.color = "green";
-      score++;
-    } else {
-      feedbackElement.textContent = `NAAAAAAN ${currentQuestion.anecdote}`;
-      feedbackElement.style.color = "red";
-    }
-
-    currentQuestionIndex++;
-    if (currentQuestionIndex < questions.length) {
-      setTimeout(() => {
-        showQuestion(questions[currentQuestionIndex]);
-        feedbackElement.textContent = "";
-      }, 1000);
-    } else {
-      showSummary();
-    }
-  }
-
-  function showSummary() {
-    questionElement.textContent = `Quizz terminé score: ${score}/${currentQuestionIndex} :3`;
-    vraiBtn.style.display = "none";
-    fauxBtn.style.display = "none";
-    skipBtn.style.display = "none";
-    feedbackElement.textContent = "";
-  }
-});
 */

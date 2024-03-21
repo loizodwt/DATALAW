@@ -26,6 +26,113 @@
   font-family: "Livingstone";
   src: url("../assets/fonts/livingstone.regular.ttf");
 }
+body {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*
+test js 2EME GRAPH BLEU
+
+#graph-container {
+  margin-bottom: 20px;
+}
+
+#continent-buttons {
+  margin-bottom: 20px;
+}
+
+button {
+  margin-right: 10px;
+}
+
+.bar {
+  fill: rgb(0, 140, 255);
+}
+
+*/
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.timeline {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+.timeline__1, .timeline__2, .timeline__3, .timeline__4, .timeline__5 {
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
+  height: 100vh;
+}
+.timeline__1 {
+  background-image: -webkit-image-set(url(../assets/images/background_1.jpg) 1x, url(../assets/images/background_1@2x.jpg) 2x);
+  background-image: image-set(url(../assets/images/background_1.jpg) 1x, url(../assets/images/background_1@2x.jpg) 2x);
+}
+.timeline__2 {
+  background-image: -webkit-image-set(url(../assets/images/background_2.jpg) 1x, url(../assets/images/background_2@2x.png) 2x);
+  background-image: image-set(url(../assets/images/background_2.jpg) 1x, url(../assets/images/background_2@2x.png) 2x);
+  font-family: "BIZ UDMincho", serif;
+}
+.timeline__3 {
+  background-color: rgb(110, 198, 110);
+}
+.timeline__4 {
+  background-color: rgb(123, 225, 225);
+}
+.timeline__5 {
+  background-color: rgb(221, 221, 114);
+}
+
+.timeline::-webkit-scrollbar {
+  display: none;
+}
+
+.timeline {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.quizz__container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: start;
+}
+.quizz__question {
+  margin-bottom: 20px;
+  font-size: 25px;
+  color: black;
+}
+.quizz__button {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+.quizz__button:hover {
+  background-color: rgb(106, 106, 106);
+}
+.quizz__button--vrai {
+  background-color: rgb(71, 179, 71);
+  color: white;
+}
+.quizz__button--faux {
+  background-color: rgb(193, 0, 0);
+  color: white;
+}
+.quizz__feedback {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
 /* ------ MEDIEVAL ------ */
 .MoyenAge {
   background-color: lightgreen;
