@@ -1,52 +1,82 @@
 [
-    {
-      "question": "La Terre est plate.",
-      "reponse": false,
-      "anecdote": "La Terre est en réalité une sphère. Cette idée a été prouvée dès l'Antiquité."
-    },
-    {
-      "question": "Le soleil tourne autour de la Terre.",
-      "reponse": false,
-      "anecdote": "C'est la Terre qui tourne autour du soleil. Cette théorie a été démontrée par Copernic."
-    },
-    {
-      "question": "La lune est un satellite naturel de la Terre.",
-      "reponse": true,
-      "anecdote": "Effectivement, la Lune est un satellite naturel de la Terre, et elle est en orbite autour d'elle."
-    },
-    {
-      "question": "L'eau bout à 100 degrés Fahrenheit.",
-      "reponse": false,
-      "anecdote": "L'eau bout à 100 degrés Celsius (212 degrés Fahrenheit)."
-    },
-    {
-      "question": "La vitesse de la lumière est infinie.",
-      "reponse": false,
-      "anecdote": "La vitesse de la lumière est d'environ 299 792 458 mètres par seconde dans le vide."
-    },
-    {
-      "question": "Le code binaire utilise seulement les chiffres 0 et 1.",
-      "reponse": true,
-      "anecdote": "C'est exact. Le code binaire est un système de numération qui utilise seulement les chiffres 0 et 1 pour représenter l'information."
-    },
-    {
-      "question": "La photosynthèse est le processus par lequel les plantes produisent de l'oxygène.",
-      "reponse": true,
-      "anecdote": "Oui, la photosynthèse est un processus biologique vital où les plantes utilisent la lumière pour convertir le dioxyde de carbone en oxygène."
-    },
-    {
-      "question": "La Guerre de Troie a eu lieu en Grèce.",
-      "reponse": false,
-      "anecdote": "La Guerre de Troie a eu lieu en Anatolie, l'actuelle Turquie."
-    },
-    {
-      "question": "Le désert du Sahara est le plus grand désert du monde.",
-      "reponse": true,
-      "anecdote": "Oui, le Sahara est le plus grand désert chaud du monde, couvrant une superficie d'environ 9 200 000 kilomètres carrés."
-    },
-    {
-      "question": "Les dauphins sont des poissons.",
-      "reponse": false,
-      "anecdote": "Les dauphins sont des mammifères marins, pas des poissons. Ils sont plus étroitement liés aux baleines et aux marsouins qu'aux poissons."
-    }
-  ]
+  {
+    "question": "Les animaux peuvent être jugés devant les tribunaux pour des délits criminels. (France, 14ᵉ siècle)",
+    "reponse": true,
+    "anecdote": "Le plus ancien procès d’un animal retrouvé date du 14ᵉ siècle, une truie a été pendue pour avoir mangé un nouveau-né. Il est possible que d’autres procès aient eu lieu avant cela cependant.",
+    "pour": "86.7%",
+    "contre": "13.3%",
+    "periode": "moyen-age"
+  },
+  {
+    "question": "Il est interdit de porter une armure au Parlement de Londres. (Royaume-Uni, 14ᵉ siècle)",
+    "reponse": true,
+    "anecdote": "Bien que la loi soit techniquement toujours d’application, aucun arrêt n’a plus été fait depuis fort longtemps.",
+    "pour": "66.7%",
+    "contre": "33.3%",
+    "periode": "moyen-age"
+  },
+  {
+    "question": "Au Nevada, il est interdit de chevaucher un chameau sur l'autoroute. (USA, 20ᵉ siècle)",
+    "reponse": false,
+    "anecdote": "En réalité, toute personne chevauchant un animal quel qu’il soit a les mêmes droits et devoirs que n’importe quel autre automobiliste sur l’autoroute. Y chevaucher un chameau n’est pas interdit, mais peut être dangereux.",
+    "pour": "73.3%",
+    "contre": "26.7%",
+    "periode": "1900"
+  },
+  {
+    "question": "Au Kentucky, il est illégal pour une femme d’apparaître en maillot de bain sur une autoroute, sauf si escortée par au moins 2 policiers, blessée, qu’elle pèse moins de 45 Kg ou plus de 100 kg. (USA, 20ᵉ siècle)",
+    "reponse": true,
+    "anecdote": "Cette loi était avant tout discriminatoire, et avait pour but de restreindre la liberté vestimentaire et corporelle des femmes.",
+    "pour": "60%",
+    "contre": "40%",
+    "periode": "1900"
+  },
+  {
+    "question": "Il est illégal de posséder plus de 50kg de pommes de terre. (Autriche, années 2000)",
+    "reponse": false,
+    "anecdote": "Cette légende urbaine prend sa source dans les forums du début des années 2000, et ses détails varient. Parfois, il est fait mention de 100kg. Parfois, il est dit que c’était pour éviter soit les pénuries alimentaires, soit la transmission de maladies trouvées dans le féculent.",
+    "pour": "53.3%",
+    "contre": "46.7%",
+    "periode": "2000"
+  },
+  {
+    "question": "Jouer aux jeux-vidéos est illégal. (Grèce, années 2000)",
+    "reponse": true,
+    "anecdote": "Visant la lutte contre les jeux d’argent en ligne, mais jugée inconstitutionnelle, la loi a été remaniée en 2003 pour uniquement interdire les jeux dans les cybercafés.",
+    "pour": "26.7%",
+    "contre": "73.3%",
+    "periode": "2000"
+  },
+  {
+    "question": "La coupe mulet est interdite. (Iran, années 2000)",
+    "reponse": true,
+    "anecdote": "L’Iran suit la Charia, qui interdit aux hommes d’avoir leurs cheveux trop courts, en dégradé, ou trop « occidentaux » en général.",
+    "pour": "93.3%",
+    "contre": "6.7%",
+    "periode": "2000"
+  },
+  {
+    "question": "À Uxbridge, il est interdit d'avoir une connexion internet plus rapide que 56K. (Canada, années 2010)",
+    "reponse": false,
+    "anecdote": "La rumeur semble avoir commencé en 2011, lorsqu'un article a été publié sur le site web satirique “The Daily Mash”. L'article affirmait qu'Uxbridge avait adopté une loi limitant la vitesse d'internet à 56k afin de protéger le mode de vie rural.",
+    "pour": "53.3%",
+    "contre": "46.7%",
+    "periode": "2010"
+  },
+  {
+    "question": "Il est interdit de pêcher en pyjama. (Nouvelle-Zélande, années 2010)",
+    "reponse": false,
+    "anecdote": "Cette rumeur est apparue en 2012 suite à une mauvaise interprétation de la loi néo-zélandaise qui interdit la pêche en zones dangereuses.",
+    "pour": "53.3%",
+    "contre": "46.7%",
+    "periode": "2010"
+  },
+  {
+    "question": "Un médecin de sexe masculin ne peut faire un examen gynécologique à une femme qu'en regardant ses parties génitales dans un miroir. (Bahreïn, années 2020)",
+    "reponse": false,
+    "anecdote": "Cette légende urbaine provient d'une vidéo virale créée par un groupe de comédiiens, mettant en scène un faux gynécoloque bahreinien.",
+    "pour": "40%",
+    "contre": "60%",
+    "periode": "2020"
+  }
+]
