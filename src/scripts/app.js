@@ -1,5 +1,46 @@
 "use strict"
 
+// Function to fetch JSON data
+async function fetchJSONData(url) {
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error('Network response was not ok.');
+    }
+    return await response.json();
+  } catch (error) {
+    console.error('Error fetching JSON data:', error);
+    return [];
+  }
+}
+
+// Function to populate HTML with JSON data
+function populateHTML(jsonData) {
+  const topContainer = document.querySelector('.top');
+  const template = document.querySelector('#top-template');
+
+  jsonData.forEach((data, index) => {
+    // Clone template content
+    const clone = template.content.cloneNode(true);
+
+    // Fill cloned content with data
+    clone.querySelector('.top__pays').textContent = data.Pays;
+    clone.querySelector('.top__loi').textContent = data.Loi;
+    clone.querySelector('.top__date').textContent = `${data.Début} - ${data.Fin}`;
+    clone.querySelector('.top__comment').textContent = data.Commentaire;
+    clone.querySelector('.top__rating').textContent = `${data.Absurdité} ♥`;
+
+    // Append cloned content to topContainer
+    topContainer.appendChild(clone);
+  });
+}
+
+// Fetch JSON data and populate HTML
+const lawsDataURL = '../assets/data/laws.json';
+fetchJSONData(lawsDataURL)
+  .then(data => populateHTML(data))
+  .catch(error => console.error('Error fetching JSON data:', error));
+
 
 
 // test initial
