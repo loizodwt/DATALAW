@@ -17,22 +17,32 @@ async function fetchJSONData(url) {
 // Function to populate HTML with JSON data
 function populateHTML(jsonData) {
   const topContainer = document.querySelector('.top');
-  const template = document.querySelector('#top-template');
+  const template = document.querySelector('.top__container');
+
+  // Sort JSON data by "Absurdité" value in descending order
+  jsonData.sort((a, b) => b.Absurdité - a.Absurdité);
 
   jsonData.forEach((data, index) => {
     // Clone template content
-    const clone = template.content.cloneNode(true);
+    const clone = template.cloneNode(true);
 
     // Fill cloned content with data
+    clone.querySelector('.top__number').textContent = index + 1;
     clone.querySelector('.top__pays').textContent = data.Pays;
     clone.querySelector('.top__loi').textContent = data.Loi;
     clone.querySelector('.top__date').textContent = `${data.Début} - ${data.Fin}`;
     clone.querySelector('.top__comment').textContent = data.Commentaire;
-    clone.querySelector('.top__rating').textContent = `${data.Absurdité} ♥`;
+    clone.querySelector('.top__rating').textContent = `${data.Absurdité} 🤡`;
+
+    // Show cloned content
+    clone.classList.remove('hidden');
 
     // Append cloned content to topContainer
     topContainer.appendChild(clone);
   });
+
+  // Remove the template
+  template.remove();
 }
 
 // Fetch JSON data and populate HTML

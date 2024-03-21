@@ -1,7 +1,13 @@
 @import "utils/variables";
 @import "components/type";
 
+/* ------ EXTRA ------ */
+.hidden {
+  display: none;
+}
+
 // Quizz
+/*
 .quizz-container {
   max-width: 600px;
   margin: 0 auto;
@@ -42,3 +48,4 @@
     font-size: 20px;
   }
 }
+*/
