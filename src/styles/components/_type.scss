@@ -1,7 +1,7 @@
 // Fonts nécessaires
 @font-face {
   font-family: "Livingstone";
-  src: url("assets/fonts/Livingstone.ttf");
+  src: url("assets/fonts/Livingstone.ttf") format("truetype");
 }
 
 @font-face {
@@ -11,7 +11,7 @@
 
 @font-face {
   font-family: "Prince Valiant";
-  src: url("assets/fonts/Princevaliant.ttf");
+  src: url("assets/fonts/Princevaliant.ttf") format("truetype");
 }
 
 @import url('https://fonts.googleapis.com/css2?family=BIZ+UDMincho&display=swap');
@@ -19,24 +19,24 @@
 
 @font-face {
   font-family: "Clash Display";
-  src: url("assets/fonts/ClashDisplay-Variable.ttf");
+  src: url("assets/fonts/ClashDisplay-Variable.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Satoshi";
-  src: url("assets/fonts/Satoshi-Variable.ttf");
+  src: url("assets/fonts/Satoshi-Variable.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Satoshi Italic";
-  src: url("assets/fonts/Satoshi-VariableItalic.ttf");
+  src: url("assets/fonts/Satoshi-VariableItalic.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "pix";
-  src: url("../assets/fonts/singapour/pixM8pt.ttf");
+  src: url("../assets/fonts/singapour/pixM8pt.ttf") format("truetype");
 }
 @font-face {
   font-family: "w9";
-  src: url("../assets/fonts/singapour/W95FA.otf");
+  src: url("../assets/fonts/singapour/W95FA.otf") format("opentype");
 }
