@@ -24,18 +24,23 @@ function extractYearFromDate(dateString) {
 
 // Function to determine the class based on the "Début" value
 function getClassForYear(year) {
-  if (year < 1900) {
-    return 'one';
-  } else if (year >= 1900 && year <= 1999) {
-    return 'two';
-  } else if (year >= 2000 && year <= 2009) {
-    return 'three';
-  } else if (year >= 2010 && year <= 2019) {
-    return 'four';
-  } else {
-    return 'five';
+  if (year >= 2020) {
+    return 'five'; // For years 2020 and above
   }
+  if (year >= 2010 && year <= 2019) {
+    return 'four';
+  }
+  if (year >= 2000 && year <= 2009) {
+    return 'three';
+  }
+  if (year >= 1900 && year <= 1999) {
+    return 'two';
+  }
+  return 'one'; // Default for years before 1900
 }
+
+
+
 
 // Function to fetch JSON data
 async function fetchJSONData(url) {
@@ -59,7 +64,7 @@ function populateHTML(jsonData) {
   // Sort JSON data by "Absurdité" value in descending order
   jsonData.sort((a, b) => b.Absurdité - a.Absurdité);
 
-  jsonData.forEach(data => {
+  jsonData.forEach((data, index) => {
     // Clone template content
     const clone = template.cloneNode(true);
 
@@ -94,6 +99,7 @@ function populateHTML(jsonData) {
   // Remove the template
   template.remove();
 }
+
 
 // Fetch JSON data and populate HTML
 const lawsDataURL = '../assets/data/laws.json';
