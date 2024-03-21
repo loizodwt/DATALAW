@@ -1,5 +1,34 @@
-body {
+// importer fonts
+
+@font-face {
+    font-family: "Pix";
+    src: url("../assets/fonts/singapour/pixM8pt.ttf");
+}
+@font-face {
+    font-family: "W9";
+    src: url("../assets/fonts/singapour/W95FA.otf");
 }
 
-.title {
+@font-face {
+    font-family: "Elite";
+    src: url("../assets/fonts/texas/SpecialElite.ttf");
+}
+@font-face {
+    font-family: "Gensco";
+    src: url("../assets/fonts/gensco/GENSCO.otf");
+}
+
+@font-face {
+    font-family: "Ortica";
+    src: url("../assets/fonts/ortica/OrticaLinear-Regular.woff2");
+}
+
+@font-face {
+    font-family: "Valiant";
+    src: url("../assets/fonts/PrinceValiant.ttf");
+}
+
+@font-face {
+    font-family: "Livingstone";
+    src: url("../assets/fonts/livingstone.regular.ttf");
 }

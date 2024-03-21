@@ -36,7 +36,7 @@ function getClassForYear(year) {
   if (year >= 1900 && year <= 1999) {
     return 'two';
   }
-  return 'one'; // Default for years before 1900
+  return 'MoyenAge'; // Default for years before 1900
 }
 
 

@@ -3,7 +3,7 @@
 
 /* ------ MEDIEVAL ------ */
 
-.one {
+.MoyenAge {
   background-color: lightgreen;
 }
 
@@ -31,47 +31,3 @@
 .hidden {
   display: none;
 }
-
-// Quizz
-/*
-.quizz-container {
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: center;
-
-  &__question {
-    margin-bottom: 20px;
-    font-size: 25px;
-    color: black;
-  }
-
-  &__buttons {
-    margin-top: 20px;
-  }
-
-  &__button {
-    padding: 5px 10px;
-    border: none;
-    cursor: pointer;
-
-    &:hover {
-      background-color: rgb(106, 106, 106);
-    }
-
-    &--vrai {
-      background-color: $quiz-primary-color;
-      color: white;
-    }
-
-    &--faux {
-      background-color: $quiz-secondary-color;
-      color: white;
-    }
-  }
-
-  &__feedback {
-    margin-top: 20px;
-    font-size: 20px;
-  }
-}
-*/
