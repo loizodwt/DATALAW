@@ -3,6 +3,7 @@
 
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 html {
@@ -32,6 +33,7 @@ html {
       url(../assets/images/background_1.jpg) 1x,
       url(../assets/images/background_1@2x.jpg) 2x
     );
+    background-repeat: no-repeat;
   }
   &__2 {
     background-image: image-set(
@@ -41,7 +43,7 @@ html {
     font-family: "BIZ UDMincho", serif;
   }
   &__3 {
-    background-color: rgb(110, 198, 110);
+    background-color: #008081;
   }
   &__4 {
     background-color: rgb(123, 225, 225);
@@ -296,5 +298,239 @@ html {
   &__feedback {
     margin-top: 20px;
     font-size: 20px;
+  }
+}
+
+
+
+
+
+@font-face {
+  font-family: "Ortica";
+  src:
+      url("../assets/fonts/ortica/OrticaLinear-Regular.woff2");
+
+}
+
+@font-face {
+  font-family: "Valiant";
+  src:
+      url("../assets/fonts/PrinceValiant.ttf");
+}
+
+@font-face {
+  font-family: "livingstone";
+  src:
+      url("../assets/fonts/livingstone.regular.ttf");
+}
+
+:root {
+  --red-color: #B50008;
+}
+
+.MoyenAge {
+  padding: 17px 32px;
+  position: relative;
+
+  &__vert, 
+  &__hor {
+    display: none;
+  }
+
+  &__r {
+    height: 111px;
+  }
+
+  &__top {
+    display: flex;
+    position: relative;
+    margin-top: -7rem;
+  }
+  &__title {
+    align-content: baseline;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    font-size: 33px;
+    font-family: "Valiant";
+    color: var(--red-color);
+  }
+
+  &__h3 {
+    font-size: 24px;
+    font-family: "valiant";
+    color: var(--red-color);
+    margin-top: 50px;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: "ortica";
+
+    &--adoptee {
+      font-size: 16px;
+    }
+  }
+  &__chiffre {
+    font-size: 122px;
+    font-family: "livingstone";
+    color: var(--red-color);
+    margin-left: 80%;
+    line-height: 0%;
+    margin-top: 60px;
+  }
+
+  &__img {
+    &--lapin {
+      width: 100px;
+      margin-left: 50%;
+      margin-top: -15%;
+      position: absolute;
+      top: 55%;
+      right: 5%;
+      transform: rotate3dy('180deg');
+    }
+  }
+}
+
+
+@font-face {
+  font-family: "elite";
+  src:
+      url("../assets/fonts/texas/SpecialElite.ttf");
+}
+@font-face {
+  font-family: "gensco";
+  src:
+      url("../assets/fonts/gensco/GENSCO.otf");
+}
+
+.texas {
+  padding: 17px 32px;
+  overflow-x: hidden;
+  // background-image: image-set(
+  //   url(../assets/images/epingle.png) 1x
+  // );
+  // background-repeat: no-repeat;
+  // background-size: contain;
+
+  &__txt {
+    font-family: "elite";
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  &__chiffre {
+    font-size: 122px;
+    line-height: 0%;
+    margin-left: 80%;
+    margin-top: -90vh;
+  }
+  &__title, 
+  &__h3 {
+    font-family: "gensco";
+    margin-top: 50px;
+    z-index: 8;
+
+  }
+  &__title {
+    font-size: 33px;
+    margin-top: -7rem;
+  }
+  &__h3 {
+    font-size: 24px;
+  }
+  &__img {
+    margin-left: -33%;
+
+    &--ville {
+    margin-left: -33%;
+    z-index: -3;
+    margin-top: -25px;
+    }
+    &--papier {
+      z-index: -2;
+      height: 100vh;
+      position: relative;
+    }
+    &__content {
+      position: absolute;
+      margin-top: -100vh;
+    }
+  }
+}
+
+
+@font-face {
+  font-family: "pix";
+  src:
+      url("../assets/fonts/singapour/pixM8pt.ttf");
+}
+@font-face {
+  font-family: "w9";
+  src:
+      url("../assets/fonts/singapour/W95FA.otf");
+}
+
+
+.singapour {
+  padding: 5rem 33px;
+
+  &__modal {
+    background-color: #fafafa;
+    z-index: 5;
+  }
+
+  &__navbar {
+    display: flex;
+    background-color: #000080;
+    padding: 3px;
+    height: 25px;
+    border: 2px solid #C0C0C0;
+  }
+  &__txt {
+    font-family: "w9";
+
+    &--bottom {
+      padding-bottom: 74px;
+    }
+
+    &--nav {
+      font-size: 20px;
+      color: #fafafa;
+      line-height: 0%;
+      margin-top: 12px;
+    }
+  }
+  &_notepad {
+    width: 20px;
+    height: 20px;
+    margin-top: 0px;
+  }
+  &__icons {
+    width: 145px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 25%;
+  }
+  &__icon {
+    margin-top: 3px;
+    width: 20px;
+    height: 20px;
+  }
+  &__content {
+    max-width: 94%;
+    margin: auto 3%;
+  }
+  &__title {
+    font-family: "pix";
+    font-size: 33px;
+    margin-top: 54px;
+    margin-bottom: 33px;
+  }
+  &__h3 {
+    font-size: 24px;
+    margin-top: 54px;
+    font-family: "pix";
+    line-height: 1.2;
   }
 }
