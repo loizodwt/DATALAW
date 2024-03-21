@@ -1,3 +1,28 @@
+/* ------ MEDIEVAL ------ */
+.one {
+  background-color: lightgreen;
+}
+
+/* ------ 1900 ------ */
+.two {
+  background-color: aquamarine;
+}
+
+/* ------ 2000 ------ */
+.three {
+  background-color: lightcoral;
+}
+
+/* ------ 2010 ------ */
+.four {
+  background-color: chocolate;
+}
+
+/* ------ 2020 ------ */
+.five {
+  background-color: cornflowerblue;
+}
+
 /* ------ EXTRA ------ */
 .hidden {
   display: none;
