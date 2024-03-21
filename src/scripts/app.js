@@ -1,5 +1,42 @@
 "use strict"
 
+// Function to convert text formatted as "20ᵉ siècle" to its associated year (e.g., "20ᵉ siècle" -> 1900)
+function convertCenturyToYear(text) {
+  const century = parseInt(text);
+  if (!isNaN(century)) {
+    return (century - 1) * 100;
+  }
+  return null;
+}
+
+// Function to extract the year from a date string, ignoring the day and text (e.g., "5 octobre 2019" -> 2019)
+function extractYearFromDate(dateString) {
+  if (typeof dateString === 'string') {
+    const yearRegex = /\b\d{4}\b/;
+    const match = dateString.match(yearRegex);
+    if (match) {
+      return parseInt(match[0]);
+    }
+  }
+  return null;
+}
+
+
+// Function to determine the class based on the "Début" value
+function getClassForYear(year) {
+  if (year < 1900) {
+    return 'one';
+  } else if (year >= 1900 && year <= 1999) {
+    return 'two';
+  } else if (year >= 2000 && year <= 2009) {
+    return 'three';
+  } else if (year >= 2010 && year <= 2019) {
+    return 'four';
+  } else {
+    return 'five';
+  }
+}
+
 // Function to fetch JSON data
 async function fetchJSONData(url) {
   try {
@@ -22,17 +59,30 @@ function populateHTML(jsonData) {
   // Sort JSON data by "Absurdité" value in descending order
   jsonData.sort((a, b) => b.Absurdité - a.Absurdité);
 
-  jsonData.forEach((data, index) => {
+  jsonData.forEach(data => {
     // Clone template content
     const clone = template.cloneNode(true);
 
+    // Extract year from "Début" value
+    let year;
+    if (typeof data.Début === 'string' && data.Début.includes('ᵉ siècle')) {
+      year = convertCenturyToYear(data.Début);
+    } else {
+      year = extractYearFromDate(data.Début);
+    }
+
+    // Assign class based on year
+    if (year !== null) {
+      clone.classList.add(getClassForYear(year));
+    }
+
     // Fill cloned content with data
-    clone.querySelector('.top__number').textContent = index + 1;
+    clone.querySelector('.top__number').textContent = '';
     clone.querySelector('.top__pays').textContent = data.Pays;
     clone.querySelector('.top__loi').textContent = data.Loi;
     clone.querySelector('.top__date').textContent = `${data.Début} - ${data.Fin}`;
     clone.querySelector('.top__comment').textContent = data.Commentaire;
-    clone.querySelector('.top__rating').textContent = `${data.Absurdité} 🤡`;
+    clone.querySelector('.top__rating').textContent = `${data.Absurdité} ♥`;
 
     // Show cloned content
     clone.classList.remove('hidden');
@@ -50,7 +100,6 @@ const lawsDataURL = '../assets/data/laws.json';
 fetchJSONData(lawsDataURL)
   .then(data => populateHTML(data))
   .catch(error => console.error('Error fetching JSON data:', error));
-
 
 
 // test initial
