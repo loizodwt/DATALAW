@@ -15,7 +15,7 @@ html {
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
-  
+
   &__1,
   &__2,
   &__3,
@@ -24,50 +24,50 @@ html {
     scroll-snap-align: start;
     scroll-snap-stop: normal;
     height: 100vh;
+    overflow: hidden;
   }
-  
+
   &__1 {
     background-image: image-set(
       url(../assets/images/background_1.jpg) 1x,
       url(../assets/images/background_1@2x.jpg) 2x
-      );
-    }
-    &__2 {
-      background-image: image-set(
-        url(../assets/images/background_2.jpg) 1x,
-        url(../assets/images/background_2@2x.png) 2x
-        );
-        font-family: "BIZ UDMincho", serif;
-      }
-      &__3 {
-        background-color: rgb(110, 198, 110);
-      }
-      &__4 {
-        background-color: rgb(123, 225, 225);
-      }
-      &__5 {
-        display: flex;
-        align-items: center;
-        background-image: url(../assets/images/background_5.svg);
-        position: relative;
+    );
+  }
+  &__2 {
+    background-image: image-set(
+      url(../assets/images/background_2.jpg) 1x,
+      url(../assets/images/background_2@2x.png) 2x
+    );
+    font-family: "BIZ UDMincho", serif;
+  }
+  &__3 {
+    background-color: rgb(110, 198, 110);
+  }
+  &__4 {
+    background-color: rgb(123, 225, 225);
+  }
+  &__5 {
+    display: flex;
+    align-items: center;
+    background-image: url(../assets/images/background_5.svg);
+    position: relative;
   }
   &__5 svg {
     position: absolute;
     top: 0;
     left: 0;
     transform: translate(-90px, -100px);
+    width: 200px;
+    height: auto;
   }
 }
 
 .bg-5 {
-  margin-left: 24px;
-  margin-right: 24px;
   border-radius: 20px;
   backdrop-filter: blur(30px);
   background-color: #44434370;
   border: 2px solid #888888;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
-  padding: 32px;
 }
 
 .law-5 {
@@ -75,7 +75,6 @@ html {
     display: flex;
     justify-content: center;
     font-family: $law5-p;
-    font-size: 182px;
     font-weight: 800;
     background: linear-gradient(
       90deg,
@@ -88,7 +87,6 @@ html {
   }
   &__h2 {
     font-family: $law-5-h2;
-    font-size: $h2-mobile;
     margin-top: 24px;
     margin-bottom: 24px;
     background: linear-gradient(
@@ -102,7 +100,6 @@ html {
   }
   &__h3 {
     font-family: $law-5-h3;
-    font-size: $h3-mobile;
     margin-top: 16px;
     margin-bottom: 16px;
     background: linear-gradient(
@@ -116,9 +113,133 @@ html {
   }
   &__p {
     font-family: $law5-p;
-    font-size: $p-mobile;
     line-height: 140%;
     color: white;
+  }
+}
+
+// Media-querries
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .bg-5 {
+    padding: 32px;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .law-5 {
+    &__nbr {
+      font-size: 182px;
+    }
+    &__h2 {
+      font-size: $h2-mobile;
+    }
+    &__h3 {
+      font-size: $h3-mobile;
+    }
+    &__p {
+      font-size: $p-mobile;
+    }
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .timeline {
+    &__5 svg {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transform: translate(-90px, 765px);
+      width: 200px;
+      height: auto;
+    }
+  }
+  .law-5 {
+    &__nbr {
+      align-items: center;
+      font-size: 273px;
+    }
+    &__h2 {
+      font-size: $h2-mobile;
+    }
+    &__h3 {
+      font-size: $h3-mobile;
+    }
+    &__p {
+      font-size: $p-mobile;
+    }
+  }
+  .bg-5 {
+    margin-left: 80px;
+    margin-right: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .timeline {
+    &__5 svg {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transform: translate(-90px, 765px);
+      width: 200px;
+      height: auto;
+    }
+  }
+  .law-5 {
+    &__nbr {
+      align-items: center;
+      font-size: 273px;
+    }
+    &__h2 {
+      font-size: $h2-mobile;
+    }
+    &__h3 {
+      font-size: $h3-mobile;
+    }
+    &__p {
+      font-size: $p-mobile;
+    }
+  }
+  .bg-5 {
+    margin-left: 80px;
+    margin-right: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+@media (min-width: 1025px) {
+  .timeline {
+    &__5 svg {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transform: translate(-70px, 700px);
+      width: 200px;
+      height: auto;
+    }
+  }
+  .law-5 {
+    display: flex;
+    gap: 68px;
+
+    &__nbr {
+      align-items: center;
+      font-size: 410px;
+    }
+    &__h2 {
+      font-size: $h2-desktop;
+    }
+    &__h3 {
+      font-size: $h3-desktop;
+    }
+    &__p {
+      font-size: $p-desktop;
+    }
+  }
+  .bg-5 {
+    margin-left: 80px;
+    margin-right: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
   }
 }
 
