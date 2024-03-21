@@ -18,7 +18,7 @@
 
   <title>Quizz | DataLaws</title>
   <link rel="stylesheet" href="styles/app.css">
-  <script src="scripts/app.js"></script>
+  <script src="scripts/app.js" defer></script>
 </head>
 
 <body>
@@ -46,15 +46,15 @@
 
     <section class="quizz__container">
 
-      <h1 id="counter" class="quizz__counter"></h1>
-      <h2 id="question" class="quizz__question"></h2>
+      <h1 class="quizz__counter"></h1>
+      <h2 class="quizz__question"></h2>
       <div class="quizz__buttons">
-        <button id="vraiBtn" class="quizz__button quizz__button--vrai">Je vote pour</button>
-        <button id="fauxBtn" class="quizz__button quizz__button--faux">Je vote contre</button>
+        <button class="quizz__button quizz__button--vrai">Je vote pour</button>
+        <button class="quizz__button quizz__button--faux">Je vote contre</button>
       </div>
 
-      <p id="feedback" class="quizz__feedback"></p>
-      <button id="nextBtn" class="quizz__button quizz__button--next">Next</button>
+      <p class="quizz__feedback"></p>
+      <button class="quizz__button quizz__button--next">Next</button>
 
       <!-- <div class="quizz__compteur">
         <span class="quizz__compteur--current">1</span> sur 10

@@ -1,104 +1,92 @@
 "use strict"
 
-document.addEventListener("DOMContentLoaded", function () {
-  const questionElement = document.getElementById("question");
-  const vraiBtn = document.getElementById("vraiBtn");
-  const fauxBtn = document.getElementById("fauxBtn");
-  const feedbackElement = document.getElementById("feedback");
-  const nextBtn = document.getElementById("nextBtn");
-  const counterElement = document.getElementById("counter");
-  const contexte = document.getElementById("contexte");
 
-  let currentQuestionIndex = 0;
-  let score = 0;
-  let questionsData = null;
+let questionElement = document.querySelector(".quizz__question");
+let vraiBtn = document.querySelector(".quizz__button--vrai");
+let fauxBtn = document.querySelector(".quizz__button--faux");
+let feedbackElement = document.querySelector(".quizz__feedback");
+let nextBtn = document.querySelector(".quizz__button--next");
+let counterElement = document.querySelector(".quizz__counter");
 
-  fetch("../assets/data/questions.json")
-    .then((response) => response.json())
-    .then((data) => {
-      questionsData = data;
-      showQuestion();
-      vraiBtn.addEventListener("click", () => checkAnswer(true, questionsData[currentQuestionIndex]));
-      fauxBtn.addEventListener("click", () => checkAnswer(false, questionsData[currentQuestionIndex]));
-      nextBtn.addEventListener("click", () => {
-        currentQuestionIndex++;
-        if (currentQuestionIndex < questionsData.length) {
-          showQuestion();
-        } else {
-          showSummary();
-        }
-      });
+let currentQuestionIndex = 0;
+let score = 0;
+let questionsData = null;
+
+fetch("../assets/data/questions.json")
+  .then((response) => response.json())
+  .then((data) => {
+    questionsData = data;
+    showQuestion();
+    vraiBtn.addEventListener("click", () => checkAnswer(true, questionsData[currentQuestionIndex]));
+    fauxBtn.addEventListener("click", () => checkAnswer(false, questionsData[currentQuestionIndex]));
+    nextBtn.addEventListener("click", () => {
+      currentQuestionIndex++;
+      if (currentQuestionIndex < questionsData.length) {
+        showQuestion();
+      } else {
+        showSummary();
+      }
     });
+  });
 
-  function showQuestion() {
-    if (!questionElement || currentQuestionIndex >= questionsData.length) {
-      return;
-    }
-    const currentQuestion = questionsData[currentQuestionIndex];
-    questionElement.textContent = currentQuestion.question;
-    feedbackElement.textContent = "";
-    vraiBtn.style.display = "inline";
-    fauxBtn.style.display = "inline";
-    vraiBtn.disabled = false;
-    fauxBtn.disabled = false;
-    counterElement.textContent = `${currentQuestionIndex + 1}/${questionsData.length}`;
+function showQuestion() {
+  if (!questionElement || currentQuestionIndex >= questionsData.length) {
+    return;
   }
+  let currentQuestion = questionsData[currentQuestionIndex];
+  questionElement.textContent = currentQuestion.question;
+  feedbackElement.textContent = "";
+  vraiBtn.style.display = "inline";
+  fauxBtn.style.display = "inline";
+  vraiBtn.disabled = false;
+  fauxBtn.disabled = false;
+  counterElement.textContent = `${currentQuestionIndex + 1}/${questionsData.length}`;
+}
 
-  function checkAnswer(userAnswer, currentQuestion) {
-    vraiBtn.disabled = true;
-    fauxBtn.disabled = true;
-    if (userAnswer === currentQuestion.reponse) {
-      feedbackElement.textContent = "Vous avez voté comme le peuple de l'époque";
-      score++;
-    } else {
-      feedbackElement.textContent = `Vous n'avez pas voté comme le peuple de l'époque : ${currentQuestion.anecdote}`;
-    }
+function checkAnswer(userAnswer, currentQuestion) {
+  vraiBtn.disabled = true;
+  fauxBtn.disabled = true;
+  if (userAnswer === currentQuestion.reponse) {
+    feedbackElement.textContent = "Vous avez voté comme le peuple de l'époque";
+    score++;
+  } else {
+    feedbackElement.textContent = "Vous n'avez pas voté comme le peuple de l'époque : ${currentQuestion.anecdote}";
   }
+}
 
-  function showSummary() {
-    questionElement.textContent = `Récap score: ${score}/${questionsData.length}`;
-    vraiBtn.style.display = "none";
-    fauxBtn.style.display = "none";
-    nextBtn.style.display = "none";
-    counterElement.style.display = "none";
-    contexte.style.display = "none";
-    feedbackElement.textContent = "";
-  }
-
-
+function showSummary() {
+  questionElement.textContent = "Récap score: ${score}/${questionsData.length}";
+  vraiBtn.style.display = "none";
+  fauxBtn.style.display = "none";
+  nextBtn.style.display = "none";
+  counterElement.style.display = "none";
+  feedbackElement.textContent = "";
+}
 
 
-  //GRAPHOU :3
+/*
+   //GRAPHOU :3
 
-  //afficher de base europe
-  changeData('Europe');
+   //afficher de base europe
+   changeData('Europe');
 
-  document.getElementById('btnAfrique').addEventListener('click', function () {
-    changeData('Afrique');
-  });
-  document.getElementById('btnAsie').addEventListener('click', function () {
-    changeData('Asie');
-  });
-  document.getElementById('btnEurope').addEventListener('click', function () {
-    changeData('Europe');
-    console.log("europe")
-  });
-  document.getElementById('btnAmérique').addEventListener('click', function () {
-    changeData('Amérique');
-  });
-  document.getElementById('btnOcéanie').addEventListener('click', function () {
-    changeData('Océanie');
-  });
-
-
-
-
-
-
-
-});
-
-
+   document.getElementById('btnAfrique').addEventListener('click', function () {
+     changeData('Afrique');
+   });
+   document.getElementById('btnAsie').addEventListener('click', function () {
+     changeData('Asie');
+   });
+   document.getElementById('btnEurope').addEventListener('click', function () {
+     changeData('Europe');
+     console.log("europe")
+   });
+   document.getElementById('btnAmérique').addEventListener('click', function () {
+     changeData('Amérique');
+   });
+   document.getElementById('btnOcéanie').addEventListener('click', function () {
+     changeData('Océanie');
+   });
+ */
 
 
 
