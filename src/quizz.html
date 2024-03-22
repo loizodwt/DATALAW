@@ -37,11 +37,11 @@
     <section class="quizz--start">
       <h1 class="title">Quizz</h1>
       <p>Vous incarnez un législateur devant se prononcer sur des propositions de lois étranges, parmi lesquelles se sont glissées des légendes urbaines fausses. À vous de juger si vous les approuvez et décidez de les mettre en place officiellement !</p>
-      <button class="btn">Commencer le quizz</button>
+      <button class="btn quizz__button quizz__button--start">Commencer le quizz</button>
     </section>
 
 
-    <section class="quizz__container">
+    <section class="quizz__container hidden">
 
       <div class="quizz__counter">1/10</div>
       <h2 class="quizz__question"></h2>
@@ -51,7 +51,7 @@
       </div>
 
       <p class="quizz__feedback"></p>
-      <button class="quizz__button quizz__button--next">Passer</button>
+      <button class="quizz__button quizz__button--skip">Passer</button>
 
       <!-- <div class="quizz__compteur">
         <span class="quizz__compteur--current">1</span> sur 10
@@ -74,8 +74,10 @@
 
     </section>
 
-    <section class="quizz--recap">
+    <section class="quizz--recap hidden">
       <h2 class="title">Récapitulatif</h2>
+
+      <p class="quizz__result"></p>
 
       <div class="quizz--recap__yes">
         <h3 class="title">Vous avez voté POUR</h3>
@@ -99,9 +101,11 @@
         <!-- Liste FAUX -->
       </div>
 
+      <button class="btn quizz__button quizz__button--start">Recommencer le quizz</button>
+
     </section>
 
-    <section class="quizz--end">
+    <section class="quizz--end hidden">
 
       <h2 class="title">Résultats</h2>
       <p>Félicitations, votre rôle de législateur est maintenant terminé…jusqu’à votre retour sur le quizz !</p>

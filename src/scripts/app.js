@@ -1,11 +1,30 @@
 "use strict"
 
+/* ---------- NAVIGATION PAGE QUIZ ---------- */
+let startBtn = document.querySelector(".quizz__button--start");
+let startSection = document.querySelector(".quizz--start");
+let containerSection = document.querySelector(".quizz__container");
+let recapSection = document.querySelector(".quizz--recap");
+let resultElement = document.querySelector(".quizz__result");
+
+startBtn.addEventListener("click", function () {
+  startSection.classList.add("hidden");
+  containerSection.classList.remove("hidden");
+});
+
+function showSummary() {
+  containerSection.classList.add("hidden");
+  recapSection.classList.remove("hidden");
+  resultElement.textContent = `Votre score: ${score}/${questionsData.length}`;
+}
+
+/* ---------- CODE QUIZ ---------- */
 
 let questionElement = document.querySelector(".quizz__question");
 let vraiBtn = document.querySelector(".quizz__button--vrai");
 let fauxBtn = document.querySelector(".quizz__button--faux");
 let feedbackElement = document.querySelector(".quizz__feedback");
-let nextBtn = document.querySelector(".quizz__button--next");
+let skipBtn = document.querySelector(".quizz__button--skip");
 let counterElement = document.querySelector(".quizz__counter");
 
 let currentQuestionIndex = 0;
@@ -20,7 +39,7 @@ if (questionElement) {
       showQuestion();
       vraiBtn.addEventListener("click", () => checkAnswer(true, questionsData[currentQuestionIndex]));
       fauxBtn.addEventListener("click", () => checkAnswer(false, questionsData[currentQuestionIndex]));
-      nextBtn.addEventListener("click", () => {
+      skipBtn.addEventListener("click", () => {
         currentQuestionIndex++;
         if (currentQuestionIndex < questionsData.length) {
           showQuestion();
@@ -55,16 +74,16 @@ function checkAnswer(userAnswer, currentQuestion) {
     feedbackElement.textContent = `Vous n'avez pas voté comme le peuple de l'époque: ${currentQuestion.anecdote}`;
   }
 }
-
+/*
 function showSummary() {
   questionElement.textContent = `Votre score: ${score}/${questionsData.length}`;
   vraiBtn.style.display = "none";
   fauxBtn.style.display = "none";
-  nextBtn.style.display = "none";
+  skipBtn.style.display = "none";
   counterElement.style.display = "none";
   feedbackElement.textContent = "";
 }
-
+*/
 
 
 /*
