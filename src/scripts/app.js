@@ -1,6 +1,7 @@
 "use strict"
 
 /* ---------- NAVIGATION PAGE QUIZ ---------- */
+
 let startBtn = document.querySelector(".quizz__button--start");
 let startSection = document.querySelector(".quizz--start");
 let quizzSection = document.querySelector(".quizz__container");
