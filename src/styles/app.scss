@@ -307,7 +307,7 @@ html {
 
 
 
-
+/* MOYEN AGE */
 @font-face {
   font-family: "Ortica";
   src:
@@ -342,12 +342,17 @@ html {
 
   &__r {
     height: 111px;
+
+    &--769 {
+      display: none;
+    }
   }
 
   &__top {
     display: flex;
     position: relative;
     margin-top: -7rem;
+    width: 250px;
   }
   &__title {
     align-content: baseline;
@@ -357,6 +362,10 @@ html {
     font-size: 33px;
     font-family: "Valiant";
     color: $c-moyen-age;
+
+    &--769 {
+      display: none;
+    }
   }
 
   &__h3 {
@@ -386,18 +395,143 @@ html {
 
   &__img {
     &--lapin {
-      width: 100px;
       margin-left: 50%;
       margin-top: -15%;
       position: absolute;
-      top: 50%;
-      right: 5%;
       transform: rotate3dy('180deg');
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 481px) {
+
+  .MoyenAge {
+    &__img {
+      &--lapin {
+        display: block;
+        bottom: 8%;
+        right: 8%;
+        width: 250px;
+      }
+    }
+    &__text {
+      max-width: 550px;
+    }
+    &__top {
+      margin-top: -9rem;
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  .MoyenAge {
+    display: grid;
+    position: relative;
+
+    grid-auto-columns: 1fr 1fr 0.2fr 1.8fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 0.7fr 1.1fr 0.8fr 1.7fr 0.7fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+
+      "chiffre . oyaume ."
+      "chiffre . adoptee adoptee"
+      "chiffre interdit interdit interdit"
+      "chiffre infosup infosup infosup"
+      // "vert this this this"
+      "vert cependant cependant lapin"
+      "vert hor hor hor"; 
+
+
+    &__chiffre { 
+      grid-area: chiffre; 
+    }
+
+    &__vert { 
+      grid-area: vert; 
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    &__hor { 
+      grid-area: hor; 
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    &__img { 
+      grid-area: lapin; 
+      width: 150px;
+    }
+
+    // &___this { 
+    //   grid-area: this; 
+    // }
+
+    &__cependant { 
+      grid-area: cependant; 
+      padding-left: 33px;
+    }
+
+    &__info { 
+      grid-area: infosup; 
+      padding-left: 33px;
+    }
+
+    &__title--769 { 
+      grid-area: oyaume; 
+    }
+
+    &__interdit { 
+      grid-area: interdit; 
+    }
+    &__text--adoptee { 
+      grid-area: adoptee; 
+    }
+
+    &__r {
+      display: none; 
+
+      &--769 {
+        position: absolute;
+        display: block;
+        background-image: url(../assets/images/background_1.jpg);
+
+      }
+    }
+    &__title {
+      display: none;
+
+      &--769 {
+        display: block;
+        position: relative;
+        
+      }
+    }
+    &__text {
+      width: auto;
+    }
+    &__chiffre {
+      margin: auto;
+      font-size: 300px;
     }
   }
 }
 
 
+
+
+
+
+
+
+
+
+
+/* TEXAS */
 @font-face {
   font-family: "elite";
   src:
@@ -463,6 +597,8 @@ html {
   }
 }
 
+
+/* SINGAPOUR */
 
 @font-face {
   font-family: "pix";
@@ -550,3 +686,5 @@ html {
     }
   }
 }
+
+@import "components/moyen-age";

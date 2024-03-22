@@ -1,0 +1,249 @@
+/* MOYEN AGE */
+@font-face {
+    font-family: "Ortica";
+    src:
+        url("../assets/fonts/ortica/OrticaLinear-Regular.woff2");
+  
+  }
+  
+  @font-face {
+    font-family: "Valiant";
+    src:
+        url("../assets/fonts/PrinceValiant.ttf");
+  }
+  
+  @font-face {
+    font-family: "livingstone";
+    src:
+        url("../assets/fonts/livingstone.regular.ttf");
+  }
+  
+  :root {
+    --red-color: #B50008;
+  }
+  
+  .MoyenAge {
+    padding: 17px 32px;
+    position: relative;
+    background-image: image-set(
+      url(../assets/images/background_1.jpg) 1x,
+      url(../assets/images/background_1@2x.jpg) 2x
+    );
+    background-repeat: no-repeat;
+  
+    &__vert, 
+    &__hor {
+      display: none;
+    }
+  
+    &__r {
+      width: 111px;
+  
+      &--769 {
+        display: none;
+      }
+    }
+  
+    &__top {
+      display: flex;
+      position: relative;
+      margin-top: -7rem;
+      width: 250px;
+    }
+    &__title {
+      align-content: baseline;
+      position: absolute;
+      bottom: 0%;
+      right: 0%;
+      font-size: 33px;
+      font-family: "Valiant";
+      color: $c-moyen-age;
+  
+      &--769 {
+        display: none;
+      }
+    }
+  
+    &__h3 {
+      font-size: 24px;
+      font-family: "valiant";
+      color: $c-moyen-age;
+      margin-top: 50px;
+    }
+    &__text {
+      font-size: 16px;
+      line-height: 1.6;
+      font-family: "ortica";
+      max-width: 350px;
+  
+      &--adoptee {
+        font-size: 16px;
+      }
+    }
+    &__chiffre {
+      font-size: 122px;
+      font-family: "livingstone";
+      color: $c-moyen-age;
+      margin-left: 80%;
+      line-height: 0%;
+      margin-top: 60px;
+    }
+  
+    &__img {
+      &--lapin {
+        margin-left: 50%;
+        margin-top: -15%;
+        position: absolute;
+        transform: rotate3dy('180deg');
+        display: none;
+      }
+    }
+  }
+  
+  @media (min-width: 481px) {
+  
+    .MoyenAge {
+      &__img {
+        &--lapin {
+          display: block;
+          bottom: 8%;
+          right: 8%;
+          width: 250px;
+        }
+      }
+      &__text {
+        max-width: 550px;
+      }
+      &__top {
+        margin-top: -9rem;
+      }
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .MoyenAge {
+        padding-top: 5rem;
+      display: grid;
+      position: relative;
+  
+      grid-auto-columns: 1fr 0.1fr 1fr 1fr; 
+      grid-template-columns: 1fr 1fr 0.8fr 1.2fr; 
+      grid-template-rows: 1fr 0.7fr 1.1fr 0.8fr 1.7fr 0.7fr; 
+      gap: 0px 0px; 
+      grid-template-areas: 
+  
+        "chiffre oyaume oyaume oyaume"
+        "chiffre adoptee adoptee adoptee"
+        "chiffre interdit interdit interdit"
+        "chiffre infosup infosup infosup"
+        // "vert this this this"
+        "vert cependant cependant lapin"
+        "vert hor hor hor"; 
+  
+  
+      &__chiffre { 
+        grid-area: chiffre; 
+        margin: 0px;
+        border-top: 1px solid #B50008;
+        border-left: 1px solid #B50008;
+        border-right: 1px solid #B50008;
+        font-size: 300px;
+
+        p {
+            text-align: center;
+        }
+        
+      }
+  
+      &__vert { 
+        grid-area: vert; 
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+  
+      &__hor { 
+        grid-area: hor; 
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+  
+      &__img { 
+        grid-area: lapin; 
+        width: 150px;
+      }
+  
+      &__cependant { 
+        grid-area: cependant; 
+        padding-left: 33px;
+        padding-top: 33px;
+      }
+  
+      &__info { 
+        grid-area: infosup; 
+        padding-left: 33px;
+        border-bottom: 1px solid #B50008;
+        border-right: 1px solid #B50008;
+
+        h3 {
+            font-size: $h3-tablet;
+        }
+      }
+
+      &__title {
+        display: none;
+      }
+  
+      &__title--769 { 
+        grid-area: oyaume; 
+        display: inline-block;
+        position: relative;
+        border-right: 1px solid #B50008;
+        border-top: 1px solid #B50008;
+        padding-right: 30%;  
+        padding-left: 150px;  
+        margin: 0%;  
+        font-size: $h2-tablet;
+      }
+  
+      &__interdit { 
+        padding-left: 33px;
+        padding-right: 33px;
+        border-right: 1px solid #B50008;
+        grid-area: interdit; 
+        padding-top: 33px;
+        margin: 0px;
+      }
+      &__text--adoptee { 
+        margin: 0px;
+        border-right: 1px solid #B50008;
+        grid-area: adoptee; 
+        padding-left: 150px;  
+        padding-right: 33px;
+      }
+  
+      &__r {
+        display: none; 
+  
+        &--769 {
+          position: absolute;
+          display: block;
+          background-image: url(../assets/images/background_1.jpg);
+          margin-top: 50px;
+          left: 20%;
+          width: 175px;
+          height: auto;
+          top: -2rem;
+          z-index: 40;
+            border: 1px solid #B50008;
+            
+        }
+      }
+      
+      &__text {
+        width: auto;
+        font-size: $p-tablet;
+      }
+    }
+  }
