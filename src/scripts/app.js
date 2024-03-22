@@ -129,7 +129,33 @@ function populateRecapLists() {
   });
 }
 
+/* ---------- RESET QUIZ ---------- */
 
+let restartBtn = document.querySelector(".quizz__button--restart");
+
+restartBtn.addEventListener("click", restartQuiz);
+
+function restartQuiz() {
+  currentQuestionIndex = 0;
+  score = 0;
+
+  // Reset userAnswers array
+  userAnswers = new Array(questionsData.length).fill(null);
+
+  // Hide recap section and show start section
+  recapSection.classList.add("hidden");
+  startSection.classList.remove("hidden");
+
+  // Clear recap lists
+  recapTrueList.innerHTML = "";
+  recapFalseList.innerHTML = "";
+
+  // Reset question counter
+  counterElement.textContent = "1/" + questionsData.length;
+
+  // Call showQuestion to display the first question
+  showQuestion();
+}
 
 
 
