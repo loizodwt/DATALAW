@@ -356,13 +356,13 @@ html {
     right: 0%;
     font-size: 33px;
     font-family: "Valiant";
-    color: var(--red-color);
+    color: $c-moyen-age;
   }
 
   &__h3 {
     font-size: 24px;
     font-family: "valiant";
-    color: var(--red-color);
+    color: $c-moyen-age;
     margin-top: 50px;
   }
   &__text {
@@ -378,7 +378,7 @@ html {
   &__chiffre {
     font-size: 122px;
     font-family: "livingstone";
-    color: var(--red-color);
+    color: $c-moyen-age;
     margin-left: 80%;
     line-height: 0%;
     margin-top: 60px;
