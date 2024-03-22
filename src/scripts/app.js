@@ -68,13 +68,22 @@ function showQuestion() {
 function checkAnswer(userAnswer, currentQuestion) {
   vraiBtn.disabled = true;
   fauxBtn.disabled = true;
+
+  let feedback = '';
+
   if (userAnswer === currentQuestion.reponse) {
-    feedbackElement.textContent = `Vous avez voté comme le peuple de l'époque: ${currentQuestion.anecdote}`;
+    feedback = `Vous avez voté comme le peuple de l'époque: ${currentQuestion.anecdote}`;
     score++;
   } else {
-    feedbackElement.textContent = `Vous n'avez pas voté comme le peuple de l'époque: ${currentQuestion.anecdote}`;
+    feedback = `Vous n'avez pas voté comme le peuple de l'époque: ${currentQuestion.anecdote}`;
   }
+
+  let percentage = userAnswer ? currentQuestion.pour : currentQuestion.contre;
+
+  feedbackElement.innerHTML = `<p>${feedback}</p><p>${percentage} des « législateurs » interrogés ont répondu comme vous !</p>`;
 }
+
+
 /*
 function showSummary() {
   questionElement.textContent = `Votre score: ${score}/${questionsData.length}`;
