@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DataLaws</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="description" content="">
+  <!-- Meta Partage -->
+  <!-- Favicon -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="styles/app.css">
+
+
+  <script src="scripts/app.js" defer></script>
+    <!-- Frameworks -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollTrigger.min.js"></script>
+  
+ 
+
+
+</head>
+<body>
+
+
+
+
+  <section class="graphique">
+
+    <button id="btnEurope">Europe</button>
+    <button id="btnAmérique">Amérique</button>
+    <button id="btnAfrique">Afrique</button>
+    <button id="btnAsie">Asie</button>
+    <button id="btnOcéanie">Océanie</button>
+  
+    <div style="width: 800px;"><canvas id="myChart"></canvas></div>
+  
+    <div id="textContainer"></div>
+  
+  </section>
+  
+  
+  
+
+
+
+  <section class="timeline">
+    <div class="timeline__1 timeline-height MoyenAge">
+
+      <p class="MoyenAge__chiffre">1</p>
+      <div class="MoyenAge__top">
+        <img class="MoyenAge__r" src="./assets/images/r.png" srcset="./assets/images/r@2x.png" alt="">
+        <h2 class="MoyenAge__title">oyaume-Uni</h2>
+      </div>
+
+      <p class="MoyenAge__text MoyenAge__text--adoptee">Loi adaptée par le roi Édouard&nbsp;III</p>
+      <p class="MoyenAge__text">Il était interdit de porter des chaussures longues etpointues au XXe siècle.</p>
+
+      <h3 class="MoyenAge__h3">Informations supplémentaires</h3>
+
+      <p class="MoyenAge__text MoyenAge__text--info">Cette loi visait à empêcher les classes inférieures de porter des chaussures, qui étaient considérées comme un symbole de statut social élevé.</p>
+
+      <p class="MoyenAge__text MoyenAge__text--bottom">Elle était cependant difficile à mettre en place et a donc été abolie au XVIe siècle.</p>
+
+      <img class="MoyenAge__img MoyenAge__img--lapin" src="./assets/images/lapin.png" srcset="./assets/images/lapin@2x.png" alt="">
+      
+      <img class="MoyenAge__vert" src="./assets/images/vert.jpg" srcset="./assets/images/vert@2x.jpg" alt="">
+      <img class="MoyenAge__hor" src="./assets/images/hor.jpg" srcset="./assets/images/hor@2x.jpg" alt="">
+           
+    </div>
+
+
+
+
+    <div class="timeline__2 timeline-height texas">
+      <img class="texas__img texas__img--papier" src="./assets/images/epingle.png" alt="">
+
+      <div class="texas__content">
+        <p class="texas__chiffre texas__txt">2</p>
+
+        <h2 class="texas__title">États-Unis — Texas</h2>
+
+        <p class="texas__txt">La “&#8239;Texas Cow Milking Law&#8239;” disposait que la traite de la vache d’un voisin était illégale et était sanctionnée d’une amende de 10$.</p>
+
+        <h3 class="texas__h3">Informations supplémentaires</h3>
+
+        <p class="texas__txt">Il est important de noter que la loi ne s'appliquait qu'à la traite des vaches. Il n'était pas illégal de traire d'autres animaux, comme des chèvres ou des moutons.</p>
+
+        <img class="texas__img--ville" src="./assets/images/ville.png" alt="">
+      </div>
+      
+    </div>
+
+
+
+
+    <div class="timeline__3 timeline-height singapour">
+      <div class="singapour__modal">
+
+        <div class="singapour__navbar">
+          <img class="singapour__notepad" src="./assets/images/singapour/Notepad.png" srcset="./assets/images/singapour/Notepad@2x.png" alt="">
+          <p class="singapour__txt singapour__txt--nav">DataLaws</p>
+          <div class="singapour__icons">
+            <img class="singapour__icon singapour__icon--reduce" id="reduce" src="./assets/images/singapour/-.jpg" srcset="./assets/images/singapour/-@2x.jpg" alt="">
+            <img class="singapour__icon singapour__icon--open" src="./assets/images/singapour/open.jpg" srcset="./assets/images/singapour/open@2x.jpg" alt="">
+            <img class="singapour__icon singapour__icon--close" src="./assets/images/singapour/close.jpg" srcset="./assets/images/singapour/close@2x.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="singapour__content">
+          <h2 class="singapour__title">3.&nbsp;Singapour</h2>
+          <p class="singapour__txt">La vente et l'importation de chewing-gum est interdite.</p>
+
+          <h3 class="singapour__h3">Informations supplementaires</h3>
+          <p class="singapour__txt singapour__txt--bottom">Les voyageurs peuvent apporter deux paquets de chewing-gum par personne. Il existe cependant des exceptions à l’interdiction pour la gomme à mâcher à usage thérapeutique.
+            L'amende maximale pour avoir mâché du chewing-gum en public est de 1 000 S$.</p>
+        </div>
+      </div>
+
+      <div class="singapour__folder singapour__folder--none" id="folder">
+        <img src="./assets/images/singapour/Documents.jpg" srcset="./assets/images/singapour/Documents@2x.jpg" alt="">
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="timeline__4 timeline-height">
+      <h2>4</h2>
+    </div>
+    <div class="timeline__5 timeline-height">
+      <div class="bg-5 law-5">
+        <span class="law-5__nbr">5</span>
+        <div class="law-5__content">
+          <h2 class="law-5__h2">France</h2>
+          <p class="law-5__p">À Essarts-en-Bocage, entre le 5 et le 11 octobre 2019, il était obligatoire d’être « en joie » entre 8 et 22 heures et de faire sourire au moins 10 personnes par jour.</p>
+          <h3 class="law-5__h3">Commentaire de la rédaction</h3>
+          <p class="law-5__p">Cela rappelle un peu Brave New World, le livre dystopique de Aldous Huxley…</p>
+          <svg width="223" height="223" viewBox="0 0 223 223" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="111.525" cy="111.525" r="110.83" transform="rotate(-30.7458 111.525 111.525)" fill="url(#paint0_radial_463_115)"/>
+            <defs>
+              <radialGradient id="paint0_radial_463_115" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(111.525 24.2046) rotate(90) scale(147.101 128.191)">
+                <stop stop-color="#D7C1FF"/>
+                <stop offset="1" stop-color="#905EED"/>
+              </radialGradient>
+            </defs>
+          </svg>
+        </div>
+        </div>
+    </div>
+  </section>
+  <section class="quizz">
+    <a href="quizz.html">Accéder au quizz</a>
+  </section>
+</body>
+</html>

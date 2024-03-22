@@ -1,0 +1,39 @@
+{
+  "continents": {
+    "Europe": [
+      { "pays": "France", "Absurdité": 4, "Loi": "Tous les citoyens doivent participer à une compétition annuelle de dégustation de fromage." },
+      { "pays": "Italie", "Absurdité": 3, "Loi": "Il est interdit de couper des spaghettis avant de les manger." },
+      { "pays": "Allemagne", "Absurdité": 2, "Loi": "Tout film allemand doit inclure une scène avec des saucisses." },
+      { "pays": "Suède", "Absurdité": 5, "Loi": "Les noms des bébés doivent être approuvés par le gouvernement." },
+      { "pays": "Pays-Bas", "Absurdité": 1, "Loi": "Les citoyens ont le droit de construire des maisons flottantes sur les canaux." }
+    ],
+    "Amérique": [
+      { "pays": "États-Unis", "Absurdité": 5, "Loi": "Chaque citoyen a le droit de posséder un chien de toute taille, quelle que soit la taille de son logement." },
+      { "pays": "Canada", "Absurdité": 3, "Loi": "Les bâtiments gouvernementaux doivent être équipés de pistes de hockey sur glace." },
+      { "pays": "Mexique", "Absurdité": 2, "Loi": "Les tacos doivent être servis à chaque repas, y compris le petit déjeuner." },
+      { "pays": "Brésil", "Absurdité": 4, "Loi": "Tout citoyen a droit à une journée de plage rémunérée par mois." },
+      { "pays": "Argentine", "Absurdité": 1, "Loi": "Les tangos doivent être joués dans tous les espaces publics pendant au moins une heure par jour." }
+    ],
+    "Asie": [
+      { "pays": "Chine", "Absurdité": 4, "Loi": "Les pandas sont reconnus comme des citoyens et ont droit aux mêmes soins de santé que les humains." },
+      { "pays": "Japon", "Absurdité": 3, "Loi": "Il est interdit de manger bruyamment dans les espaces publics." },
+      { "pays": "Inde", "Absurdité": 2, "Loi": "Les vaches ont le droit de circuler librement dans les rues, et tout obstacle à leur passage est passible d'amende." },
+      { "pays": "Corée du Sud", "Absurdité": 5, "Loi": "Tout citoyen doit effectuer un service militaire obligatoire de cosplay pendant un mois." },
+      { "pays": "Russie", "Absurdité": 1, "Loi": "Les ours ont le droit de posséder des passeports russes pour voyager librement à travers le pays." }
+    ],
+    "Afrique": [
+      { "pays": "Nigeria", "Absurdité": 3, "Loi": "Tous les mariages doivent inclure une performance de danse afrobeat obligatoire." },
+      { "pays": "Égypte", "Absurdité": 2, "Loi": "Il est interdit de photographier les pyramides sans un selfie stick approuvé par le gouvernement." },
+      { "pays": "Afrique du Sud", "Absurdité": 4, "Loi": "Les éléphants ont la priorité sur les routes, et tout conducteur doit s'arrêter pour les laisser passer." },
+      { "pays": "Kenya", "Absurdité": 5, "Loi": "Chaque citoyen a droit à une ration mensuelle de lait de lion." },
+      { "pays": "Maroc", "Absurdité": 1, "Loi": "Les chameaux ont le droit de vote lors des élections locales." }
+    ],
+    "Océanie": [
+      { "pays": "Australie", "Absurdité": 4, "Loi": "Tous les kangourous doivent porter un gilet de sécurité lorsqu'ils traversent la route." },
+      { "pays": "Nouvelle-Zélande", "Absurdité": 3, "Loi": "Les moutons ont le droit de se présenter comme candidats aux élections locales." },
+      { "pays": "Fidji", "Absurdité": 2, "Loi": "Il est interdit de porter des chemises hawaïennes dans les lieux publics." },
+      { "pays": "Papouasie-Nouvelle-Guinée", "Absurdité": 5, "Loi": "Tout citoyen a le droit de posséder un perroquet comme conseiller juridique." },
+      { "pays": "Vanuatu", "Absurdité": 1, "Loi": "Les citoyens ont le droit de voter pour élire le chef de l'État par tirage au sort tous les cinq ans." }
+    ]
+  }
+}
