@@ -1,7 +1,7 @@
 // Fonts nécessaires
 @font-face {
   font-family: "Livingstone";
-  src: url("assets/fonts/Livingstone.ttf");
+  src: url("assets/fonts/Livingstone.ttf") format("truetype");
 }
 
 @font-face {
@@ -11,23 +11,41 @@
 
 @font-face {
   font-family: "Prince Valiant";
-  src: url("assets/fonts/Princevaliant.ttf");
+  src: url("assets/fonts/Princevaliant.ttf") format("truetype");
 }
 
-@import url('https://fonts.googleapis.com/css2?family=BIZ+UDMincho&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=BIZ+UDMincho&display=swap");
 
 @font-face {
   font-family: "Clash Display";
-  src: url("assets/fonts/ClashDisplay-Variable.ttf");
+  src: url("assets/fonts/ClashDisplay-Variable.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Satoshi";
-  src: url("assets/fonts/Satoshi-Variable.ttf");
+  font-family: "Satoshi-Variable";
+  src: url("../assets/fonts/Satoshi-Variable.woff2") format("woff2"),
+    url("../assets/fonts/Satoshi-Variable.woff") format("woff"),
+    url("../assets/fonts/Satoshi-Variable.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "Satoshi Italic";
-  src: url("assets/fonts/Satoshi-VariableItalic.ttf");
+  font-family: "ClashDisplay-Variable";
+  src: url("../assets/fonts/ClashDisplay-Variable.woff2") format("woff2"),
+    url("../assets/fonts/ClashDisplay-Variable.woff") format("woff"),
+    url("../assets/fonts/ClashDisplay-Variable.ttf") format("truetype");
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "pix";
+  src: url("../assets/fonts/singapour/pixM8pt.ttf") format("truetype");
+}
+@font-face {
+  font-family: "w9";
+  src: url("../assets/fonts/singapour/W95FA.otf") format("opentype");
 }

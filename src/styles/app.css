@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=BIZ+UDMincho&display=swap");
 @font-face {
   font-family: "Livingstone";
-  src: url("assets/fonts/Livingstone.ttf");
+  src: url("assets/fonts/Livingstone.ttf") format("truetype");
 }
 @font-face {
   font-family: "Ortica Angular";
@@ -9,19 +9,33 @@
 }
 @font-face {
   font-family: "Prince Valiant";
-  src: url("assets/fonts/Princevaliant.ttf");
+  src: url("assets/fonts/Princevaliant.ttf") format("truetype");
 }
 @font-face {
   font-family: "Clash Display";
-  src: url("assets/fonts/ClashDisplay-Variable.ttf");
+  src: url("assets/fonts/ClashDisplay-Variable.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Satoshi";
-  src: url("assets/fonts/Satoshi-Variable.ttf");
+  font-family: "Satoshi-Variable";
+  src: url("../assets/fonts/Satoshi-Variable.woff2") format("woff2"), url("../assets/fonts/Satoshi-Variable.woff") format("woff"), url("../assets/fonts/Satoshi-Variable.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
 }
 @font-face {
-  font-family: "Satoshi Italic";
-  src: url("assets/fonts/Satoshi-VariableItalic.ttf");
+  font-family: "ClashDisplay-Variable";
+  src: url("../assets/fonts/ClashDisplay-Variable.woff2") format("woff2"), url("../assets/fonts/ClashDisplay-Variable.woff") format("woff"), url("../assets/fonts/ClashDisplay-Variable.ttf") format("truetype");
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "pix";
+  src: url("../assets/fonts/singapour/pixM8pt.ttf") format("truetype");
+}
+@font-face {
+  font-family: "w9";
+  src: url("../assets/fonts/singapour/W95FA.otf") format("opentype");
 }
 body {
   margin: 0;
@@ -47,6 +61,12 @@ html {
   background-image: -webkit-image-set(url(../assets/images/background_1.jpg) 1x, url(../assets/images/background_1@2x.jpg) 2x);
   background-image: image-set(url(../assets/images/background_1.jpg) 1x, url(../assets/images/background_1@2x.jpg) 2x);
   background-repeat: no-repeat;
+  cursor: url(../assets/images/moyen-age-curseur.png);
+}
+.timeline__2 {
+  background-image: -webkit-image-set(url(../assets/images/background_2.jpg) 1x, url(../assets/images/background_2@2x.png) 2x);
+  background-image: image-set(url(../assets/images/background_2.jpg) 1x, url(../assets/images/background_2@2x.png) 2x);
+  font-family: "BIZ UDMincho", serif;
 }
 .timeline__3 {
   background-color: #008081;
@@ -58,6 +78,173 @@ html {
   background-color: rgb(221, 221, 114);
 }
 
+  display: flex;
+  align-items: center;
+  background-image: url(../assets/images/background_5.svg);
+  position: relative;
+}
+.timeline__5 svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-90px, -100px);
+  width: 200px;
+  height: auto;
+}
+
+.bg-5 {
+  border-radius: 20px;
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  background-color: rgba(68, 67, 67, 0.4392156863);
+  border: 2px solid #888888;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+.law-5__nbr {
+  display: flex;
+  justify-content: center;
+  font-family: "Satoshi-Variable";
+  font-weight: 800;
+  background: linear-gradient(90deg, rgb(194, 160, 250) 0%, rgb(115, 143, 243) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.law-5__h2 {
+  font-family: "ClashDisplay-Variable";
+  margin-top: 24px;
+  margin-bottom: 24px;
+  background: linear-gradient(90deg, rgb(194, 160, 250) 0%, rgb(115, 143, 243) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.law-5__h3 {
+  font-family: "ClashDisplay-Variable";
+  margin-top: 16px;
+  margin-bottom: 16px;
+  background: linear-gradient(90deg, rgb(194, 160, 250) 0%, rgb(115, 143, 243) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.law-5__p {
+  font-family: "Satoshi-Variable";
+  line-height: 140%;
+  color: white;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .bg-5 {
+    padding: 32px;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .law-5__nbr {
+    font-size: 182px;
+  }
+  .law-5__h2 {
+    font-size: 61px;
+  }
+  .law-5__h3 {
+    font-size: 27px;
+  }
+  .law-5__p {
+    font-size: 16px;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .timeline__5 svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(-90px, 765px);
+    width: 200px;
+    height: auto;
+  }
+  .law-5__nbr {
+    align-items: center;
+    font-size: 273px;
+  }
+  .law-5__h2 {
+    font-size: 61px;
+  }
+  .law-5__h3 {
+    font-size: 27px;
+  }
+  .law-5__p {
+    font-size: 16px;
+  }
+  .bg-5 {
+    margin-left: 80px;
+    margin-right: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .timeline__5 svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(-90px, 765px);
+    width: 200px;
+    height: auto;
+  }
+  .law-5__nbr {
+    align-items: center;
+    font-size: 273px;
+  }
+  .law-5__h2 {
+    font-size: 61px;
+  }
+  .law-5__h3 {
+    font-size: 27px;
+  }
+  .law-5__p {
+    font-size: 16px;
+  }
+  .bg-5 {
+    margin-left: 80px;
+    margin-right: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+@media (min-width: 1025px) {
+  .timeline__5 svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(-70px, 700px);
+    width: 200px;
+    height: auto;
+  }
+  .law-5 {
+    display: flex;
+    gap: 68px;
+  }
+  .law-5__nbr {
+    align-items: center;
+    font-size: 410px;
+  }
+  .law-5__h2 {
+    font-size: 108px;
+  }
+  .law-5__h3 {
+    font-size: 48px;
+  }
+  .law-5__p {
+    font-size: 32px;
+  }
+  .bg-5 {
+    margin-left: 80px;
+    margin-right: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
 .timeline::-webkit-scrollbar {
   display: none;
 }
@@ -119,7 +306,7 @@ html {
   src: url("../assets/fonts/livingstone.regular.ttf");
 }
 :root {
-  --red-color: #B50008;
+  --red-color: #b50008;
 }
 
 .MoyenAge {
@@ -232,14 +419,6 @@ html {
   margin-top: -100vh;
 }
 
-@font-face {
-  font-family: "pix";
-  src: url("../assets/fonts/singapour/pixM8pt.ttf");
-}
-@font-face {
-  font-family: "w9";
-  src: url("../assets/fonts/singapour/W95FA.otf");
-}
 .singapour {
   padding: 5rem 33px;
   position: relative;
@@ -253,7 +432,7 @@ html {
   background-color: #000080;
   padding: 3px;
   height: 25px;
-  border: 2px solid #C0C0C0;
+  border: 2px solid #c0c0c0;
 }
 .singapour__txt {
   font-family: "w9";
