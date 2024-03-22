@@ -12,22 +12,24 @@ let currentQuestionIndex = 0;
 let score = 0;
 let questionsData = null;
 
-fetch("../assets/data/questions.json")
-  .then((response) => response.json())
-  .then((data) => {
-    questionsData = data;
-    showQuestion();
-    vraiBtn.addEventListener("click", () => checkAnswer(true, questionsData[currentQuestionIndex]));
-    fauxBtn.addEventListener("click", () => checkAnswer(false, questionsData[currentQuestionIndex]));
-    nextBtn.addEventListener("click", () => {
-      currentQuestionIndex++;
-      if (currentQuestionIndex < questionsData.length) {
-        showQuestion();
-      } else {
-        showSummary();
-      }
+if (questionElement) {
+  fetch("../assets/data/questions.json")
+    .then((response) => response.json())
+    .then((data) => {
+      questionsData = data;
+      showQuestion();
+      vraiBtn.addEventListener("click", () => checkAnswer(true, questionsData[currentQuestionIndex]));
+      fauxBtn.addEventListener("click", () => checkAnswer(false, questionsData[currentQuestionIndex]));
+      nextBtn.addEventListener("click", () => {
+        currentQuestionIndex++;
+        if (currentQuestionIndex < questionsData.length) {
+          showQuestion();
+        } else {
+          showSummary();
+        }
+      });
     });
-  });
+}
 
 function showQuestion() {
   if (!questionElement || currentQuestionIndex >= questionsData.length) {
@@ -47,21 +49,22 @@ function checkAnswer(userAnswer, currentQuestion) {
   vraiBtn.disabled = true;
   fauxBtn.disabled = true;
   if (userAnswer === currentQuestion.reponse) {
-    feedbackElement.textContent = "Vous avez voté comme le peuple de l'époque";
+    feedbackElement.textContent = `Vous avez voté comme le peuple de l'époque: ${currentQuestion.anecdote}`;
     score++;
   } else {
-    feedbackElement.textContent = "Vous n'avez pas voté comme le peuple de l'époque : ${currentQuestion.anecdote}";
+    feedbackElement.textContent = `Vous n'avez pas voté comme le peuple de l'époque: ${currentQuestion.anecdote}`;
   }
 }
 
 function showSummary() {
-  questionElement.textContent = "Récap score: ${score}/${questionsData.length}";
+  questionElement.textContent = `Votre score: ${score}/${questionsData.length}`;
   vraiBtn.style.display = "none";
   fauxBtn.style.display = "none";
   nextBtn.style.display = "none";
   counterElement.style.display = "none";
   feedbackElement.textContent = "";
 }
+
 
 
 /*
