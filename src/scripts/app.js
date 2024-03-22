@@ -3,17 +3,17 @@
 /* ---------- NAVIGATION PAGE QUIZ ---------- */
 let startBtn = document.querySelector(".quizz__button--start");
 let startSection = document.querySelector(".quizz--start");
-let containerSection = document.querySelector(".quizz__container");
+let quizzSection = document.querySelector(".quizz__container");
 let recapSection = document.querySelector(".quizz--recap");
 let resultElement = document.querySelector(".quizz__result");
 
 startBtn.addEventListener("click", function () {
   startSection.classList.add("hidden");
-  containerSection.classList.remove("hidden");
+  quizzSection.classList.remove("hidden");
 });
 
 function showSummary() {
-  containerSection.classList.add("hidden");
+  quizzSection.classList.add("hidden");
   recapSection.classList.remove("hidden");
   resultElement.textContent = `Votre score: ${score}/${questionsData.length}`;
 }
