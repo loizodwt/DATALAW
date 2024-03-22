@@ -12,7 +12,7 @@ let counterElement = document.querySelector(".quizz__counter");
 let currentQuestionIndex = 0;
 let score = 0;
 let questionsData = null;
-let userAnswers = []; // Initialize userAnswers array
+let userAnswers = [];
 
 if (questionElement) {
   fetch("../assets/data/questions.json")
@@ -24,7 +24,9 @@ if (questionElement) {
       vraiBtn.addEventListener("click", () => checkAnswer(true, questionsData[currentQuestionIndex]));
       fauxBtn.addEventListener("click", () => checkAnswer(false, questionsData[currentQuestionIndex]));
       skipBtn.addEventListener("click", () => {
-        userAnswers[currentQuestionIndex] = null; // Record skipped answer
+        if (userAnswers[currentQuestionIndex] === null) {
+          userAnswers[currentQuestionIndex] = null; // Record skipped answer only if not answered already
+        }
         currentQuestionIndex++;
         if (currentQuestionIndex < questionsData.length) {
           showQuestion();
@@ -33,8 +35,6 @@ if (questionElement) {
         }
       });
 
-      // Call populateRecapLists after questionsData is loaded
-      populateRecapLists();
     });
 }
 
@@ -69,6 +69,7 @@ function checkAnswer(userAnswer, currentQuestion) {
   }
 }
 
+
 /* ---------- QUIZ NAVIGATION ---------- */
 
 let startBtn = document.querySelector(".quizz__button--start");
@@ -86,6 +87,8 @@ function showSummary() {
   quizzSection.classList.add("hidden");
   recapSection.classList.remove("hidden");
   resultElement.textContent = `Votre score: ${score}/${questionsData.length}`;
+
+  populateRecapLists();
 }
 
 /* ---------- RECAP ---------- */
@@ -98,12 +101,9 @@ function populateRecapLists() {
     let listItem = document.createElement("li");
     listItem.textContent = question.question;
 
-    // Check if the user answered the question
     if (userAnswers[index] !== null) {
-      // Check if the user's answer matches the correct answer
       let isCorrect = (userAnswers[index] === question.reponse);
 
-      // Determine which list to append the list item to based on the correct answer
       if (question.reponse === true) {
         if (isCorrect) {
           listItem.classList.add("correct");
@@ -120,7 +120,6 @@ function populateRecapLists() {
         recapFalseList.appendChild(listItem);
       }
     } else {
-      // Append the list item to the appropriate list without any class if the question was skipped
       if (question.reponse === true) {
         recapTrueList.appendChild(listItem);
       } else {
