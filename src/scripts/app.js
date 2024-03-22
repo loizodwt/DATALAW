@@ -1,25 +1,6 @@
 "use strict"
 
-/* ---------- NAVIGATION PAGE QUIZ ---------- */
-
-let startBtn = document.querySelector(".quizz__button--start");
-let startSection = document.querySelector(".quizz--start");
-let quizzSection = document.querySelector(".quizz__container");
-let recapSection = document.querySelector(".quizz--recap");
-let resultElement = document.querySelector(".quizz__result");
-
-startBtn.addEventListener("click", function () {
-  startSection.classList.add("hidden");
-  quizzSection.classList.remove("hidden");
-});
-
-function showSummary() {
-  quizzSection.classList.add("hidden");
-  recapSection.classList.remove("hidden");
-  resultElement.textContent = `Votre score: ${score}/${questionsData.length}`;
-}
-
-/* ---------- CODE QUIZ ---------- */
+/* ---------- QUIZ MAIN CODE ---------- */
 
 let questionElement = document.querySelector(".quizz__question");
 let vraiBtn = document.querySelector(".quizz__button--vrai");
@@ -31,16 +12,19 @@ let counterElement = document.querySelector(".quizz__counter");
 let currentQuestionIndex = 0;
 let score = 0;
 let questionsData = null;
+let userAnswers = []; // Initialize userAnswers array
 
 if (questionElement) {
   fetch("../assets/data/questions.json")
     .then((response) => response.json())
     .then((data) => {
       questionsData = data;
+      userAnswers = new Array(questionsData.length).fill(null); // Initialize userAnswers array with null values
       showQuestion();
       vraiBtn.addEventListener("click", () => checkAnswer(true, questionsData[currentQuestionIndex]));
       fauxBtn.addEventListener("click", () => checkAnswer(false, questionsData[currentQuestionIndex]));
       skipBtn.addEventListener("click", () => {
+        userAnswers[currentQuestionIndex] = null; // Record skipped answer
         currentQuestionIndex++;
         if (currentQuestionIndex < questionsData.length) {
           showQuestion();
@@ -48,6 +32,9 @@ if (questionElement) {
           showSummary();
         }
       });
+
+      // Call populateRecapLists after questionsData is loaded
+      populateRecapLists();
     });
 }
 
@@ -69,19 +56,82 @@ function checkAnswer(userAnswer, currentQuestion) {
   vraiBtn.disabled = true;
   fauxBtn.disabled = true;
 
-  let feedback = '';
-
   if (userAnswer === currentQuestion.reponse) {
-    feedback = `Vous avez voté comme le peuple de l'époque: ${currentQuestion.anecdote}`;
+    feedbackElement.textContent = `Vous avez voté comme le peuple de l'époque: ${currentQuestion.anecdote}`;
     score++;
   } else {
-    feedback = `Vous n'avez pas voté comme le peuple de l'époque: ${currentQuestion.anecdote}`;
+    feedbackElement.textContent = `Vous n'avez pas voté comme le peuple de l'époque: ${currentQuestion.anecdote}`;
   }
 
-  let percentage = userAnswer ? currentQuestion.pour : currentQuestion.contre;
-
-  feedbackElement.innerHTML = `<p>${feedback}</p><p>${percentage} des « législateurs » interrogés ont répondu comme vous !</p>`;
+  // Record user's answer only if it's not a skip
+  if (userAnswer !== null) {
+    userAnswers[currentQuestionIndex] = userAnswer;
+  }
 }
+
+/* ---------- QUIZ NAVIGATION ---------- */
+
+let startBtn = document.querySelector(".quizz__button--start");
+let startSection = document.querySelector(".quizz--start");
+let quizzSection = document.querySelector(".quizz__container");
+let recapSection = document.querySelector(".quizz--recap");
+let resultElement = document.querySelector(".quizz__result");
+
+startBtn.addEventListener("click", function () {
+  startSection.classList.add("hidden");
+  quizzSection.classList.remove("hidden");
+});
+
+function showSummary() {
+  quizzSection.classList.add("hidden");
+  recapSection.classList.remove("hidden");
+  resultElement.textContent = `Votre score: ${score}/${questionsData.length}`;
+}
+
+/* ---------- RECAP ---------- */
+
+let recapTrueList = document.querySelector(".quizz--recap__true");
+let recapFalseList = document.querySelector(".quizz--recap__false");
+
+function populateRecapLists() {
+  questionsData.forEach((question, index) => {
+    let listItem = document.createElement("li");
+    listItem.textContent = question.question;
+
+    // Check if the user answered the question
+    if (userAnswers[index] !== null) {
+      // Check if the user's answer matches the correct answer
+      let isCorrect = (userAnswers[index] === question.reponse);
+
+      // Determine which list to append the list item to based on the correct answer
+      if (question.reponse === true) {
+        if (isCorrect) {
+          listItem.classList.add("correct");
+        } else {
+          listItem.classList.add("wrong");
+        }
+        recapTrueList.appendChild(listItem);
+      } else {
+        if (isCorrect) {
+          listItem.classList.add("correct");
+        } else {
+          listItem.classList.add("wrong");
+        }
+        recapFalseList.appendChild(listItem);
+      }
+    } else {
+      // Append the list item to the appropriate list without any class if the question was skipped
+      if (question.reponse === true) {
+        recapTrueList.appendChild(listItem);
+      } else {
+        recapFalseList.appendChild(listItem);
+      }
+    }
+  });
+}
+
+
+
 
 
 /*

@@ -102,6 +102,18 @@ canvas {
   -ms-overflow-style: none;
 }
 
+.correct {
+  color: green;
+}
+
+.wrong {
+  color: red;
+}
+
+.skipped {
+  color: grey;
+}
+
 .quizz__container {
   max-width: 600px;
   margin: 0 auto;
