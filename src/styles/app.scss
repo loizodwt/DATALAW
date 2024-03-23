@@ -11,12 +11,30 @@ html {
   scroll-behavior: smooth;
 }
 
+.homepage {
+  // Permet de devoir scroller pour créer l'effet scroll horizontal sur .timeline
+  height: 200vh;
+  // Style temporaire
+  &__h1 {
+    font-family: "ClashDisplay-Variable";
+    font-weight: 900;
+    font-size: 108px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 // Timeline
 .timeline {
   height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 
   &__1,
   &__2,
@@ -26,6 +44,7 @@ html {
     scroll-snap-align: start;
     scroll-snap-stop: normal;
     height: 100vh;
+    width: 100vw;
     overflow: hidden;
   }
 
@@ -36,7 +55,6 @@ html {
     );
     background-repeat: no-repeat;
   }
-
 
   &__2 {
     background-image: image-set(
@@ -305,38 +323,31 @@ html {
   }
 }
 
-
-
-
 /* MOYEN AGE */
 @font-face {
   font-family: "Ortica";
-  src:
-      url("../assets/fonts/ortica/OrticaLinear-Regular.woff2");
-
+  src: url("../assets/fonts/ortica/OrticaLinear-Regular.woff2");
 }
 
 @font-face {
   font-family: "Valiant";
-  src:
-      url("../assets/fonts/PrinceValiant.ttf");
+  src: url("../assets/fonts/PrinceValiant.ttf");
 }
 
 @font-face {
   font-family: "livingstone";
-  src:
-      url("../assets/fonts/livingstone.regular.ttf");
+  src: url("../assets/fonts/livingstone.regular.ttf");
 }
 
 :root {
-  --red-color: #B50008;
+  --red-color: #b50008;
 }
 
 .MoyenAge {
   padding: 17px 32px;
   position: relative;
 
-  &__vert, 
+  &__vert,
   &__hor {
     display: none;
   }
@@ -399,14 +410,13 @@ html {
       margin-left: 50%;
       margin-top: -15%;
       position: absolute;
-      transform: rotate3dy('180deg');
+      transform: rotate3dy("180deg");
       display: none;
     }
   }
 }
 
 @media (min-width: 481px) {
-
   .MoyenAge {
     &__img {
       &--lapin {
@@ -430,77 +440,74 @@ html {
     display: grid;
     position: relative;
 
-    grid-auto-columns: 1fr 1fr 0.2fr 1.8fr; 
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 0.7fr 1.1fr 0.8fr 1.7fr 0.7fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-
+    grid-auto-columns: 1fr 1fr 0.2fr 1.8fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.7fr 1.1fr 0.8fr 1.7fr 0.7fr;
+    gap: 0px 0px;
+    grid-template-areas:
       "chiffre . oyaume ."
       "chiffre . adoptee adoptee"
       "chiffre interdit interdit interdit"
       "chiffre infosup infosup infosup"
       // "vert this this this"
       "vert cependant cependant lapin"
-      "vert hor hor hor"; 
+      "vert hor hor hor";
 
-
-    &__chiffre { 
-      grid-area: chiffre; 
+    &__chiffre {
+      grid-area: chiffre;
     }
 
-    &__vert { 
-      grid-area: vert; 
+    &__vert {
+      grid-area: vert;
       display: block;
       width: 100%;
       height: 100%;
     }
 
-    &__hor { 
-      grid-area: hor; 
+    &__hor {
+      grid-area: hor;
       display: block;
       width: 100%;
       height: 100%;
     }
 
-    &__img { 
-      grid-area: lapin; 
+    &__img {
+      grid-area: lapin;
       width: 150px;
     }
 
-    // &___this { 
-    //   grid-area: this; 
+    // &___this {
+    //   grid-area: this;
     // }
 
-    &__cependant { 
-      grid-area: cependant; 
+    &__cependant {
+      grid-area: cependant;
       padding-left: 33px;
     }
 
-    &__info { 
-      grid-area: infosup; 
+    &__info {
+      grid-area: infosup;
       padding-left: 33px;
     }
 
-    &__title--769 { 
-      grid-area: oyaume; 
+    &__title--769 {
+      grid-area: oyaume;
     }
 
-    &__interdit { 
-      grid-area: interdit; 
+    &__interdit {
+      grid-area: interdit;
     }
-    &__text--adoptee { 
-      grid-area: adoptee; 
+    &__text--adoptee {
+      grid-area: adoptee;
     }
 
     &__r {
-      display: none; 
+      display: none;
 
       &--769 {
         position: absolute;
         display: block;
         background-image: url(../assets/images/background_1.jpg);
-
       }
     }
     &__title {
@@ -509,7 +516,6 @@ html {
       &--769 {
         display: block;
         position: relative;
-        
       }
     }
     &__text {
@@ -522,26 +528,14 @@ html {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
 /* TEXAS */
 @font-face {
   font-family: "elite";
-  src:
-      url("../assets/fonts/texas/SpecialElite.ttf");
+  src: url("../assets/fonts/texas/SpecialElite.ttf");
 }
 @font-face {
   font-family: "gensco";
-  src:
-      url("../assets/fonts/gensco/GENSCO.otf");
+  src: url("../assets/fonts/gensco/GENSCO.otf");
 }
 
 .texas {
@@ -564,12 +558,11 @@ html {
     margin-left: 80%;
     margin-top: -90vh;
   }
-  &__title, 
+  &__title,
   &__h3 {
     font-family: "gensco";
     margin-top: 50px;
     z-index: 8;
-
   }
   &__title {
     font-size: 33px;
@@ -582,9 +575,9 @@ html {
     margin-left: -33%;
 
     &--ville {
-    margin-left: -33px;
-    z-index: -3;
-    margin-top: -10px;
+      margin-left: -33px;
+      z-index: -3;
+      margin-top: -10px;
     }
     &--papier {
       z-index: -2;
@@ -598,20 +591,16 @@ html {
   }
 }
 
-
 /* SINGAPOUR */
 
 @font-face {
   font-family: "pix";
-  src:
-      url("../assets/fonts/singapour/pixM8pt.ttf");
+  src: url("../assets/fonts/singapour/pixM8pt.ttf");
 }
 @font-face {
   font-family: "w9";
-  src:
-      url("../assets/fonts/singapour/W95FA.otf");
+  src: url("../assets/fonts/singapour/W95FA.otf");
 }
-
 
 .singapour {
   padding: 5rem 33px;
@@ -627,7 +616,7 @@ html {
     background-color: #000080;
     padding: 3px;
     height: 25px;
-    border: 2px solid #C0C0C0;
+    border: 2px solid #c0c0c0;
   }
   &__txt {
     font-family: "w9";

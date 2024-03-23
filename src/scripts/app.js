@@ -1,4 +1,6 @@
-"use strict";
+import { gsap } from "gsap";
+
+("use strict");
 
 document.addEventListener("DOMContentLoaded", function () {
   const questionElement = document.getElementById("question");
@@ -72,4 +74,70 @@ document.addEventListener("DOMContentLoaded", function () {
     skipBtn.style.display = "none";
     feedbackElement.textContent = "";
   }
+});
+
+// Horizontal scroll pour la timeline
+// gsap.registerPlugin(ScrollTrigger);
+// const timeline = document.querySelector(".timeline");
+// const sections = gsap.utils.toArray(".timeline .timeline-height");
+
+// let totalWidth = 0;
+// sections.forEach((sections) => {
+//   totalWidth += sections.offsetWidth;
+// });
+
+// sections.forEach((section, index) => {
+//   const offset = (-100 * (totalWidth - section.offsetWidth)) / totalWidth;
+//   gsap.to(sections, {
+//     xPercent: -100 * (sections.length - 1),
+//     ease: "none",
+//     scrollTrigger: {
+//       trigger: ".timeline",
+//       pin: true,
+//       scrub: 1,
+//       end: "+=" + totalWidth,
+//     },
+//   });
+// });
+
+gsap.registerPlugin(ScrollTrigger);
+
+// Sélectionnez la section timeline
+const timeline = document.querySelector(".timeline");
+
+// Sélectionnez toutes les sections enfants de la timeline
+const sections = gsap.utils.toArray(".timeline > div");
+
+// Calculez la largeur totale de la timeline en tenant compte des marges
+let totalWidth = 0;
+sections.forEach((section) => {
+  const sectionStyles = getComputedStyle(section);
+  totalWidth += section.offsetWidth + parseInt(sectionStyles.marginLeft) + parseInt(sectionStyles.marginRight);
+});
+
+// Créez une animation pour déplacer la timeline horizontalement
+gsap.to(sections, {
+  x: () => {
+    return -(totalWidth - timeline.offsetWidth);
+  },
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".timeline",
+    pin: true,
+    start: "top top",
+    scrub: 1,
+    end: () => {
+      return "+=" + (totalWidth - timeline.offsetWidth);
+    },
+    snap: {
+      snapTo: "labels",
+      duration: { min: 0.1, max: 0.3 },
+      delay: 0.2,
+    },
+    onLeaveBack: (self) => {
+      if (self.progress === 1 && window.innerWidth < 768) {
+        self.scroll(self.start - 50); // Ajustez cette valeur pour régler le décalage en fin d'animation
+      }
+    }
+  },
 });
