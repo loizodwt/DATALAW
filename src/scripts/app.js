@@ -100,22 +100,19 @@ document.addEventListener("DOMContentLoaded", function () {
 //   });
 // });
 
+
+// Scroll horizontal, à priori il n'y a pas besoin d'y toucher
 gsap.registerPlugin(ScrollTrigger);
 
-// Sélectionnez la section timeline
 const timeline = document.querySelector(".timeline");
-
-// Sélectionnez toutes les sections enfants de la timeline
 const sections = gsap.utils.toArray(".timeline > div");
 
-// Calculez la largeur totale de la timeline en tenant compte des marges
 let totalWidth = 0;
 sections.forEach((section) => {
   const sectionStyles = getComputedStyle(section);
   totalWidth += section.offsetWidth + parseInt(sectionStyles.marginLeft) + parseInt(sectionStyles.marginRight);
 });
 
-// Créez une animation pour déplacer la timeline horizontalement
 gsap.to(sections, {
   x: () => {
     return -(totalWidth - timeline.offsetWidth);
@@ -136,7 +133,7 @@ gsap.to(sections, {
     },
     onLeaveBack: (self) => {
       if (self.progress === 1 && window.innerWidth < 768) {
-        self.scroll(self.start - 50); // Ajustez cette valeur pour régler le décalage en fin d'animation
+        self.scroll(self.start - 50);
       }
     }
   },
