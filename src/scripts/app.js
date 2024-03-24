@@ -76,31 +76,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-// Horizontal scroll pour la timeline
-// gsap.registerPlugin(ScrollTrigger);
-// const timeline = document.querySelector(".timeline");
-// const sections = gsap.utils.toArray(".timeline .timeline-height");
-
-// let totalWidth = 0;
-// sections.forEach((sections) => {
-//   totalWidth += sections.offsetWidth;
-// });
-
-// sections.forEach((section, index) => {
-//   const offset = (-100 * (totalWidth - section.offsetWidth)) / totalWidth;
-//   gsap.to(sections, {
-//     xPercent: -100 * (sections.length - 1),
-//     ease: "none",
-//     scrollTrigger: {
-//       trigger: ".timeline",
-//       pin: true,
-//       scrub: 1,
-//       end: "+=" + totalWidth,
-//     },
-//   });
-// });
-
-
 // Scroll horizontal, à priori il n'y a pas besoin d'y toucher
 gsap.registerPlugin(ScrollTrigger);
 
