@@ -18,7 +18,7 @@ html {
   &__h1 {
     font-family: "ClashDisplay-Variable";
     font-weight: 900;
-    font-size: 108px;
+    font-size: clamp(50px, 4vw, 108px); // Valeur à changer !
     display: flex;
     justify-content: center;
     align-items: center;
