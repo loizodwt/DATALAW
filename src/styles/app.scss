@@ -25,6 +25,10 @@ button {
   display: none;
 }
 
+.nav-button:active {
+  filter: brightness(.7);
+}
+
 // Timeline
 .timeline {
   margin: 100px;
