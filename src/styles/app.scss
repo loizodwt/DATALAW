@@ -56,10 +56,7 @@ html {
   }
 
   &__2 {
-    background-image: image-set(
-      url(../assets/images/epingle.png) 1x,
-      url(../assets/images/epingle@2x.png) 2x
-    );
+    background-image: image-set(url(../assets/images/epingle.png) 1x, url(../assets/images/epingle@2x.png) 2x);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: "BIZ UDMincho", serif;
@@ -69,10 +66,7 @@ html {
     background-color: #008081;
   }
   &__4 {
-    background-image: image-set(
-      url(../assets/images/y2k/bgy2k.jpg) 1x,
-      url(../assets/images/y2k/bgy2k@2x.jpg) 2x
-    );
+    background-image: image-set(url(../assets/images/y2k/bgy2k.jpg) 1x, url(../assets/images/y2k/bgy2k@2x.jpg) 2x);
   }
   &__5 {
     display: flex;
@@ -104,11 +98,7 @@ html {
     justify-content: center;
     font-family: $law5-p;
     font-weight: 800;
-    background: linear-gradient(
-      90deg,
-      rgba(194, 160, 250, 1) 0%,
-      rgba(115, 143, 243, 1) 100%
-    );
+    background: linear-gradient(90deg, rgba(194, 160, 250, 1) 0%, rgba(115, 143, 243, 1) 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -117,11 +107,7 @@ html {
     font-family: $law-5-h2;
     margin-top: 24px;
     margin-bottom: 24px;
-    background: linear-gradient(
-      90deg,
-      rgba(194, 160, 250, 1) 0%,
-      rgba(115, 143, 243, 1) 100%
-    );
+    background: linear-gradient(90deg, rgba(194, 160, 250, 1) 0%, rgba(115, 143, 243, 1) 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -130,11 +116,7 @@ html {
     font-family: $law-5-h3;
     margin-top: 16px;
     margin-bottom: 16px;
-    background: linear-gradient(
-      90deg,
-      rgba(194, 160, 250, 1) 0%,
-      rgba(115, 143, 243, 1) 100%
-    );
+    background: linear-gradient(90deg, rgba(194, 160, 250, 1) 0%, rgba(115, 143, 243, 1) 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -271,7 +253,7 @@ html {
   }
 }
 
-// Maque la scrollbar sur la timeline, ne laissant que celle du site de base
+// Masque la scrollbar sur la timeline, ne laissant que celle du site de base
 .timeline::-webkit-scrollbar {
   display: none; // Chrome
 }
@@ -533,7 +515,6 @@ html {
 }
 @import "components/moyen-age";
 
-
 /* TEXAS */
 @font-face {
   font-family: "elite";
@@ -597,7 +578,6 @@ html {
   }
 }
 @import "components/texas";
-
 
 /* SINGAPOUR */
 
@@ -686,4 +666,3 @@ html {
 }
 @import "components/singapour";
 @import "components/y2k";
-
