@@ -157,7 +157,7 @@ body {
     width: 80%;
     border: 1px solid #9486c4;
     border-radius: 15px;
-    backdrop-filter: blur(15);
+    backdrop-filter: blur(0);
     justify-content: center;
     padding: 16px 33px;
     margin: 0% auto;
@@ -168,8 +168,8 @@ body {
 
     p {
       font-family: sato;
-    color: #333333;
-    font-size: 18px;
+      color: #E6EFEB;
+      font-size: 18px;
       line-height: 1.6;
     }
   }
@@ -186,6 +186,20 @@ body {
     padding: 10px;
     font-weight: lighter;
     cursor: pointer;
+
+    a {
+      text-decoration: none;
+      color: #333333;
+    }
+    &:hover {
+      background-color: rgb(148,134,196, 0.5);
+      backdrop-filter: blur(5);
+      border: 2px solid #D7D4FF;
+
+      a {
+          color: #E6EFEB;
+      }
+    }
   }
 }
 
@@ -283,3 +297,6 @@ a {
     padding-top: 111px;
   }
 }
+
+
+@import "components/finquiz"
