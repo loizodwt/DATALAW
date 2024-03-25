@@ -89,7 +89,7 @@ canvas {
   -ms-overflow-style: none; // IE et Edge
 }
 
-// Quizz
+// quiz
 
 .correct {
   color: green;
@@ -99,7 +99,7 @@ canvas {
   color: red;
 }
 
-.quizz {
+.quiz {
   &__container {
     max-width: 600px;
     margin: 0 auto;

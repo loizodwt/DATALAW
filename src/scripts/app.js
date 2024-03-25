@@ -1,19 +1,19 @@
 "use strict"
 
 
-// condition : code du quizz ne se lance qui sur la page du quizz
+// condition : code du quiz ne se lance qui sur la page du quiz
 
-let quizzSection = document.querySelector(".quizz__container");
-if (quizzSection) {
+let quizSection = document.querySelector(".quiz__container");
+if (quizSection) {
 
   /* ---------- QUIZ MAIN CODE ---------- */
 
-  let questionElement = document.querySelector(".quizz__question");
-  let vraiBtn = document.querySelector(".quizz__button--vrai");
-  let fauxBtn = document.querySelector(".quizz__button--faux");
-  let feedbackElement = document.querySelector(".quizz__feedback");
-  let skipBtn = document.querySelector(".quizz__button--skip");
-  let counterElement = document.querySelector(".quizz__counter");
+  let questionElement = document.querySelector(".quiz__question");
+  let vraiBtn = document.querySelector(".quiz__button--vrai");
+  let fauxBtn = document.querySelector(".quiz__button--faux");
+  let feedbackElement = document.querySelector(".quiz__feedback");
+  let skipBtn = document.querySelector(".quiz__button--skip");
+  let counterElement = document.querySelector(".quiz__counter");
 
   let currentQuestionIndex = 0;
   let score = 0;
@@ -56,7 +56,7 @@ if (quizzSection) {
     counterElement.textContent = `${currentQuestionIndex + 1}/${questionsData.length}`;
 
     // Assign class based on periode for the current question
-    assignClassBasedOnPeriode(currentQuestion.periode, quizzSection);
+    assignClassBasedOnPeriode(currentQuestion.periode, quizSection);
   }
 
   function checkAnswer(userAnswer, currentQuestion) {
@@ -78,19 +78,19 @@ if (quizzSection) {
 
   /* ---------- QUIZ NAVIGATION ---------- */
 
-  let startBtn = document.querySelector(".quizz__button--start");
-  let startSection = document.querySelector(".quizz--start");
+  let startBtn = document.querySelector(".quiz__button--start");
+  let startSection = document.querySelector(".quiz--start");
 
-  let recapSection = document.querySelector(".quizz--recap");
-  let resultElement = document.querySelector(".quizz__result");
+  let recapSection = document.querySelector(".quiz--recap");
+  let resultElement = document.querySelector(".quiz__result");
 
   startBtn.addEventListener("click", function () {
     startSection.classList.add("hidden");
-    quizzSection.classList.remove("hidden");
+    quizSection.classList.remove("hidden");
   });
 
   function showSummary() {
-    quizzSection.classList.add("hidden");
+    quizSection.classList.add("hidden");
     recapSection.classList.remove("hidden");
     resultElement.textContent = `Votre score: ${score}/${questionsData.length}`;
 
@@ -99,8 +99,8 @@ if (quizzSection) {
 
   /* ---------- RECAP ---------- */
 
-  let recapTrueList = document.querySelector(".quizz--recap__true");
-  let recapFalseList = document.querySelector(".quizz--recap__false");
+  let recapTrueList = document.querySelector(".quiz--recap__true");
+  let recapFalseList = document.querySelector(".quiz--recap__false");
 
   function populateRecapLists() {
     // Clear existing content in the recap lists
@@ -169,7 +169,7 @@ if (quizzSection) {
 
   /* ---------- RESET QUIZ ---------- */
 
-  let restartBtn = document.querySelector(".quizz__button--restart");
+  let restartBtn = document.querySelector(".quiz__button--restart");
 
   restartBtn.addEventListener("click", restartQuiz);
 
