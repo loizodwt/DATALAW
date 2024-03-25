@@ -2,6 +2,7 @@
 
 /* ---------- QUIZ MAIN CODE ---------- */
 
+let quizzSection = document.querySelector(".quizz__container");
 let questionElement = document.querySelector(".quizz__question");
 let vraiBtn = document.querySelector(".quizz__button--vrai");
 let fauxBtn = document.querySelector(".quizz__button--faux");
@@ -14,7 +15,7 @@ let score = 0;
 let questionsData = null;
 let userAnswers = [];
 
-if (questionElement) {
+if (quizzSection) {
   fetch("../assets/data/questions.json")
     .then((response) => response.json())
     .then((data) => {
@@ -34,7 +35,6 @@ if (questionElement) {
           showSummary();
         }
       });
-
     });
 }
 
@@ -50,6 +50,9 @@ function showQuestion() {
   vraiBtn.disabled = false;
   fauxBtn.disabled = false;
   counterElement.textContent = `${currentQuestionIndex + 1}/${questionsData.length}`;
+
+  // Assign class based on periode for the current question
+  assignClassBasedOnPeriode(currentQuestion.periode, quizzSection);
 }
 
 function checkAnswer(userAnswer, currentQuestion) {
@@ -69,12 +72,11 @@ function checkAnswer(userAnswer, currentQuestion) {
   }
 }
 
-
 /* ---------- QUIZ NAVIGATION ---------- */
 
 let startBtn = document.querySelector(".quizz__button--start");
 let startSection = document.querySelector(".quizz--start");
-let quizzSection = document.querySelector(".quizz__container");
+
 let recapSection = document.querySelector(".quizz--recap");
 let resultElement = document.querySelector(".quizz__result");
 
@@ -156,6 +158,51 @@ function restartQuiz() {
   // Call showQuestion to display the first question
   showQuestion();
 }
+
+/* ---------- FUNCTION TO ASSIGN CLASS BASED ON PERIODE ---------- */
+
+function parsePeriodeToYear(periode) {
+  // Check if the periode contains the word "siècle"
+  if (periode.includes("siècle")) {
+    // Extract century number from the periode string
+    let century = parseInt(periode.match(/\d+/)[0]);
+
+    // Convert century to year
+    return (century - 1) * 100;
+  } else {
+    // Extract the single year from the periode string
+    return parseInt(periode);
+  }
+}
+
+
+function assignClassBasedOnPeriode(periode, element) {
+  if (!periode || !element) return;
+
+  let year = parsePeriodeToYear(periode);
+  let periodeClass = "";
+
+  console.log("Year:", year); // Log the year for debugging
+
+  if (year < 1900) {
+    periodeClass = "MoyenAge";
+  } else if (year >= 1900 && year <= 1999) {
+    periodeClass = "two";
+  } else if (year >= 2000 && year <= 2009) {
+    periodeClass = "three";
+  } else if (year >= 2010 && year <= 2019) {
+    periodeClass = "four";
+  } else {
+    periodeClass = "five";
+  }
+
+  // Remove existing classes
+  element.classList.remove("MoyenAge", "two", "three", "four", "five");
+
+  // Add new class
+  element.classList.add(periodeClass);
+}
+
 
 
 
