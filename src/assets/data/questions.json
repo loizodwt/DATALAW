@@ -1,23 +1,5 @@
 [
   {
-    "question": "Les animaux peuvent être jugés devant les tribunaux pour des délits criminels.",
-    "pays": "France",
-    "reponse": true,
-    "anecdote": "Le plus ancien procès d’un animal retrouvé date du 14ᵉ siècle, une truie a été pendue pour avoir mangé un nouveau-né. Il est possible que d’autres procès aient eu lieu avant cela cependant.",
-    "pour": "86.7%",
-    "contre": "13.3%",
-    "periode": "14ᵉ siècle"
-  },
-  {
-    "question": "Il est interdit de porter une armure au Parlement de Londres.",
-    "pays": "Royaume-Uni",
-    "reponse": true,
-    "anecdote": "Bien que la loi soit techniquement toujours d’application, aucun arrêt n’a plus été fait depuis fort longtemps.",
-    "pour": "66.7%",
-    "contre": "33.3%",
-    "periode": "1313"
-  },
-  {
     "question": "Au Nevada, il est interdit de chevaucher un chameau sur l'autoroute.",
     "pays": "États-Unis",
     "reponse": false,
