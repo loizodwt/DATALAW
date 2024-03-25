@@ -182,8 +182,6 @@ function assignClassBasedOnPeriode(periode, element) {
   let year = parsePeriodeToYear(periode);
   let periodeClass = "";
 
-  console.log("Year:", year); // Log the year for debugging
-
   if (year < 1900) {
     periodeClass = "MoyenAge";
   } else if (year >= 1900 && year <= 1999) {
