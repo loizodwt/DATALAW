@@ -10,22 +10,23 @@ html {
   scroll-behavior: smooth;
 }
 
-.homepage {
-  // Permet de devoir scroller pour créer l'effet scroll horizontal sur .timeline
-  height: 200vh;
-  // Style temporaire
-  &__h1 {
-    font-family: "ClashDisplay-Variable";
-    font-weight: 900;
-    font-size: 108px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
+// .homepage {
+//   // Permet de devoir scroller pour créer l'effet scroll horizontal sur .timeline
+//   height: 200vh;
+//   // Style temporaire
+//   &__h1 {
+//     font-family: "ClashDisplay-Variable";
+//     font-weight: 900;
+//     font-size: clamp(50px, 4vw, 108px); // Valeur à changer !
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//   }
+// }
 
 // Timeline
 .timeline {
+  margin: 100px;
   height: 100vh;
   overflow-y: scroll;
   scroll-snap-type: y mandatory; // j'ai mis y pour avoir plus simple, à changer pour x
@@ -43,7 +44,7 @@ html {
     scroll-snap-align: start;
     scroll-snap-stop: normal;
     height: 100vh;
-    width: 100vw;
+    width: 90vw;
     overflow: hidden;
   }
 
@@ -53,6 +54,7 @@ html {
       url(../assets/images/background_1@2x.jpg) 2x
     );
     background-repeat: no-repeat;
+    cursor: url("../assets/images/cursors/moyen-age-curseur.png"), auto;
   }
 
   &__2 {
@@ -130,6 +132,9 @@ html {
 
 // Media-querries
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  .timeline {
+    margin: 0;
+  }
   .bg-5 {
     padding: 32px;
     margin-left: 24px;
@@ -152,6 +157,7 @@ html {
 }
 @media (min-width: 481px) and (max-width: 768px) {
   .timeline {
+    margin: 0;
     &__5 svg {
       position: absolute;
       bottom: 0;
