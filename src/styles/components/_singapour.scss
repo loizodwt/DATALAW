@@ -13,7 +13,11 @@
 
 .singapour {
   position: relative;
-
+  &__label {
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+  }
   &__modal {
     position: absolute;
     background-color: #fafafa;
@@ -32,12 +36,13 @@
   }
   &__txt {
     font-family: "w9";
-
+    
     &--bottom {
       padding-bottom: 74px;
     }
-
+    
     &--nav {
+      font-family: "w9";
       font-size: 20px;
       color: #fafafa;
       line-height: 0%;
@@ -45,8 +50,6 @@
     }
   }
   &_notepad {
-    width: 20px;
-    height: 20px;
     margin-top: 0px;
   }
   &__icons {
