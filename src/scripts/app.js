@@ -128,6 +128,7 @@ gsap.to(sections, {
   },
 });
 
+// Draggable icons
 gsap.registerPlugin(Draggable);
 
 Draggable.create(".singapour__grab", {

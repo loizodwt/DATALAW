@@ -100,6 +100,15 @@
     bottom: 200px;
     right: 15%;
   }
+  &__datalaws {
+    position: absolute;
+    bottom: 200px;
+    right: 30%;
+  }
+  &__datalaws img {
+    height: 64px;
+    width: auto;
+  }
 }
 
 .icon-name {
@@ -157,10 +166,8 @@
     }
     &__folder,
     &__bin,
-    &__pait {
-      bottom: 50px;
-    }
-    &__paint {
+    &__paint,
+    &__datalaws {
       bottom: 50px;
     }
   }
