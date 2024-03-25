@@ -1,6 +1,5 @@
 @import "utils/variables";
 @import "components/type";
-@import "components/moyen-age";
 
 body {
   margin: 0;
@@ -28,8 +27,8 @@ html {
 // Timeline
 .timeline {
   height: 100vh;
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory; // j'ai mis y pour avoir plus simple, à changer pour x
   scroll-behavior: smooth;
   border-radius: 20px;
   display: flex;
@@ -58,9 +57,11 @@ html {
 
   &__2 {
     background-image: image-set(
-      url(../assets/images/background_2.jpg) 1x,
-      url(../assets/images/background_2@2x.png) 2x
+      url(../assets/images/epingle.png) 1x,
+      url(../assets/images/epingle@2x.png) 2x
     );
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: "BIZ UDMincho", serif;
   }
 
@@ -527,6 +528,8 @@ html {
     }
   }
 }
+@import "components/moyen-age";
+
 
 /* TEXAS */
 @font-face {
@@ -590,6 +593,8 @@ html {
     }
   }
 }
+@import "components/texas";
+
 
 /* SINGAPOUR */
 
@@ -676,3 +681,6 @@ html {
     }
   }
 }
+@import "components/singapour";
+@import "components/y2k";
+

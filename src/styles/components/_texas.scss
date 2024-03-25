@@ -1,0 +1,100 @@
+@font-face {
+    font-family: "elite";
+    src:
+        url("../assets/fonts/texas/SpecialElite.ttf");
+  }
+  @font-face {
+    font-family: "gensco";
+    src:
+        url("../assets/fonts/gensco/GENSCO.otf");
+  }
+  
+.texas {
+    padding: 17px 32px;
+    overflow-x: hidden;
+    position: relative;
+
+    &__content {
+        opacity: 1;
+        z-index: 80;
+    }
+    &__txt {
+        font-family: "elite";
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    &__chiffre {
+        font-size: 122px;
+        line-height: 0%;
+        margin-left: 80%;
+        margin-top: -90vh;
+    }
+    &__title, 
+    &__h3 {
+        font-family: "gensco";
+        margin-top: 50px;
+        z-index: 8;
+
+    }
+    &__title {
+        font-size: 33px;
+        margin-top: -7rem;
+    }
+    &__h3 {
+        font-size: 24px;
+    }
+    &__img {
+        margin-left: -33%;
+
+        &--ville {
+        margin-left: -33px;
+        z-index: 5;
+        // margin-top: -10px;
+        position: absolute; // ajout
+        bottom: 0%;
+        width: 300px;
+        }
+        
+        &--papier {
+            width: 100vw;
+        }
+        
+    }
+}
+
+
+
+@media (min-width: 481px) {
+    .texas {
+        position: relative;
+
+        &__img {
+            &--ville {
+                position: absolute;
+                margin-top: 10px;
+                bottom: 0%;
+                width: 400px;
+                z-index: 80;
+            }
+        }
+        &__content {
+            max-width: 600px;
+        }
+        &__txt {
+            font-size: $p-tablet;
+        }
+        &__h3 {
+            font-size: $h3-tablet;
+        }
+        &__title {
+            font-size: $h2-tablet;
+            margin-top: -150px;
+        }
+        &__chiffre {
+            font-size: 150px;
+            line-height: 0%;
+        }
+    }
+}
+
+// laisser de la place pour la time line à droite donc normal l'espace à droite
