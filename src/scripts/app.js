@@ -131,11 +131,11 @@ gsap.to(sections, {
 gsap.registerPlugin(Draggable);
 
 Draggable.create(".singapour__grab", {
-  bounds: ".singapour",
+  bounds: ".timeline__3",
   inertia: false
 });
 
 Draggable.create(".singapour__modal", {
-  bounds: ".singapour",
+  bounds: ".timeline__3",
   inertia: false
 });

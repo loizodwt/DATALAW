@@ -12,7 +12,7 @@
 }
 
 .singapour {
-  padding: 5rem 33px;
+  // padding: 5rem 33px;
   position: relative;
 
   &__modal {
@@ -86,7 +86,6 @@
     display: none;
     z-index: -1;
     padding: 5px;
-    border: 0.5px solid #fafafa;
   }
   &__bin {
     position: absolute;
