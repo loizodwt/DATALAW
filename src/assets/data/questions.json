@@ -45,13 +45,13 @@
     "periode": "2023"
   },
   {
-    "question": "Au Nevada, il est interdit de chevaucher un chameau sur l'autoroute.",
+    "question": "En Pennsylvanie, un mariage est non-valide si l’un des époux est ivre pendant la demande du certificat de mariage.",
     "pays": "États-Unis",
-    "reponse": false,
-    "anecdote": "En réalité, toute personne chevauchant un animal quel qu’il soit a les mêmes droits et devoirs que n’importe quel autre automobiliste sur l’autoroute. Y chevaucher un chameau n’est pas interdit, mais peut être dangereux.",
+    "reponse": true,
+    "anecdote": "Un conseil: attendez d’avoir obtenu le certificat avant de faire la fête.",
     "pour": "73.3%",
     "contre": "26.7%",
-    "periode": "1917"
+    "periode": "1923"
   },
   {
     "question": "La coupe mulet est interdite.",
