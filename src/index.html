@@ -23,29 +23,48 @@
 
 <body>
 
-  <header>
-    <nav class="nav">
-      <ul class="nav__ul">
-        <li><a href="/index.html" class="nav__el">Accueil</a></li>
-        <li><a href="/quizz.html" class="nav__el">Quizz</a></li>
-      </ul>
-    </nav>
-  </header>
 
   <main>
 
-    <section>
-      <h1 class="title">DataLaws</h1>
-      <p>DataLaws, c'est un jeu de données mettant à l'honneur des lois partout dans le monde…pas toujours très sérieuses. Actuelles ou archaïques, farfelues ou hyper-spécifiques, découvrez le monde parfois illogique de la loi.</p>
-      <button class="btn">Découvrir les lois</button>
+    <section class="section">
+      
+      <div class="main">
+        <canvas id="canvas"></canvas>
+        <div class="main__content">
+          <h1 class="main__title">DataLaws</h1>
+          <p class="main__txt">DataLaws, c'est un jeu de données mettant à l'honneur des lois partout dans le monde…pas toujours très sérieuses. Actuelles ou archaïques, farfelues ou hyper-spécifiques, découvrez le monde parfois illogique de la loi.</p>
+        </div>     
+      </div>    
     </section>
 
-    <section>
+    <section id="navbar" class="navbar navbar--hide">
+      <nav class="nav">
+        <ul class="nav__ul">
+          <li><a href="/index.html" class="nav__el">Accueil</a></li>
+          <li><a href="/quizz.html" class="nav__el">Quizz</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section class="graph">
+      <!-- insérer le code du graphique -->
+    </section>
+
+    <section class="introquiz">
+      <h2 class="introquiz__h2">À vous de jouer&nbsp;!</h2>
+      <div class="introquiz__glass">
+        <p>Voici 10 propositions de lois étranges, parmi lesquelles se sont glissées des légendes urbaines fausses.</p>
+        <p>À vous de jugersi vous les approuvez et décidez de les mettre en place officiellement.</p>
+      </div>
+      <button class="introquiz__btn"> <a href="./quizz.html"></a>Commencer le quiz</button>
+    </section>
+
+    <!-- <section>
       <h2 class="title">Taux d'absurdité par pays</h2>
-      <p>Pour calculer le taux d’absurdité, nous avons demandé à plusieurs personnes de donner un « indice d’absurdité » sur cinq pour chacune des lois, et avons fait une moyenne des réponses obtenues.</p>
+      <p>Pour calculer le taux d’absurdité, nous avons demandé à plusieurs personnes de donner un « indice d’absurdité » sur cinq pour chacune des lois, et avons fait une moyenne des réponses obtenues.</p> -->
       <!-- Insérer graphique -->
 
-      <h2 class="title">Top des lois les plus absurdes</h2>
+      <!-- <h2 class="title">Top des lois les plus absurdes</h2>
 
       <div class="top">
         <div class="top__container">
@@ -57,13 +76,13 @@
           <h4 class="top__comment--title">Commentaire</h4>
           <p class="top__comment">Ceci est le commentaire de la rédaction.</p>
         </div>
-      </div>
+      </div> -->
       <!-- Timeline -->
 
-      <h2 class="title">Envie de vous tester ?</h2>
+      <!-- <h2 class="title">Envie de vous tester ?</h2>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe ea magni iusto quisquam accusamus, provident iste quas similique eum deserunt laboriosam velit, placeat illum amet nemo nihil, praesentium exercitationem voluptates.</p>
       <a href="quizz.html" class="btn">Faire le quizz</a>
-    </section>
+    </section> -->
 
   </main>
 
