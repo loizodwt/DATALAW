@@ -93,7 +93,7 @@ body {
 }
 .nav__el {
   list-style: none;
-  color: black;
+  color: #333333;
   font-family: gruppo;
   margin: 0 16px;
 }
@@ -121,6 +121,7 @@ body {
   font-size: 34px;
   text-align: center;
   font-family: gruppo;
+  color: #333333;
   font-weight: lighter;
 }
 .main__txt {
@@ -129,6 +130,7 @@ body {
   font-family: sato;
   line-height: 1.6;
   margin: auto;
+  color: #333333;
   margin-top: 111px;
   justify-content: center;
 }
@@ -154,6 +156,7 @@ body {
   margin-top: 0px;
   text-align: center;
   padding-top: 54px;
+  color: #333333;
 }
 .introquiz__glass {
   background-color: rgba(173, 168, 233, 0.5);
@@ -163,7 +166,7 @@ body {
   -webkit-backdrop-filter: blur(15);
           backdrop-filter: blur(15);
   justify-content: center;
-  padding: 16px;
+  padding: 16px 33px;
   margin: 0% auto;
   z-index: 8;
   align-items: center;
@@ -172,18 +175,21 @@ body {
 }
 .introquiz__glass p {
   font-family: sato;
+  color: #333333;
   font-size: 18px;
   line-height: 1.6;
 }
 .introquiz__btn {
   display: flex;
   font-size: 18px;
-  background-color: #9486c4;
-  border: 2px solid #bbaee7;
+  background-color: rgba(173, 168, 233, 0.5);
+  -webkit-backdrop-filter: blur(5);
+          backdrop-filter: blur(5);
+  border: 2px solid #9486c4;
   border-radius: 15px;
   margin: 74px auto auto auto;
   justify-content: center;
-  color: #E6EFEB;
+  color: black;
   padding: 10px;
   font-weight: lighter;
   cursor: pointer;
@@ -231,6 +237,7 @@ a {
   }
   .main__txt {
     font-size: 20px;
+    max-width: 600px;
   }
   .main__content {
     width: 80%;
@@ -244,5 +251,22 @@ a {
   }
   .introquiz__glass p {
     font-size: 20px;
+  }
+}
+@media (min-width: 1225px) {
+  .main__txt {
+    margin-top: 100px;
+    background: none;
+    border: none;
+    color: #E6EFEB;
+    max-width: 500px;
+  }
+  .main__title {
+    font-size: 200px;
+    line-height: 0%;
+    width: 100%;
+  }
+  .introquiz {
+    padding-top: 111px;
   }
 }/*# sourceMappingURL=app.css.map */

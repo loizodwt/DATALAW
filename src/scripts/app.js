@@ -293,6 +293,11 @@ animation();
 canvas.addEventListener('mousemove', canvasMouseOver);
 
 
+
+
+
+
+
 import { gsap } from "gsap";
 
 document.addEventListener('DOMContentLoaded', function () {
