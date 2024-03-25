@@ -1,5 +1,10 @@
 "use strict";
 
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+
+/*
 document.addEventListener("DOMContentLoaded", function () {
   const questionElement = document.getElementById("question");
   const vraiBtn = document.getElementById("vraiBtn");
@@ -72,4 +77,53 @@ document.addEventListener("DOMContentLoaded", function () {
     skipBtn.style.display = "none";
     feedbackElement.textContent = "";
   }
+});
+*/
+
+
+
+
+
+
+
+
+
+
+
+// Scroll horizontal, à priori il n'y a pas besoin d'y toucher
+gsap.registerPlugin(ScrollTrigger);
+
+const timeline = document.querySelector(".timeline");
+const sections = gsap.utils.toArray(".timeline > div");
+
+let totalWidth = 0;
+sections.forEach((section) => {
+  const sectionStyles = getComputedStyle(section);
+  totalWidth += section.offsetWidth + parseInt(sectionStyles.marginLeft) + parseInt(sectionStyles.marginRight);
+});
+
+gsap.to(sections, {
+  x: () => {
+    return -(totalWidth - timeline.offsetWidth);
+  },
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".timeline",
+    pin: true,
+    start: "top top",
+    scrub: 1,
+    end: () => {
+      return "+=" + (totalWidth - timeline.offsetWidth);
+    },
+    snap: {
+      snapTo: "labels",
+      duration: { min: 0.1, max: 0.3 },
+      delay: 0.2,
+    },
+    onLeaveBack: (self) => {
+      if (self.progress === 1 && window.innerWidth < 768) {
+        self.scroll(self.start - 50);
+      }
+    }
+  },
 });

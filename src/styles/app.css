@@ -16,12 +16,18 @@
   src: url("assets/fonts/ClashDisplay-Variable.ttf");
 }
 @font-face {
-  font-family: "Satoshi";
-  src: url("assets/fonts/Satoshi-Variable.ttf");
+  font-family: "Satoshi-Variable";
+  src: url("../assets/fonts/Satoshi-Variable.woff2") format("woff2"), url("../assets/fonts/Satoshi-Variable.woff") format("woff"), url("../assets/fonts/Satoshi-Variable.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
 }
 @font-face {
-  font-family: "Satoshi Italic";
-  src: url("assets/fonts/Satoshi-VariableItalic.ttf");
+  font-family: "ClashDisplay-Variable";
+  src: url("../assets/fonts/ClashDisplay-Variable.woff2") format("woff2"), url("../assets/fonts/ClashDisplay-Variable.woff") format("woff"), url("../assets/fonts/ClashDisplay-Variable.ttf") format("truetype");
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
 }
 body {
   margin: 0;
@@ -32,16 +38,34 @@ html {
   scroll-behavior: smooth;
 }
 
+.homepage {
+  height: 200vh;
+}
+.homepage__h1 {
+  font-family: "ClashDisplay-Variable";
+  font-weight: 900;
+  font-size: 108px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .timeline {
   height: 100vh;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 .timeline__1, .timeline__2, .timeline__3, .timeline__4, .timeline__5 {
   scroll-snap-align: start;
   scroll-snap-stop: normal;
   height: 100vh;
+  width: 100vw;
+  overflow: hidden;
 }
 .timeline__1 {
   background-image: -webkit-image-set(url(../assets/images/background_1.jpg) 1x, url(../assets/images/background_1@2x.jpg) 2x);
@@ -49,15 +73,18 @@ html {
   background-repeat: no-repeat;
 }
 .timeline__2 {
-  background-image: -webkit-image-set(url(../assets/images/background_2.jpg) 1x, url(../assets/images/background_2@2x.png) 2x);
-  background-image: image-set(url(../assets/images/background_2.jpg) 1x, url(../assets/images/background_2@2x.png) 2x);
+  background-image: -webkit-image-set(url(../assets/images/epingle.png) 1x, url(../assets/images/epingle@2x.png) 2x);
+  background-image: image-set(url(../assets/images/epingle.png) 1x, url(../assets/images/epingle@2x.png) 2x);
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: "BIZ UDMincho", serif;
 }
 .timeline__3 {
   background-color: #008081;
 }
 .timeline__4 {
-  background-color: rgb(123, 225, 225);
+  background-image: -webkit-image-set(url(../assets/images/y2k/bgy2k.jpg) 1x, url(../assets/images/y2k/bgy2k@2x.jpg) 2x);
+  background-image: image-set(url(../assets/images/y2k/bgy2k.jpg) 1x, url(../assets/images/y2k/bgy2k@2x.jpg) 2x);
 }
 .timeline__5 {
   background-color: rgb(221, 221, 114);
@@ -89,7 +116,7 @@ html {
 .law-5__nbr {
   display: flex;
   justify-content: center;
-  font-family: "Satoshi";
+  font-family: "Satoshi-Variable";
   font-weight: 800;
   background: linear-gradient(90deg, rgb(194, 160, 250) 0%, rgb(115, 143, 243) 100%);
   background-clip: text;
@@ -97,7 +124,7 @@ html {
   -webkit-text-fill-color: transparent;
 }
 .law-5__h2 {
-  font-family: "Clash Display";
+  font-family: "ClashDisplay-Variable";
   margin-top: 24px;
   margin-bottom: 24px;
   background: linear-gradient(90deg, rgb(194, 160, 250) 0%, rgb(115, 143, 243) 100%);
@@ -106,7 +133,7 @@ html {
   -webkit-text-fill-color: transparent;
 }
 .law-5__h3 {
-  font-family: "Clash Display";
+  font-family: "ClashDisplay-Variable";
   margin-top: 16px;
   margin-bottom: 16px;
   background: linear-gradient(90deg, rgb(194, 160, 250) 0%, rgb(115, 143, 243) 100%);
@@ -115,7 +142,7 @@ html {
   -webkit-text-fill-color: transparent;
 }
 .law-5__p {
-  font-family: "Satoshi";
+  font-family: "Satoshi-Variable";
   line-height: 140%;
   color: white;
 }
@@ -278,6 +305,169 @@ html {
   font-size: 20px;
 }
 
+/* MOYEN AGE */
+@font-face {
+  font-family: "Ortica";
+  src: url("../assets/fonts/ortica/OrticaLinear-Regular.woff2");
+}
+@font-face {
+  font-family: "Valiant";
+  src: url("../assets/fonts/PrinceValiant.ttf");
+}
+@font-face {
+  font-family: "livingstone";
+  src: url("../assets/fonts/livingstone.regular.ttf");
+}
+:root {
+  --red-color: #b50008;
+}
+
+.MoyenAge {
+  padding: 17px 32px;
+  position: relative;
+}
+.MoyenAge__vert, .MoyenAge__hor {
+  display: none;
+}
+.MoyenAge__r {
+  height: 111px;
+}
+.MoyenAge__r--769 {
+  display: none;
+}
+.MoyenAge__top {
+  display: flex;
+  position: relative;
+  margin-top: -7rem;
+  width: 250px;
+}
+.MoyenAge__title {
+  align-content: baseline;
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  font-size: 33px;
+  font-family: "Valiant";
+  color: #B50008;
+}
+.MoyenAge__title--769 {
+  display: none;
+}
+.MoyenAge__h3 {
+  font-size: 24px;
+  font-family: "valiant";
+  color: #B50008;
+  margin-top: 50px;
+}
+.MoyenAge__text {
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: "ortica";
+  max-width: 350px;
+}
+.MoyenAge__text--adoptee {
+  font-size: 16px;
+}
+.MoyenAge__chiffre {
+  font-size: 122px;
+  font-family: "livingstone";
+  color: #B50008;
+  margin-left: 80%;
+  line-height: 0%;
+  margin-top: 60px;
+}
+.MoyenAge__img--lapin {
+  margin-left: 50%;
+  margin-top: -15%;
+  position: absolute;
+  transform: rotate3dy("180deg");
+  display: none;
+}
+
+@media (min-width: 481px) {
+  .MoyenAge__img--lapin {
+    display: block;
+    bottom: 8%;
+    right: 8%;
+    width: 250px;
+  }
+  .MoyenAge__text {
+    max-width: 550px;
+  }
+  .MoyenAge__top {
+    margin-top: -9rem;
+  }
+}
+@media (min-width: 769px) {
+  .MoyenAge {
+    display: grid;
+    position: relative;
+    grid-auto-columns: 1fr 1fr 0.2fr 1.8fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.7fr 1.1fr 0.8fr 1.7fr 0.7fr;
+    gap: 0px 0px;
+    grid-template-areas: "chiffre . oyaume ." "chiffre . adoptee adoptee" "chiffre interdit interdit interdit" "chiffre infosup infosup infosup" "vert cependant cependant lapin" "vert hor hor hor";
+  }
+  .MoyenAge__chiffre {
+    grid-area: chiffre;
+  }
+  .MoyenAge__vert {
+    grid-area: vert;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .MoyenAge__hor {
+    grid-area: hor;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .MoyenAge__img {
+    grid-area: lapin;
+    width: 150px;
+  }
+  .MoyenAge__cependant {
+    grid-area: cependant;
+    padding-left: 33px;
+  }
+  .MoyenAge__info {
+    grid-area: infosup;
+    padding-left: 33px;
+  }
+  .MoyenAge__title--769 {
+    grid-area: oyaume;
+  }
+  .MoyenAge__interdit {
+    grid-area: interdit;
+  }
+  .MoyenAge__text--adoptee {
+    grid-area: adoptee;
+  }
+  .MoyenAge__r {
+    display: none;
+  }
+  .MoyenAge__r--769 {
+    position: absolute;
+    display: block;
+    background-image: url(../assets/images/background_1.jpg);
+  }
+  .MoyenAge__title {
+    display: none;
+  }
+  .MoyenAge__title--769 {
+    display: block;
+    position: relative;
+  }
+  .MoyenAge__text {
+    width: auto;
+  }
+  .MoyenAge__chiffre {
+    margin: auto;
+    font-size: 300px;
+  }
+}
+/* MOYEN AGE */
 @font-face {
   font-family: "Ortica";
   src: url("../assets/fonts/ortica/OrticaLinear-Regular.woff2");
@@ -297,17 +487,25 @@ html {
 .MoyenAge {
   padding: 17px 32px;
   position: relative;
+  background-image: -webkit-image-set(url(../assets/images/background_1.jpg) 1x, url(../assets/images/background_1@2x.jpg) 2x);
+  background-image: image-set(url(../assets/images/background_1.jpg) 1x, url(../assets/images/background_1@2x.jpg) 2x);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .MoyenAge__vert, .MoyenAge__hor {
   display: none;
 }
 .MoyenAge__r {
-  height: 111px;
+  width: 111px;
+}
+.MoyenAge__r--769 {
+  display: none;
 }
 .MoyenAge__top {
   display: flex;
   position: relative;
   margin-top: -7rem;
+  width: 250px;
 }
 .MoyenAge__title {
   align-content: baseline;
@@ -316,12 +514,15 @@ html {
   right: 0%;
   font-size: 33px;
   font-family: "Valiant";
-  color: var(--red-color);
+  color: #B50008;
+}
+.MoyenAge__title--769 {
+  display: none;
 }
 .MoyenAge__h3 {
   font-size: 24px;
   font-family: "valiant";
-  color: var(--red-color);
+  color: #B50008;
   margin-top: 50px;
 }
 .MoyenAge__text {
@@ -336,21 +537,135 @@ html {
 .MoyenAge__chiffre {
   font-size: 122px;
   font-family: "livingstone";
-  color: var(--red-color);
+  color: #B50008;
   margin-left: 80%;
   line-height: 0%;
   margin-top: 60px;
 }
 .MoyenAge__img--lapin {
-  width: 100px;
   margin-left: 50%;
   margin-top: -15%;
   position: absolute;
-  top: 50%;
-  right: 5%;
   transform: rotate3dy("180deg");
+  display: none;
 }
 
+@media (min-width: 481px) {
+  .MoyenAge__img--lapin {
+    display: block;
+    bottom: 8%;
+    right: 8%;
+    width: 250px;
+  }
+  .MoyenAge__text {
+    max-width: 550px;
+  }
+  .MoyenAge__top {
+    margin-top: -9rem;
+  }
+}
+@media (min-width: 769px) {
+  .MoyenAge {
+    padding-top: 5rem;
+    display: grid;
+    position: relative;
+    grid-auto-columns: 1fr 0.1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 0.8fr 1.2fr;
+    grid-template-rows: 1fr 0.7fr 1.1fr 0.8fr 1.7fr 0.7fr;
+    gap: 0px 0px;
+    grid-template-areas: "chiffre oyaume oyaume oyaume" "chiffre adoptee adoptee adoptee" "chiffre interdit interdit interdit" "chiffre infosup infosup infosup" "vert cependant cependant lapin" "vert hor hor hor";
+  }
+  .MoyenAge__chiffre {
+    grid-area: chiffre;
+    margin: 0px;
+    border-top: 1px solid #B50008;
+    border-left: 1px solid #B50008;
+    border-right: 1px solid #B50008;
+    font-size: 300px;
+  }
+  .MoyenAge__chiffre p {
+    text-align: center;
+  }
+  .MoyenAge__vert {
+    grid-area: vert;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .MoyenAge__hor {
+    grid-area: hor;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .MoyenAge__img {
+    grid-area: lapin;
+    width: 150px;
+  }
+  .MoyenAge__cependant {
+    grid-area: cependant;
+    padding-left: 33px;
+    padding-top: 33px;
+  }
+  .MoyenAge__info {
+    grid-area: infosup;
+    padding-left: 33px;
+    border-bottom: 1px solid #B50008;
+    border-right: 1px solid #B50008;
+  }
+  .MoyenAge__info h3 {
+    font-size: 30px;
+  }
+  .MoyenAge__title {
+    display: none;
+  }
+  .MoyenAge__title--769 {
+    grid-area: oyaume;
+    display: inline-block;
+    position: relative;
+    border-right: 1px solid #B50008;
+    border-top: 1px solid #B50008;
+    padding-right: 30%;
+    padding-left: 150px;
+    margin: 0%;
+    font-size: 45px;
+  }
+  .MoyenAge__interdit {
+    padding-left: 33px;
+    padding-right: 33px;
+    border-right: 1px solid #B50008;
+    grid-area: interdit;
+    padding-top: 33px;
+    margin: 0px;
+  }
+  .MoyenAge__text--adoptee {
+    margin: 0px;
+    border-right: 1px solid #B50008;
+    grid-area: adoptee;
+    padding-left: 150px;
+    padding-right: 33px;
+  }
+  .MoyenAge__r {
+    display: none;
+  }
+  .MoyenAge__r--769 {
+    position: absolute;
+    display: block;
+    background-image: url(../assets/images/background_1.jpg);
+    margin-top: 50px;
+    left: 20%;
+    width: 175px;
+    height: auto;
+    top: -2rem;
+    z-index: 40;
+    border: 1px solid #B50008;
+  }
+  .MoyenAge__text {
+    width: auto;
+    font-size: 20px;
+  }
+}
+/* TEXAS */
 @font-face {
   font-family: "elite";
   src: url("../assets/fonts/texas/SpecialElite.ttf");
@@ -405,6 +720,90 @@ html {
 }
 
 @font-face {
+  font-family: "elite";
+  src: url("../assets/fonts/texas/SpecialElite.ttf");
+}
+@font-face {
+  font-family: "gensco";
+  src: url("../assets/fonts/gensco/GENSCO.otf");
+}
+.texas {
+  padding: 17px 32px;
+  overflow-x: hidden;
+  position: relative;
+}
+.texas__content {
+  opacity: 1;
+  z-index: 80;
+}
+.texas__txt {
+  font-family: "elite";
+  font-size: 16px;
+  line-height: 1.6;
+}
+.texas__chiffre {
+  font-size: 122px;
+  line-height: 0%;
+  margin-left: 80%;
+  margin-top: -90vh;
+}
+.texas__title, .texas__h3 {
+  font-family: "gensco";
+  margin-top: 50px;
+  z-index: 8;
+}
+.texas__title {
+  font-size: 33px;
+  margin-top: -7rem;
+}
+.texas__h3 {
+  font-size: 24px;
+}
+.texas__img {
+  margin-left: -33%;
+}
+.texas__img--ville {
+  margin-left: -33px;
+  z-index: 5;
+  position: absolute;
+  bottom: 0%;
+  width: 300px;
+}
+.texas__img--papier {
+  width: 100vw;
+}
+
+@media (min-width: 481px) {
+  .texas {
+    position: relative;
+  }
+  .texas__img--ville {
+    position: absolute;
+    margin-top: 10px;
+    bottom: 0%;
+    width: 400px;
+    z-index: 80;
+  }
+  .texas__content {
+    max-width: 600px;
+  }
+  .texas__txt {
+    font-size: 20px;
+  }
+  .texas__h3 {
+    font-size: 30px;
+  }
+  .texas__title {
+    font-size: 45px;
+    margin-top: -150px;
+  }
+  .texas__chiffre {
+    font-size: 150px;
+    line-height: 0%;
+  }
+}
+/* SINGAPOUR */
+@font-face {
   font-family: "pix";
   src: url("../assets/fonts/singapour/pixM8pt.ttf");
 }
@@ -425,7 +824,7 @@ html {
   background-color: #000080;
   padding: 3px;
   height: 25px;
-  border: 2px solid #C0C0C0;
+  border: 2px solid #c0c0c0;
 }
 .singapour__txt {
   font-family: "w9";
@@ -480,4 +879,291 @@ html {
 }
 .singapour__folder--none {
   display: none;
+}
+
+@font-face {
+  font-family: "pix";
+  src: url("../assets/fonts/singapour/pixM8pt.ttf");
+}
+@font-face {
+  font-family: "w9";
+  src: url("../assets/fonts/singapour/W95FA.otf");
+}
+.singapour {
+  padding: 5rem 33px;
+  position: relative;
+}
+.singapour__modal {
+  background-color: #fafafa;
+  z-index: 5;
+  border: 3px solid #C0C0C0;
+  border-top: none;
+}
+.singapour__navbar {
+  display: flex;
+  background-color: #000080;
+  padding: 3px;
+  height: 25px;
+  border: 2px solid #C0C0C0;
+  position: relative;
+}
+.singapour__txt {
+  font-family: "w9";
+}
+.singapour__txt--bottom {
+  padding-bottom: 74px;
+}
+.singapour__txt--nav {
+  font-size: 20px;
+  color: #fafafa;
+  line-height: 0%;
+  margin-top: 12px;
+}
+.singapour_notepad {
+  width: 20px;
+  height: 20px;
+  margin-top: 0px;
+}
+.singapour__icons {
+  width: 80px;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  right: 5px;
+}
+.singapour__icon {
+  margin-top: 3px;
+  width: 20px;
+  height: 20px;
+}
+.singapour__content {
+  max-width: 94%;
+  margin: auto 3%;
+}
+.singapour__title {
+  font-family: "pix";
+  font-size: 33px;
+  margin-top: 54px;
+  margin-bottom: 33px;
+}
+.singapour__h3 {
+  font-size: 24px;
+  margin-top: 54px;
+  font-family: "pix";
+  line-height: 1.2;
+}
+.singapour__folder {
+  position: absolute;
+  bottom: 200px;
+  left: 40%;
+}
+.singapour__grab {
+  display: none;
+  z-index: -1;
+  padding: 5px;
+  border: 0.5px solid #fafafa;
+}
+.singapour__bin {
+  position: absolute;
+  bottom: 200px;
+  left: 10%;
+}
+.singapour__paint {
+  position: absolute;
+  bottom: 200px;
+  right: 15%;
+}
+
+@media (min-width: 481px) {
+  .singapour__modal {
+    max-width: 80%;
+    justify-content: center;
+  }
+}
+@media (min-width: 560px) {
+  .singapour__grab {
+    display: block;
+    z-index: 2;
+  }
+}
+@media (min-width: 769px) {
+  .singapour__h3 {
+    font-size: 30px;
+  }
+  .singapour__title {
+    font-size: 45px;
+  }
+  .singapour__txt {
+    font-size: 20px;
+  }
+  .singapour__modal {
+    max-width: 60%;
+  }
+}
+@media (min-width: 1025px) {
+  .singapour__h3 {
+    font-size: 48px;
+  }
+  .singapour__title {
+    font-size: 100px;
+  }
+  .singapour__txt {
+    font-size: 32px;
+  }
+  .singapour__modal {
+    max-width: 80%;
+  }
+  .singapour__folder, .singapour__bin, .singapour__pait {
+    bottom: 50px;
+  }
+  .singapour__paint {
+    bottom: 50px;
+  }
+}
+@font-face {
+  font-family: "radar";
+  src: url("../assets/fonts/radar.ttf");
+}
+@font-face {
+  font-family: "jura";
+  src: url("../assets/fonts/Jura-Regular.ttf");
+}
+.y2k {
+  background-image: -webkit-image-set(url(../assets/images/y2k/bgy2k.jpg) 1x, url(../assets/images/y2k/bgy2k@2x.jpg) 2x);
+  background-image: image-set(url(../assets/images/y2k/bgy2k.jpg) 1x, url(../assets/images/y2k/bgy2k@2x.jpg) 2x);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.y2k__content {
+  padding: 33px;
+  z-index: 5;
+}
+.y2k__bstars {
+  width: 90px;
+  position: absolute;
+  top: 5%;
+  left: 15%;
+}
+.y2k__chiffre {
+  font-size: 182px;
+  line-height: 0%;
+  font-family: jura;
+  position: absolute;
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  -webkit-text-fill-color: transparent;
+  top: -100px;
+  left: 60%;
+  font-style: italic;
+}
+.y2k__title {
+  font-size: 61px;
+  font-family: radar;
+  margin-top: 150px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  -webkit-text-fill-color: transparent;
+}
+.y2k__txt {
+  font-size: 16px;
+  font-family: jura;
+  margin-top: 0%;
+}
+.y2k__h3 {
+  font-size: 27px;
+  font-family: jura;
+  margin-top: 4rem;
+}
+.y2k__bottomstars {
+  width: 175px;
+  position: absolute;
+  bottom: 5%;
+  left: 45%;
+  z-index: 1;
+}
+.y2k__lotstars {
+  display: none;
+  z-index: 1;
+}
+
+@media (min-width: 481px) {
+  .y2k__bottomstars {
+    width: 200px;
+    bottom: 10%;
+    left: 45%;
+  }
+  .y2k__content {
+    max-width: 550px;
+  }
+  .y2k__chiffre {
+    left: 50%;
+  }
+}
+@media (min-width: 769px) {
+  .y2k__title {
+    font-size: 61px;
+  }
+  .y2k__txt {
+    font-size: 20px;
+  }
+  .y2k__h3 {
+    font-size: 30px;
+  }
+  .y2k__lotstars {
+    display: block;
+    width: 250px;
+    position: absolute;
+    bottom: 5%;
+    left: 45%;
+  }
+  .y2k__bottomstars {
+    display: none;
+  }
+}
+@media (min-width: 880px) {
+  .y2k__textes {
+    padding: 33px;
+    background-color: rgba(158, 170, 227, 0.1);
+    border-radius: 25px;
+    margin-left: 30%;
+    width: 100%;
+  }
+  .y2k__title {
+    margin-left: 30%;
+    font-size: 108px;
+    margin-top: 33px;
+  }
+  .y2k__chiffre {
+    top: 30%;
+    left: 5%;
+  }
+  .y2k__bstars {
+    left: 80%;
+  }
+  .y2k__lotstars {
+    width: 200px;
+    left: 70%;
+  }
+}
+@media (min-width: 1025px) {
+  .y2k__title {
+    font-size: 108px;
+  }
+  .y2k__txt {
+    font-size: 32px;
+  }
+  .y2k__h3 {
+    font-size: 48px;
+    margin-bottom: 0%;
+  }
+  .y2k__content {
+    max-width: 70%;
+  }
+  .y2k__textes {
+    margin-left: 20%;
+    margin-top: -7%;
+    width: 70%;
+  }
 }/*# sourceMappingURL=app.css.map */

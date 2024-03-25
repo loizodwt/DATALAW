@@ -3,14 +3,20 @@ $p-mobile: 16px;
 $h2-mobile: 61px;
 $h3-mobile: 27px;
 // ------
+$p-tablet: 20px;
+$h2-tablet: 45px;
+$h3-tablet: 30px;
+// ------
 $p-desktop: 32px;
 $h2-desktop: 108px;
 $h3-desktop: 48px;
 
+// Couleurs
 $quiz-primary-color: rgb(71, 179, 71);
 $quiz-secondary-color: rgb(193, 0, 0);
+$c-moyen-age: #B50008;
 
 // Fonts
-$law-5-h2: "Clash Display";
-$law-5-h3: "Clash Display";
-$law5-p: "Satoshi";
+$law-5-h2: "ClashDisplay-Variable";
+$law-5-h3: "ClashDisplay-Variable";
+$law5-p: "Satoshi-Variable";

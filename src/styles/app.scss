@@ -1,5 +1,8 @@
 @import "utils/variables";
 @import "components/type";
+@import "components/singapour";
+@import "components/y2k";
+@import "components/texas";
 
 body {
   margin: 0;
@@ -12,10 +15,15 @@ html {
 
 // Timeline
 .timeline {
+  margin: 100px;
   height: 100vh;
   overflow-y: scroll;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory; // j'ai mis y pour avoir plus simple, à changer pour x
   scroll-behavior: smooth;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 
   &__1,
   &__2,
@@ -25,6 +33,7 @@ html {
     scroll-snap-align: start;
     scroll-snap-stop: normal;
     height: 100vh;
+    width: 90vw;
   }
 
   &__1 {
@@ -33,14 +42,13 @@ html {
       url(../assets/images/background_1@2x.jpg) 2x
     );
     background-repeat: no-repeat;
-    cursor: url(../assets/images/moyen-age-curseur.png); // C'est un essai, je re-regarde ça demain
+    cursor: url("../assets/images/cursors/moyen-age-curseur.png"), auto;
   }
 
   &__2 {
-    background-image: image-set(
-      url(../assets/images/background_2.jpg) 1x,
-      url(../assets/images/background_2@2x.png) 2x
-    );
+    background-image: image-set(url(../assets/images/epingle.png) 1x, url(../assets/images/epingle@2x.png) 2x);
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: "BIZ UDMincho", serif;
   }
 
@@ -48,14 +56,198 @@ html {
     background-color: #008081;
   }
   &__4 {
-    background-color: rgb(123, 225, 225);
+    background-image: image-set(url(../assets/images/y2k/bgy2k.jpg) 1x, url(../assets/images/y2k/bgy2k@2x.jpg) 2x);
   }
   &__5 {
-    background-color: rgb(221, 221, 114);
+    display: flex;
+    align-items: center;
+    background-image: url(../assets/images/background_5.svg);
+    position: relative;
+  }
+  &__5 svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-90px, -100px);
+    width: 200px;
+    height: auto;
   }
 }
 
-// Maque la scrollbar sur la timeline, ne laissant que celle du site de base
+.bg-5 {
+  border-radius: 20px;
+  backdrop-filter: blur(30px);
+  background-color: #44434370;
+  border: 2px solid #888888;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+.law-5 {
+  &__nbr {
+    display: flex;
+    justify-content: center;
+    font-family: $law5-p;
+    font-weight: 800;
+    background: linear-gradient(90deg, rgba(194, 160, 250, 1) 0%, rgba(115, 143, 243, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &__h2 {
+    font-family: $law-5-h2;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    background: linear-gradient(90deg, rgba(194, 160, 250, 1) 0%, rgba(115, 143, 243, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &__h3 {
+    font-family: $law-5-h3;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    background: linear-gradient(90deg, rgba(194, 160, 250, 1) 0%, rgba(115, 143, 243, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &__p {
+    font-family: $law5-p;
+    line-height: 140%;
+    color: white;
+  }
+}
+
+// Media-querries
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .timeline {
+    margin: 0;
+  }
+  .bg-5 {
+    padding: 32px;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .law-5 {
+    &__nbr {
+      font-size: 182px;
+    }
+    &__h2 {
+      font-size: $h2-mobile;
+    }
+    &__h3 {
+      font-size: $h3-mobile;
+    }
+    &__p {
+      font-size: $p-mobile;
+    }
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .timeline {
+    margin: 0;
+    &__5 svg {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transform: translate(-90px, 765px);
+      width: 200px;
+      height: auto;
+    }
+  }
+  .law-5 {
+    &__nbr {
+      align-items: center;
+      font-size: 273px;
+    }
+    &__h2 {
+      font-size: $h2-mobile;
+    }
+    &__h3 {
+      font-size: $h3-mobile;
+    }
+    &__p {
+      font-size: $p-mobile;
+    }
+  }
+  .bg-5 {
+    margin-left: 80px;
+    margin-right: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .timeline {
+    &__5 svg {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transform: translate(-90px, 765px);
+      width: 200px;
+      height: auto;
+    }
+  }
+  .law-5 {
+    &__nbr {
+      align-items: center;
+      font-size: 273px;
+    }
+    &__h2 {
+      font-size: $h2-mobile;
+    }
+    &__h3 {
+      font-size: $h3-mobile;
+    }
+    &__p {
+      font-size: $p-mobile;
+    }
+  }
+  .bg-5 {
+    margin-left: 80px;
+    margin-right: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+@media (min-width: 1025px) {
+  .timeline {
+    &__5 svg {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transform: translate(-70px, 700px);
+      width: 200px;
+      height: auto;
+    }
+  }
+  .law-5 {
+    display: flex;
+    gap: 68px;
+
+    &__nbr {
+      align-items: center;
+      font-size: 410px;
+    }
+    &__h2 {
+      font-size: $h2-desktop;
+    }
+    &__h3 {
+      font-size: $h3-desktop;
+    }
+    &__p {
+      font-size: $p-desktop;
+    }
+  }
+  .bg-5 {
+    margin-left: 80px;
+    margin-right: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+// Masque la scrollbar sur la timeline, ne laissant que celle du site de base
 .timeline::-webkit-scrollbar {
   display: none; // Chrome
 }
@@ -111,91 +303,7 @@ html {
   }
 }
 
-@font-face {
-  font-family: "Ortica";
-  src: url("../assets/fonts/ortica/OrticaLinear-Regular.woff2");
-}
-
-@font-face {
-  font-family: "Valiant";
-  src: url("../assets/fonts/PrinceValiant.ttf");
-}
-
-@font-face {
-  font-family: "livingstone";
-  src: url("../assets/fonts/livingstone.regular.ttf");
-}
-
-:root {
-  --red-color: #b50008;
-}
-
-.MoyenAge {
-  padding: 17px 32px;
-  position: relative;
-
-  &__vert,
-  &__hor {
-    display: none;
-  }
-
-  &__r {
-    height: 111px;
-  }
-
-  &__top {
-    display: flex;
-    position: relative;
-    margin-top: -7rem;
-  }
-  &__title {
-    align-content: baseline;
-    position: absolute;
-    bottom: 0%;
-    right: 0%;
-    font-size: 33px;
-    font-family: "Valiant";
-    color: var(--red-color);
-  }
-
-  &__h3 {
-    font-size: 24px;
-    font-family: "valiant";
-    color: var(--red-color);
-    margin-top: 50px;
-  }
-  &__text {
-    font-size: 16px;
-    line-height: 1.6;
-    font-family: "ortica";
-    max-width: 350px;
-
-    &--adoptee {
-      font-size: 16px;
-    }
-  }
-  &__chiffre {
-    font-size: 122px;
-    font-family: "livingstone";
-    color: var(--red-color);
-    margin-left: 80%;
-    line-height: 0%;
-    margin-top: 60px;
-  }
-
-  &__img {
-    &--lapin {
-      width: 100px;
-      margin-left: 50%;
-      margin-top: -15%;
-      position: absolute;
-      top: 50%;
-      right: 5%;
-      transform: rotate3dy("180deg");
-    }
-  }
-}
-
+/* TEXAS */
 @font-face {
   font-family: "elite";
   src: url("../assets/fonts/texas/SpecialElite.ttf");
@@ -208,11 +316,6 @@ html {
 .texas {
   padding: 17px 32px;
   overflow-x: hidden;
-  // background-image: image-set(
-  //   url(../assets/images/epingle.png) 1x
-  // );
-  // background-repeat: no-repeat;
-  // background-size: contain;
 
   &__txt {
     font-family: "elite";
@@ -256,6 +359,17 @@ html {
       margin-top: -100vh;
     }
   }
+}
+
+/* SINGAPOUR */
+
+@font-face {
+  font-family: "pix";
+  src: url("../assets/fonts/singapour/pixM8pt.ttf");
+}
+@font-face {
+  font-family: "w9";
+  src: url("../assets/fonts/singapour/W95FA.otf");
 }
 
 .singapour {
@@ -332,3 +446,4 @@ html {
     }
   }
 }
+
