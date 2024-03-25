@@ -127,3 +127,15 @@ gsap.to(sections, {
     }
   },
 });
+
+gsap.registerPlugin(Draggable);
+
+Draggable.create(".singapour__grab", {
+  bounds: ".singapour",
+  inertia: false
+});
+
+Draggable.create(".singapour__modal", {
+  bounds: ".singapour",
+  inertia: false
+});
