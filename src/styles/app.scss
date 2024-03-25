@@ -17,8 +17,8 @@ html {
 .timeline {
   margin: 100px;
   height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory; // j'ai mis y pour avoir plus simple, à changer pour x
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   border-radius: 20px;
   display: flex;
@@ -35,28 +35,37 @@ html {
     height: 100vh;
     width: 90vw;
   }
-
   &__1 {
+    display: flex;
+    align-items: center;
+    position: relative;
     background-image: image-set(
-      url(../assets/images/background_1.jpg) 1x,
-      url(../assets/images/background_1@2x.jpg) 2x
+      url(../assets/images/background_2.jpg) 1x,
+      url(../assets/images/background_2@2x.png) 2x
     );
     background-repeat: no-repeat;
-    cursor: url("../assets/images/cursors/moyen-age-curseur.png"), auto;
-  }
-
-  &__2 {
-    background-image: image-set(url(../assets/images/epingle.png) 1x, url(../assets/images/epingle@2x.png) 2x);
-    background-repeat: no-repeat;
     background-size: cover;
-    font-family: "BIZ UDMincho", serif;
+    overflow: hidden;
   }
+  // &__2 {
+  //   background-image: image-set(
+  //     url(../assets/images/epingle.png) 1x,
+  //     url(../assets/images/epingle@2x.png) 2x
+  //   );
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   font-family: "BIZ UDMincho", serif;
+  //   overflow: hidden;
+  // }
 
   &__3 {
     background-color: #008081;
   }
   &__4 {
-    background-image: image-set(url(../assets/images/y2k/bgy2k.jpg) 1x, url(../assets/images/y2k/bgy2k@2x.jpg) 2x);
+    background-image: image-set(
+      url(../assets/images/y2k/bgy2k.jpg) 1x,
+      url(../assets/images/y2k/bgy2k@2x.jpg) 2x
+    );
   }
   &__5 {
     display: flex;
@@ -70,7 +79,32 @@ html {
     left: 0;
     transform: translate(-90px, -100px);
     width: 200px;
-    height: auto;
+    // height: auto;
+  }
+}
+
+.ville {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.law-1 {
+  z-index: 2;
+  margin: 96px;
+  display: flex;
+  &__nbr {
+    display: flex;
+    justify-content: center;
+    font-family: $law-1-p;
+  }
+  &__h2, &__h3 {
+    font-family: $law-1-h;
+  }
+  &__p {
+    font-family: $law-1-p;
+    z-index: 99999;
   }
 }
 
@@ -88,7 +122,11 @@ html {
     justify-content: center;
     font-family: $law5-p;
     font-weight: 800;
-    background: linear-gradient(90deg, rgba(194, 160, 250, 1) 0%, rgba(115, 143, 243, 1) 100%);
+    background: linear-gradient(
+      90deg,
+      rgba(194, 160, 250, 1) 0%,
+      rgba(115, 143, 243, 1) 100%
+    );
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -97,7 +135,11 @@ html {
     font-family: $law-5-h2;
     margin-top: 24px;
     margin-bottom: 24px;
-    background: linear-gradient(90deg, rgba(194, 160, 250, 1) 0%, rgba(115, 143, 243, 1) 100%);
+    background: linear-gradient(
+      90deg,
+      rgba(194, 160, 250, 1) 0%,
+      rgba(115, 143, 243, 1) 100%
+    );
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -106,7 +148,11 @@ html {
     font-family: $law-5-h3;
     margin-top: 16px;
     margin-bottom: 16px;
-    background: linear-gradient(90deg, rgba(194, 160, 250, 1) 0%, rgba(115, 143, 243, 1) 100%);
+    background: linear-gradient(
+      90deg,
+      rgba(194, 160, 250, 1) 0%,
+      rgba(115, 143, 243, 1) 100%
+    );
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -128,7 +174,7 @@ html {
     margin-left: 24px;
     margin-right: 24px;
   }
-  .law-5 {
+  .law-5, .law-1 {
     &__nbr {
       font-size: 182px;
     }
@@ -141,6 +187,9 @@ html {
     &__p {
       font-size: $p-mobile;
     }
+  }
+  .law-1 {
+    flex-direction: column;
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
@@ -155,7 +204,7 @@ html {
       height: auto;
     }
   }
-  .law-5 {
+  .law-5, .law-1 {
     &__nbr {
       align-items: center;
       font-size: 273px;
@@ -170,6 +219,10 @@ html {
       font-size: $p-mobile;
     }
   }
+  .law-1 {
+    flex-direction: column;
+  }
+  
   .bg-5 {
     margin-left: 80px;
     margin-right: 80px;
@@ -188,7 +241,7 @@ html {
       height: auto;
     }
   }
-  .law-5 {
+  .law-5, .law-1 {
     &__nbr {
       align-items: center;
       font-size: 273px;
@@ -209,6 +262,9 @@ html {
     padding-left: 80px;
     padding-right: 80px;
   }
+  .law-1 {
+    flex-direction: column;
+  }
 }
 @media (min-width: 1025px) {
   .timeline {
@@ -216,12 +272,12 @@ html {
       position: absolute;
       bottom: 0;
       left: 0;
-      transform: translate(-70px, 700px);
+      // transform: translate(-70px, 700px);
       width: 200px;
       height: auto;
     }
   }
-  .law-5 {
+  .law-5, .law-1 {
     display: flex;
     gap: 68px;
 
@@ -446,4 +502,3 @@ html {
     }
   }
 }
-
