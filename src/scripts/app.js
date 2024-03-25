@@ -197,30 +197,18 @@ if (quizSection) {
 
   /* ---------- QUIZ AUTO-CLASS ---------- */
 
-  function parsePeriodeToYear(periode) {
-    // Conversion siècle -> année
-    if (periode.includes("siècle")) {
-      let century = parseInt(periode.match(/\d+/)[0]);
-      return (century - 1) * 100;
-    } else {
-      return parseInt(periode);
-    }
-  }
-
-
   function assignClassBasedOnPeriode(periode, element) {
     if (!periode || !element) return;
 
-    let year = parsePeriodeToYear(periode);
     let periodeClass = "";
 
-    if (year < 1900) {
+    if (periode < 1900) {
       periodeClass = "MoyenAge";
-    } else if (year >= 1900 && year <= 1999) {
+    } else if (periode >= 1900 && periode <= 1999) {
       periodeClass = "two";
-    } else if (year >= 2000 && year <= 2009) {
+    } else if (periode >= 2000 && periode <= 2009) {
       periodeClass = "three";
-    } else if (year >= 2010 && year <= 2019) {
+    } else if (periode >= 2010 && periode <= 2019) {
       periodeClass = "four";
     } else {
       periodeClass = "five";
@@ -232,5 +220,6 @@ if (quizSection) {
     // Add new class
     element.classList.add(periodeClass);
   }
+
 
 }
