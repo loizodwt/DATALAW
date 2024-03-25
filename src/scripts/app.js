@@ -133,10 +133,33 @@ gsap.registerPlugin(Draggable);
 
 Draggable.create(".singapour__grab", {
   bounds: ".timeline__3",
-  inertia: false
 });
 
 Draggable.create(".singapour__modal", {
   bounds: ".timeline__3",
-  inertia: false
 });
+
+// Boutons modale Singapour
+let openButton = document.getElementById("open");
+let closeButton = document.getElementById("close");
+let singapourWindow = document.querySelector(".singapour__modal");
+let datalawsIcon = document.querySelector(".singapour__datalaws");
+
+openButton.addEventListener("click", openWindow);
+closeButton.addEventListener("click", reduce);
+
+function openWindow() {
+  singapourWindow.classList.remove("reduced");
+}
+
+function reduce() {
+  singapourWindow.classList.add("reduced");
+}
+
+datalawsIcon.addEventListener("dblclick", toggleVisibility);
+
+function toggleVisibility() {
+  singapourWindow.classList.toggle("reduced");
+}
+
+

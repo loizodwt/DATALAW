@@ -15,6 +15,7 @@
   position: relative;
 
   &__modal {
+    position: absolute;
     background-color: #fafafa;
     z-index: 5;
     border: 3px solid #c0c0c0;
@@ -51,7 +52,7 @@
   &__icons {
     width: 80px; // ajout
     display: flex;
-    justify-content: space-around;
+    justify-content: end;
     position: absolute; // ajout
     right: 5px; // ajout
   }
