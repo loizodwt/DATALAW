@@ -69,7 +69,10 @@ html {
     background-color: #008081;
   }
   &__4 {
-    background-color: rgb(123, 225, 225);
+    background-image: image-set(
+      url(../assets/images/y2k/bgy2k.jpg) 1x,
+      url(../assets/images/y2k/bgy2k@2x.jpg) 2x
+    );
   }
   &__5 {
     display: flex;
