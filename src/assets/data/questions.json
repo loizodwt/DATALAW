@@ -1,12 +1,21 @@
 [
   {
-    "question": "Au Nevada, il est interdit de chevaucher un chameau sur l'autoroute.",
-    "pays": "États-Unis",
+    "question": "Jouer aux jeux-vidéos est illégal.",
+    "pays": "Grèce",
+    "reponse": true,
+    "anecdote": "Visant la lutte contre les jeux d’argent en ligne, mais jugée inconstitutionnelle, la loi a été remaniée en 2003 pour uniquement interdire les jeux dans les cybercafés.",
+    "pour": "26.7%",
+    "contre": "73.3%",
+    "periode": "2002"
+  },
+  {
+    "question": "À Uxbridge, il est interdit d'avoir une connexion internet plus rapide que 56K.",
+    "pays": "Canada",
     "reponse": false,
-    "anecdote": "En réalité, toute personne chevauchant un animal quel qu’il soit a les mêmes droits et devoirs que n’importe quel autre automobiliste sur l’autoroute. Y chevaucher un chameau n’est pas interdit, mais peut être dangereux.",
-    "pour": "73.3%",
-    "contre": "26.7%",
-    "periode": "1917"
+    "anecdote": "La rumeur semble avoir commencé en 2011, lorsqu'un article a été publié sur le site web satirique “The Daily Mash”. L'article affirmait qu'Uxbridge avait adopté une loi limitant la vitesse d'internet à 56k afin de protéger le mode de vie rural.",
+    "pour": "53.3%",
+    "contre": "46.7%",
+    "periode": "2011"
   },
   {
     "question": "Au Kentucky, il est illégal pour une femme d’apparaître en maillot de bain sur une autoroute, sauf si elle est escortée par au moins 2 policiers, blessée, qu’elle pèse moins de 45 Kg ou plus de 100 kg.",
@@ -27,13 +36,22 @@
     "periode": "2000"
   },
   {
-    "question": "Jouer aux jeux-vidéos est illégal.",
-    "pays": "Grèce",
-    "reponse": true,
-    "anecdote": "Visant la lutte contre les jeux d’argent en ligne, mais jugée inconstitutionnelle, la loi a été remaniée en 2003 pour uniquement interdire les jeux dans les cybercafés.",
-    "pour": "26.7%",
-    "contre": "73.3%",
-    "periode": "2002"
+    "question": "Un médecin de sexe masculin ne peut faire un examen gynécologique à une femme qu'en regardant ses parties génitales dans un miroir.",
+    "pays": "Bahreïn",
+    "reponse": false,
+    "anecdote": "Cette légende urbaine provient d'une vidéo virale créée par un groupe de comédiiens, mettant en scène un faux gynécoloque bahreinien.",
+    "pour": "40%",
+    "contre": "60%",
+    "periode": "2023"
+  },
+  {
+    "question": "Au Nevada, il est interdit de chevaucher un chameau sur l'autoroute.",
+    "pays": "États-Unis",
+    "reponse": false,
+    "anecdote": "En réalité, toute personne chevauchant un animal quel qu’il soit a les mêmes droits et devoirs que n’importe quel autre automobiliste sur l’autoroute. Y chevaucher un chameau n’est pas interdit, mais peut être dangereux.",
+    "pour": "73.3%",
+    "contre": "26.7%",
+    "periode": "1917"
   },
   {
     "question": "La coupe mulet est interdite.",
@@ -45,15 +63,6 @@
     "periode": "2007"
   },
   {
-    "question": "À Uxbridge, il est interdit d'avoir une connexion internet plus rapide que 56K.",
-    "pays": "Canada",
-    "reponse": false,
-    "anecdote": "La rumeur semble avoir commencé en 2011, lorsqu'un article a été publié sur le site web satirique “The Daily Mash”. L'article affirmait qu'Uxbridge avait adopté une loi limitant la vitesse d'internet à 56k afin de protéger le mode de vie rural.",
-    "pour": "53.3%",
-    "contre": "46.7%",
-    "periode": "2011"
-  },
-  {
     "question": "Il est interdit de manger de la pizza à Mumbai les jours impairs.",
     "pays": "Inde",
     "reponse": false,
@@ -61,14 +70,5 @@
     "pour": "43%",
     "contre": "57%",
     "periode": "2015"
-  },
-  {
-    "question": "Un médecin de sexe masculin ne peut faire un examen gynécologique à une femme qu'en regardant ses parties génitales dans un miroir.",
-    "pays": "Bahreïn",
-    "reponse": false,
-    "anecdote": "Cette légende urbaine provient d'une vidéo virale créée par un groupe de comédiiens, mettant en scène un faux gynécoloque bahreinien.",
-    "pour": "40%",
-    "contre": "60%",
-    "periode": "2023"
   }
 ]
