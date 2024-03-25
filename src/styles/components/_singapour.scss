@@ -12,7 +12,6 @@
 }
 
 .singapour {
-  // padding: 5rem 33px;
   position: relative;
 
   &__modal {
@@ -83,7 +82,11 @@
     left: 40%;
   }
   &__grab {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
     z-index: -1;
     padding: 5px;
   }
@@ -99,6 +102,11 @@
   }
 }
 
+.icon-name {
+  font-family: "w9";
+  color: white;
+}
+
 @media (min-width: 481px) {
   .singapour {
     &__modal {
@@ -111,7 +119,6 @@
 @media (min-width: 560px) {
   .singapour {
     &__grab {
-      display: block;
       z-index: 2;
     }
   }
