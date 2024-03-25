@@ -16,7 +16,7 @@
   <meta property="og:image:width" content="1800" />
   <meta property="og:image:height" content="945" />
 
-  <title>Quizz | DataLaws</title>
+  <title>Quiz | DataLaws</title>
   <link rel="stylesheet" href="styles/app.css">
   <script src="scripts/app.js" defer></script>
 </head>
@@ -27,53 +27,53 @@
     <nav class="nav">
       <ul class="nav__ul">
         <li><a href="/index.html" class="nav__el">Accueil</a></li>
-        <li><a href="/quizz.html" class="nav__el">Quizz</a></li>
+        <li><a href="/quiz.html" class="nav__el">Quiz</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
 
-    <section class="quizz--start">
-      <h1 class="title">Quizz</h1>
+    <section class="quiz--start">
+      <h1 class="title">quiz</h1>
       <p>Vous incarnez un législateur devant se prononcer sur des propositions de lois étranges, parmi lesquelles se sont glissées des légendes urbaines fausses. À vous de juger si vous les approuvez et décidez de les mettre en place officiellement !</p>
-      <button class="btn quizz__button quizz__button--start">Commencer le quizz</button>
+      <button class="btn quiz__button quiz__button--start">Commencer le quiz</button>
     </section>
 
 
-    <section class="quizz__container hidden">
+    <section class="quiz__container hidden">
 
-      <div class="quizz__counter">1/10</div>
-      <h2 class="quizz__question"></h2>
-      <div class="quizz__buttons">
-        <button class="quizz__button quizz__button--vrai">Je vote pour</button>
-        <button class="quizz__button quizz__button--faux">Je vote contre</button>
+      <div class="quiz__counter">1/10</div>
+      <h2 class="quiz__question"></h2>
+      <div class="quiz__buttons">
+        <button class="quiz__button quiz__button--vrai">Je vote pour</button>
+        <button class="quiz__button quiz__button--faux">Je vote contre</button>
       </div>
 
-      <div class="quizz__feedback"></div>
-      <button class="quizz__button quizz__button--skip">Passer</button>
+      <div class="quiz__feedback"></div>
+      <button class="quiz__button quiz__button--skip">Passer</button>
 
     </section>
 
-    <section class="quizz--recap hidden">
+    <section class="quiz--recap hidden">
       <h2 class="title">Récapitulatif</h2>
-      <p>Félicitations, votre rôle de législateur est maintenant terminé…jusqu’à votre retour sur le quizz !</p>
+      <p>Félicitations, votre rôle de législateur est maintenant terminé…jusqu’à votre retour sur le quiz !</p>
 
       <h2 class="title">Avez-vous trouvé les bonnes lois ?</h2>
 
-      <div class="quizz--recap__true">
+      <div class="quiz--recap__true">
         <h3 class="title">Les vraies lois</h3>
         <!-- Liste VRAI -->
       </div>
 
-      <div class="quizz--recap__false">
+      <div class="quiz--recap__false">
         <h3 class="title">Les légendes urbaines</h3>
         <!-- Liste FAUX -->
       </div>
 
-      <p class="quizz__result"></p>
+      <p class="quiz__result"></p>
 
-      <button class="btn quizz__button quizz__button--restart">Recommencer le quizz</button>
+      <button class="btn quiz__button quiz__button--restart">Recommencer le quiz</button>
 
     </section>
 
