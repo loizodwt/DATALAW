@@ -1,0 +1,258 @@
+@import "utils/variables";
+@import "components/type";
+@import "components/graphique";
+
+/* ------ MEDIEVAL ------ */
+
+.MoyenAge {
+  background-color: lightgreen;
+}
+
+/* ------ 1900 ------ */
+.two {
+  background-color: aquamarine;
+}
+
+/* ------ 2000 ------ */
+.three {
+  background-color: lightcoral;
+}
+
+/* ------ 2010 ------ */
+.four {
+  background-color: chocolate;
+}
+
+/* ------ 2020 ------ */
+.five {
+  background-color: cornflowerblue;
+}
+
+/* ------ EXTRA ------ */
+.hidden {
+  display: none;
+}
+
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "gruppo" ;
+  src: url("../assets/font/Gruppo-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "sato" ;
+  src: url("../assets/font/satoshi/satoshi-Regular.otf") ;
+}
+
+.nav {
+  display: flex;
+  width: 100%;
+  background-color: #E6EFEB;
+
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  &--hide {
+    display: none;
+  }
+
+  &__ul {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 0%;
+    list-style: none;
+  }
+  &__el {
+    list-style: none;
+    color: black;
+    font-family: gruppo;
+    margin: 0 16px;
+  }
+}
+
+.main {
+  background-image: image-set(
+    url(../assets/images/da/bg-main.png) 1x,
+    url(../assets/images/da/bg-main@2x.png) 2x
+  );
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+  padding: auto 16px;
+
+  &__content {
+    z-index: 5;
+    position: absolute;
+    top: 5%;
+    width: 90%;
+    margin: auto 5%;
+    justify-content: center;
+    background-color: transparent;
+  }
+  
+  &__title {
+    font-size: 34px;
+    text-align: center;
+    font-family: gruppo;
+    font-weight: lighter;
+  }
+  &__txt {
+    font-size: 20px;
+    text-align: left;
+    font-family: sato;
+    line-height: 1.6;
+    margin: auto;
+    margin-top: 111px;
+    justify-content: center;
+    
+  }
+  #canvas {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// .graph {margin-top: -70px;}
+
+
+
+.introquiz {
+  background-image: image-set(
+    url(../assets/images/da/bg-main.png) 1x,
+    url(../assets/images/da/bg-main@2x.png) 2x
+  );
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+  padding: auto 16px;
+  font-family: gruppo;
+
+  &__h2 {
+    font-size: 34px;
+    font-family: gruppo;
+    margin-top: 0px;
+    text-align: center;
+    padding-top: 54px;
+  }
+
+  &__glass { 
+    background-color: rgba(173, 168, 233, 0.5);
+    width: 80%;
+    border: 1px solid #9486c4;
+    border-radius: 15px;
+    backdrop-filter: blur(15);
+    justify-content: center;
+    padding: 16px;
+    margin: 0% auto;
+    z-index: 8;
+    align-items: center;
+    max-width: 450px;
+    margin-top: 54px;
+
+    p {
+      font-family: sato;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+  }
+  &__btn {
+    display: flex;
+    font-size: 18px;
+    background-color: #9486c4;
+    border: 2px solid #bbaee7;
+    border-radius: 15px;
+    margin: 74px auto auto auto;
+    justify-content: center;
+    color: #E6EFEB;
+    padding: 10px;
+    font-weight: lighter;
+    cursor: pointer;
+  }
+}
+
+
+
+
+.footer {
+  background-color: #ACA0D6;
+  text-align: center;
+  padding: 16px;
+  padding-top: 8px;
+  z-index: 7;
+
+  &__ul {
+    list-style: none;
+    padding: 0%;
+  }
+  &__el {
+    font-family: gruppo;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  small {
+    font-family: gruppo;
+    font-size: 16px;
+  }
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+
+@media (min-width: 481px) {
+  .main {
+    
+    &__txt {
+      background-color: rgba(155, 150, 221, 0.5);
+      padding: 10px;
+      border: 1px solid #9486c4;
+      border-radius: 15px;
+      backdrop-filter: blur(15);
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  .main {
+    &__title {
+      font-size: 108px;
+    }
+    &__txt {
+      font-size: 20px;
+    }
+    &__content {
+      width: 80%;
+      margin: auto 10%;
+    }
+  }
+  .nav {
+    &__el {
+      font-size: 32px;
+    }
+  }
+  .introquiz {
+    &__h2 {
+      font-size: 45px;
+    }
+    &__glass {
+      p {font-size: 20px;}
+    }
+  }
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content=".">
+
+  <!-- Open Graph data -->
+  <meta property="og:site_name" content="DataLaws" />
+  <meta property="og:title" content="DataLaws" />
+  <meta property="og:description" content="" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="/assets/images/share.png" />
+  <meta property="og:image:width" content="1800" />
+  <meta property="og:image:height" content="945" />
+
+  <title>DataLaws</title>
+  <link rel="stylesheet" href="styles/app.css">
+  
+
+    <!-- Frameworks -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollTrigger.min.js"></script>
+    <script src="scripts/app.js" defer></script>
+
+</head>
+
+<body>
+
+
+  <main>
+
+    <section class="section">
+      
+      <div class="main">
+        <canvas id="canvas"></canvas>
+        <div class="main__content">
+          <h1 class="main__title">DataLaws</h1>
+          <p class="main__txt">DataLaws, c'est un jeu de données mettant à l'honneur des lois partout dans le monde…pas toujours très sérieuses. Actuelles ou archaïques, farfelues ou hyper-spécifiques, découvrez le monde parfois illogique de la loi.</p>
+        </div>     
+      </div>    
+    </section>
+
+    <section id="navbar" class="navbar navbar--hide">
+      <nav class="nav">
+        <ul class="nav__ul">
+          <li><a href="/index.html" class="nav__el">Accueil</a></li>
+          <li><a href="/quizz.html" class="nav__el">Quizz</a></li>
+        </ul>
+      </nav>
+    </section>
+
+     <!-- graphique -->
+    <section class="graphique graph">
+      <div class="graphique__boutons">
+        <button id="btnEurope">Europe</button>
+        <button id="btnAmérique">Amérique</button>
+        <button id="btnAfrique">Afrique</button>
+        <button id="btnAsie">Asie</button>
+        <button id="btnOcéanie">Océanie</button>
+     </div>
+
+      <div><canvas height="40vh" width="80vw" id="myChart"></canvas></div>
+  
+      <p class="graphique__lois" id="textContainer"></p>
+
+    </section>
+
+
+
+
+
+    <section class="introquiz">
+      <h2 class="introquiz__h2">À vous de jouer&nbsp;!</h2>
+      <div class="introquiz__glass">
+        <p>Voici 10 propositions de lois étranges, parmi lesquelles se sont glissées des légendes urbaines fausses.</p>
+        <p>À vous de jugersi vous les approuvez et décidez de les mettre en place officiellement.</p>
+      </div>
+      <button class="introquiz__btn"> <a href="./quizz.html"></a>Commencer le quiz</button>
+    </section>
+
+    <section>
+      <h2 class="title">Taux d'absurdité par pays</h2>
+      <p>Pour calculer le taux d’absurdité, nous avons demandé à plusieurs personnes de donner un « indice d’absurdité » sur cinq pour chacune des lois, et avons fait une moyenne des réponses obtenues.</p> -->
+      <!-- Insérer graphique -->
+
+      <h2 class="title">Top des lois les plus absurdes</h2>
+
+      <div class="top">
+        <div class="top__container">
+          <h3 class="top__number">1</h3>
+          <p class="top__pays">Pays</p>
+          <p class="top__date">Début - Fin</p>
+          <p class="top__rating">1</p>
+          <p class="top__loi">Ceci est une loi</p>
+          <h4 class="top__comment--title">Commentaire</h4>
+          <p class="top__comment">Ceci est le commentaire de la rédaction.</p>
+        </div>
+      </div> 
+      <!-- Timeline -->
+
+       <h2 class="title">Envie de vous tester ?</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe ea magni iusto quisquam accusamus, provident iste quas similique eum deserunt laboriosam velit, placeat illum amet nemo nihil, praesentium exercitationem voluptates.</p>
+      <a href="quizz.html" class="btn">Faire le quizz</a>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <ul class="footer__ul">
+      <li class="footer__el"><a href="https://dwt.heaj.be/">DWT</a></li>
+      <li class="footer__el"><a href="/credits.html">Crédits</a></li>
+    </ul>
+    <small>© 2024, tous droits réservés.</small>
+  </footer>
+
+</body>
+
+</html>

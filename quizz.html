@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content=".">
+
+  <!-- Open Graph data -->
+  <meta property="og:site_name" content="DataLaws" />
+  <meta property="og:title" content="DataLaws" />
+  <meta property="og:description" content="" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="/assets/images/share.png" />
+  <meta property="og:image:width" content="1800" />
+  <meta property="og:image:height" content="945" />
+
+  <title>Quizz | DataLaws</title>
+  <link rel="stylesheet" href="styles/app.css">
+  <script defer src="scripts/app.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <nav class="nav">
+      <ul class="nav__ul">
+        <li><a href="/index.html" class="nav__el">Accueil</a></li>
+        <li><a href="/quizz.html" class="nav__el">Quizz</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="quizz--start">
+      <h1 class="title">Quizz</h1>
+      <p>Vous incarnez un législateur devant se prononcer sur des propositions de lois étranges, parmi lesquelles se sont glissées des légendes urbaines fausses. À vous de juger si vous les approuvez et décidez de les mettre en place officiellement !</p>
+      <button class="btn">Commencer le quizz</button>
+    </section>
+
+    <!-- <section>
+      <div class="quizz-container">
+        <h2 id="question" class="quizz-container__question"></h2>
+        <div class="quizz-container__buttons">
+          <button id="vraiBtn" class="quizz-container__button quizz-container__button--vrai">Voter pour</button>
+          <button id="fauxBtn" class="quizz-container__button quizz-container__button--faux">Voter contre</button>
+          <button id="skipBtn" class="quizz-container__button quizz-container__button--skip">Passer</button>
+        </div>
+        <div id="feedback" class="quizz-container__feedback"></div>
+      </div>
+    </section> -->
+
+    <section class="quizz">
+
+      <div class="quizz__compteur">
+        <span class="quizz__compteur--current">1</span> sur 10
+        <!-- Compteur -->
+      </div>
+
+      <h2 class="title">Question</h2>
+      <!-- Insérer la question -->
+
+      <p>Que décidez-vous ?</p>
+
+      <ul class="quizz__choice">
+        <li class="quizz__choice__el"><button class="quizz__choice__btn">Je dis oui !</button></li>
+        <li class="quizz__choice__el"><button class="quizz__choice__btn">Je dis non.</button></li>
+      </ul>
+
+      <ul class="quizz__nav">
+        <li class="quizz__nav__el"><button class="quizz__nav__btn quizz__nav__btn--back">Précédent</button></li>
+        <li class="quizz__nav__el"><button class="quizz__nav__btn quizz__nav__btn--skip">Passer</button></li>
+        <li class="quizz__nav__el"><button class="quizz__nav__btn quizz__nav__btn--next">Suivant</button></li>
+      </ul>
+
+    </section>
+
+    <section class="quizz--recap">
+      <h2 class="title">Récapitulatif</h2>
+
+      <div class="quizz--recap__yes">
+        <h3 class="title">Vous avez voté POUR</h3>
+        <!-- Liste POUR -->
+      </div>
+
+      <div class="quizz--recap__no">
+        <h3 class="title">Vous avez voté CONTRE</h3>
+        <!-- Liste CONTRE -->
+      </div>
+
+      <h2 class="title">Avez-vous trouvé les bonnes lois ?</h2>
+
+      <div class="quizz--recap__true">
+        <h3 class="title">Les vraies lois</h3>
+        <!-- Liste VRAI -->
+      </div>
+
+      <div class="quizz--recap__false">
+        <h3 class="title">Les légendes urbaines</h3>
+        <!-- Liste FAUX -->
+      </div>
+
+    </section>
+
+    <section class="quizz--end">
+
+      <h2 class="title">Résultats</h2>
+      <p>Félicitations, votre rôle de législateur est maintenant terminé…jusqu’à votre retour sur le quizz !</p>
+      <p>Stats:</p>
+      <p class="quizz--end__average">
+        <!-- Pourcentage ("Vous êtes en accord avec XX% des participants.") -->
+      </p>
+      <p class="quizz--end__rumor">
+        <!-- Quantité ("Vous avez identifié X légendes urbaines sur 5.") -->
+      </p>
+
+      <button class="btn">Recommencer le quizz</button>
+      <a href="index.html" class="button">Revenir au site</a>
+
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <ul class="footer__ul">
+      <li class="footer__el"><a href="https://dwt.heaj.be/">DWT</a></li>
+      <li class="footer__el"><a href="/credits.html">Crédits</a></li>
+    </ul>
+    <small>© 2024, tous droits réservés.</small>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+
+
+.graphique {
+
+
+  background-color: #E2EDE9;
+  padding-right: 10vw;
+  max-width: 10;
+}
+
+canvas {
+  cursor: pointer;
+}
+
+  .graphique__boutons {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    gap: 20px;
+
+   
+
+    button {
+      background-color: rgba(245, 245, 245, 0.356); 
+      color: #3E2F60;
+      font-family: "Satoshi";
+      padding: 5px 12px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      cursor: pointer;
+      border: 1px solid #CDC7E3;
+      border-radius: 10px;
+
+      &:hover {
+        background-color: #3E2F60; 
+        color: #F5F5F5;
+       
+      }
+
+
+    }
+  }
+
+  .graphique__lois {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-family: "Satoshi";
+    font-size: 22px;
+    padding: 10%;
+    margin: 0%;
+  }
+
+
+
+  @media only screen and (max-width: 768px) {
+    .graphique {
+      width: 100%;
+      height: auto;
+    }
+  }
