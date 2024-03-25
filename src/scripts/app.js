@@ -1,7 +1,10 @@
+"use strict";
+
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-("use strict");
 
+/*
 document.addEventListener("DOMContentLoaded", function () {
   const questionElement = document.getElementById("question");
   const vraiBtn = document.getElementById("vraiBtn");
@@ -75,6 +78,17 @@ document.addEventListener("DOMContentLoaded", function () {
     feedbackElement.textContent = "";
   }
 });
+*/
+
+
+
+
+
+
+
+
+
+
 
 // Horizontal scroll pour la timeline
 // gsap.registerPlugin(ScrollTrigger);
