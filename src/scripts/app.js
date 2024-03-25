@@ -99,6 +99,14 @@ let recapTrueList = document.querySelector(".quizz--recap__true");
 let recapFalseList = document.querySelector(".quizz--recap__false");
 
 function populateRecapLists() {
+  // Clear existing content in the recap lists
+  recapTrueList.innerHTML = "";
+  recapFalseList.innerHTML = "";
+
+  // Populate the recap lists with the recap of questions
+  let hasTrueQuestions = false;
+  let hasFalseQuestions = false;
+
   questionsData.forEach((question, index) => {
     let listItem = document.createElement("li");
     listItem.textContent = question.question;
@@ -113,6 +121,7 @@ function populateRecapLists() {
           listItem.classList.add("wrong");
         }
         recapTrueList.appendChild(listItem);
+        hasTrueQuestions = true;
       } else {
         if (isCorrect) {
           listItem.classList.add("correct");
@@ -120,16 +129,27 @@ function populateRecapLists() {
           listItem.classList.add("wrong");
         }
         recapFalseList.appendChild(listItem);
-      }
-    } else {
-      if (question.reponse === true) {
-        recapTrueList.appendChild(listItem);
-      } else {
-        recapFalseList.appendChild(listItem);
+        hasFalseQuestions = true;
       }
     }
   });
+
+  // Append titles only if there are corresponding questions
+  if (hasTrueQuestions) {
+    let trueTitle = document.createElement("h3");
+    trueTitle.classList.add("title");
+    trueTitle.textContent = "Les vraies lois";
+    recapTrueList.prepend(trueTitle); // Add title before the list
+  }
+
+  if (hasFalseQuestions) {
+    let falseTitle = document.createElement("h3");
+    falseTitle.classList.add("title");
+    falseTitle.textContent = "Les légendes urbaines";
+    recapFalseList.prepend(falseTitle); // Add title before the list
+  }
 }
+
 
 /* ---------- RESET QUIZ ---------- */
 
