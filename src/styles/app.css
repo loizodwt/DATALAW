@@ -381,11 +381,12 @@ a {
   font-size: 51px;
   font-family: gruppo;
   margin-left: 5%;
+  text-align: center;
 }
 
 @font-face {
-  font-family: "sato";
-  src: url("../assets/font/satoshi/satoshi-Regular.otf");
+  font-family: "satolight";
+  src: url("../assets/font/satoshi/satoshi-Light.otf");
 }
 @font-face {
   font-family: "gruppo";
@@ -393,8 +394,9 @@ a {
 }
 .good {
   height: 100vh;
-  width: 90%;
-  margin: auto 5%;
+  width: 80%;
+  max-width: 750px;
+  margin: auto 10%;
 }
 .good__h2 {
   font-family: gruppo;
@@ -402,7 +404,43 @@ a {
 }
 .good__el {
   list-style-image: url("../../assets/images/da/yes.png");
+  margin-bottom: 33px;
 }
 .good__el p {
   font-family: sato;
+}
+.good__content {
+  background-color: rgba(173, 168, 233, 0.2);
+  border: 1px solid #9486c4;
+  border-radius: 15px;
+  -webkit-backdrop-filter: blur(15);
+          backdrop-filter: blur(15);
+  padding: 33px;
+  padding-bottom: 16px;
+}
+
+.legendes {
+  height: 100vh;
+  width: 80%;
+  margin: -111px 10% auto 10%;
+}
+.legendes__h2 {
+  font-family: gruppo;
+  font-size: 34px;
+}
+.legendes__el {
+  list-style-image: url("../../assets/images/da/no.png");
+  margin-bottom: 33px;
+}
+.legendes__el p {
+  font-family: sato;
+}
+.legendes__content {
+  background-color: rgba(173, 168, 233, 0.2);
+  border: 1px solid #9486c4;
+  border-radius: 15px;
+  -webkit-backdrop-filter: blur(15);
+          backdrop-filter: blur(15);
+  padding: 33px;
+  padding-bottom: 16px;
 }/*# sourceMappingURL=app.css.map */
