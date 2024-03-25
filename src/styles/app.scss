@@ -10,20 +10,6 @@ html {
   scroll-behavior: smooth;
 }
 
-// .homepage {
-//   // Permet de devoir scroller pour créer l'effet scroll horizontal sur .timeline
-//   height: 200vh;
-//   // Style temporaire
-//   &__h1 {
-//     font-family: "ClashDisplay-Variable";
-//     font-weight: 900;
-//     font-size: clamp(50px, 4vw, 108px); // Valeur à changer !
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//   }
-// }
-
 // Timeline
 .timeline {
   margin: 100px;
