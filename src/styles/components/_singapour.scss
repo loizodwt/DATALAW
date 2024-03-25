@@ -22,8 +22,7 @@
     position: absolute;
     background-color: #fafafa;
     z-index: 5;
-    border: 3px solid #c0c0c0;
-    border-top: none;
+    border: 5px solid #c0c0c0;
   }
 
   &__navbar {
@@ -31,7 +30,7 @@
     background-color: #000080;
     padding: 3px;
     height: 25px;
-    border: 2px solid #c0c0c0;
+    border-bottom: 5px solid #c0c0c0;
     position: relative; // ajout
   }
   &__txt {
