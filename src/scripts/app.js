@@ -110,12 +110,10 @@ fetchJSONData(lawsDataURL)
 
 
 
-//water effect au hover
-
 const rippleSettings = {
   maxSize: 100,
   animationSpeed: 5,
-  strokeColor: [49, 54, 135],
+  strokeColor: [137, 137, 218],
 };
 
 const canvasSettings = {
@@ -177,13 +175,14 @@ const isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
 
 canvas.style.filter = `blur(${canvasSettings.blur}px)`;
 
-// canvas.width = width * canvasSettings.ratio;
-// canvas.height = height * canvasSettings.ratio;
+canvas.width = width * canvasSettings.ratio;
+canvas.height = height * canvasSettings.ratio;
 
-// canvas.style.width = `${width}px`;
-// canvas.style.height = `${height}px`;
+canvas.style.width = `${width}px`;
+canvas.style.height = `${height}px`;
 
 let animationFrame;
+
 
 
 
@@ -212,9 +211,10 @@ const animation = () => {
   }
   animationFrame = window.requestAnimationFrame(animation);
 };
-
-animation();
-canvas.addEventListener('mousemove', canvasMouseOver);
+  
+  animation();
+  canvas.addEventListener('mousemove', canvasMouseOver);
+  
 
 
 

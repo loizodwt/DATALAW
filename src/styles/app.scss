@@ -351,6 +351,9 @@ a {
   }
 }
 
+::selection {
+  background-color: #ACA0D6;
+}
 
 @import "components/finquiz";
 @import "components/recapquiz";

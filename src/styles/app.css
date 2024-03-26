@@ -330,6 +330,13 @@ a {
     width: 100%;
   }
 }
+::-moz-selection {
+  background-color: #ACA0D6;
+}
+::selection {
+  background-color: #ACA0D6;
+}
+
 .finquiz {
   background-image: -webkit-image-set(url(../assets/images/da/bg-main.png) 1x, url(../assets/images/da/bg-main@2x.png) 2x);
   background-image: image-set(url(../assets/images/da/bg-main.png) 1x, url(../assets/images/da/bg-main@2x.png) 2x);
