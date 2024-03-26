@@ -1,0 +1,44 @@
+.one {
+    background-image: image-set(
+        url(../../assets/images/bg-quiz-one.png) 1x,
+        url(../../assets/images/bg-quiz-one@2x.png) 2x,
+    );
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+    .quiz__h2 {
+        font-family: Gensco;
+        font-size: 36px;
+    }
+    .quiz__date {
+        font-family: Gensco;
+        font-size: 36px;
+    }
+    .quiz__question {
+        font-family: Gensco;
+        font-size: 16px;
+    }
+    .quiz__button {
+        font-size: 16px;
+        font-family: ppgochat;
+        color: black;
+
+        &--vrai,
+        &--faux {
+            text-transform: uppercase;
+            color: #5d491b;
+        }
+        &--skip {
+            &::after {
+                content: url("../../assets/images/nextquiiiz.png") ;
+            }
+        }
+        &--quit {
+            &::after {
+                content: url("../../assets/images/quitquiz.png");
+            }
+        }
+    }
+}
