@@ -3,7 +3,7 @@
 @media (min-width: 481px) {
     .main {
         p {
-            background-color: rgba(155, 150, 221, 0.5);
+            background-color: $c-glass;
             padding: 10px;
             border: 1px solid #9486c4;
             border-radius: 15px;
@@ -31,14 +31,14 @@
             font-size: 32px;
         }
     }
-    .introquiz {
-        &__h2 {
+    .quiz__intro {
+        .title {
             font-size: 45px;
         }
-        &__glass {
-            p {
-                font-size: 20px;
-            }
+    }
+    .glass {
+        p {
+            font-size: 20px;
         }
     }
 }
@@ -59,7 +59,7 @@
         }
     }
 
-    .introquiz {
+    .quiz__intro {
         padding-top: 111px;
     }
 }
