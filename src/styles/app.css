@@ -70,6 +70,10 @@ body {
   font-family: "sato";
   src: url("../assets/font/satoshi/satoshi-Regular.otf");
 }
+@font-face {
+  font-family: "clash";
+  src: url("../assets/font/clash/ClashDisplay-Regular.otf");
+}
 .nav {
   display: flex;
   width: 100%;
@@ -96,6 +100,7 @@ body {
   color: #333333;
   font-family: gruppo;
   margin: 0 16px;
+  cursor: pointer;
 }
 .nav__el:hover {
   border-bottom: 1px solid #333333;
@@ -125,7 +130,7 @@ body {
 .main__title {
   font-size: 60px;
   text-align: center;
-  font-family: gruppo;
+  font-family: clash;
   color: #333333;
   font-weight: lighter;
 }
@@ -418,11 +423,11 @@ a {
   width: 100vw;
   height: 100%;
   background-size: cover;
+  overflow-x: hidden;
 }
 .recap__title {
   font-size: 51px;
   font-family: gruppo;
-  margin-left: 5%;
   text-align: center;
 }
 
@@ -436,9 +441,9 @@ a {
 }
 .good {
   height: 100vh;
-  width: 80%;
+  width: 90%;
   max-width: 750px;
-  margin: auto 10%;
+  margin: auto 5%;
 }
 .good__h2 {
   font-family: gruppo;
@@ -450,6 +455,8 @@ a {
 }
 .good__el p {
   font-family: sato;
+  font-size: 16px;
+  line-height: 1.6;
 }
 .good__content {
   background-color: rgba(173, 168, 233, 0.2);
@@ -457,16 +464,18 @@ a {
   border-radius: 15px;
   -webkit-backdrop-filter: blur(15);
           backdrop-filter: blur(15);
-  padding: 33px;
-  padding-bottom: 16px;
+  padding: 16px;
+  padding-bottom: 8px;
 }
 
 .legendes {
   height: 100vh;
-  width: 80%;
+  width: 90%;
   max-width: 750px;
-  margin: -111px 10% auto 10%;
+  margin: 500px 5% 250px 5%;
   position: relative;
+  background-color: transparent;
+  padding-bottom: 150px;
 }
 .legendes__h2 {
   font-family: gruppo;
@@ -478,6 +487,8 @@ a {
 }
 .legendes__el p {
   font-family: sato;
+  font-size: 16px;
+  line-height: 1.6;
 }
 .legendes__content {
   background-color: rgba(173, 168, 233, 0.2);
@@ -485,9 +496,9 @@ a {
   border-radius: 15px;
   -webkit-backdrop-filter: blur(15);
           backdrop-filter: blur(15);
-  padding: 33px;
-  padding-bottom: 16px;
-  margin-bottom: 150px;
+  padding: 16px;
+  padding-bottom: 8px;
+  margin-bottom: 50px;
 }
 .legendes__end {
   color: #3e2f60;
@@ -499,11 +510,10 @@ a {
   display: flex;
   max-width: 100px;
   gap: 10px;
-  align-items: flex-end;
-  justify-content: center;
   cursor: pointer;
   position: absolute;
-  right: 0px;
+  right: 0;
+  margin-bottom: 100px;
 }
 .legendes__end:hover {
   background-color: #3E2F60;
@@ -519,13 +529,97 @@ a {
 }
 
 @media (min-width: 481px) {
-  .good {
-    width: 70%;
-    margin: auto 15%;
-    margin-top: 111px;
+  .legendes {
+    margin-top: 100px;
+    margin-bottom: 0%;
+  }
+}
+@media (min-width: 769px) {
+  .legendes {
+    margin-top: 0px;
+  }
+}
+@media (min-width: 1000px) {
+  .recap__content {
+    display: flex;
+  }
+  .good,
+  .legendes {
+    margin-top: 0%;
   }
   .legendes {
-    width: 70%;
-    margin: auto 15% auto 15%;
+    margin-bottom: 0px;
+  }
+}
+@font-face {
+  font-family: "sato";
+  src: url("../assets/font/satoshi/satoshi-Regular.otf");
+}
+.nav-credits {
+  display: flex;
+  width: 100%;
+  background-color: transparent;
+}
+.nav-credits__ul {
+  display: flex;
+  width: 90%;
+  justify-content: flex-end;
+  padding: 0%;
+  list-style: none;
+}
+.nav-credits__el {
+  list-style: none;
+  color: #333333;
+  font-family: sato;
+  margin: 0 16px;
+  cursor: pointer;
+}
+.nav-credits__el:hover {
+  border-bottom: 1px solid #333333;
+  transition: 0.3s ease-out;
+}
+.nav-credits__el:visited {
+  color: #333333;
+}
+
+.credits {
+  background-image: -webkit-image-set(url(../assets/images/da/recapquiz.png) 1x, url(../assets/images/da/recapquiz@2x.png) 2x);
+  background-image: image-set(url(../assets/images/da/recapquiz.png) 1x, url(../assets/images/da/recapquiz@2x.png) 2x);
+  background-repeat: no-repeat;
+  max-width: 100vw;
+  height: 100%;
+  background-size: cover;
+  overflow-x: hidden;
+  font-family: sato;
+  padding-left: 8px;
+}
+.credits__div {
+  margin-bottom: 54px;
+}
+.credits__div h2 {
+  margin-left: 0.5em;
+}
+.credits__div ul {
+  list-style: none;
+  margin-left: 0.5em;
+  line-height: 1.6;
+}
+.credits__div p {
+  margin-left: 0.5em;
+  max-width: 90%;
+}
+
+footer {
+  overflow-x: hidden;
+}
+
+@media (min-width: 769px) {
+  .credits {
+    padding-left: 33px;
+  }
+  .credits h2,
+  .credits p,
+  .credits ul {
+    margin-left: 2rem;
   }
 }/*# sourceMappingURL=app.css.map */

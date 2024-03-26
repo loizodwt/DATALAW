@@ -13,7 +13,58 @@ body {
   font-size: 18px;
   line-height: 1.6;
   overflow-x: hidden;
-  font-family: sato;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "gruppo";
+  src: url("../assets/font/Gruppo-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "sato";
+  src: url("../assets/font/satoshi/satoshi-Regular.otf");
+}
+@font-face {
+  font-family: "clash";
+  src: url("../assets/font/clash/ClashDisplay-Regular.otf");
+}
+
+.nav {
+  display: flex;
+  width: 100%;
+  background-color: transparent;
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  &--hide {
+    display: none;
+  }
+
+  &__ul {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 0%;
+    list-style: none;
+  }
+  &__el {
+    list-style: none;
+    color: #333333;
+    font-family: gruppo;
+    margin: 0 16px;
+    cursor: pointer;
+
+    &:hover {
+      border-bottom: 1px solid #333333;
+      transition: 0.3s ease-out;
+    }
+  }
 }
 
 .main {
@@ -38,7 +89,7 @@ body {
   .title {
     font-size: 34px;
     text-align: center;
-    font-family: gruppo;
+    font-family: clash;
     color: #333333;
     font-weight: lighter;
   }
@@ -133,3 +184,5 @@ button {
 @import "components/quiz";
 @import "components/timeline";
 @import "components/media";
+
+@import "components/credits";
