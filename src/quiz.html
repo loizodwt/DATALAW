@@ -34,11 +34,11 @@
 
   <main>
 
-    <section class="section quiz quiz__intro quiz__intro__glass">
+    <section class="section quiz quiz__intro">
       <h1 class="title">Quiz</h1>
       <div class="glass">
         <p>Vous incarnez un législateur devant se prononcer sur des propositions de lois étranges, parmi lesquelles se sont glissées des légendes urbaines fausses. À vous de juger si vous les approuvez et décidez de les mettre en place officiellement !</p>
-        <button class="btn quiz__button quiz__button--start">Commencer le quiz</button>
+        <button class="quiz__button quiz__button--start">Commencer le quiz</button>
       </div>
     </section>
 
@@ -60,31 +60,36 @@
 
     <section class="section quiz quiz__recap hidden">
       <h2 class="title">Récapitulatif</h2>
-      <p>Votre rôle de législateur est maintenant terminé…jusqu’à votre retour sur le quiz !</p>
 
-      <h2 class="title">Avez-vous trouvé les bonnes lois ?</h2>
+      <div class="glass">
+        <p>Votre rôle de législateur est maintenant terminé…jusqu’à votre retour sur le quiz !</p>
 
-      <div class="quiz__recap__true">
-        <h3 class="title">Les vraies lois</h3>
-        <!-- Liste VRAI -->
+        <h2 class="title">Avez-vous trouvé les bonnes lois ?</h2>
+
+        <div class="quiz__recap__true">
+          <h3 class="title">Les vraies lois</h3>
+          <!-- Liste VRAI -->
+        </div>
+
+        <div class="quiz__recap__false">
+          <h3 class="title">Les légendes urbaines</h3>
+          <!-- Liste FAUX -->
+          <!-- Quantité ("Vous avez identifié X légendes urbaines sur 5.") -->
+        </div>
+
+        <div class="quiz__result">
+          <p class="quiz__result--score">Votre score: 0/8</p>
+          <p class="quiz__result--percent">
+            Vous avez voté à <span>x%</span> comme la majorité à l'époque de proposition de ces lois.
+          </p>
+
+        </div>
+
+        <div class="quiz__buttons">
+          <button class="btn quiz__button quiz__button--restart">Recommencer le quiz</button>
+          <a class="btn quiz__button" href="index.html">Revenir au menu</a>
+        </div>
       </div>
-
-      <div class="quiz__recap__false">
-        <h3 class="title">Les légendes urbaines</h3>
-        <!-- Liste FAUX -->
-        <!-- Quantité ("Vous avez identifié X légendes urbaines sur 5.") -->
-      </div>
-
-      <div class="quiz__result">
-        <p class="quiz__result--score">Votre score: 0/8</p>
-        <p class="quiz__result--percent">
-          Vous avez voté à <span>x%</span> comme la majorité à l'époque de proposition de ces lois.
-        </p>
-
-      </div>
-
-      <button class="btn quiz__button quiz__button--restart">Recommencer le quiz</button>
-      <a class="btn quiz__button" href="index.html">Revenir au menu</a>
 
     </section>
 
