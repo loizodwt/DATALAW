@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="styles/app.css">
   <script src="scripts/app.js" defer></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.2/dat.gui.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </head>
 
@@ -34,7 +35,7 @@
         <canvas id="canvas"></canvas>
         <div class="main__content">
           <h1 class="main__title">DataLaws</h1>
-          <p class="main__txt">En tous lieux, à toutes époques, les lois régissent nos vies. Mais quand est-il lorsqu’elles prennent le chemin de l’absurde&nbsp;?</p>
+          <p class="main__txt">En tous lieux, à toutes époques, les lois régissent nos vies. Mais qu'en est-il lorsqu’elles prennent le chemin de l’absurde&nbsp;?</p>
         </div>
       </div>
     </section>
@@ -48,8 +49,25 @@
       </nav>
     </section>
 
-    <section class="graph">
-      <!-- insérer le code du graphique -->
+    <section class="graphique">
+      <h2 class="title">Taux d'absurdité par pays</h2>
+      <p>Pour calculer le taux d’absurdité, nous avons demandé à plusieurs personnes de donner un « indice d’absurdité » sur cinq pour chacune des lois, et avons fait une moyenne des réponses obtenues.</p>
+
+      <div class="graphique__boutons">
+        <button id="btnEurope">Europe</button>
+        <button id="btnAmérique">Amérique</button>
+        <button id="btnAfrique">Afrique</button>
+        <button id="btnAsie">Asie</button>
+        <button id="btnOcéanie">Océanie</button>
+      </div>
+
+      <div class="graphique__container"><canvas id="myChart"></canvas></div>
+
+      <div class="graphique__lois hidden">
+        <h3>Loi:</h3>
+        <p>Ceci est une loi.</p>
+      </div>
+
     </section>
 
     <section class="timeline">
@@ -134,7 +152,7 @@
     </section>
 
     <section class="introquiz">
-      <h2 class="introquiz__h2">À vous de jouer&nbsp;!</h2>
+      <h2 class="introquiz__h2">À vous de jouer !</h2>
       <div class="introquiz__glass">
         <p>Voici 10 propositions de lois étranges, parmi lesquelles se sont glissées des légendes urbaines fausses.</p>
         <p>À vous de juger si vous les approuvez et décidez de les mettre en place officiellement.</p>
