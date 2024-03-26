@@ -1,22 +1,95 @@
 @import "utils/variables";
-@import "components/reset";
 @import "components/type";
 
-/* ---------- MAIN ---------- */
+/* ------ MEDIEVAL ------ */
 
-html {
-  scroll-behavior: smooth;
+.MoyenAge {
+  background-color: lightgreen;
 }
 
+/* ------ 1900 ------ */
+.two {
+  background-color: aquamarine;
+}
+
+/* ------ 2000 ------ */
+.three {
+  background-color: lightcoral;
+}
+
+/* ------ 2010 ------ */
+.four {
+  background-color: chocolate;
+}
+
+/* ------ 2020 ------ */
+.five {
+  background-color: cornflowerblue;
+}
+
+/* ------ EXTRA ------ */
+.hidden {
+  display: none;
+}
+
+
 body {
-  font-size: 18px;
-  line-height: 1.6;
   overflow-x: hidden;
-  font-family: sato;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "gruppo" ;
+  src: url("../assets/font/Gruppo-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "sato" ;
+  src: url("../assets/font/satoshi/satoshi-Regular.otf") ;
+}
+
+.nav {
+  display: flex;
+  width: 100%;
+  background-color: transparent;
+
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  &--hide {
+    display: none;
+  }
+
+  &__ul {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 0%;
+    list-style: none;
+  }
+  &__el {
+    list-style: none;
+    color: #333333;    
+    font-family: gruppo;
+    margin: 0 16px;
+
+    &:hover {
+      border-bottom: 1px solid #333333;
+      transition: .3s ease-out;
+    }
+  }
 }
 
 .main {
-  background-image: image-set(url(../assets/images/da/bg-main.png) 1x, url(../assets/images/da/bg-main@2x.png) 2x);
+  background-image: image-set(
+    url(../assets/images/da/bg-main.png) 1x,
+    url(../assets/images/da/bg-main@2x.png) 2x
+  );
   background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
@@ -34,68 +107,28 @@ body {
     justify-content: center;
     background-color: transparent;
   }
-
-  .title {
+  
+  &__title {
     font-size: 60px;
     text-align: center;
     font-family: gruppo;
     color: #333333;
     font-weight: lighter;
   }
-  p {
+  &__txt {
     font-size: 20px;
     text-align: left;
+    font-family: sato;
+    line-height: 1.6;
     margin: auto;
     color: #333333;
     margin-top: 350px;
     justify-content: center;
+    
   }
-}
-
-/*
-test js 2EME GRAPH BLEU
-
-#graph-container {
-  margin-bottom: 20px;
-}
-
-#continent-buttons {
-  margin-bottom: 20px;
-}
-
-button {
-  margin-right: 10px;
-}
-
-.bar {
-  fill: rgb(0, 140, 255);
-}
-
-*/
-
-/* ---------- NAVIGATION ---------- */
-
-.nav {
-  display: flex;
-  width: 100%;
-  background-color: $c-light;
-
-  .sticky {
-    position: fixed;
-    top: 0;
+  #canvas {
     width: 100%;
-    z-index: 1000;
-  }
-
-  &__ul {
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
-  }
-  &__el {
-    color: #333333;
-    font-family: gruppo;
-    margin: 0 16px;
+    height: 100%;
   }
 }
 
@@ -181,8 +214,7 @@ button {
 
 
 .footer {
-  font-family: gruppo;
-  background-color: $c-bg;
+  background-color: #ACA0D6;
   text-align: center;
   padding: 16px;
   padding-top: 8px;
