@@ -1,100 +1,82 @@
-
-
 .graphique {
+  background-color: #e2ede9;
 
-
-  background-color: #E2EDE9;
-
-
+  &__lois {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-family: "sato";
+    font-size: 22px;
+    padding: 5%;
+    margin: 0%;
+  }
 }
 
 canvas {
   cursor: pointer;
 }
 
+.graphique__boutons {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  gap: 30px;
+
+  button {
+    background-color: rgba(245, 245, 245, 0.356);
+    color: #3e2f60;
+    font-family: "sato";
+    padding: 5px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #cdc7e3;
+    border-radius: 10px;
+
+    &:hover {
+      background-color: #795fb6;
+      color: #f5f5f5;
+    }
+
+    &:active,
+    &:focus {
+      background-color: #3e2f60;
+      color: #f5f5f5;
+    }
+  }
+}
+
+#myChart {
+  min-width: 300px;
+  min-height: 300px;
+  max-height: 300px;
+  max-width: 300px;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+@media screen and (max-width: 768px) {
   .graphique__boutons {
-    display: flex;
+    display: inline-block;
     justify-content: center;
-    padding: 50px;
-    gap: 30px;
-
-   
-
-    button {
-      background-color: rgba(245, 245, 245, 0.356); 
-      color: #3E2F60;
-      font-family: "Satoshi";
-      padding: 5px 12px;
-      text-align: center;
-      text-decoration: none;
-      font-size: 16px;
-      cursor: pointer;
-      border: 1px solid #CDC7E3;
-      border-radius: 10px;
-
-      &:hover {
-        background-color: #795fb6; 
-        color: #F5F5F5;
-       
-      }
-
-      &:active, &:focus {
-        background-color: #3E2F60; 
-        color: #F5F5F5;
-      }
-    }
   }
 
-  .graphique__lois {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    font-family: "Satoshi";
-    font-size: 22px;
-    padding: 5%;
-    margin: 0%;
+  button {
+    margin: 5px;
   }
+}
 
+@media screen and (min-width: 350px) {
   #myChart {
-    min-width:300px;
-    min-height: 300px;
-    max-height: 300px;
-    max-width: 300px;
-    margin-left: 1vw;
-    margin-right: 1vw;
+    margin-left: auto;
+    margin-right: auto;
   }
+}
 
-
-
-
-  @media screen and (max-width: 768px) {
-    .graphique__boutons {
-      display: inline-block; 
-      justify-content: center;
-    }
-  
-    button {
-      margin: 5px; 
-    }
-
-
-  
-  }
-
-  @media screen and (min-width: 350px) {
-
-    #myChart {
-
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
-  
-
-  @media screen and (min-width: 600px) {
-
+@media screen and (min-width: 600px) {
   #myChart {
-    min-width:600px;
+    min-width: 600px;
     min-height: 500px;
     max-height: 500px;
     max-width: 600px;
@@ -103,13 +85,9 @@ canvas {
   }
 }
 
-
-
 @media screen and (min-width: 900px) {
-
   #myChart {
-    min-width:800px;
-
+    min-width: 800px;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;

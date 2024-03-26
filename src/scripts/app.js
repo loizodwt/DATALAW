@@ -2,6 +2,123 @@
 
 import { gsap } from "gsap";
 
+/* ---------- timeline ---------- */
+/*
+// Function to convert text formatted as "20ᵉ siècle" to its associated year (e.g., "20ᵉ siècle" -> 1900)
+function convertCenturyToYear(text) {
+  let century = parseInt(text);
+  if (!isNaN(century)) {
+    return (century - 1) * 100;
+  }
+  return null;
+}
+
+// Function to extract the year from a date string, ignoring the day and text (e.g., "5 octobre 2019" -> 2019)
+function extractYearFromDate(dateString) {
+  if (typeof dateString === 'string') {
+    let yearRegex = /\b\d{4}\b/;
+    let match = dateString.match(yearRegex);
+    if (match) {
+      return parseInt(match[0]);
+    }
+  }
+  return null;
+}
+
+
+// Function to determine the class based on the "Début" value
+function getClassForYear(year) {
+  if (year >= 2020) {
+    return 'five'; // For years 2020 and above
+  }
+  if (year >= 2010 && year <= 2019) {
+    return 'four';
+  }
+  if (year >= 2000 && year <= 2009) {
+    return 'three';
+  }
+  if (year >= 1900 && year <= 1999) {
+    return 'two';
+  }
+  return 'MoyenAge'; // Default for years before 1900
+}
+
+
+
+
+// Function to fetch JSON data
+async function fetchJSONData(url) {
+  try {
+    let response = await fetch(url);
+    if (!response.ok) {
+      throw new Error('Network response was not ok.');
+    }
+    return await response.json();
+  } catch (error) {
+    console.error('Error fetching JSON data:', error);
+    return [];
+  }
+}
+
+// Function to populate HTML with JSON data
+function populateHTML(jsonData) {
+  // Selecting top container and template
+  let topContainer = document.querySelector('.top');
+  let template = document.querySelector('.top__container');
+
+  // Check if template exists
+  if (!template) {
+    console.error("Template not found!");
+    return;
+  }
+
+  // Sort JSON data by "Absurdité" value in descending order
+  jsonData.sort((a, b) => b.Absurdité - a.Absurdité);
+
+  // Iterate through JSON data
+  jsonData.forEach((data, index) => {
+    // Clone template content
+    let clone = template.cloneNode(true);
+
+    // Extract year from "Début" value
+    let year;
+    if (typeof data.Début === 'string' && data.Début.includes('ᵉ siècle')) {
+      year = convertCenturyToYear(data.Début);
+    } else {
+      year = extractYearFromDate(data.Début);
+    }
+
+    // Assign class based on year
+    if (year !== null) {
+      clone.classList.add(getClassForYear(year));
+    }
+
+    // Fill cloned content with data
+    clone.querySelector('.top__number').textContent = index + 1; // Increment index for numbering
+    clone.querySelector('.top__pays').textContent = data.Pays;
+    clone.querySelector('.top__loi').textContent = data.Loi;
+    clone.querySelector('.top__date').textContent = `${data.Début} - ${data.Fin}`;
+    clone.querySelector('.top__comment').textContent = data.Commentaire;
+    clone.querySelector('.top__rating').textContent = `${data.Absurdité} 🤡`;
+
+    // Show cloned content
+    clone.classList.remove('hidden');
+
+    // Append cloned content to topContainer
+    topContainer.appendChild(clone);
+  });
+
+  // Remove the template from DOM
+  template.remove();
+}
+
+
+// Fetch JSON data and populate HTML
+let lawsDataURL = 'assets/data/laws.json';
+fetchJSONData(lawsDataURL)
+  .then(data => populateHTML(data))
+  .catch(error => console.error('Error fetching JSON data:', error));
+*/
 
 /* ---------- QUIZ ---------- */
 // condition : code du quiz ne se lance qui sur la page du quiz
@@ -365,8 +482,157 @@ if (navbar && graphSection) {
     }
   }
 
+
+
+
+
+  //GRAPHIQUE :3
+
+  //afficher de base europe
+  changeData('Europe');
+
+  document.getElementById('btnAfrique').addEventListener('click', function () {
+    changeData('Afrique');
+  });
+  document.getElementById('btnAsie').addEventListener('click', function () {
+    changeData('Asie');
+  });
+  document.getElementById('btnEurope').addEventListener('click', function () {
+    changeData('Europe');
+    console.log("europe")
+  });
+  document.getElementById('btnAmérique').addEventListener('click', function () {
+    changeData('Amérique');
+  });
+  document.getElementById('btnOcéanie').addEventListener('click', function () {
+    changeData('Océanie');
+  });
+
+
+  var buttons = document.querySelectorAll('.button');
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      button.classList.add('clicked');
+    });
+  });
+
+
+
   window.addEventListener('scroll', toggleStickyNav);
 }
 
 
 
+
+//GRAPHOU :3
+
+const ctxm = document.getElementById('myChart').getContext('2d');
+const myChart = new Chart(ctxm, {
+  type: 'bar',
+});
+
+// Common options
+const fontSize = 16;
+const commonFont = {
+  size: fontSize
+};
+
+// bloc pour le fetch
+async function fetchData() {
+  try {
+    const response = await fetch('../assets/data/data.json');
+
+    if (!response.ok) {
+      throw new Error('Erreur lors de la récupération des données.');
+    }
+
+    return await response.json();
+  } catch (error) {
+    console.error('Erreur:', error.message);
+  }
+}
+
+function changeData(continent) {
+  fetchData()
+    .then(data => {
+      const continentData = data.continents[continent];
+      createChart(continentData, data.xAxisLabel, data.yAxisLabel);
+    });
+}
+
+function createChart(data, xAxisLabel, yAxisLabel) {
+  // Création d'un gradient de l'orange au jaune
+  const gradient = document.getElementById("myChart").getContext("2d").createLinearGradient(0, 0, 0, 400);
+  gradient.addColorStop(0, '#3E2F60');
+  gradient.addColorStop(1, '#3E2F60');
+
+  const chartData = {
+    labels: data.map(entry => entry.pays),
+    datasets: [{
+      label: "Moyenne d'absurdité",
+      data: data.map(entry => entry.Absurdité),
+      backgroundColor: gradient
+    }]
+  };
+
+  const options = {
+    responsive: true, // Ensure chart responsiveness
+    maintainAspectRatio: false,
+    animation: {
+      duration: 1000,
+      easing: 'easeInOutQuart'
+    },
+    indexAxis: 'y',
+    scales: {
+      x: {
+        beginAtZero: true,
+        suggestedMax: 5,
+        ticks: {
+          font: commonFont
+        },
+        title: {
+          display: true,
+          text: xAxisLabel,
+          font: commonFont
+        }
+      },
+      y: {
+        ticks: {
+          font: commonFont
+        },
+        title: {
+          display: true,
+          text: yAxisLabel,
+          font: commonFont
+        }
+      }
+    },
+    plugins: {
+      tooltip: {
+        bodyFont: commonFont,
+        titleFont: commonFont
+      }
+    },
+    onClick: (e) => {
+      const canvasPosition = Chart.helpers.getRelativePosition(e, myChart);
+
+      const dataX = myChart.scales.x.getValueForPixel(canvasPosition.x);
+      const dataY = myChart.scales.y.getValueForPixel(canvasPosition.y);
+
+      let dataIndex = Math.abs(dataY);
+
+      const loiContainer = document.querySelector('.graphique__lois');
+
+      if (dataIndex >= 0 && dataIndex < data.length) {
+        loiContainer.classList.remove('hidden');
+        loiContainer.innerHTML = "<strong>Lois aléatoires:</strong><br>" + data[dataIndex].Loi;
+      } else {
+        loiContainer.classList.add('hidden');
+      }
+    }
+  };
+
+  myChart.data = chartData;
+  myChart.options = options;
+  myChart.update();
+}

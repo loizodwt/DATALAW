@@ -19,6 +19,11 @@
   <title>DataLaws</title>
   <link rel="stylesheet" href="styles/app.css">
   <script src="scripts/app.js" defer></script>
+  <!-- Frameworks -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollTrigger.min.js"></script>
 </head>
 
 <body>
@@ -46,8 +51,46 @@
       </nav>
     </section>
 
-    <section class="graph">
-      <!-- insérer le code du graphique -->
+    <!-- graphique -->
+
+    <section class="graphique graph">
+      <div class="graphique__boutons">
+        <button id="btnEurope">Europe</button>
+        <button id="btnAmérique">Amérique</button>
+        <button id="btnAfrique">Afrique</button>
+        <button id="btnAsie">Asie</button>
+        <button id="btnOcéanie">Océanie</button>
+      </div>
+
+      <div><canvas id="myChart"></canvas></div>
+
+      <p class="graphique__lois hidden">Loi aléatoire.</p>
+
+    </section>
+
+    <section>
+      <h2 class="title">Taux d'absurdité par pays</h2>
+      <p>Pour calculer le taux d’absurdité, nous avons demandé à plusieurs personnes de donner un « indice d’absurdité » sur cinq pour chacune des lois, et avons fait une moyenne des réponses obtenues.</p>
+      <!-- Insérer graphique -->
+
+      <h2 class="title">Top des lois les plus absurdes</h2>
+
+      <div class="top">
+        <div class="top__container">
+          <h3 class="top__number">1</h3>
+          <p class="top__pays">Pays</p>
+          <p class="top__date">Début - Fin</p>
+          <p class="top__rating">1</p>
+          <p class="top__loi">Ceci est une loi</p>
+          <h4 class="top__comment--title">Commentaire</h4>
+          <p class="top__comment">Ceci est le commentaire de la rédaction.</p>
+        </div>
+      </div>
+      <!-- Timeline -->
+
+      <h2 class="title">Envie de vous tester ?</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe ea magni iusto quisquam accusamus, provident iste quas similique eum deserunt laboriosam velit, placeat illum amet nemo nihil, praesentium exercitationem voluptates.</p>
+      <a href="quizz.html" class="btn">Faire le quizz</a>
     </section>
 
     <section class="quiz__intro">
