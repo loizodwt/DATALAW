@@ -1,0 +1,336 @@
+.quiz {
+    &__intro {
+        background-image: image-set(
+            url(../assets/images/da/bg-main.png) 1x,
+            url(../assets/images/da/bg-main@2x.png) 2x
+        );
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 100vh;
+        background-size: cover;
+        position: relative;
+        padding: auto 16px;
+        font-family: gruppo;
+
+        .title {
+            font-size: 34px;
+            font-family: gruppo;
+            margin-top: 0px;
+            text-align: center;
+            padding-top: 54px;
+            color: #333333;
+        }
+    }
+    &__buttons {
+        display: flex;
+    }
+    &__button {
+        display: block;
+        background-color: $c-glass;
+        backdrop-filter: blur(5);
+        border: 2px solid #9486c4;
+        border-radius: 15px;
+        margin: 74px auto auto auto;
+        padding: 10px;
+        font-weight: lighter;
+        cursor: pointer;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: $c-glass-hover;
+            backdrop-filter: blur(5);
+            border-color: #d7d4ff;
+
+            a {
+                color: $c-light;
+            }
+        }
+
+        &--vrai,
+        &--faux {
+            display: inline;
+        }
+    }
+    &__container {
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: start;
+    }
+
+    &__question {
+        margin-bottom: 20px;
+        font-size: 25px;
+        color: black;
+    }
+
+    &__button {
+        padding: 5px 10px;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgb(106, 106, 106);
+        }
+
+        &--vrai {
+            background-color: $quiz-primary-color;
+            color: white;
+        }
+
+        &--faux {
+            background-color: $quiz-secondary-color;
+            color: white;
+        }
+    }
+
+    &__feedback {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    &--correct {
+        //color: $quiz-primary-color;
+        background-image: image-set(
+            url("../../assets/images/da/yes.png") 1x,
+            url("../../assets/images/da/yes@2x.png") 2x
+        );
+    }
+
+    &--wrong {
+        //color: $quiz-secondary-color;
+        background-image: image-set(
+            url("../../assets/images/da/no.png") 1x,
+            url("../../assets/images/da/no@2x.png") 2x
+        );
+    }
+
+    &--correct,
+    &--wrong {
+        background-position: left center;
+        background-repeat: no-repeat;
+        vertical-align: middle;
+        padding-left: 33px;
+        margin-left: -33px;
+    }
+
+    &__recap {
+        background-image: image-set(
+            url(../assets/images/da/recapquiz.png) 1x,
+            url(../assets/images/da/recapquiz@2x.png) 2x
+        );
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 100%;
+        background-size: cover;
+
+        .title {
+            font-size: 51px;
+            font-family: gruppo;
+            text-align: center;
+        }
+
+        li {
+            margin-bottom: 33px;
+
+            font-family: sato;
+        }
+
+        &__true {
+            height: 100vh;
+            width: 80%;
+            max-width: 750px;
+            margin: auto 10%;
+            &__h2 {
+                font-family: gruppo;
+                font-size: 34px;
+            }
+            &__content {
+                background-color: rgba(173, 168, 233, 0.2);
+                border: 1px solid #9486c4;
+                border-radius: 15px;
+                backdrop-filter: blur(15);
+                padding: 33px;
+                padding-bottom: 16px;
+            }
+        }
+        &__false {
+            height: 100vh;
+            width: 80%;
+            margin: -111px 10% auto 10%;
+            &__h2 {
+                font-family: gruppo;
+                font-size: 34px;
+            }
+            &__content {
+                background-color: rgba(173, 168, 233, 0.2);
+                border: 1px solid #9486c4;
+                border-radius: 15px;
+                backdrop-filter: blur(15);
+                padding: 33px;
+                padding-bottom: 16px;
+            }
+        }
+    }
+}
+
+// .introquiz {
+//     background-image: image-set(url(../assets/images/da/bg-main.png) 1x, url(../assets/images/da/bg-main@2x.png) 2x);
+//     background-repeat: no-repeat;
+//     width: 100vw;
+//     height: 100vh;
+//     background-size: cover;
+//     position: relative;
+//     padding: auto 16px;
+//     font-family: gruppo;
+
+//     &__h2 {
+//         font-size: 34px;
+//         font-family: gruppo;
+//         margin-top: 0px;
+//         text-align: center;
+//         padding-top: 54px;
+//         color: #333333;
+//     }
+
+//     &__glass {
+//         background-color: $c-glass;
+//         width: 80%;
+//         border: 1px solid #9486c4;
+//         border-radius: 15px;
+//         backdrop-filter: blur(0);
+//         justify-content: center;
+//         padding: 16px 33px;
+//         margin: 0% auto;
+//         z-index: 8;
+//         align-items: center;
+//         max-width: 450px;
+//         margin-top: 54px;
+
+//         p {
+//             font-family: sato;
+//             color: $c-light;
+//             line-height: 1.6;
+//         }
+//     }
+//     &__button {
+//         display: flex;
+//         background-color: $c-glass;
+//         backdrop-filter: blur(5);
+//         border: 2px solid #9486c4;
+//         border-radius: 15px;
+//         margin: 74px auto auto auto;
+//         justify-content: center;
+//         color: black;
+//         padding: 10px;
+//         font-weight: lighter;
+//         cursor: pointer;
+
+//         a {
+//             color: #333333;
+//         }
+//         &:hover {
+//             background-color: $c-glass-hover;
+//             backdrop-filter: blur(5);
+//             border: 2px solid #d7d4ff;
+
+//             a {
+//                 color: $c-light;
+//             }
+//         }
+//     }
+// }
+
+.finquiz {
+    background-image: image-set(url(../assets/images/da/bg-main.png) 1x, url(../assets/images/da/bg-main@2x.png) 2x);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    padding: auto 16px;
+    font-family: gruppo;
+
+    &__h2 {
+        font-size: 34px;
+        font-family: gruppo;
+        margin-top: 0px;
+        text-align: center;
+        padding-top: 54px;
+        color: #333333;
+    }
+
+    &__glass {
+        background-color: $c-glass;
+        width: 80%;
+        border: 1px solid #9486c4;
+        border-radius: 15px;
+        backdrop-filter: blur(15);
+        justify-content: center;
+        padding: 16px 33px;
+        margin: 0% auto;
+        z-index: 8;
+        align-items: center;
+        max-width: 450px;
+        margin-top: 54px;
+
+        p {
+            font-family: sato;
+            color: $c-light;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+    }
+    &__button {
+        display: flex;
+        width: 60%;
+        margin: auto 20%;
+        justify-content: center;
+    }
+    &__button--1,
+    &__button--2 {
+        display: flex;
+        font-size: 18px;
+        background-color: $c-glass;
+        backdrop-filter: blur(5);
+        border: 2px solid #9486c4;
+        border-radius: 15px;
+        margin: 74px auto auto auto;
+        padding: 10px;
+        font-weight: lighter;
+        cursor: pointer;
+
+        a {
+            text-decoration: none;
+            color: #333333;
+        }
+        &:hover {
+            background-color: $c-glass-hover;
+            backdrop-filter: blur(5);
+            border: 2px solid #d7d4ff;
+
+            a {
+                color: $c-light;
+            }
+        }
+    }
+}
+
+@media (min-width: 769px) {
+    .finquiz {
+        &__h2 {
+            font-size: 45px;
+        }
+        &__glass {
+            p {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1225px) {
+    .finquiz {
+        padding-top: 111px;
+    }
+}

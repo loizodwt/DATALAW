@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content=".">
+
+  <!-- Open Graph data -->
+  <meta property="og:site_name" content="DataLaws" />
+  <meta property="og:title" content="DataLaws" />
+  <meta property="og:description" content="" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="/assets/images/share.png" />
+  <meta property="og:image:width" content="1800" />
+  <meta property="og:image:height" content="945" />
+
+  <title>Quiz | DataLaws</title>
+  <link rel="stylesheet" href="styles/app.css">
+  <script src="scripts/app.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <nav class="nav">
+      <ul class="nav__ul">
+        <li><a href="/index.html" class="nav__el">Accueil</a></li>
+        <li><a href="/quiz.html" class="nav__el">Quiz</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="section quiz quiz__intro">
+      <h1 class="title">Quiz</h1>
+      <div class="glass">
+        <p>Vous incarnez un législateur devant se prononcer sur des propositions de lois étranges, parmi lesquelles se sont glissées des légendes urbaines fausses. À vous de juger si vous les approuvez et décidez de les mettre en place officiellement !</p>
+        <button class="quiz__button quiz__button--start">Commencer le quiz</button>
+      </div>
+    </section>
+
+
+    <section class="section quiz quiz__container hidden">
+
+      <div class="quiz__compteur">
+        <span class="quiz__compteur--current">1</span> sur 8
+      </div>
+      <h2 class="title quiz__question">Ceci est une loi.</h2>
+      <div class="quiz__buttons">
+        <button class="quiz__button quiz__button--vrai">Je vote pour</button>
+        <button class="quiz__button quiz__button--skip">Passer</button>
+        <button class="quiz__button quiz__button--faux">Je vote contre</button>
+      </div>
+      <div class="quiz__feedback"></div>
+
+    </section>
+
+    <section class="section quiz quiz__recap hidden">
+      <h2 class="title">Récapitulatif</h2>
+
+      <div class="glass">
+        <p>Votre rôle de législateur est maintenant terminé…jusqu’à votre retour sur le quiz !</p>
+
+        <h2 class="title">Avez-vous trouvé les bonnes lois ?</h2>
+
+        <div class="quiz__recap__true">
+          <h3 class="title">Les vraies lois</h3>
+          <!-- Liste VRAI -->
+        </div>
+
+        <div class="quiz__recap__false">
+          <h3 class="title">Les légendes urbaines</h3>
+          <!-- Liste FAUX -->
+          <!-- Quantité ("Vous avez identifié X légendes urbaines sur 5.") -->
+        </div>
+
+        <div class="quiz__result">
+          <p class="quiz__result--score">Votre score: 0/8</p>
+          <p class="quiz__result--percent">
+            Vous avez voté à <span>x%</span> comme la majorité à l'époque de proposition de ces lois.
+          </p>
+
+        </div>
+
+        <div class="quiz__buttons">
+          <button class="btn quiz__button quiz__button--restart">Recommencer le quiz</button>
+          <a class="btn quiz__button" href="index.html">Revenir au menu</a>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <ul class="footer__ul">
+      <li class="footer__el"><a href="https://dwt.heaj.be/">DWT</a></li>
+      <li class="footer__el"><a href="/credits.html">Crédits</a></li>
+    </ul>
+    <small>© 2024, tous droits réservés.</small>
+  </footer>
+
+</body>
+
+</html>
