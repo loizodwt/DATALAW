@@ -2,6 +2,10 @@
   background-color: $c-light;
   font-family: "sato";
 
+  .title {
+    text-align: center;
+  }
+
   &__lois {
     display: flex;
     flex-direction: column;
@@ -72,6 +76,11 @@ canvas {
       margin: auto;
     }
     &__lois {
+      max-width: 800px;
+      margin: auto;
+    }
+    &__txt {
+      display: block;
       max-width: 800px;
       margin: auto;
     }
