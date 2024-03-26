@@ -1,102 +1,28 @@
 @import "utils/variables";
+@import "components/reset";
 @import "components/type";
 
-/* ------ MEDIEVAL ------ */
+/* ---------- MAIN ---------- */
 
-.MoyenAge {
-  background-color: lightgreen;
+html {
+  scroll-behavior: smooth;
 }
-
-/* ------ 1900 ------ */
-.two {
-  background-color: aquamarine;
-}
-
-/* ------ 2000 ------ */
-.three {
-  background-color: lightcoral;
-}
-
-/* ------ 2010 ------ */
-.four {
-  background-color: chocolate;
-}
-
-/* ------ 2020 ------ */
-.five {
-  background-color: cornflowerblue;
-}
-
-/* ------ EXTRA ------ */
-.hidden {
-  display: none;
-}
-
 
 body {
+  font-size: 18px;
+  line-height: 1.6;
   overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-}
-
-@font-face {
-  font-family: "gruppo" ;
-  src: url("../assets/font/Gruppo-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "sato" ;
-  src: url("../assets/font/satoshi/satoshi-Regular.otf") ;
-}
-
-.nav {
-  display: flex;
-  width: 100%;
-  background-color: transparent;
-
-
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-  }
-
-  &--hide {
-    display: none;
-  }
-
-  &__ul {
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
-    padding: 0%;
-    list-style: none;
-  }
-  &__el {
-    list-style: none;
-    color: #333333;    
-    font-family: gruppo;
-    margin: 0 16px;
-
-    &:hover {
-      border-bottom: 1px solid #333333;
-      transition: .3s ease-out;
-    }
-  }
+  font-family: sato;
 }
 
 .main {
-  background-image: image-set(
-    url(../assets/images/da/bg-main.png) 1x,
-    url(../assets/images/da/bg-main@2x.png) 2x
-  );
+  background-image: image-set(url(../assets/images/da/bg-main.png) 1x, url(../assets/images/da/bg-main@2x.png) 2x);
   background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
   background-size: cover;
   position: relative;
   padding: auto 16px;
-  padding-bottom: 100px;
 
   &__content {
     z-index: 5;
@@ -107,245 +33,102 @@ body {
     justify-content: center;
     background-color: transparent;
   }
-  
-  &__title {
-    font-size: 60px;
+
+  .title {
+    font-size: 34px;
     text-align: center;
     font-family: gruppo;
     color: #333333;
     font-weight: lighter;
   }
-  &__txt {
+  p {
     font-size: 20px;
     text-align: left;
-    font-family: sato;
-    line-height: 1.6;
     margin: auto;
     color: #333333;
-    margin-top: 350px;
+    margin-top: 111px;
     justify-content: center;
-    
   }
-  #canvas {
+}
+
+/*
+test js 2EME GRAPH BLEU
+
+#graph-container {
+  margin-bottom: 20px;
+}
+
+#continent-buttons {
+  margin-bottom: 20px;
+}
+
+button {
+  margin-right: 10px;
+}
+
+.bar {
+  fill: rgb(0, 140, 255);
+}
+
+*/
+
+/* ---------- NAVIGATION ---------- */
+
+.nav {
+  display: flex;
+  width: 100%;
+  background-color: $c-light;
+
+  .sticky {
+    position: fixed;
+    top: 0;
     width: 100%;
-    height: 100%;
+    z-index: 1000;
+  }
+
+  &__ul {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  &__el {
+    color: #333333;
+    font-family: gruppo;
+    margin: 0 16px;
   }
 }
 
 // .graph {margin-top: -70px;}
 
-.graph {margin-top: -100px; }
-
-
-.introquiz {
-  background-image: image-set(
-    url(../assets/images/da/bg-main.png) 1x,
-    url(../assets/images/da/bg-main@2x.png) 2x
-  );
-  background-repeat: no-repeat;
-  width: 100vw;
-  height: 100vh;
-  background-size: cover;
-  position: relative;
-  padding: auto 16px;
-  font-family: gruppo;
-
-  &__h2 {
-    font-size: 34px;
-    font-family: gruppo;
-    margin-top: 0px;
-    text-align: center;
-    padding-top: 54px;
-    color: #333333;
-  }
-
-  &__glass { 
-    background-color: rgba(189, 185, 238, 0.5);
-    width: 80%;
-    border: 1px solid #9486c4;
-    border-radius: 15px;
-    backdrop-filter: blur(0);
-    justify-content: center;
-    padding: 16px 33px;
-    margin: 0% auto;
-    z-index: 8;
-    align-items: center;
-    max-width: 450px;
-    margin-top: 54px;
-
-    p {
-      font-family: sato;
-      color: #333333;
-      font-size: 18px;
-      line-height: 1.6;
-    }
-  }
-  &__btn {
-    display: flex;
-    font-size: 18px;
-    background-color: rgba(189, 185, 238, 0.5);
-    backdrop-filter: blur(5);
-    border: 2px solid #9486c4;
-    border-radius: 15px;
-    margin: 74px auto auto auto;
-    justify-content: center;
-    color: black;
-    padding: 10px;
-    font-weight: lighter;
-    cursor: pointer;
-
-    a {
-      text-decoration: none;
-      color: #333333;
-    }
-    &:hover {
-      background-color: rgb(148,134,196, 0.5);
-      backdrop-filter: blur(5);
-      border: 2px solid #D7D4FF;
-
-      a {
-          color: #E6EFEB;
-      }
-    }
-  }
-}
-
-
-
+/* ---------- FOOTER ---------- */
 
 .footer {
-  background-color: #ACA0D6;
+  font-family: gruppo;
+  background-color: $c-bg;
   text-align: center;
   padding: 16px;
   padding-top: 8px;
   z-index: 7;
-
-  &__ul {
-    list-style: none;
-    padding: 0%;
-  }
-  &__el {
-    font-family: gruppo;
-    font-size: 16px;
-    line-height: 1.6;
-
-    a {
-      color: #333333;
-      font-size: 20px;
-
-      &:hover {
-        color: #E6EFEB;
-      }
-    }
-  }
-  small {
-    font-family: gruppo;
-    font-size: 16px;
-  }
+  font-size: 16px;
 }
 
-a {
-  text-decoration: none;
-  list-style: none;
+/* ---------- WATER EFFECT ---------- */
+
+#canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
 }
 
-
-@media (min-width: 481px) {
-  .main {
-    &__content {
-      width: 100%;
-      margin: 0%;
-      justify-content: center;
-    }
-    &__title {
-      font-size: 85px;
-      justify-content: center;
-      width: 100%;
-      text-align: center;
-    }
-    &__txt {
-      max-width: 450px;
-      width: 100%;
-      margin: 300px 5% auto 5%;
-    }
-
-  }
+/* ------ EXTRA ------ */
+.hidden {
+  display: none;
 }
 
-@media (min-width: 769px) {
-  .main {
-    &__title {
-      font-size: 108px;
-    }
-    &__txt {
-      font-size: 20px;
-      max-width: 500px;
-    }
-    &__content {
-      width: 80%;
-      margin: auto 10%;
-    }
-  }
-  .nav {
-    &__el {
-      font-size: 32px;
-    }
-  }
-  .introquiz {
-    &__h2 {
-      font-size: 45px;
-    }
-    &__glass {
-      p {font-size: 20px;}
-    }
-  }
-}
-
-@media (min-width: 1225px) {
-  .main {
-    
-    &__txt {
-      justify-content: center;
-      background: none;
-      border: none;
-      color: #E6EFEB;
-      max-width: 450px;
-      width: 80%;
-      text-align: center;
-      margin: auto;
-      margin-top: 250px;
-    }
-    &__title {
-      font-size: 250px;
-      line-height: 0%;
-      width: 100%;
-    }
-  }
-
-  .introquiz {
-    padding-top: 111px;
-  }
-}
-
-@media (min-width: 1500px) {
-  .main {
-    &__title {
-      font-size: 275px;
-    }
-  }
-}
-@media (min-width: 2000px) {
-  .main {
-    &__title {
-      font-size: 500px;
-      width: 100%;
-    }
-    &__content {
-      width: 100%;
-    }
-  }
-}
-
-
-@import "components/finquiz";
-@import "components/recapquiz";
+@import "components/glass";
+@import "components/quiz";
+@import "components/timeline";
+@import "components/media";
