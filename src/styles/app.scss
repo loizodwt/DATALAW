@@ -1,5 +1,6 @@
 @import "utils/variables";
 @import "components/type";
+@import "components/quiz-glassmorphism";
 
 
 body {
@@ -168,9 +169,9 @@ canvas {
 }
 
 /* ------ 2000 ------ */
-.four {
-  background-color: chocolate;
-}
+// .four {
+//   background-color: chocolate;
+// }
 
 /* ------ 2020 ------ */
 .five {
@@ -451,4 +452,3 @@ a {
 
 @import "components/finquiz";
 @import "components/recapquiz";
-@import "components/quiz-glassmorphism";

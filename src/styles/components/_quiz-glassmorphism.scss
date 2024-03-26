@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'Satoshi-Variable';
+    src: url('../../assets/font/satoshi/Satoshi-Variable.woff2') format('woff2'),
+         url('../../assets/font/satoshi/Satoshi-Variable.woff') format('woff'),
+         url('../../assets/font/satoshi/Satoshi-Variable.ttf') format('truetype');
+         font-weight: 300 900;
+         font-display: swap;
+         font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'ClashDisplay-Variable';
+    src: url('../../assets/font/ClashDisplay-Variable.woff2') format('woff2'),
+         url('../../assets/font/ClashDisplay-Variable.woff') format('woff'),
+         url('../../assets/font/ClashDisplay-Variable.ttf') format('truetype');
+         font-weight: 200 700;
+         font-display: swap;
+         font-style: normal;
+  }
+
+.four {
+    background-image: url("../../assets/images/bg-glassmorphism.svg");
+    .quiz__question {
+        background-color: rgba(#444343, 0.5);
+        backdrop-filter: blur(30px);
+        border: 2px solid #333;
+        border-radius: 20px;
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+        font-family: "Satoshi-Variable";
+        color: white;
+    }
+    .quiz__button {
+        background-color: rgba(#444343, 0.5);
+        backdrop-filter: blur(30px);
+        border: 2px solid #333;
+        border-radius: 20px;
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+    }
+    .quiz__h2 {
+        font-family: 'ClashDisplay-Variable';
+        background: linear-gradient(
+            90deg,
+            rgba(194, 160, 250, 1) 0%,
+            rgba(115, 143, 243, 1) 100%
+          );
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+    }
+    .quiz__date {
+        font-family: 'ClashDisplay-Variable';
+        background: linear-gradient(
+            90deg,
+            rgba(194, 160, 250, 1) 0%,
+            rgba(115, 143, 243, 1) 100%
+          );
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+    }
+}
