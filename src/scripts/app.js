@@ -8,70 +8,72 @@ import { Draggable } from "gsap/Draggable";
 gsap.registerPlugin(ScrollTrigger, Draggable);
 
 /* ---------- timeline ---------- */
-// Scroll horizontal, à priori il n'y a pas besoin d'y toucher
-gsap.registerPlugin(ScrollTrigger);
 
 const timeline = document.querySelector(".timeline");
-const sections = gsap.utils.toArray(".timeline > div");
 
-let totalWidth = 0;
-sections.forEach((section) => {
-  const sectionStyles = getComputedStyle(section);
-  totalWidth += section.offsetWidth + parseInt(sectionStyles.marginLeft) + parseInt(sectionStyles.marginRight);
-});
+// condition : ne run que si la timeline existe
+if (timeline) {
+  const sections = gsap.utils.toArray(".timeline > div");
 
-gsap.to(sections, {
-  x: () => {
-    return -(totalWidth - timeline.offsetWidth);
-  },
-  ease: "none",
-  scrollTrigger: {
-    trigger: ".timeline",
-    pin: true,
-    start: "top top",
-    scrub: 1,
-    end: () => {
-      return "+=" + (totalWidth - timeline.offsetWidth);
+  let totalWidth = 0;
+  sections.forEach((section) => {
+    const sectionStyles = getComputedStyle(section);
+    totalWidth += section.offsetWidth + parseInt(sectionStyles.marginLeft) + parseInt(sectionStyles.marginRight);
+  });
+
+  gsap.to(sections, {
+    x: () => {
+      return -(totalWidth - timeline.offsetWidth);
     },
-    snap: {
-      snapTo: "labels",
-      duration: { min: 0.1, max: 0.3 },
-      delay: 0.2,
-    },
-    onLeaveBack: (self) => {
-      if (self.progress === 1 && window.innerWidth < 768) {
-        self.scroll(self.start - 50);
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".timeline",
+      pin: true,
+      start: "top top",
+      scrub: 1,
+      end: () => {
+        return "+=" + (totalWidth - timeline.offsetWidth);
+      },
+      snap: {
+        snapTo: "labels",
+        duration: { min: 0.1, max: 0.3 },
+        delay: 0.2,
+      },
+      onLeaveBack: (self) => {
+        if (self.progress === 1 && window.innerWidth < 768) {
+          self.scroll(self.start - 50);
+        }
       }
-    }
-  },
-});
+    },
+  });
 
-// Draggable icons
-gsap.registerPlugin(Draggable);
+  // Draggable icons
+  gsap.registerPlugin(Draggable);
 
-Draggable.create(".singapour__grab", {
-  bounds: ".timeline__3",
-});
+  Draggable.create(".singapour__grab", {
+    bounds: ".timeline__3",
+  });
 
-Draggable.create(".singapour__modal", {
-  bounds: ".timeline__3",
-});
+  Draggable.create(".singapour__modal", {
+    bounds: ".timeline__3",
+  });
 
-// Boutons modale Singapour
-let closeButton = document.getElementById("close");
-let singapourWindow = document.querySelector(".singapour__modal");
-let datalawsIcon = document.querySelector(".singapour__datalaws");
+  // Boutons modale Singapour
+  let closeButton = document.getElementById("close");
+  let singapourWindow = document.querySelector(".singapour__modal");
+  let datalawsIcon = document.querySelector(".singapour__datalaws");
 
-closeButton.addEventListener("click", reduce);
+  closeButton.addEventListener("click", reduce);
 
-function reduce() {
-  singapourWindow.classList.add("reduced");
-}
+  function reduce() {
+    singapourWindow.classList.add("reduced");
+  }
 
-datalawsIcon.addEventListener("dblclick", toggleVisibility);
+  datalawsIcon.addEventListener("dblclick", toggleVisibility);
 
-function toggleVisibility() {
-  singapourWindow.classList.toggle("reduced");
+  function toggleVisibility() {
+    singapourWindow.classList.toggle("reduced");
+  }
 }
 
 /* ---------- QUIZ ---------- */
