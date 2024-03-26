@@ -9,27 +9,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/*
-test js 2EME GRAPH BLEU
-
-#graph-container {
-  margin-bottom: 20px;
-}
-
-#continent-buttons {
-  margin-bottom: 20px;
-}
-
-button {
-  margin-right: 10px;
-}
-
-.bar {
-  fill: rgb(0, 140, 255);
-}
-
-*/
-
 canvas {
   display: block;
   width: 100%;
@@ -101,7 +80,7 @@ canvas {
 
 .quiz {
   &__container {
-    max-width: 600px;
+    height: 100vh;
     margin: 0 auto;
     text-align: start;
   }
@@ -144,17 +123,17 @@ canvas {
   background-color: lightgreen;
 }
 
-/* ------ 1900 ------ */
+/* ------ 1800 ------ */
 .two {
   background-color: aquamarine;
 }
 
-/* ------ 2000 ------ */
+/* ------ 1900 ------ */
 .three {
   background-color: lightcoral;
 }
 
-/* ------ 2010 ------ */
+/* ------ 2000 ------ */
 .four {
   background-color: chocolate;
 }
