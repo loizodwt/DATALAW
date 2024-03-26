@@ -57,6 +57,7 @@
     width: 80%;
     max-width: 750px;
     margin: -111px 10% auto 10%;
+    position: relative;
     &__h2 {
         font-family: gruppo;
         font-size: 34px;
@@ -76,5 +77,47 @@
         backdrop-filter: blur(15);
         padding: 33px;
         padding-bottom: 16px;
+        margin-bottom: 150px;
+    }
+    &__end {
+        color: #3e2f60;
+        background-color: rgb(210, 214, 214, 0.2);
+        padding: 8px 16px;
+        border: 1px solid #9486c4;
+        border-radius: 25px;
+        font-family: sato;
+        display: flex;
+        max-width: 100px;
+        gap: 10px;
+        align-items: flex-end;
+        justify-content: center;
+        cursor: pointer;
+        position: absolute;
+        right: 0px; 
+
+        &:hover {
+        background-color: #3E2F60;
+        border: 1px solid #9486c4;
+        color: #E6EFEB;
+        }
+    }
+    &__end svg {        
+        fill: #3e2f60;
+        align-items: center;
+    }
+    &__end:hover svg {
+        fill: #E6EFEB;
+    }
+}
+
+@media (min-width: 481px) {
+    .good{
+        width: 70%;
+        margin: auto 15%;
+        margin-top: 111px;
+    }
+    .legendes{
+        width: 70%;
+        margin: auto 15% auto 15%;
     }
 }
