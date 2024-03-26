@@ -1,0 +1,169 @@
+@font-face {
+    font-family: "radar";
+    src:
+        url("../assets/fonts/PPRader-Italic.otf");
+  
+  }
+  
+  @font-face {
+    font-family: "jura";
+    src:
+        url("../assets/fonts/Jura-Regular.ttf");
+  }
+
+.y2k {
+    background-image: image-set(
+      url(../assets/images/y2k/bgy2k.jpg) 1x,
+      url(../assets/images/y2k/bgy2k@2x.jpg) 2x
+    );
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    position: relative;
+
+    &__content {
+        padding: 33px;
+        z-index: 5;
+    }
+
+    &__bstars {
+        width: 90px;
+        position: absolute;
+        top: 5%;
+        left: 15%;
+    }
+    &__chiffre {
+        font-size: 182px;
+        line-height: 0%;
+        font-family: radar;
+        position: absolute; 
+        color: transparent;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: black;
+        -webkit-text-fill-color: transparent;
+        top: -100px;
+        left: 60%;
+        font-style: italic;
+    }
+    &__title {
+        font-size: $h2-mobile;
+        font-family: radar;
+        margin-top: 150px;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        -webkit-text-fill-color: transparent;
+
+    }
+    &__txt {
+        font-size: $p-mobile;
+        font-family: jura;
+        margin-top: 0%;
+    }
+    &__h3 {
+        font-size: $h3-mobile;
+        font-family: jura;
+        margin-top: 4rem;
+    }
+    &__bottomstars {
+        width: 175px;
+        position: absolute;
+        bottom: 5%;
+        left: 45%;
+        z-index: 1;
+    }
+    &__lotstars {
+        display: none;
+        z-index: 1;
+    }
+}
+
+@media (min-width: 481px) {
+    .y2k {
+        &__bottomstars {
+            width: 200px;
+            bottom: 10%;
+            left: 45%;
+        }
+        &__content  {
+            max-width: 550px;
+        }
+        &__chiffre {
+            left: 50%;
+        }
+    }
+}
+
+@media (min-width: 769px) {
+    .y2k {
+        &__title {
+            font-size: $h2-mobile;
+        }
+        &__txt {
+            font-size: $p-tablet;
+        }
+        &__h3 {
+            font-size: $h3-tablet;
+        }
+        &__lotstars {
+            display: block;
+            width: 250px;
+            position: absolute;
+            bottom: 5%;
+            left: 45%;
+        }
+        &__bottomstars {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 880px) {
+    .y2k {
+        &__textes {
+            padding: 33px;
+            background-color: rgba(158, 170, 227, 0.1);
+            border-radius: 25px;
+            margin-left: 30%;
+            width: 100%;
+        }
+        &__title {
+            margin-left: 30%;
+            font-size: $h2-desktop;
+            margin-top: 33px;
+        }
+        &__chiffre {
+            top: 30%;
+            left: 5%;
+        }
+        &__bstars {
+            left: 80%;
+        }
+        &__lotstars {
+            width: 200px;
+            left: 70%;
+        }
+    }
+}
+
+@media (min-width: 1025px) {
+    .y2k {
+        &__title {
+            font-size: $h2-desktop;
+        }
+        &__txt {
+            font-size: $p-desktop;
+        }
+        &__h3 {
+            font-size: $h3-desktop;
+            margin-bottom: 0%;
+        }
+        &__content {
+            max-width: 70%;
+        }
+        &__textes {
+            margin-left: 20%;
+            margin-top: -7%;
+            // width: 70%;
+        }
+    }
+}

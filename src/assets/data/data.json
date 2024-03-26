@@ -1,0 +1,139 @@
+{
+  "continents": {
+    "Europe": [
+      {
+        "pays": "France",
+        "Absurdité": 5,
+        "Loi": "À Essarts-en-Bocage, il est obligatoire d’être « en joie » entre 8 et 22 heures et de faire sourire 10 personnes par jour."
+      },
+      {
+        "pays": "Roumanie",
+        "Absurdité": 4.8,
+        "Loi": "Si on est déclaré mort alors qu’on est en vie, il faut faire appel avant le délai imparti."
+      },
+      {
+        "pays": "Belgique",
+        "Absurdité": 3.4,
+        "Loi": "Jsuqu'en 2023, lors d’une saisie de biens, on ne pouvait pas prendre votre dernière vache, chèvre, cochon et vos 24 derniers poulets."
+      },
+      {
+        "pays": "Finlande",
+        "Absurdité": 2.6,
+        "Loi": "Les chauffeurs de taxi doivent payer des redevances s’ils jouent de la musique sous droit d’auteur dans leur voiture."
+      },
+      {
+        "pays": "Suisse",
+        "Absurdité": 2.5,
+        "Loi": "Jusqu'en 2005, il était illégal de produire, stocker, vendre ou d’échanger de l’absinthe mais légal d’en consommer."
+      }
+    ],
+    "Amérique": [
+      {
+        "pays": "Alabama",
+        "Absurdité": 4.6,
+        "Loi": "De 2003 à 2019, seule la position du missionnaire était autorisée. La sodomie, comme dans de nombreux Etats du Sud, était passible de prison."
+      },
+      {
+        "pays": "Wisconsin",
+        "Absurdité": 4,
+        "Loi": "De 1962 à 2019, les batailles de boules de neige étaient interdites."
+      },
+      {
+        "pays": "Californie",
+        "Absurdité": 3.4,
+        "Loi": "A Pacific Grove, il est interdit de déloger les papillons monarques sans autorisation de la police."
+      },
+      {
+        "pays": "Texas",
+        "Absurdité": 3.2,
+        "Loi": "Entre 1866 et 1974, traire la vache d'un voisin était illégal et passible d'une amende de 10 dollars."
+      },
+      {
+        "pays": "Arizona",
+        "Absurdité": 3,
+        "Loi": "Depuis 1928, il est interdit de tirer des coups de fusil sur des cactus, en particulier le Saguaro, qui est une espèce protégée."
+      }
+    ],
+    "Asie": [
+      {
+        "pays": "Israël",
+        "Absurdité": 4,
+        "Loi": "Dans la ville d'Arad, les animaux sont interdits en public."
+      },
+      {
+        "pays": "Singapour",
+        "Absurdité": 4,
+        "Loi": "Oublier de tirer la chasse en public est passible d'une amende de 1000 dollars singapouriens."
+      },
+      {
+        "pays": "Indonésie",
+        "Absurdité": 3.8,
+        "Loi": "Depuis 2022, il est interdit pour un couple non-marié de vivre ensemble, sous peine de 6 mois à 1 an de prison."
+      },
+      {
+        "pays": "Thaïlande",
+        "Absurdité": 3.6,
+        "Loi": "Poser le pied sur la monnaie nationale est un crime de lèse-majesté et passible d’une peine de prison."
+      },
+      {
+        "pays": "Iran",
+        "Absurdité": 3,
+        "Loi": "Depuis 2010, la coupe mulet, ainsi que tout autre coupe trop occidentale, est formellement interdite."
+      }
+    ],
+    "Afrique": [
+      {
+        "pays": "Kenya",
+        "Absurdité": 5,
+        "Loi": "Chaque citoyen a droit à une ration mensuelle de lait de lion."
+      },
+      {
+        "pays": "Afrique du Sud",
+        "Absurdité": 4,
+        "Loi": "Les éléphants ont la priorité sur les routes, et tout conducteur doit s'arrêter pour les laisser passer."
+      },
+      {
+        "pays": "Nigeria",
+        "Absurdité": 3,
+        "Loi": "Tous les mariages doivent inclure une performance de danse afrobeat obligatoire."
+      },
+      {
+        "pays": "Égypte",
+        "Absurdité": 2,
+        "Loi": "Il est interdit de photographier les pyramides sans un selfie stick approuvé par le gouvernement."
+      },
+      {
+        "pays": "Maroc",
+        "Absurdité": 1,
+        "Loi": "Les chameaux ont le droit de vote lors des élections locales."
+      }
+    ],
+    "Océanie": [
+      {
+        "pays": "Nouvelle-Guinée",
+        "Absurdité": 5,
+        "Loi": "Tout citoyen a le droit d'avoir des relations sexuelles avec une personne décédée, tant que cette personne est du sexe opposé."
+      },
+      {
+        "pays": "Australie",
+        "Absurdité": 4.5,
+        "Loi": "Il est illégal d’interrompre un mariage, sous peine de devoir payer 10 000 dollars australiens et deux ans de prison."
+      },
+      {
+        "pays": "Nouvelle-Zélande",
+        "Absurdité": 3.7,
+        "Loi": "Il est interdit d'avoir une adresse sur une île déserte sans prévenir les autorités."
+      },
+      {
+        "pays": "Fidji",
+        "Absurdité": 3.2,
+        "Loi": "Il est illégal d’être ivre dans un lieu public."
+      },
+      {
+        "pays": "Vanuatu",
+        "Absurdité": 2.8,
+        "Loi": "Il est interdit de jeter des mégots dans les lieux publics sous peine d’une amende de 100 000 Vatu."
+      }
+    ]
+  }
+}

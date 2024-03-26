@@ -1,5 +1,9 @@
 @import "utils/variables";
 @import "components/type";
+@import "components/graphique";
+@import "components/singapour";
+@import "components/y2k";
+@import "components/texas";
 
 /* ------ MEDIEVAL ------ */
 
@@ -32,7 +36,6 @@
   display: none;
 }
 
-
 body {
   overflow-x: hidden;
   margin: 0;
@@ -40,23 +43,22 @@ body {
 }
 
 @font-face {
-  font-family: "gruppo" ;
+  font-family: "gruppo";
   src: url("../assets/font/Gruppo-Regular.ttf") format("truetype");
 }
 @font-face {
-  font-family: "sato" ;
-  src: url("../assets/font/satoshi/satoshi-Regular.otf") ;
+  font-family: "sato";
+  src: url("../assets/font/satoshi/satoshi-Regular.otf");
 }
 @font-face {
-  font-family: "clash" ;
-  src: url("../assets/font/clash/ClashDisplay-Regular.otf") ;
+  font-family: "clash";
+  src: url("../assets/font/clash/ClashDisplay-Regular.otf");
 }
 
 .nav {
   display: flex;
   width: 100%;
   background-color: transparent;
-
 
   .sticky {
     position: fixed;
@@ -78,23 +80,20 @@ body {
   }
   &__el {
     list-style: none;
-    color: #333333;    
+    color: #333333;
     font-family: gruppo;
     margin: 0 16px;
     cursor: pointer;
 
     &:hover {
       border-bottom: 1px solid #333333;
-      transition: .3s ease-out;
+      transition: 0.3s ease-out;
     }
   }
 }
 
 .main {
-  background-image: image-set(
-    url(../assets/images/da/bg-main.png) 1x,
-    url(../assets/images/da/bg-main@2x.png) 2x
-  );
+  background-image: image-set(url(../assets/images/da/bg-main.png) 1x, url(../assets/images/da/bg-main@2x.png) 2x);
   background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
@@ -112,7 +111,7 @@ body {
     justify-content: center;
     background-color: transparent;
   }
-  
+
   &__title {
     font-size: 60px;
     text-align: center;
@@ -129,7 +128,6 @@ body {
     color: #333333;
     margin-top: 350px;
     justify-content: center;
-    
   }
   #canvas {
     width: 100%;
@@ -139,14 +137,12 @@ body {
 
 // .graph {margin-top: -70px;}
 
-.graph {margin-top: -100px; }
-
+.graph {
+  margin-top: -100px;
+}
 
 .introquiz {
-  background-image: image-set(
-    url(../assets/images/da/bg-main.png) 1x,
-    url(../assets/images/da/bg-main@2x.png) 2x
-  );
+  background-image: image-set(url(../assets/images/da/bg-main.png) 1x, url(../assets/images/da/bg-main@2x.png) 2x);
   background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
@@ -164,7 +160,7 @@ body {
     color: #333333;
   }
 
-  &__glass { 
+  &__glass {
     background-color: rgba(189, 185, 238, 0.5);
     width: 80%;
     border: 1px solid #9486c4;
@@ -204,22 +200,19 @@ body {
       color: #333333;
     }
     &:hover {
-      background-color: rgb(148,134,196, 0.5);
+      background-color: rgb(148, 134, 196, 0.5);
       backdrop-filter: blur(5);
-      border: 2px solid #D7D4FF;
+      border: 2px solid #d7d4ff;
 
       a {
-          color: #E6EFEB;
+        color: #e6efeb;
       }
     }
   }
 }
 
-
-
-
 .footer {
-  background-color: #ACA0D6;
+  background-color: #aca0d6;
   text-align: center;
   padding: 16px;
   padding-top: 8px;
@@ -239,7 +232,7 @@ body {
       font-size: 20px;
 
       &:hover {
-        color: #E6EFEB;
+        color: #e6efeb;
       }
     }
   }
@@ -253,7 +246,6 @@ a {
   text-decoration: none;
   list-style: none;
 }
-
 
 @media (min-width: 481px) {
   .main {
@@ -273,7 +265,6 @@ a {
       width: 100%;
       margin: 300px 5% auto 5%;
     }
-
   }
 }
 
@@ -301,19 +292,20 @@ a {
       font-size: 45px;
     }
     &__glass {
-      p {font-size: 20px;}
+      p {
+        font-size: 20px;
+      }
     }
   }
 }
 
 @media (min-width: 1225px) {
   .main {
-    
     &__txt {
       justify-content: center;
       background: none;
       border: none;
-      color: #E6EFEB;
+      color: #e6efeb;
       max-width: 450px;
       width: 80%;
       text-align: center;
@@ -352,9 +344,14 @@ a {
 }
 
 ::selection {
-  background-color: #ACA0D6;
+  background-color: #aca0d6;
 }
 
 @import "components/finquiz";
 @import "components/recapquiz";
+@import "components/glass";
+@import "components/quiz";
+@import "components/timeline";
+@import "components/media";
+
 @import "components/credits";

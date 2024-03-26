@@ -1,0 +1,78 @@
+.graphique {
+  background-color: $c-light;
+
+  &__lois {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 22px;
+    padding: 5%;
+    margin: 0%;
+  }
+
+  &__boutons {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    gap: 30px;
+
+    button {
+      background-color: rgba(245, 245, 245, 0.356);
+      color: #3e2f60;
+      padding: 5px 12px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      cursor: pointer;
+      border: 1px solid #cdc7e3;
+      border-radius: 10px;
+
+      &:hover {
+        background-color: #795fb6;
+        color: #f5f5f5;
+      }
+
+      &:active,
+      &:focus {
+        background-color: #3e2f60;
+        color: #f5f5f5;
+      }
+    }
+  }
+}
+
+canvas {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .graphique__boutons {
+    display: inline-block;
+    justify-content: center;
+  }
+
+  button {
+    margin: 5px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .graphique {
+    &__container {
+      max-height: 500px;
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .graphique {
+    &__container {
+      max-width: 800px;
+      margin: auto;
+    }
+    &__lois {
+      max-width: 800px;
+      margin: auto;
+    }
+  }
+}
