@@ -1,189 +1,228 @@
 "use strict"
 
-// Function to convert text formatted as "20ᵉ siècle" to its associated year (e.g., "20ᵉ siècle" -> 1900)
-function convertCenturyToYear(text) {
-  let century = parseInt(text);
-  if (!isNaN(century)) {
-    return (century - 1) * 100;
-  }
-  return null;
-}
 
-// Function to extract the year from a date string, ignoring the day and text (e.g., "5 octobre 2019" -> 2019)
-function extractYearFromDate(dateString) {
-  if (typeof dateString === 'string') {
-    let yearRegex = /\b\d{4}\b/;
-    let match = dateString.match(yearRegex);
-    if (match) {
-      return parseInt(match[0]);
-    }
-  }
-  return null;
-}
+// condition : code du quiz ne se lance qui sur la page du quiz
 
+let quizSection = document.querySelector(".quiz__container");
+if (quizSection) {
 
-// Function to determine the class based on the "Début" value
-function getClassForYear(year) {
-  if (year >= 2020) {
-    return 'five'; // For years 2020 and above
-  }
-  if (year >= 2010 && year <= 2019) {
-    return 'four';
-  }
-  if (year >= 2000 && year <= 2009) {
-    return 'three';
-  }
-  if (year >= 1900 && year <= 1999) {
-    return 'two';
-  }
-  return 'MoyenAge'; // Default for years before 1900
-}
+  /* ---------- QUIZ MAIN CODE ---------- */
 
-
-
-
-// Function to fetch JSON data
-async function fetchJSONData(url) {
-  try {
-    let response = await fetch(url);
-    if (!response.ok) {
-      throw new Error('Network response was not ok.');
-    }
-    return await response.json();
-  } catch (error) {
-    console.error('Error fetching JSON data:', error);
-    return [];
-  }
-}
-
-// Function to populate HTML with JSON data
-function populateHTML(jsonData) {
-  let topContainer = document.querySelector('.top');
-  let template = document.querySelector('.top__container');
-
-  // Sort JSON data by "Absurdité" value in descending order
-  jsonData.sort((a, b) => b.Absurdité - a.Absurdité);
-
-  jsonData.forEach((data, index) => {
-    // Clone template content
-    let clone = template.cloneNode(true);
-
-    // Extract year from "Début" value
-    let year;
-    if (typeof data.Début === 'string' && data.Début.includes('ᵉ siècle')) {
-      year = convertCenturyToYear(data.Début);
-    } else {
-      year = extractYearFromDate(data.Début);
-    }
-
-    // Assign class based on year
-    if (year !== null) {
-      clone.classList.add(getClassForYear(year));
-    }
-
-    // Fill cloned content with data
-    clone.querySelector('.top__number').textContent = '';
-    clone.querySelector('.top__pays').textContent = data.Pays;
-    clone.querySelector('.top__loi').textContent = data.Loi;
-    clone.querySelector('.top__date').textContent = `${data.Début} - ${data.Fin}`;
-    clone.querySelector('.top__comment').textContent = data.Commentaire;
-    clone.querySelector('.top__rating').textContent = `${data.Absurdité} 🤡`;
-
-    // Show cloned content
-    clone.classList.remove('hidden');
-
-    // Append cloned content to topContainer
-    topContainer.appendChild(clone);
-  });
-
-  // Remove the template
-  template.remove();
-}
-
-
-// Fetch JSON data and populate HTML
-let lawsDataURL = '../assets/data/laws.json';
-fetchJSONData(lawsDataURL)
-  .then(data => populateHTML(data))
-  .catch(error => console.error('Error fetching JSON data:', error));
-
-
-// test initial
-/*
-document.addEventListener("DOMContentLoaded", function () {
-  let questionElement = document.getElementById("question");
-  let vraiBtn = document.getElementById("vraiBtn");
-  let fauxBtn = document.getElementById("fauxBtn");
-  let feedbackElement = document.getElementById("feedback"); // test a ignorer
-  let skipBtn = document.getElementById("skipBtn");
+  let questionElement = document.querySelector(".quiz__question");
+  let vraiBtn = document.querySelector(".quiz__button--vrai");
+  let fauxBtn = document.querySelector(".quiz__button--faux");
+  let feedbackElement = document.querySelector(".quiz__feedback");
+  let skipBtn = document.querySelector(".quiz__button--skip");
+  let counterElement = document.querySelector(".quiz__counter");
 
   let currentQuestionIndex = 0;
   let score = 0;
-  let isQuestionDisplayed = false;
+  let questionsData = null;
+  let userAnswers = [];
 
-  let questionsData = null; // pour stocker les données hihi
-
-  // peuti fetch qui va chercher les infos sur le doc questions.json
-  fetch("/assets/data/questions.json")
+  fetch("../assets/data/questions.json")
     .then((response) => response.json())
     .then((data) => {
       questionsData = data;
+      userAnswers = new Array(questionsData.length).fill(null); // Initialize userAnswers array with null values
       showQuestion();
-
-      vraiBtn.addEventListener("click", () => checkAnswer(true, questionsData));
-      fauxBtn.addEventListener("click", () =>
-        checkAnswer(false, questionsData)
-      );
-      skipBtn.addEventListener("click", showSummary);
+      vraiBtn.addEventListener("click", () => checkAnswer(true, questionsData[currentQuestionIndex]));
+      fauxBtn.addEventListener("click", () => checkAnswer(false, questionsData[currentQuestionIndex]));
+      skipBtn.addEventListener("click", () => {
+        if (userAnswers[currentQuestionIndex] === null) {
+          userAnswers[currentQuestionIndex] = null; // Record skipped answer only if not answered already
+        }
+        currentQuestionIndex++;
+        if (currentQuestionIndex < questionsData.length) {
+          showQuestion();
+        } else {
+          showSummary();
+        }
+      });
     });
 
+
   function showQuestion() {
-    // Modification ici
+    if (!questionElement || currentQuestionIndex >= questionsData.length) {
+      return;
+    }
     let currentQuestion = questionsData[currentQuestionIndex];
     questionElement.textContent = currentQuestion.question;
-    feedbackElement.textContent = ""; // réinitialisation de la réponse
-    vraiBtn.style.display = "inline"; // affichage et désaffichaaage des boutons
+    feedbackElement.textContent = "";
+    vraiBtn.style.display = "inline";
     fauxBtn.style.display = "inline";
-    isQuestionDisplayed = true;
-
-    // Activer les boutons
     vraiBtn.disabled = false;
     fauxBtn.disabled = false;
+    counterElement.textContent = `${currentQuestionIndex + 1}/${questionsData.length}`;
+
+    // Assign class based on periode for the current question
+    assignClassBasedOnPeriode(currentQuestion.periode, quizSection);
   }
 
-  function checkAnswer(userAnswer, questions) {
-    let currentQuestion = questions[currentQuestionIndex];
-    vraiBtn.disabled = true; // désactive les boutons pendant le delai chiant de la reponse
+  function checkAnswer(userAnswer, currentQuestion) {
+    vraiBtn.disabled = true;
     fauxBtn.disabled = true;
+
     if (userAnswer === currentQuestion.reponse) {
-      feedbackElement.textContent = "YE!";
-      feedbackElement.style.color = "green";
+      feedbackElement.textContent = `Vous avez voté comme le peuple de l'époque: ${currentQuestion.anecdote}`;
       score++;
     } else {
-      feedbackElement.textContent = `NAAAAAAN ${currentQuestion.anecdote}`;
-      feedbackElement.style.color = "red";
+      feedbackElement.textContent = `Vous n'avez pas voté comme le peuple de l'époque: ${currentQuestion.anecdote}`;
     }
 
-    currentQuestionIndex++;
-    if (currentQuestionIndex < questions.length) {
-      setTimeout(() => {
-        showQuestion(questions[currentQuestionIndex]);
-        feedbackElement.textContent = "";
-      }, 1000);
-    } else {
-      showSummary();
+    // Record user's answer only if it's not a skip
+    if (userAnswer !== null) {
+      userAnswers[currentQuestionIndex] = userAnswer;
     }
   }
+
+  /* ---------- QUIZ NAVIGATION ---------- */
+
+  let startBtn = document.querySelector(".quiz__button--start");
+  let startSection = document.querySelector(".quiz--start");
+
+  let recapSection = document.querySelector(".quiz--recap");
+  let resultElement = document.querySelector(".quiz__result");
+
+  startBtn.addEventListener("click", function () {
+    startSection.classList.add("hidden");
+    quizSection.classList.remove("hidden");
+  });
 
   function showSummary() {
-    questionElement.textContent = `Quizz terminé score: ${score}/${currentQuestionIndex} :3`;
-    vraiBtn.style.display = "none";
-    fauxBtn.style.display = "none";
-    skipBtn.style.display = "none";
-    feedbackElement.textContent = "";
+    quizSection.classList.add("hidden");
+    recapSection.classList.remove("hidden");
+    resultElement.textContent = `Votre score: ${score}/${questionsData.length}`;
+
+    populateRecapLists();
   }
-});
-*/
+
+  /* ---------- RECAP ---------- */
+
+  let recapTrueList = document.querySelector(".quiz--recap__true");
+  let recapFalseList = document.querySelector(".quiz--recap__false");
+
+  function populateRecapLists() {
+    // Clear existing content in the recap lists
+    recapTrueList.innerHTML = "";
+    recapFalseList.innerHTML = "";
+
+    // Populate the recap lists with the recap of questions
+    let hasTrueQuestions = false;
+    let hasFalseQuestions = false;
+
+    questionsData.forEach((question, index) => {
+      let listItem = document.createElement("li");
+      listItem.textContent = question.question;
+
+      if (userAnswers[index] !== null) {
+        let isCorrect = (userAnswers[index] === question.reponse);
+
+        if (question.reponse === true) {
+          if (isCorrect) {
+            listItem.classList.add("correct");
+          } else {
+            listItem.classList.add("wrong");
+          }
+          recapTrueList.appendChild(listItem);
+          hasTrueQuestions = true;
+        } else {
+          if (isCorrect) {
+            listItem.classList.add("correct");
+          } else {
+            listItem.classList.add("wrong");
+          }
+          recapFalseList.appendChild(listItem);
+          hasFalseQuestions = true;
+        }
+      } else {
+        // For skipped questions, add them to the respective list based on their question type
+        if (question.reponse === true) {
+          listItem.classList.add("skipped");
+          recapTrueList.appendChild(listItem);
+          hasTrueQuestions = true;
+        } else {
+          listItem.classList.add("skipped");
+          recapFalseList.appendChild(listItem);
+          hasFalseQuestions = true;
+        }
+      }
+    });
+
+    // Append titles only if there are corresponding questions
+    if (hasTrueQuestions) {
+      let trueTitle = document.createElement("h3");
+      trueTitle.classList.add("title");
+      trueTitle.textContent = "Les vraies lois";
+      recapTrueList.prepend(trueTitle); // Add title before the list
+    }
+
+    if (hasFalseQuestions) {
+      let falseTitle = document.createElement("h3");
+      falseTitle.classList.add("title");
+      falseTitle.textContent = "Les légendes urbaines";
+      recapFalseList.prepend(falseTitle); // Add title before the list
+    }
+  }
+
+
+
+  /* ---------- RESET QUIZ ---------- */
+
+  let restartBtn = document.querySelector(".quiz__button--restart");
+
+  restartBtn.addEventListener("click", restartQuiz);
+
+  function restartQuiz() {
+    currentQuestionIndex = 0;
+    score = 0;
+
+    // Reset userAnswers array
+    userAnswers = new Array(questionsData.length).fill(null);
+
+    // Hide recap section and show start section
+    recapSection.classList.add("hidden");
+    startSection.classList.remove("hidden");
+
+    // Clear recap lists
+    recapTrueList.innerHTML = "";
+    recapFalseList.innerHTML = "";
+
+    // Reset question counter
+    counterElement.textContent = "1/" + questionsData.length;
+
+    // Call showQuestion to display the first question
+    showQuestion();
+  }
+
+  /* ---------- QUIZ AUTO-CLASS ---------- */
+
+  function assignClassBasedOnPeriode(periode, element) {
+    if (!periode || !element) return;
+
+    let periodeClass = "";
+
+    if (periode < 1900) {
+      periodeClass = "MoyenAge";
+    } else if (periode >= 1900 && periode <= 1999) {
+      periodeClass = "two";
+    } else if (periode >= 2000 && periode <= 2009) {
+      periodeClass = "three";
+    } else if (periode >= 2010 && periode <= 2019) {
+      periodeClass = "four";
+    } else {
+      periodeClass = "five";
+    }
+
+    // Remove existing classes
+    element.classList.remove("MoyenAge", "two", "three", "four", "five");
+
+    // Add new class
+    element.classList.add(periodeClass);
+  }
+
+
+}
 
 
 //water effect
@@ -308,9 +347,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function toggleStickyNav() {
     if (window.scrollY >= graphSection.offsetTop && !isSticky) {
-      gsap.to(navbar, { 
-        duration: 0.3, 
-        y: 0, 
+      gsap.to(navbar, {
+        duration: 0.3,
+        y: 0,
         position: 'fixed',
         top: 0,
         width: '100%',
@@ -319,9 +358,9 @@ document.addEventListener('DOMContentLoaded', function () {
       });
       isSticky = true;
     } else if (window.scrollY < graphSection.offsetTop && isSticky) {
-      gsap.to(navbar, { 
-        duration: 0.3, 
-        y: 0, 
+      gsap.to(navbar, {
+        duration: 0.3,
+        y: 0,
         position: 'relative',
         top: 'auto',
         width: '100%',
