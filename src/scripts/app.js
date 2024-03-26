@@ -140,17 +140,11 @@ Draggable.create(".singapour__modal", {
 });
 
 // Boutons modale Singapour
-// let openButton = document.getElementById("open");
 let closeButton = document.getElementById("close");
 let singapourWindow = document.querySelector(".singapour__modal");
 let datalawsIcon = document.querySelector(".singapour__datalaws");
 
-// openButton.addEventListener("click", openWindow);
 closeButton.addEventListener("click", reduce);
-
-// function openWindow() {
-//   singapourWindow.classList.remove("reduced");
-// }
 
 function reduce() {
   singapourWindow.classList.add("reduced");
@@ -161,5 +155,3 @@ datalawsIcon.addEventListener("dblclick", toggleVisibility);
 function toggleVisibility() {
   singapourWindow.classList.toggle("reduced");
 }
-
-
