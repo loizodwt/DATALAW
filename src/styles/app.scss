@@ -51,7 +51,7 @@ body {
 .nav {
   display: flex;
   width: 100%;
-  background-color: #E6EFEB;
+  background-color: transparent;
 
 
   .sticky {
@@ -77,6 +77,11 @@ body {
     color: #333333;    
     font-family: gruppo;
     margin: 0 16px;
+
+    &:hover {
+      border-bottom: 1px solid #333333;
+      transition: .3s ease-out;
+    }
   }
 }
 
@@ -91,6 +96,7 @@ body {
   background-size: cover;
   position: relative;
   padding: auto 16px;
+  padding-bottom: 100px;
 
   &__content {
     z-index: 5;
@@ -103,7 +109,7 @@ body {
   }
   
   &__title {
-    font-size: 34px;
+    font-size: 60px;
     text-align: center;
     font-family: gruppo;
     color: #333333;
@@ -116,7 +122,7 @@ body {
     line-height: 1.6;
     margin: auto;
     color: #333333;
-    margin-top: 111px;
+    margin-top: 350px;
     justify-content: center;
     
   }
@@ -128,6 +134,7 @@ body {
 
 // .graph {margin-top: -70px;}
 
+.graph {margin-top: -100px; }
 
 
 .introquiz {
@@ -153,7 +160,7 @@ body {
   }
 
   &__glass { 
-    background-color: rgba(173, 168, 233, 0.5);
+    background-color: rgba(189, 185, 238, 0.5);
     width: 80%;
     border: 1px solid #9486c4;
     border-radius: 15px;
@@ -168,7 +175,7 @@ body {
 
     p {
       font-family: sato;
-      color: #E6EFEB;
+      color: #333333;
       font-size: 18px;
       line-height: 1.6;
     }
@@ -176,7 +183,7 @@ body {
   &__btn {
     display: flex;
     font-size: 18px;
-    background-color: rgba(173, 168, 233, 0.5);
+    background-color: rgba(189, 185, 238, 0.5);
     backdrop-filter: blur(5);
     border: 2px solid #9486c4;
     border-radius: 15px;
@@ -221,6 +228,15 @@ body {
     font-family: gruppo;
     font-size: 16px;
     line-height: 1.6;
+
+    a {
+      color: #333333;
+      font-size: 20px;
+
+      &:hover {
+        color: #E6EFEB;
+      }
+    }
   }
   small {
     font-family: gruppo;
@@ -236,14 +252,23 @@ a {
 
 @media (min-width: 481px) {
   .main {
-    
-    &__txt {
-      background-color: rgba(155, 150, 221, 0.5);
-      padding: 10px;
-      border: 1px solid #9486c4;
-      border-radius: 15px;
-      backdrop-filter: blur(15);
+    &__content {
+      width: 100%;
+      margin: 0%;
+      justify-content: center;
     }
+    &__title {
+      font-size: 85px;
+      justify-content: center;
+      width: 100%;
+      text-align: center;
+    }
+    &__txt {
+      max-width: 450px;
+      width: 100%;
+      margin: 300px 5% auto 5%;
+    }
+
   }
 }
 
@@ -254,7 +279,7 @@ a {
     }
     &__txt {
       font-size: 20px;
-      max-width: 600px;
+      max-width: 500px;
     }
     &__content {
       width: 80%;
@@ -280,14 +305,18 @@ a {
   .main {
     
     &__txt {
-      margin-top: 100px;
+      justify-content: center;
       background: none;
       border: none;
       color: #E6EFEB;
-      max-width: 500px;
+      max-width: 450px;
+      width: 80%;
+      text-align: center;
+      margin: auto;
+      margin-top: 250px;
     }
     &__title {
-      font-size: 200px;
+      font-size: 250px;
       line-height: 0%;
       width: 100%;
     }
@@ -295,6 +324,25 @@ a {
 
   .introquiz {
     padding-top: 111px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .main {
+    &__title {
+      font-size: 275px;
+    }
+  }
+}
+@media (min-width: 2000px) {
+  .main {
+    &__title {
+      font-size: 500px;
+      width: 100%;
+    }
+    &__content {
+      width: 100%;
+    }
   }
 }
 

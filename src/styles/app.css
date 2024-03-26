@@ -73,7 +73,7 @@ body {
 .nav {
   display: flex;
   width: 100%;
-  background-color: #E6EFEB;
+  background-color: transparent;
 }
 .nav .sticky {
   position: fixed;
@@ -97,6 +97,10 @@ body {
   font-family: gruppo;
   margin: 0 16px;
 }
+.nav__el:hover {
+  border-bottom: 1px solid #333333;
+  transition: 0.3s ease-out;
+}
 
 .main {
   background-image: -webkit-image-set(url(../assets/images/da/bg-main.png) 1x, url(../assets/images/da/bg-main@2x.png) 2x);
@@ -107,6 +111,7 @@ body {
   background-size: cover;
   position: relative;
   padding: auto 16px;
+  padding-bottom: 100px;
 }
 .main__content {
   z-index: 5;
@@ -118,7 +123,7 @@ body {
   background-color: transparent;
 }
 .main__title {
-  font-size: 34px;
+  font-size: 60px;
   text-align: center;
   font-family: gruppo;
   color: #333333;
@@ -131,12 +136,16 @@ body {
   line-height: 1.6;
   margin: auto;
   color: #333333;
-  margin-top: 111px;
+  margin-top: 350px;
   justify-content: center;
 }
 .main #canvas {
   width: 100%;
   height: 100%;
+}
+
+.graph {
+  margin-top: -100px;
 }
 
 .introquiz {
@@ -159,7 +168,7 @@ body {
   color: #333333;
 }
 .introquiz__glass {
-  background-color: rgba(173, 168, 233, 0.5);
+  background-color: rgba(189, 185, 238, 0.5);
   width: 80%;
   border: 1px solid #9486c4;
   border-radius: 15px;
@@ -175,14 +184,14 @@ body {
 }
 .introquiz__glass p {
   font-family: sato;
-  color: #E6EFEB;
+  color: #333333;
   font-size: 18px;
   line-height: 1.6;
 }
 .introquiz__btn {
   display: flex;
   font-size: 18px;
-  background-color: rgba(173, 168, 233, 0.5);
+  background-color: rgba(189, 185, 238, 0.5);
   -webkit-backdrop-filter: blur(5);
           backdrop-filter: blur(5);
   border: 2px solid #9486c4;
@@ -224,6 +233,13 @@ body {
   font-size: 16px;
   line-height: 1.6;
 }
+.footer__el a {
+  color: #333333;
+  font-size: 20px;
+}
+.footer__el a:hover {
+  color: #E6EFEB;
+}
 .footer small {
   font-family: gruppo;
   font-size: 16px;
@@ -235,13 +251,21 @@ a {
 }
 
 @media (min-width: 481px) {
+  .main__content {
+    width: 100%;
+    margin: 0%;
+    justify-content: center;
+  }
+  .main__title {
+    font-size: 85px;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
   .main__txt {
-    background-color: rgba(155, 150, 221, 0.5);
-    padding: 10px;
-    border: 1px solid #9486c4;
-    border-radius: 15px;
-    -webkit-backdrop-filter: blur(15);
-            backdrop-filter: blur(15);
+    max-width: 450px;
+    width: 100%;
+    margin: 300px 5% auto 5%;
   }
 }
 @media (min-width: 769px) {
@@ -250,7 +274,7 @@ a {
   }
   .main__txt {
     font-size: 20px;
-    max-width: 600px;
+    max-width: 500px;
   }
   .main__content {
     width: 80%;
@@ -268,19 +292,37 @@ a {
 }
 @media (min-width: 1225px) {
   .main__txt {
-    margin-top: 100px;
+    justify-content: center;
     background: none;
     border: none;
     color: #E6EFEB;
-    max-width: 500px;
+    max-width: 450px;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-top: 250px;
   }
   .main__title {
-    font-size: 200px;
+    font-size: 250px;
     line-height: 0%;
     width: 100%;
   }
   .introquiz {
     padding-top: 111px;
+  }
+}
+@media (min-width: 1500px) {
+  .main__title {
+    font-size: 275px;
+  }
+}
+@media (min-width: 2000px) {
+  .main__title {
+    font-size: 500px;
+    width: 100%;
+  }
+  .main__content {
+    width: 100%;
   }
 }
 .finquiz {
@@ -422,6 +464,7 @@ a {
 .legendes {
   height: 100vh;
   width: 80%;
+  max-width: 750px;
   margin: -111px 10% auto 10%;
 }
 .legendes__h2 {
