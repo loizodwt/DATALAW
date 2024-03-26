@@ -1,34 +1,88 @@
-// importer fonts
+// importer font
 
 @font-face {
+    font-display: swap;
     font-family: "Pix";
-    src: url("../assets/fonts/singapour/pixM8pt.ttf");
+    font-style: normal;
+    font-weight: 400;
+    src: url("../../assets/font/singapour/pixM8pt.ttf");
 }
 @font-face {
+    font-display: swap;
     font-family: "W9";
-    src: url("../assets/fonts/singapour/W95FA.otf");
+    font-style: normal;
+    font-weight: 400;
+    src: url("../../assets/font/singapour/W95FA.otf");
 }
 
 @font-face {
+    font-display: swap;
     font-family: "Elite";
-    src: url("../assets/fonts/texas/SpecialElite.ttf");
+    font-style: normal;
+    font-weight: 400;
+    src: url("../../assets/font/special-elite-v18-latin-regular.woff2") format("woff2");
 }
+
 @font-face {
+    font-display: swap;
     font-family: "Gensco";
-    src: url("../assets/fonts/gensco/GENSCO.otf");
+    font-style: normal;
+    font-weight: 400;
+    src: url("../../assets/font/gensco/GENSCO.otf");
 }
 
 @font-face {
+    font-display: swap;
     font-family: "Ortica";
-    src: url("../assets/fonts/ortica/OrticaLinear-Regular.woff2");
+    font-style: normal;
+    font-weight: 400;
+    src: url("../../assets/font/ortica/OrticaLinear-Regular.woff2") format("woff2");
 }
 
 @font-face {
+    font-display: swap;
     font-family: "Valiant";
-    src: url("../assets/fonts/PrinceValiant.ttf");
+    font-style: normal;
+    font-weight: 400;
+    src: url("../../assets/font/PrinceValiant.ttf");
 }
 
 @font-face {
+    font-display: swap;
     font-family: "Livingstone";
-    src: url("../assets/fonts/livingstone.regular.ttf");
+    font-style: normal;
+    font-weight: 400;
+    src: url("../../assets/font/livingstone.regular.ttf");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "sato";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../../assets/font/Satoshi-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "satolight";
+    font-style: normal;
+    font-weight: 300;
+    src: url("../../assets/font/Satoshi-Light.woff2") format("woff2");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "gruppo";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../../assets/font/gruppo-v21-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "BIZ UDMincho";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../../assets/font/biz-udmincho-v9-latin-regular.woff2") format("woff2");
 }

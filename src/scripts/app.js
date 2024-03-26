@@ -1,19 +1,20 @@
 "use strict"
 
+import { gsap } from "gsap";
 
+
+/* ---------- QUIZ ---------- */
 // condition : code du quiz ne se lance qui sur la page du quiz
 
 let quizSection = document.querySelector(".quiz__container");
 if (quizSection) {
-
-  /* ---------- QUIZ MAIN CODE ---------- */
 
   let questionElement = document.querySelector(".quiz__question");
   let vraiBtn = document.querySelector(".quiz__button--vrai");
   let fauxBtn = document.querySelector(".quiz__button--faux");
   let feedbackElement = document.querySelector(".quiz__feedback");
   let skipBtn = document.querySelector(".quiz__button--skip");
-  let counterElement = document.querySelector(".quiz__counter");
+  let counterElement = document.querySelector(".quiz__compteur--current");
 
   let currentQuestionIndex = 0;
   let score = 0;
@@ -49,11 +50,9 @@ if (quizSection) {
     let currentQuestion = questionsData[currentQuestionIndex];
     questionElement.textContent = currentQuestion.question;
     feedbackElement.textContent = "";
-    vraiBtn.style.display = "inline";
-    fauxBtn.style.display = "inline";
     vraiBtn.disabled = false;
     fauxBtn.disabled = false;
-    counterElement.textContent = `${currentQuestionIndex + 1}/${questionsData.length}`;
+    counterElement.textContent = `${currentQuestionIndex + 1}`;
 
     // Assign class based on periode for the current question
     assignClassBasedOnPeriode(currentQuestion.periode, quizSection);
@@ -76,13 +75,13 @@ if (quizSection) {
     }
   }
 
-  /* ---------- QUIZ NAVIGATION ---------- */
+  // NAVIGATION
 
   let startBtn = document.querySelector(".quiz__button--start");
-  let startSection = document.querySelector(".quiz--start");
-
-  let recapSection = document.querySelector(".quiz--recap");
-  let resultElement = document.querySelector(".quiz__result");
+  let startSection = document.querySelector(".quiz__intro");
+  let recapSection = document.querySelector(".quiz__recap");
+  let scoreElement = document.querySelector(".quiz__result--score");
+  let percentElement = document.querySelector(".quiz__result--percent span");
 
   startBtn.addEventListener("click", function () {
     startSection.classList.add("hidden");
@@ -90,17 +89,23 @@ if (quizSection) {
   });
 
   function showSummary() {
+    // changement de section
     quizSection.classList.add("hidden");
     recapSection.classList.remove("hidden");
-    resultElement.textContent = `Votre score: ${score}/${questionsData.length}`;
+
+    // score
+    scoreElement.textContent = `Votre score: ${score}/${questionsData.length}`;
+    // pourcentage
+    let successPercentage = (score / questionsData.length) * 100;
+    percentElement.textContent = `${successPercentage.toFixed(2)}%`;
 
     populateRecapLists();
   }
 
-  /* ---------- RECAP ---------- */
+  // RECAP
 
-  let recapTrueList = document.querySelector(".quiz--recap__true");
-  let recapFalseList = document.querySelector(".quiz--recap__false");
+  let recapTrueList = document.querySelector(".quiz__recap__true");
+  let recapFalseList = document.querySelector(".quiz__recap__false");
 
   function populateRecapLists() {
     // Clear existing content in the recap lists
@@ -120,17 +125,17 @@ if (quizSection) {
 
         if (question.reponse === true) {
           if (isCorrect) {
-            listItem.classList.add("correct");
+            listItem.classList.add("quiz--correct");
           } else {
-            listItem.classList.add("wrong");
+            listItem.classList.add("quiz--wrong");
           }
           recapTrueList.appendChild(listItem);
           hasTrueQuestions = true;
         } else {
           if (isCorrect) {
-            listItem.classList.add("correct");
+            listItem.classList.add("quiz--correct");
           } else {
-            listItem.classList.add("wrong");
+            listItem.classList.add("quiz--wrong");
           }
           recapFalseList.appendChild(listItem);
           hasFalseQuestions = true;
@@ -167,7 +172,7 @@ if (quizSection) {
 
 
 
-  /* ---------- RESET QUIZ ---------- */
+  // RESET QUIZ
 
   let restartBtn = document.querySelector(".quiz__button--restart");
 
@@ -195,16 +200,14 @@ if (quizSection) {
     showQuestion();
   }
 
-  /* ---------- QUIZ AUTO-CLASS ---------- */
+  // AUTO-CLASS
 
   function assignClassBasedOnPeriode(periode, element) {
     if (!periode || !element) return;
 
     let periodeClass = "";
 
-    if (periode < 1900) {
-      periodeClass = "MoyenAge";
-    } else if (periode >= 1900 && periode <= 1999) {
+    if (periode <= 1999) {
       periodeClass = "two";
     } else if (periode >= 2000 && periode <= 2009) {
       periodeClass = "three";
@@ -221,128 +224,119 @@ if (quizSection) {
     element.classList.add(periodeClass);
   }
 
-
 }
 
 
-//water effect
+/* ---------- WATER EFFECT ---------- */
 
-const rippleSettings = {
-  maxSize: 100,
-  animationSpeed: 5,
-  strokeColor: [49, 54, 135],
-};
+const canvas = document.querySelector('#canvas');
 
-const canvasSettings = {
-  blur: 8,
-  ratio: 1,
-};
+// condition : ne run que si l'élément canvas existe
+if (canvas) {
+  const rippleSettings = {
+    maxSize: 100,
+    animationSpeed: 5,
+    strokeColor: [49, 54, 135],
+  };
 
-function Coords(x, y) {
-  this.x = x || null;
-  this.y = y || null;
-}
+  const canvasSettings = {
+    blur: 8,
+    ratio: 1,
+  };
 
-const Ripple = function Ripple(x, y, circleSize, ctx) {
-  this.position = new Coords(x, y);
-  this.circleSize = circleSize;
-  this.maxSize = rippleSettings.maxSize;
-  this.opacity = 1;
-  this.ctx = ctx;
-  this.strokeColor = `rgba(${Math.floor(rippleSettings.strokeColor[0])},
-    ${Math.floor(rippleSettings.strokeColor[1])},
-    ${Math.floor(rippleSettings.strokeColor[2])},
-    ${this.opacity})`;
+  function Coords(x, y) {
+    this.x = x || null;
+    this.y = y || null;
+  }
 
-  this.animationSpeed = rippleSettings.animationSpeed;
-  this.opacityStep = (this.animationSpeed / (this.maxSize - circleSize)) / 2;
-};
-
-Ripple.prototype = {
-  update: function update() {
-    this.circleSize = this.circleSize + this.animationSpeed;
-    this.opacity = this.opacity - this.opacityStep;
+  const Ripple = function Ripple(x, y, circleSize, ctx) {
+    this.position = new Coords(x, y);
+    this.circleSize = circleSize;
+    this.maxSize = rippleSettings.maxSize;
+    this.opacity = 1;
+    this.ctx = ctx;
     this.strokeColor = `rgba(${Math.floor(rippleSettings.strokeColor[0])},
       ${Math.floor(rippleSettings.strokeColor[1])},
       ${Math.floor(rippleSettings.strokeColor[2])},
       ${this.opacity})`;
-  },
-  draw: function draw() {
-    this.ctx.beginPath();
-    this.ctx.strokeStyle = this.strokeColor;
-    this.ctx.arc(this.position.x, this.position.y, this.circleSize, 0,
-      2 * Math.PI);
-    this.ctx.stroke();
-  },
-  setStatus: function setStatus(status) {
-    this.status = status;
-  },
-};
 
-const canvas = document.querySelector('#canvas');
-const ctx = canvas.getContext('2d');
-const ripples = [];
+    this.animationSpeed = rippleSettings.animationSpeed;
+    this.opacityStep = (this.animationSpeed / (this.maxSize - circleSize)) / 2;
+  };
 
-const height = document.body.clientHeight;
-const width = document.body.clientWidth;
+  Ripple.prototype = {
+    update: function update() {
+      this.circleSize = this.circleSize + this.animationSpeed;
+      this.opacity = this.opacity - this.opacityStep;
+      this.strokeColor = `rgba(${Math.floor(rippleSettings.strokeColor[0])},
+        ${Math.floor(rippleSettings.strokeColor[1])},
+        ${Math.floor(rippleSettings.strokeColor[2])},
+        ${this.opacity})`;
+    },
+    draw: function draw() {
+      this.ctx.beginPath();
+      this.ctx.strokeStyle = this.strokeColor;
+      this.ctx.arc(this.position.x, this.position.y, this.circleSize, 0,
+        2 * Math.PI);
+      this.ctx.stroke();
+    },
+    setStatus: function setStatus(status) {
+      this.status = status;
+    },
+  };
 
-const rippleStartStatus = 'start';
+  const ctx = canvas.getContext('2d');
+  const ripples = [];
 
-const isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
+  const height = document.body.clientHeight;
+  const width = document.body.clientWidth;
 
-canvas.style.filter = `blur(${canvasSettings.blur}px)`;
+  const rippleStartStatus = 'start';
 
-// canvas.width = width * canvasSettings.ratio;
-// canvas.height = height * canvasSettings.ratio;
+  const isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
 
-// canvas.style.width = `${width}px`;
-// canvas.style.height = `${height}px`;
+  canvas.style.filter = `blur(${canvasSettings.blur}px)`;
 
-let animationFrame;
+  let animationFrame;
 
+  // Function which is executed on mouse hover on canvas
+  const canvasMouseOver = (e) => {
+    const x = e.clientX * canvasSettings.ratio;
+    const y = e.clientY * canvasSettings.ratio;
+    ripples.unshift(new Ripple(x, y, 2, ctx));
+  };
 
+  const animation = () => {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-// Function which is executed on mouse hover on canvas
-const canvasMouseOver = (e) => {
-  const x = e.clientX * canvasSettings.ratio;
-  const y = e.clientY * canvasSettings.ratio;
-  ripples.unshift(new Ripple(x, y, 2, ctx));
-};
+    const length = ripples.length;
+    for (let i = length - 1; i >= 0; i -= 1) {
+      const r = ripples[i];
 
-const animation = () => {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
+      r.update();
+      r.draw();
 
-  const length = ripples.length;
-  for (let i = length - 1; i >= 0; i -= 1) {
-    const r = ripples[i];
-
-    r.update();
-    r.draw();
-
-    if (r.opacity <= 0) {
-      ripples[i] = null;
-      delete ripples[i];
-      ripples.pop();
+      if (r.opacity <= 0) {
+        ripples[i] = null;
+        delete ripples[i];
+        ripples.pop();
+      }
     }
-  }
-  animationFrame = window.requestAnimationFrame(animation);
-};
+    animationFrame = window.requestAnimationFrame(animation);
+  };
 
-animation();
-canvas.addEventListener('mousemove', canvasMouseOver);
-
-
+  animation();
+  canvas.addEventListener('mousemove', canvasMouseOver);
+}
 
 
+/* ---------- NAVIGATION STICKY ---------- */
 
+const navbar = document.getElementById('navbar');
+const graphSection = document.querySelector('.graph');
 
-
-import { gsap } from "gsap";
-
-document.addEventListener('DOMContentLoaded', function () {
-  const navbar = document.getElementById('navbar');
-  const graphSection = document.querySelector('.graph');
-
+// condition : ne run que si la navbar ET le graph existent
+if (navbar && graphSection) {
   let isSticky = false;
 
   function toggleStickyNav() {
@@ -372,7 +366,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   window.addEventListener('scroll', toggleStickyNav);
-});
+}
 
 
 

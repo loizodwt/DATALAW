@@ -1,0 +1,65 @@
+/* ---------- MEDIA ---------- */
+
+@media (min-width: 481px) {
+    .main {
+        p {
+            background-color: rgba(155, 150, 221, 0.5);
+            padding: 10px;
+            border: 1px solid #9486c4;
+            border-radius: 15px;
+            backdrop-filter: blur(15);
+        }
+    }
+}
+
+@media (min-width: 769px) {
+    .main {
+        .title {
+            font-size: 108px;
+        }
+        p {
+            font-size: 20px;
+            max-width: 600px;
+        }
+        &__content {
+            width: 80%;
+            margin: auto 10%;
+        }
+    }
+    .nav {
+        &__el {
+            font-size: 32px;
+        }
+    }
+    .introquiz {
+        &__h2 {
+            font-size: 45px;
+        }
+        &__glass {
+            p {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1225px) {
+    .main {
+        p {
+            margin-top: 100px;
+            background: none;
+            border: none;
+            color: #e6efeb;
+            max-width: 500px;
+        }
+        .title {
+            font-size: 200px;
+            line-height: 0%;
+            width: 100%;
+        }
+    }
+
+    .introquiz {
+        padding-top: 111px;
+    }
+}
