@@ -466,6 +466,7 @@ a {
   width: 80%;
   max-width: 750px;
   margin: -111px 10% auto 10%;
+  position: relative;
 }
 .legendes__h2 {
   font-family: gruppo;
@@ -486,4 +487,45 @@ a {
           backdrop-filter: blur(15);
   padding: 33px;
   padding-bottom: 16px;
+  margin-bottom: 150px;
+}
+.legendes__end {
+  color: #3e2f60;
+  background-color: rgba(210, 214, 214, 0.2);
+  padding: 8px 16px;
+  border: 1px solid #9486c4;
+  border-radius: 25px;
+  font-family: sato;
+  display: flex;
+  max-width: 100px;
+  gap: 10px;
+  align-items: flex-end;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  right: 0px;
+}
+.legendes__end:hover {
+  background-color: #3E2F60;
+  border: 1px solid #9486c4;
+  color: #E6EFEB;
+}
+.legendes__end svg {
+  fill: #3e2f60;
+  align-items: center;
+}
+.legendes__end:hover svg {
+  fill: #E6EFEB;
+}
+
+@media (min-width: 481px) {
+  .good {
+    width: 70%;
+    margin: auto 15%;
+    margin-top: 111px;
+  }
+  .legendes {
+    width: 70%;
+    margin: auto 15% auto 15%;
+  }
 }/*# sourceMappingURL=app.css.map */
