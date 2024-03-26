@@ -499,7 +499,6 @@ if (navbar && graphSection) {
   });
   document.getElementById('btnEurope').addEventListener('click', function () {
     changeData('Europe');
-    console.log("europe")
   });
   document.getElementById('btnAmérique').addEventListener('click', function () {
     changeData('Amérique');
@@ -625,7 +624,7 @@ function createChart(data, xAxisLabel, yAxisLabel) {
 
       if (dataIndex >= 0 && dataIndex < data.length) {
         loiContainer.classList.remove('hidden');
-        loiContainer.innerHTML = "<strong>Lois aléatoires:</strong><br>" + data[dataIndex].Loi;
+        loiContainer.innerHTML = "<h3>Lois aléatoires:</h3><p>" + data[dataIndex].Loi + "</p>";
       } else {
         loiContainer.classList.add('hidden');
       }
