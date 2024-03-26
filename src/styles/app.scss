@@ -86,10 +86,6 @@ button {
     z-index: 1000;
   }
 
-  &--hide {
-    display: none;
-  }
-
   &__ul {
     display: flex;
     width: 100%;
@@ -132,6 +128,7 @@ button {
   display: none;
 }
 
+@import "components/glass";
 @import "components/quiz";
 @import "components/timeline";
 @import "components/media";

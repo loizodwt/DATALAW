@@ -1,4 +1,57 @@
 .quiz {
+    &__intro {
+        background-image: image-set(
+            url(../assets/images/da/bg-main.png) 1x,
+            url(../assets/images/da/bg-main@2x.png) 2x
+        );
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 100vh;
+        background-size: cover;
+        position: relative;
+        padding: auto 16px;
+        font-family: gruppo;
+
+        .title {
+            font-size: 34px;
+            font-family: gruppo;
+            margin-top: 0px;
+            text-align: center;
+            padding-top: 54px;
+            color: #333333;
+        }
+    }
+    &__buttons {
+        display: flex;
+    }
+    &__button {
+        display: block;
+        background-color: $c-glass;
+        backdrop-filter: blur(5);
+        border: 2px solid #9486c4;
+        border-radius: 15px;
+        margin: 74px auto auto auto;
+        padding: 10px;
+        font-weight: lighter;
+        cursor: pointer;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: $c-glass-hover;
+            backdrop-filter: blur(5);
+            border-color: #d7d4ff;
+
+            a {
+                color: #e6efeb;
+            }
+        }
+
+        &--vrai,
+        &--faux {
+            display: inline;
+        }
+    }
     &__container {
         max-width: 600px;
         margin: 0 auto;
@@ -37,7 +90,7 @@
     }
 
     &--correct {
-        color: green;
+        color: $quiz-primary-color;
         background-image: image-set(
             url("../../assets/images/da/yes.png") 1x,
             url("../../assets/images/da/yes@2x.png") 2x
@@ -45,7 +98,7 @@
     }
 
     &--wrong {
-        color: red;
+        color: $quiz-secondary-color;
         background-image: image-set(
             url("../../assets/images/da/no.png") 1x,
             url("../../assets/images/da/no@2x.png") 2x
@@ -121,72 +174,72 @@
     }
 }
 
-.introquiz {
-    background-image: image-set(url(../assets/images/da/bg-main.png) 1x, url(../assets/images/da/bg-main@2x.png) 2x);
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
-    background-size: cover;
-    position: relative;
-    padding: auto 16px;
-    font-family: gruppo;
+// .introquiz {
+//     background-image: image-set(url(../assets/images/da/bg-main.png) 1x, url(../assets/images/da/bg-main@2x.png) 2x);
+//     background-repeat: no-repeat;
+//     width: 100vw;
+//     height: 100vh;
+//     background-size: cover;
+//     position: relative;
+//     padding: auto 16px;
+//     font-family: gruppo;
 
-    &__h2 {
-        font-size: 34px;
-        font-family: gruppo;
-        margin-top: 0px;
-        text-align: center;
-        padding-top: 54px;
-        color: #333333;
-    }
+//     &__h2 {
+//         font-size: 34px;
+//         font-family: gruppo;
+//         margin-top: 0px;
+//         text-align: center;
+//         padding-top: 54px;
+//         color: #333333;
+//     }
 
-    &__glass {
-        background-color: rgba(173, 168, 233, 0.5);
-        width: 80%;
-        border: 1px solid #9486c4;
-        border-radius: 15px;
-        backdrop-filter: blur(0);
-        justify-content: center;
-        padding: 16px 33px;
-        margin: 0% auto;
-        z-index: 8;
-        align-items: center;
-        max-width: 450px;
-        margin-top: 54px;
+//     &__glass {
+//         background-color: $c-glass;
+//         width: 80%;
+//         border: 1px solid #9486c4;
+//         border-radius: 15px;
+//         backdrop-filter: blur(0);
+//         justify-content: center;
+//         padding: 16px 33px;
+//         margin: 0% auto;
+//         z-index: 8;
+//         align-items: center;
+//         max-width: 450px;
+//         margin-top: 54px;
 
-        p {
-            font-family: sato;
-            color: #e6efeb;
-            line-height: 1.6;
-        }
-    }
-    &__btn {
-        display: flex;
-        background-color: rgba(173, 168, 233, 0.5);
-        backdrop-filter: blur(5);
-        border: 2px solid #9486c4;
-        border-radius: 15px;
-        margin: 74px auto auto auto;
-        justify-content: center;
-        color: black;
-        padding: 10px;
-        font-weight: lighter;
-        cursor: pointer;
+//         p {
+//             font-family: sato;
+//             color: #e6efeb;
+//             line-height: 1.6;
+//         }
+//     }
+//     &__button {
+//         display: flex;
+//         background-color: $c-glass;
+//         backdrop-filter: blur(5);
+//         border: 2px solid #9486c4;
+//         border-radius: 15px;
+//         margin: 74px auto auto auto;
+//         justify-content: center;
+//         color: black;
+//         padding: 10px;
+//         font-weight: lighter;
+//         cursor: pointer;
 
-        a {
-            color: #333333;
-        }
-        &:hover {
-            background-color: rgb(148, 134, 196, 0.5);
-            backdrop-filter: blur(5);
-            border: 2px solid #d7d4ff;
+//         a {
+//             color: #333333;
+//         }
+//         &:hover {
+//             background-color: $c-glass-hover;
+//             backdrop-filter: blur(5);
+//             border: 2px solid #d7d4ff;
 
-            a {
-                color: #e6efeb;
-            }
-        }
-    }
-}
+//             a {
+//                 color: #e6efeb;
+//             }
+//         }
+//     }
+// }
 
 .finquiz {
     background-image: image-set(url(../assets/images/da/bg-main.png) 1x, url(../assets/images/da/bg-main@2x.png) 2x);
@@ -208,7 +261,7 @@
     }
 
     &__glass {
-        background-color: rgba(173, 168, 233, 0.5);
+        background-color: $c-glass;
         width: 80%;
         border: 1px solid #9486c4;
         border-radius: 15px;
@@ -228,17 +281,17 @@
             line-height: 1.6;
         }
     }
-    &__btn {
+    &__button {
         display: flex;
         width: 60%;
         margin: auto 20%;
         justify-content: center;
     }
-    &__btn--1,
-    &__btn--2 {
+    &__button--1,
+    &__button--2 {
         display: flex;
         font-size: 18px;
-        background-color: rgba(173, 168, 233, 0.5);
+        background-color: $c-glass;
         backdrop-filter: blur(5);
         border: 2px solid #9486c4;
         border-radius: 15px;
@@ -252,7 +305,7 @@
             color: #333333;
         }
         &:hover {
-            background-color: rgb(148, 134, 196, 0.5);
+            background-color: $c-glass-hover;
             backdrop-filter: blur(5);
             border: 2px solid #d7d4ff;
 

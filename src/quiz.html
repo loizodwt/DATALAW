@@ -34,10 +34,12 @@
 
   <main>
 
-    <section class="section quiz quiz__intro">
+    <section class="section quiz quiz__intro quiz__intro__glass">
       <h1 class="title">Quiz</h1>
-      <p>Vous incarnez un législateur devant se prononcer sur des propositions de lois étranges, parmi lesquelles se sont glissées des légendes urbaines fausses. À vous de juger si vous les approuvez et décidez de les mettre en place officiellement !</p>
-      <button class="btn quiz__button quiz__button--start">Commencer le quiz</button>
+      <div class="glass">
+        <p>Vous incarnez un législateur devant se prononcer sur des propositions de lois étranges, parmi lesquelles se sont glissées des légendes urbaines fausses. À vous de juger si vous les approuvez et décidez de les mettre en place officiellement !</p>
+        <button class="btn quiz__button quiz__button--start">Commencer le quiz</button>
+      </div>
     </section>
 
 
@@ -49,11 +51,10 @@
       <h2 class="title quiz__question">Ceci est une loi.</h2>
       <div class="quiz__buttons">
         <button class="quiz__button quiz__button--vrai">Je vote pour</button>
+        <button class="quiz__button quiz__button--skip">Passer</button>
         <button class="quiz__button quiz__button--faux">Je vote contre</button>
       </div>
-
       <div class="quiz__feedback"></div>
-      <button class="quiz__button quiz__button--skip">Passer</button>
 
     </section>
 
