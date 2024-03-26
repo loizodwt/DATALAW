@@ -450,7 +450,7 @@ if (canvas) {
 /* ---------- NAVIGATION STICKY ---------- */
 
 const navbar = document.getElementById('navbar');
-const graphSection = document.querySelector('.graph');
+const graphSection = document.querySelector('.graphique');
 
 // condition : ne run que si la navbar ET le graph existent
 if (navbar && graphSection) {
@@ -486,152 +486,149 @@ if (navbar && graphSection) {
 
 
 
-  //GRAPHIQUE :3
+  /* ---------- GRAPHIQUE ---------- */
 
-  //afficher de base europe
-  changeData('Europe');
-
-  document.getElementById('btnAfrique').addEventListener('click', function () {
-    changeData('Afrique');
-  });
-  document.getElementById('btnAsie').addEventListener('click', function () {
-    changeData('Asie');
-  });
-  document.getElementById('btnEurope').addEventListener('click', function () {
+  // condition : ne run que si le grpahique existe
+  if (graphSection) {
+    //afficher de base europe
     changeData('Europe');
-  });
-  document.getElementById('btnAmérique').addEventListener('click', function () {
-    changeData('Amérique');
-  });
-  document.getElementById('btnOcéanie').addEventListener('click', function () {
-    changeData('Océanie');
-  });
 
-
-  var buttons = document.querySelectorAll('.button');
-  buttons.forEach(function (button) {
-    button.addEventListener('click', function () {
-      button.classList.add('clicked');
+    document.getElementById('btnAfrique').addEventListener('click', function () {
+      changeData('Afrique');
     });
-  });
+    document.getElementById('btnAsie').addEventListener('click', function () {
+      changeData('Asie');
+    });
+    document.getElementById('btnEurope').addEventListener('click', function () {
+      changeData('Europe');
+    });
+    document.getElementById('btnAmérique').addEventListener('click', function () {
+      changeData('Amérique');
+    });
+    document.getElementById('btnOcéanie').addEventListener('click', function () {
+      changeData('Océanie');
+    });
 
 
+    var buttons = document.querySelectorAll('.button');
+    buttons.forEach(function (button) {
+      button.addEventListener('click', function () {
+        button.classList.add('clicked');
+      });
+    });
 
-  window.addEventListener('scroll', toggleStickyNav);
-}
-
-
-
-
-//GRAPHOU :3
-
-const ctxm = document.getElementById('myChart').getContext('2d');
-const myChart = new Chart(ctxm, {
-  type: 'bar',
-});
-
-// Common options
-const fontSize = 16;
-const commonFont = {
-  size: fontSize
-};
-
-// bloc pour le fetch
-async function fetchData() {
-  try {
-    const response = await fetch('../assets/data/data.json');
-
-    if (!response.ok) {
-      throw new Error('Erreur lors de la récupération des données.');
-    }
-
-    return await response.json();
-  } catch (error) {
-    console.error('Erreur:', error.message);
+    window.addEventListener('scroll', toggleStickyNav);
   }
-}
 
-function changeData(continent) {
-  fetchData()
-    .then(data => {
-      const continentData = data.continents[continent];
-      createChart(continentData, data.xAxisLabel, data.yAxisLabel);
-    });
-}
 
-function createChart(data, xAxisLabel, yAxisLabel) {
-  // Création d'un gradient de l'orange au jaune
-  const gradient = document.getElementById("myChart").getContext("2d").createLinearGradient(0, 0, 0, 400);
-  gradient.addColorStop(0, '#3E2F60');
-  gradient.addColorStop(1, '#3E2F60');
 
-  const chartData = {
-    labels: data.map(entry => entry.pays),
-    datasets: [{
-      label: "Moyenne d'absurdité",
-      data: data.map(entry => entry.Absurdité),
-      backgroundColor: gradient
-    }]
+
+  //GRAPHOU :3
+
+  const ctxm = document.getElementById('myChart').getContext('2d');
+  const myChart = new Chart(ctxm, {
+    type: 'bar',
+  });
+
+  // Common options
+  const fontSize = 16;
+  const commonFont = {
+    size: fontSize
   };
 
-  const options = {
-    responsive: true, // Ensure chart responsiveness
-    maintainAspectRatio: false,
-    animation: {
-      duration: 1000,
-      easing: 'easeInOutQuart'
-    },
-    indexAxis: 'y',
-    scales: {
-      x: {
-        beginAtZero: true,
-        suggestedMax: 5,
-        ticks: {
-          font: commonFont
+  // bloc pour le fetch
+  async function fetchData() {
+    try {
+      const response = await fetch('../assets/data/data.json');
+
+      if (!response.ok) {
+        throw new Error('Erreur lors de la récupération des données.');
+      }
+
+      return await response.json();
+    } catch (error) {
+      console.error('Erreur:', error.message);
+    }
+  }
+
+  function changeData(continent) {
+    fetchData()
+      .then(data => {
+        const continentData = data.continents[continent];
+        createChart(continentData, data.xAxisLabel, data.yAxisLabel);
+      });
+  }
+
+  function createChart(data, xAxisLabel, yAxisLabel) {
+
+    const chartData = {
+      labels: data.map(entry => entry.pays),
+      datasets: [{
+        label: "Moyenne d'absurdité",
+        data: data.map(entry => entry.Absurdité),
+        backgroundColor: "#3E2F60"
+      }]
+    };
+
+    const options = {
+      responsive: true, // Ensure chart responsiveness
+      maintainAspectRatio: false,
+      animation: {
+        duration: 1000,
+        easing: 'easeInOutQuart'
+      },
+      indexAxis: 'y',
+      scales: {
+        x: {
+          beginAtZero: true,
+          suggestedMax: 5,
+          ticks: {
+            font: commonFont
+          },
+          title: {
+            display: true,
+            text: xAxisLabel,
+            font: commonFont
+          }
         },
-        title: {
-          display: true,
-          text: xAxisLabel,
-          font: commonFont
+        y: {
+          ticks: {
+            font: commonFont
+          },
+          title: {
+            display: true,
+            text: yAxisLabel,
+            font: commonFont
+          }
         }
       },
-      y: {
-        ticks: {
-          font: commonFont
-        },
-        title: {
-          display: true,
-          text: yAxisLabel,
-          font: commonFont
+      plugins: {
+        tooltip: {
+          bodyFont: commonFont,
+          titleFont: commonFont
+        }
+      },
+      onClick: (e) => {
+        const canvasPosition = Chart.helpers.getRelativePosition(e, myChart);
+
+        const dataX = myChart.scales.x.getValueForPixel(canvasPosition.x);
+        const dataY = myChart.scales.y.getValueForPixel(canvasPosition.y);
+
+        let dataIndex = Math.abs(dataY);
+
+        const loiContainer = document.querySelector('.graphique__lois');
+
+        if (dataIndex >= 0 && dataIndex < data.length) {
+          loiContainer.classList.remove('hidden');
+          loiContainer.innerHTML = "<h3>Lois aléatoires:</h3><p>" + data[dataIndex].Loi + "</p>";
+        } else {
+          loiContainer.classList.add('hidden');
         }
       }
-    },
-    plugins: {
-      tooltip: {
-        bodyFont: commonFont,
-        titleFont: commonFont
-      }
-    },
-    onClick: (e) => {
-      const canvasPosition = Chart.helpers.getRelativePosition(e, myChart);
+    };
 
-      const dataX = myChart.scales.x.getValueForPixel(canvasPosition.x);
-      const dataY = myChart.scales.y.getValueForPixel(canvasPosition.y);
-
-      let dataIndex = Math.abs(dataY);
-
-      const loiContainer = document.querySelector('.graphique__lois');
-
-      if (dataIndex >= 0 && dataIndex < data.length) {
-        loiContainer.classList.remove('hidden');
-        loiContainer.innerHTML = "<h3>Lois aléatoires:</h3><p>" + data[dataIndex].Loi + "</p>";
-      } else {
-        loiContainer.classList.add('hidden');
-      }
-    }
-  };
-
-  myChart.data = chartData;
-  myChart.options = options;
-  myChart.update();
+    myChart.data = chartData;
+    myChart.options = options;
+    myChart.update();
+  }
 }
