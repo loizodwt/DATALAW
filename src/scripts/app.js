@@ -78,16 +78,16 @@ if (quizSection) {
 
   /* ---------- QUIZ NAVIGATION ---------- */
 
-  let startBtn = document.querySelector(".quiz__button--start");
-  let startSection = document.querySelector(".quiz--start");
+  // let startBtn = document.querySelector(".quiz__button--start");
+  // let startSection = document.querySelector(".quiz--start");
 
   let recapSection = document.querySelector(".quiz--recap");
   let resultElement = document.querySelector(".quiz__result");
 
-  startBtn.addEventListener("click", function () {
-    startSection.classList.add("hidden");
-    quizSection.classList.remove("hidden");
-  });
+  // startBtn.addEventListener("click", function () {
+  //   startSection.classList.add("hidden");
+  //   quizSection.classList.remove("hidden");
+  // });
 
   function showSummary() {
     quizSection.classList.add("hidden");
@@ -182,7 +182,8 @@ if (quizSection) {
 
     // Hide recap section and show start section
     recapSection.classList.add("hidden");
-    startSection.classList.remove("hidden");
+    // startSection.classList.remove("hidden");
+    quizSection.classList.remove("hidden");
 
     // Clear recap lists
     recapTrueList.innerHTML = "";
