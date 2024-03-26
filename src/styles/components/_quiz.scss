@@ -43,7 +43,7 @@
             border-color: #d7d4ff;
 
             a {
-                color: #e6efeb;
+                color: $c-light;
             }
         }
 
@@ -209,7 +209,7 @@
 
 //         p {
 //             font-family: sato;
-//             color: #e6efeb;
+//             color: $c-light;
 //             line-height: 1.6;
 //         }
 //     }
@@ -235,7 +235,7 @@
 //             border: 2px solid #d7d4ff;
 
 //             a {
-//                 color: #e6efeb;
+//                 color: $c-light;
 //             }
 //         }
 //     }
@@ -276,7 +276,7 @@
 
         p {
             font-family: sato;
-            color: #e6efeb;
+            color: $c-light;
             font-size: 18px;
             line-height: 1.6;
         }
@@ -310,7 +310,7 @@
             border: 2px solid #d7d4ff;
 
             a {
-                color: #e6efeb;
+                color: $c-light;
             }
         }
     }
