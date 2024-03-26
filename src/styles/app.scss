@@ -1,6 +1,7 @@
 @import "utils/variables";
 @import "components/type";
 
+
 body {
   margin: 0;
 }
@@ -78,48 +79,82 @@ canvas {
   color: red;
 }
 
+.quiz-top {
+  display:flex; 
+  justify-content: space-around;
+  padding-top: 50px;
+}
+
 .quiz {
   &__container {
+    padding-left: 5vw;
+    padding-right: 5vw;
     height: 100vh;
-    margin: 0 auto;
     text-align: start;
+    position: relative;
   }
 
   &__question {
+    // margin-top: 25%;
     margin-bottom: 20px;
     font-size: 25px;
     color: black;
   }
 
+  &__choix {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    position: absolute;
+    bottom: 30vh;
+    // margin-top: 20%;
+  }
+
   &__button {
-    padding: 5px 10px;
+    padding: 10px 20px;
+    width: 144px;
+    height: 47px;
     border: none;
     cursor: pointer;
 
     &:hover {
       background-color: rgb(106, 106, 106);
     }
-
-    &--vrai {
-      background-color: $quiz-primary-color;
-      color: white;
-    }
-
-    &--faux {
-      background-color: $quiz-secondary-color;
-      color: white;
-    }
   }
 
   &__feedback {
-    margin-top: 20px;
+    margin-top: 15%;
     font-size: 20px;
   }
+  &__textes {
+    display: block;
+    margin: auto;
+    max-width: 500px;
+    margin-top: 5%;
+  }
+  &__sortie {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 10vh;
+    gap: 60vw;
+  }
+  &__pays-dates {
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
 }
 
 /* ------ MEDIEVAL ------ */
 
-.MoyenAge {
+.one {
   background-color: lightgreen;
 }
 
@@ -417,3 +452,4 @@ a {
 
 @import "components/finquiz";
 @import "components/recapquiz";
+@import "components/quiz-glassmorphism";

@@ -60,8 +60,8 @@ if (quizSection) {
   }
 
   function checkAnswer(userAnswer, currentQuestion) {
-    vraiBtn.disabled = true;
-    fauxBtn.disabled = true;
+    vraiBtn.style.display = "none";
+    fauxBtn.style.display = "none";
 
     if (userAnswer === currentQuestion.reponse) {
       feedbackElement.textContent = `Vous avez voté comme le peuple de l'époque: ${currentQuestion.anecdote}`;
@@ -203,19 +203,17 @@ if (quizSection) {
     let periodeClass = "";
 
     if (periode < 1900) {
-      periodeClass = "MoyenAge";
+      periodeClass = "one";
     } else if (periode >= 1900 && periode <= 1999) {
       periodeClass = "two";
     } else if (periode >= 2000 && periode <= 2009) {
       periodeClass = "three";
-    } else if (periode >= 2010 && periode <= 2019) {
+    } else if (periode >= 2010) {
       periodeClass = "four";
-    } else {
-      periodeClass = "five";
     }
 
     // Remove existing classes
-    element.classList.remove("MoyenAge", "two", "three", "four", "five");
+    element.classList.remove("one", "two", "three", "four");
 
     // Add new class
     element.classList.add(periodeClass);

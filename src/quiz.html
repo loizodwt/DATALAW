@@ -23,14 +23,14 @@
 
 <body>
 
-  <header>
+  <!-- <header>
     <nav class="nav">
       <ul class="nav__ul">
         <li><a href="/index.html" class="nav__el">Accueil</a></li>
         <li><a href="/quiz.html" class="nav__el">Quiz</a></li>
       </ul>
     </nav>
-  </header>
+  </header> -->
 
   <main>
 
@@ -42,17 +42,30 @@
 
 
     <section class="section quiz__container hidden">
-
-      <div class="quiz__counter">1/10</div>
-      <h2 class="quizz__h2">Ceci est le pays de la loi.</h2>
-      <p class="quiz__question">Ceci est une loi.</p>
-      <div class="quiz__buttons">
-        <button class="quiz__button quiz__button--vrai">Je vote pour</button>
-        <button class="quiz__button quiz__button--faux">Je vote contre</button>
+      <div class="quiz-top">
+        <div class="logo">DataLaws</div>
+        <div class="quiz__counter">1/10</div>
       </div>
-
-      <div class="quiz__feedback"></div>
-      <button class="quiz__button quiz__button--skip">Passer</button>
+      <div class="quiz__textes">
+        <div class="quiz__pays-dates">
+          <h2 class="quiz__h2">Ceci est le pays de la loi.</h2>
+          <span class="quiz__date">1889</span>
+        </div>
+        <p class="quiz__question">Ceci est une loi.</p>
+        <div class="quiz__feedback"></div>
+      </div>
+      <div class="flex">
+        <div class="quiz__choix">
+          <button class="quiz__button quiz__button--vrai">Je vote pour</button>
+          <button class="quiz__button quiz__button--faux">Je vote contre</button>
+        </div>
+      </div>
+      <div class="flex">
+        <div class="quiz__sortie">
+          <button class="quiz__button">Quitter</button>
+          <button class="quiz__button quiz__button--skip">Passer</button>
+        </div>
+      </div>
 
     </section>
 
