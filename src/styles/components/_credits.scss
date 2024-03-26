@@ -1,0 +1,79 @@
+@font-face {
+    font-family: "sato" ;
+    src: url("../assets/font/satoshi/satoshi-Regular.otf") ;
+}
+
+.nav-credits {
+    display: flex;
+    width: 100%;
+    background-color: transparent;
+  
+    &__ul {
+      display: flex;
+      width: 90%;
+      justify-content: flex-end;
+      padding: 0%;
+      list-style: none;
+    }
+    &__el {
+      list-style: none;
+      color: #333333;    
+      font-family: sato;
+      margin: 0 16px;
+      cursor: pointer;
+  
+      &:hover {
+        border-bottom: 1px solid #333333;
+        transition: .3s ease-out;
+      }
+      &:visited {
+        color: #333333;
+      }
+    }
+  }
+
+.credits {
+    background-image: image-set(
+        url(../assets/images/da/recapquiz.png) 1x,
+        url(../assets/images/da/recapquiz@2x.png) 2x
+      );
+      background-repeat: no-repeat;
+      max-width: 100vw;
+      height: 100%;
+      background-size: cover;
+      overflow-x: hidden;
+      font-family: sato;
+      padding-left: 8px;
+
+      &__div {
+        margin-bottom: 54px;
+
+        h2 {
+            margin-left: 0.5em;
+        }
+        ul {
+            list-style: none;
+            margin-left: 0.5em;
+            line-height: 1.6;
+        }
+        p {
+            margin-left: 0.5em;
+            max-width: 90%;
+        }
+      }
+}
+
+footer {
+    overflow-x: hidden;
+}
+
+@media (min-width: 769px) {
+    .credits {
+        padding-left: 33px;
+        h2,
+        p,
+        ul {
+            margin-left: 2rem;
+        }
+    }
+}

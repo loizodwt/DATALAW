@@ -7,11 +7,11 @@
     width: 100vw;
     height: 100%;
     background-size: cover;
+    overflow-x: hidden;
 
     &__title {
         font-size: 51px;
         font-family: gruppo;
-        margin-left: 5%;
         text-align: center;
     }
 }
@@ -27,9 +27,9 @@
 
 .good {
     height: 100vh;
-    width: 80%;
+    width: 90%;
     max-width: 750px;
-    margin: auto 10%;
+    margin: auto 5%;
     &__h2 {
         font-family: gruppo;
         font-size: 34px;
@@ -40,6 +40,8 @@
         
         p {
             font-family: sato;
+            font-size: 16px;
+            line-height: 1.6;
         }
     }
     &__content {
@@ -47,17 +49,21 @@
         border: 1px solid #9486c4;
         border-radius: 15px;
         backdrop-filter: blur(15);
-        padding: 33px;
-        padding-bottom: 16px;
+        padding: 16px;
+        padding-bottom: 8px;
     }
 }
 
 .legendes {
     height: 100vh;
-    width: 80%;
+    width: 90%;
     max-width: 750px;
-    margin: -111px 10% auto 10%;
+    margin: 500px 5% 250px 5%;
     position: relative;
+    background-color: transparent;
+    padding-bottom: 150px;
+
+
     &__h2 {
         font-family: gruppo;
         font-size: 34px;
@@ -68,6 +74,8 @@
         
         p {
             font-family: sato;
+            font-size: 16px;
+            line-height: 1.6;
         }
     }
     &__content {
@@ -75,9 +83,9 @@
         border: 1px solid #9486c4;
         border-radius: 15px;
         backdrop-filter: blur(15);
-        padding: 33px;
-        padding-bottom: 16px;
-        margin-bottom: 150px;
+        padding: 16px;
+        padding-bottom: 8px;
+        margin-bottom: 50px;
     }
     &__end {
         color: #3e2f60;
@@ -89,11 +97,11 @@
         display: flex;
         max-width: 100px;
         gap: 10px;
-        align-items: flex-end;
-        justify-content: center;
         cursor: pointer;
         position: absolute;
-        right: 0px; 
+        right: 0;
+        
+        margin-bottom: 100px;
 
         &:hover {
         background-color: #3E2F60;
@@ -110,14 +118,29 @@
     }
 }
 
+
 @media (min-width: 481px) {
-    .good{
-        width: 70%;
-        margin: auto 15%;
-        margin-top: 111px;
+    .legendes {
+        margin-top: 100px;
+        margin-bottom: 0%;
     }
-    .legendes{
-        width: 70%;
-        margin: auto 15% auto 15%;
+}
+@media (min-width: 769px) {
+    .legendes {
+        margin-top: 0px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .recap__content {
+        display: flex;
+
+    }
+    .good,
+    .legendes {
+        margin-top: 0%;
+    }
+    .legendes {
+        margin-bottom: 0px;
     }
 }

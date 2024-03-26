@@ -47,6 +47,10 @@ body {
   font-family: "sato" ;
   src: url("../assets/font/satoshi/satoshi-Regular.otf") ;
 }
+@font-face {
+  font-family: "clash" ;
+  src: url("../assets/font/clash/ClashDisplay-Regular.otf") ;
+}
 
 .nav {
   display: flex;
@@ -77,6 +81,7 @@ body {
     color: #333333;    
     font-family: gruppo;
     margin: 0 16px;
+    cursor: pointer;
 
     &:hover {
       border-bottom: 1px solid #333333;
@@ -111,7 +116,7 @@ body {
   &__title {
     font-size: 60px;
     text-align: center;
-    font-family: gruppo;
+    font-family: clash;
     color: #333333;
     font-weight: lighter;
   }
@@ -349,3 +354,4 @@ a {
 
 @import "components/finquiz";
 @import "components/recapquiz";
+@import "components/credits";

@@ -108,85 +108,9 @@ fetchJSONData(lawsDataURL)
   .catch(error => console.error('Error fetching JSON data:', error));
 
 
-// test initial
-/*
-document.addEventListener("DOMContentLoaded", function () {
-  let questionElement = document.getElementById("question");
-  let vraiBtn = document.getElementById("vraiBtn");
-  let fauxBtn = document.getElementById("fauxBtn");
-  let feedbackElement = document.getElementById("feedback"); // test a ignorer
-  let skipBtn = document.getElementById("skipBtn");
-
-  let currentQuestionIndex = 0;
-  let score = 0;
-  let isQuestionDisplayed = false;
-
-  let questionsData = null; // pour stocker les données hihi
-
-  // peuti fetch qui va chercher les infos sur le doc questions.json
-  fetch("/assets/data/questions.json")
-    .then((response) => response.json())
-    .then((data) => {
-      questionsData = data;
-      showQuestion();
-
-      vraiBtn.addEventListener("click", () => checkAnswer(true, questionsData));
-      fauxBtn.addEventListener("click", () =>
-        checkAnswer(false, questionsData)
-      );
-      skipBtn.addEventListener("click", showSummary);
-    });
-
-  function showQuestion() {
-    // Modification ici
-    let currentQuestion = questionsData[currentQuestionIndex];
-    questionElement.textContent = currentQuestion.question;
-    feedbackElement.textContent = ""; // réinitialisation de la réponse
-    vraiBtn.style.display = "inline"; // affichage et désaffichaaage des boutons
-    fauxBtn.style.display = "inline";
-    isQuestionDisplayed = true;
-
-    // Activer les boutons
-    vraiBtn.disabled = false;
-    fauxBtn.disabled = false;
-  }
-
-  function checkAnswer(userAnswer, questions) {
-    let currentQuestion = questions[currentQuestionIndex];
-    vraiBtn.disabled = true; // désactive les boutons pendant le delai chiant de la reponse
-    fauxBtn.disabled = true;
-    if (userAnswer === currentQuestion.reponse) {
-      feedbackElement.textContent = "YE!";
-      feedbackElement.style.color = "green";
-      score++;
-    } else {
-      feedbackElement.textContent = `NAAAAAAN ${currentQuestion.anecdote}`;
-      feedbackElement.style.color = "red";
-    }
-
-    currentQuestionIndex++;
-    if (currentQuestionIndex < questions.length) {
-      setTimeout(() => {
-        showQuestion(questions[currentQuestionIndex]);
-        feedbackElement.textContent = "";
-      }, 1000);
-    } else {
-      showSummary();
-    }
-  }
-
-  function showSummary() {
-    questionElement.textContent = `Quizz terminé score: ${score}/${currentQuestionIndex} :3`;
-    vraiBtn.style.display = "none";
-    fauxBtn.style.display = "none";
-    skipBtn.style.display = "none";
-    feedbackElement.textContent = "";
-  }
-});
-*/
 
 
-//water effect
+//water effect au hover
 
 const rippleSettings = {
   maxSize: 100,
