@@ -279,9 +279,7 @@ if (quizSection) {
 
     let periodeClass = "";
 
-    if (periode < 1900) {
-      periodeClass = "one";
-    } else if (periode >= 1900 && periode <= 1999) {
+    if (periode <= 1999) {
       periodeClass = "two";
     } else if (periode >= 2000 && periode <= 2009) {
       periodeClass = "three";
