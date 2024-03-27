@@ -42,6 +42,13 @@
     .quiz__counter {
         font-size: $p-mobile;
         font-family: gensco;
+
+        &--current {
+            font-size: 54px;
+        }
+        &--total {
+            font-size: 36px;
+        }
     }
     .quiz__button {
         font-size: $p-mobile;
@@ -148,6 +155,12 @@
         }
         .quiz__counter {
             font-size: $h3-tablet;
+            &--current {
+                font-size: 45px;
+            }
+            &--total {
+                font-size: 30px;
+            }
         }
     }
 }
@@ -172,6 +185,13 @@
         }
         .quiz__counter {
             font-size: $h3-desktop;
+
+            &--current {
+                font-size: 36px;
+            }
+            &--total {
+                font-size: 24px;
+            }
         }
     }
 }
