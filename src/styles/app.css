@@ -187,6 +187,7 @@ canvas {
   background-color: #fafafa;
   z-index: 5;
   border: 5px solid #c0c0c0;
+  bottom: 20%;
 }
 .singapour__navbar {
   display: flex;
@@ -200,7 +201,7 @@ canvas {
   font-family: "w9";
 }
 .singapour__txt--bottom {
-  padding-bottom: 74px;
+  padding-bottom: 24px;
 }
 .singapour__txt--nav {
   font-family: "w9";
@@ -253,6 +254,8 @@ canvas {
   gap: 5px;
   z-index: -1;
   padding: 5px;
+  border: none;
+  background-color: transparent;
 }
 .singapour__bin {
   position: absolute;
@@ -272,6 +275,12 @@ canvas {
 .singapour__datalaws img {
   height: 64px;
   width: auto;
+}
+.singapour__icon--close {
+  border: none;
+  background-color: transparent;
+  background: none;
+  z-index: 9860;
 }
 
 .icon-name {
@@ -309,7 +318,7 @@ canvas {
     font-size: 36px;
   }
   .singapour__title {
-    font-size: 100px;
+    font-size: 81px;
   }
   .singapour__txt {
     font-size: 24px;
@@ -625,15 +634,17 @@ body {
 .nav .sticky {
   position: fixed;
   top: 0;
-  width: 100%;
-  z-index: 1000;
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 800;
 }
 .nav--hide {
   display: none;
 }
 .nav__ul {
   display: flex;
-  width: 100%;
+  width: 30%;
   justify-content: flex-end;
   padding: 0%;
   list-style: none;

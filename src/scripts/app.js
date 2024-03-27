@@ -59,7 +59,7 @@ if (timeline) {
   });
 
   // Boutons modale Singapour
-  let closeButton = document.getElementById("close");
+  let closeButton = document.querySelector("#close");
   let singapourWindow = document.querySelector(".singapour__modal");
   let datalawsIcon = document.querySelector(".singapour__datalaws");
 

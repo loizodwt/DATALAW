@@ -23,6 +23,7 @@
     background-color: #fafafa;
     z-index: 5;
     border: 5px solid #c0c0c0;
+    bottom: 20%;
   }
 
   &__navbar {
@@ -37,7 +38,7 @@
     font-family: "w9";
     
     &--bottom {
-      padding-bottom: 74px;
+      padding-bottom: 24px;
     }
     
     &--nav {
@@ -92,6 +93,8 @@
     gap: 5px;
     z-index: -1;
     padding: 5px;
+    border: none;
+    background-color: transparent;
   }
   &__bin {
     position: absolute;
@@ -111,6 +114,12 @@
   &__datalaws img {
     height: 64px;
     width: auto;
+  }
+  &__icon--close {
+    border: none;
+    background-color: transparent;
+    background: none;
+    z-index: 9860;
   }
 }
 
@@ -159,7 +168,7 @@
       font-size: $h3-desktop;
     }
     &__title {
-      font-size: 100px;
+      font-size: $h2-desktop;
     }
     &__txt {
       font-size: $p-desktop;

@@ -63,8 +63,10 @@ body {
   .sticky {
     position: fixed;
     top: 0;
-    width: 100%;
-    z-index: 1000;
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 800;
   }
 
   &--hide {
@@ -73,7 +75,7 @@ body {
 
   &__ul {
     display: flex;
-    width: 100%;
+    width: 30%;
     justify-content: flex-end;
     padding: 0%;
     list-style: none;
