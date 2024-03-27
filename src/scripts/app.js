@@ -440,18 +440,23 @@ if (navbar && graphSection) {
       });
       isSticky = true;
     } else if (window.scrollY < graphSection.offsetTop && isSticky) {
+      const navbarHeight = navbar.offsetHeight;
       gsap.to(navbar, {
         duration: 0.3,
-        y: 0,
-        position: 'relative',
-        top: 'auto',
-        width: '100%',
+        y: -navbarHeight, // Move the navbar back into the document flow
         zIndex: 'auto',
-        ease: 'power2.out'
+        ease: 'power2.out',
+        onComplete: function () {
+          navbar.style.position = 'relative'; // Change position to relative after animation completes
+          navbar.style.top = 'auto';
+          gsap.set(navbar, { y: 0 }); // Reset y position for next sticky state
+        }
       });
       isSticky = false;
     }
   }
+
+
 
   /* ---------- GRAPHIQUE ---------- */
 
