@@ -22,29 +22,42 @@
 </head>
 
 <body>
+
   <main>
+
     <section class="section quiz__container">
       <div class="quiz-top">
-        <div class="logo">DataLaws</div>
-        <div class="quiz__counter">1/10</div>
+        <div class="logo-container" id="logo-container">
+          <span id="logo-text">DATA</span>
+          <span id="logo-text">LAWS</span>
+      </div>
+      
       </div>
       <div class="quiz__textes">
         <div class="quiz__pays-dates">
-          <h2 class="quiz__h2">Ceci est le pays de la loi.</h2>
+          <h2 class="quiz__h2">Pays</h2>
           <span class="quiz__date">1889</span>
         </div>
-        <p class="quiz__question">Ceci est une loi.</p>
-        <div class="quiz__feedback"></div>
+
+        <div class="quiz__contenu">
+          <p class="quiz__question">Ceci est une loi.</p>
+          <div class="quiz__feedback"></div>
+        </div>
+
       </div>
       <div class="flex">
         <div class="quiz__choix">
-          <button class="quiz__button quiz__button--vrai">Je vote pour</button>
-          <button class="quiz__button quiz__button--faux">Je vote contre</button>
+          <button class="quiz__button quiz__button--vrai">Pour</button>
+          <button class="quiz__button quiz__button--faux">Contre</button>
         </div>
       </div>
       <div class="flex">
         <div class="quiz__sortie">
-          <button class="quiz__button">Quitter</button>
+          <div class="quiz__counter">
+            <span class="quiz__counter--current">1</span>
+            <span class="quiz__counter--total">/8</span>
+          </div>
+          <button class="quiz__button quiz__button--quit">Quitter</button>
           <button class="quiz__button quiz__button--skip">Passer</button>
         </div>
       </div>
@@ -67,7 +80,12 @@
         <!-- Liste FAUX -->
       </div>
 
-      <p class="quiz__result"></p>
+      <div class="quiz__result">
+        <p class="quiz__result--score">Votre score: 0/8</p>
+        <p class="quiz__result--percent">
+          Vous avez voté à <span>x%</span> comme la majorité à l'époque de proposition de ces lois.
+        </p>
+      </div>
 
       <button class="btn quiz__button quiz__button--restart">Recommencer le quiz</button>
 
