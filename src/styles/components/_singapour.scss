@@ -120,6 +120,10 @@
     background-color: transparent;
     background: none;
     z-index: 9860;
+    cursor: pointer;
+  }
+  .reduced {
+    display: none;
   }
 }
 

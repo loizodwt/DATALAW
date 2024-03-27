@@ -54,10 +54,14 @@ body {
   font-family: "clash";
   src: url("../assets/fonts/clash/ClashDisplay-Regular.otf");
 }
-
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+}
 .nav {
   display: flex;
-  width: 100%;
+  width: 30%;
+  justify-content: flex-end;
   background-color: transparent;
 
   .sticky {

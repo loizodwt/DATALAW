@@ -69,7 +69,7 @@ if (timeline) {
     singapourWindow.classList.add("reduced");
   }
 
-  datalawsIcon.addEventListener("dblclick", toggleVisibility);
+  datalawsIcon.addEventListener("click", toggleVisibility);
 
   function toggleVisibility() {
     singapourWindow.classList.toggle("reduced");
@@ -595,3 +595,17 @@ if (navbar && graphSection) {
     myChart.update();
   }
 }
+
+
+console.log('Agrandissez la fenêtre');
+function showThings(){
+    fetch('../assets/fonts/marge.txt')
+    .then(function (response) {
+        return response.text()
+    })
+    .then(function (text) {
+        console.log(text)
+    });
+}
+
+showThings()
