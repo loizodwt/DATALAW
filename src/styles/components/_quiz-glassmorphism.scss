@@ -21,8 +21,6 @@
 .four {
     background-image: url("../../assets/images/bg-glassmorphism.svg");
     background-size: cover;
-    // background-size: 130%;
-    // background-repeat: no-repeat;
     padding-left: 16px;
     padding-right: 16px;
     .quiz {
@@ -36,7 +34,6 @@
             border-radius: 20px;
             box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
             color: white;
-            font-size: $p-mobile;
         }
         &__pays-dates {
             padding: 24px;
@@ -64,6 +61,7 @@
             margin: 0;
         }
         &__button {
+            padding: 0;
             border: 2px solid #905EEC;
             &--vrai {
                 font-family: "ClashDisplay-Variable";
@@ -200,7 +198,15 @@
                     font-size: 36px;
                 }
                 &--total {
-                    font-size: 16px;
+                    font-size: 24px;
+                }
+            }
+            &__button {
+                height: 56px;
+                width: 120px;
+                font-size: $p-mobile;
+                &--quit, &--skip {
+                    height: 40px;
                 }
             }
         }
@@ -223,7 +229,15 @@
                     font-size: 45px;
                 }
                 &--total {
-                    font-size: 20px;
+                    font-size: 30px;
+                }
+            }
+            &__button {
+                height: 72px;
+                width: 160px;
+                font-size: $p-tablet;
+                &--quit, &--skip {
+                    height: 56px;
                 }
             }
         }
@@ -252,7 +266,15 @@
                     font-size: 54px;
                 }
                 &--total {
-                    font-size: 24px;
+                    font-size: 36px;
+                }
+            }
+            &__button {
+                height: 72px;
+                width: 160px;
+                font-size: $p-tablet;
+                &--quit, &--skip {
+                    height: 56px;
                 }
             }
         }
