@@ -659,7 +659,7 @@ body {
   font-family: clash;
 }
 .introquiz__h2 {
-  font-size: 34px;
+  font-size: 36px;
   font-family: clash;
   margin-top: 0px;
   text-align: center;
@@ -684,12 +684,12 @@ body {
 .introquiz__glass p {
   font-family: sato;
   color: #333333;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.6;
 }
 .introquiz__btn {
   display: flex;
-  font-size: 18px;
+  font-size: 16px;
   background-color: rgba(189, 185, 238, 0.5);
   -webkit-backdrop-filter: blur(5);
           backdrop-filter: blur(5);
