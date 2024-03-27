@@ -122,6 +122,9 @@
     z-index: 9860;
     cursor: pointer;
   }
+  &__icon--close:active {
+    filter: brightness(.5);
+  }
   .reduced {
     display: none;
   }
