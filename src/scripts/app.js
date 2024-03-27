@@ -214,11 +214,9 @@ if (quizSection) {
       } else {
         // For skipped questions, add them to the respective list based on their question type
         if (question.reponse === true) {
-          listItem.classList.add("skipped");
           recapTrueList.appendChild(listItem);
           hasTrueQuestions = true;
         } else {
-          listItem.classList.add("skipped");
           recapFalseList.appendChild(listItem);
           hasFalseQuestions = true;
         }
