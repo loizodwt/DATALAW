@@ -1,4 +1,6 @@
 .two {
+    $quiz-one: #6b5522;
+
     background-image: image-set(
         url(../../assets/images/bg-quiz-one.png) 1x,
         url(../../assets/images/bg-quiz-one@2x.png) 2x
@@ -10,32 +12,38 @@
 
     .quiz__h2 {
         font-family: Gensco;
-        font-size: 36px;
+        font-size: $h2-mobile;
         margin-left: 5%;
+    }
+    .quiz__counter--current {
+        color: $quiz-one;
     }
     .quiz__date {
         font-family: Gensco;
         margin-right: 5%;
-        font-size: 36px;
+        font-size: $h2-mobile;
     }
     .quiz__contenu {
         font-family: Gensco;
-        font-size: 16px;
+        font-size: $p-mobile;
         border: 1px solid black;
         padding: 8px;
         max-width: 90%;
         margin: auto 5%;
         line-height: 1.6;
     }
+    .quiz__textes {
+        max-width: 500px;
+    }
     .quiz__feedback {
         margin-top: 54px;
     }
     .quiz__counter {
-        font-size: 16px;
+        font-size: $p-mobile;
         font-family: gensco;
     }
     .quiz__button {
-        font-size: 16px;
+        font-size: $p-mobile;
         font-family: ppgochat;
         color: black;
         padding: 5px 10px;
@@ -47,7 +55,7 @@
         &--vrai,
         &--faux {
             text-transform: uppercase;
-            color: #5d491b;
+            color: $quiz-one;
             padding: 10px 16px 10px 32px;
             border: 1px solid black;
             position: relative;
@@ -114,10 +122,10 @@
 @media (min-width: 481px) {
     .two {
         .quiz__h2 {
-            font-size: 45px;
+            font-size: $h2-tablet;
         }
         .quiz__contenu {
-            font-size: 20px;
+            font-size: $p-tablet;
         }
         .quiz__counter {
             font-size: 33px;

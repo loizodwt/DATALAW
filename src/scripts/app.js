@@ -126,8 +126,10 @@ if (quizSection) {
     let currentQuestion = questionsData[currentQuestionIndex];
     questionElement.textContent = currentQuestion.question;
     feedbackElement.textContent = "";
-    vraiBtn.classList.remove = "hidden";
-    fauxBtn.classList.remove = "hidden";
+    // vraiBtn.classList.remove = "hidden";
+    // fauxBtn.classList.remove = "hidden";
+    vraiBtn.style.display = "flex";
+    fauxBtn.style.display = "flex";
     vraiBtn.disabled = false;
     fauxBtn.disabled = false;
     counterElement.textContent = `${currentQuestionIndex + 1}`;
@@ -145,8 +147,10 @@ if (quizSection) {
 
 
   function checkAnswer(userAnswer, currentQuestion) {
-    vraiBtn.classList.add = "hidden";
-    fauxBtn.classList.add = "hidden";
+    // vraiBtn.classList.add = "hidden";
+    // fauxBtn.classList.add = "hidden";
+    vraiBtn.style.display = "none";
+    fauxBtn.style.display = "none";
 
     if (userAnswer === currentQuestion.reponse) {
       feedbackElement.textContent = "Vous avez voté comme le peuple de l'époque: " + currentQuestion.anecdote;
