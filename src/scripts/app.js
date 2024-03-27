@@ -89,7 +89,7 @@ if (quizSection) {
   let fauxBtn = document.querySelector(".quiz__button--faux");
   let feedbackElement = document.querySelector(".quiz__feedback");
   let skipBtn = document.querySelector(".quiz__button--skip");
-  let counterElement = document.querySelector(".quiz__counter");
+  let counterElement = document.querySelector(".quiz__counter span");
 
   let currentQuestionIndex = 0;
   let score = 0;
@@ -129,21 +129,28 @@ if (quizSection) {
     fauxBtn.classList.remove = "hidden";
     vraiBtn.disabled = false;
     fauxBtn.disabled = false;
-    counterElement.textContent = `${currentQuestionIndex + 1}/${questionsData.length}`;
+    counterElement.textContent = `${currentQuestionIndex + 1}`;
+
+    // Update country and date elements
+    let countryElement = document.querySelector(".quiz__h2");
+    let dateElement = document.querySelector(".quiz__date");
+    countryElement.textContent = currentQuestion.pays;
+    dateElement.textContent = currentQuestion.periode;
 
     // Assign class based on periode for the current question
     assignClassBasedOnPeriode(currentQuestion.periode, quizSection);
   }
+
 
   function checkAnswer(userAnswer, currentQuestion) {
     vraiBtn.classList.add = "hidden";
     fauxBtn.classList.add = "hidden";
 
     if (userAnswer === currentQuestion.reponse) {
-      feedbackElement.textContent = `Vous avez voté comme le peuple de l'époque: ${currentQuestion.anecdote}`;
+      feedbackElement.textContent = "Vous avez voté comme le peuple de l'époque: " + currentQuestion.anecdote;
       score++;
     } else {
-      feedbackElement.textContent = `Vous n'avez pas voté comme le peuple de l'époque: ${currentQuestion.anecdote}`;
+      feedbackElement.textContent = "Vous n'avez pas voté comme le peuple de l'époque: " + currentQuestion.anecdote;
     }
 
     // Record user's answer only if it's not a skip
@@ -163,7 +170,7 @@ if (quizSection) {
     recapSection.classList.remove("hidden");
 
     // score
-    scoreElement.textContent = `Votre score: ${score}/${questionsData.length}`;
+    scoreElement.textContent = "Votre score: " + score + "/" + questionsData.length;
     // pourcentage
     let successPercentage = (score / questionsData.length) * 100;
     percentElement.textContent = `${successPercentage.toFixed(2)}%`;
@@ -284,7 +291,7 @@ if (quizSection) {
     }
 
     // Remove existing classes
-    element.classList.remove("one", "two", "three", "four");
+    element.classList.remove("two", "three", "four");
 
     // Add new class
     element.classList.add(periodeClass);
