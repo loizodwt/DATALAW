@@ -37,7 +37,7 @@
 
     }
     &__title {
-        font-size: 33px;
+        font-size: 36px;
         margin-top: -7rem;
     }
     &__h3 {
@@ -81,13 +81,34 @@
             max-width: 600px;
         }
         &__txt {
-            font-size: $p-tablet;
+            font-size: 20px;
         }
         &__h3 {
-            font-size: $h3-tablet;
+            font-size: 30px;
         }
         &__title {
-            font-size: $h2-tablet;
+            font-size: 45px;
+            margin-top: -150px;
+        }
+        &__chiffre {
+            font-size: 150px;
+            line-height: 0%;
+        }
+    }
+}
+@media (min-width: 481px) {
+    .texas {
+        &__content {
+            max-width: 600px;
+        }
+        &__txt {
+            font-size: 24px;
+        }
+        &__h3 {
+            font-size: 36px;
+        }
+        &__title {
+            font-size: 54px;
             margin-top: -150px;
         }
         &__chiffre {
