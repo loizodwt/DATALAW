@@ -100,7 +100,8 @@ canvas {
 
   &__choix {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 3rem;
     position: absolute;
     bottom: 30vh;
     width: 100%;
