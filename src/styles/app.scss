@@ -83,23 +83,15 @@ canvas {
 .quiz-top {
   display:flex; 
   justify-content: space-around;
+  align-items: center;
   padding-top: 50px;
 }
 
 .quiz {
   &__container {
-    padding-left: 5vw;
-    padding-right: 5vw;
     height: 100vh;
     text-align: start;
     position: relative;
-  }
-
-  &__question {
-    // margin-top: 25%;
-    margin-bottom: 20px;
-    font-size: 25px;
-    color: black;
   }
 
   &__choix {
@@ -121,15 +113,13 @@ canvas {
       background-color: rgb(106, 106, 106);
     }
   }
-
   &__feedback {
-    margin-top: 15%;
-    font-size: 20px;
+    margin-top: 5%;
   }
   &__textes {
     display: block;
     margin: auto;
-    max-width: 500px;
+    // max-width: 500px;
     margin-top: 5%;
   }
   &__sortie {
@@ -141,8 +131,8 @@ canvas {
   }
   &__pays-dates {
     display: flex;
-    gap: 50px;
     flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
   }
 }
