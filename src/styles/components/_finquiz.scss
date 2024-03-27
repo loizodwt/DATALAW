@@ -12,7 +12,7 @@
     font-family: gruppo;
   
     &__h2 {
-      font-size: 34px;
+      font-size: $h2-mobile;
       font-family: gruppo;
       margin-top: 0px;
       text-align: center;
@@ -37,7 +37,7 @@
       p {
         font-family: sato;
         color: #E6EFEB;
-        font-size: 18px;
+        font-size: $p-mobile;
         line-height: 1.6;
       }
     }
@@ -50,7 +50,7 @@
     &__btn--1,
     &__btn--2 {
       display: flex;
-      font-size: 18px;
+      font-size: $p-mobile;
       background-color: rgba(173, 168, 233, 0.5);
       backdrop-filter: blur(5);
       border: 2px solid #9486c4;
@@ -79,18 +79,33 @@
 
 
 @media (min-width: 769px) {
-    .finquiz {
-      &__h2 {
-        font-size: 45px;
-      }
-      &__glass {
-        p {font-size: 20px;}
+  .finquiz {
+    &__h2 {
+      font-size: $h2-tablet;
+    }
+    &__glass {
+      p {
+        font-size: $p-tablet;
       }
     }
   }
+}
+
+@media (min-width: 769px) {
+  .finquiz {
+    &__h2 {
+      font-size: $h2-desktop;
+    }
+    &__glass {
+      p {
+        font-size: $p-desktop;
+      }
+    }
+  }
+}
 
 @media (min-width: 1225px) {  
-    .finquiz {
-      padding-top: 111px;
-    }
+  .finquiz {
+    padding-top: 111px;
   }
+}

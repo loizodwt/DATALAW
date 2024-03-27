@@ -121,7 +121,7 @@ body {
     font-weight: lighter;
   }
   &__txt {
-    font-size: 20px;
+    font-size: $p-tablet;
     text-align: left;
     font-family: sato;
     line-height: 1.6;
@@ -148,7 +148,7 @@ body {
   font-family: clash;
 
   &__h2 {
-    font-size: 36px;
+    font-size: $h2-mobile;
     font-family: clash;
     margin-top: 0px;
     text-align: center;
@@ -173,13 +173,13 @@ body {
     p {
       font-family: sato;
       color: #333333;
-      font-size: 16px;
+      font-size: $p-mobile;
       line-height: 1.6;
     }
   }
   &__btn {
     display: flex;
-    font-size: 16px;
+    font-size: $p-mobile;
     background-color: rgba(189, 185, 238, 0.5);
     backdrop-filter: blur(5);
     border: 2px solid #9486c4;
@@ -220,7 +220,7 @@ body {
   }
   &__el {
     font-family: clash;
-    font-size: 16px;
+    font-size: $p-mobile;
     line-height: 1.6;
 
     a {
@@ -234,7 +234,7 @@ body {
   }
   small {
     font-family: clash;
-    font-size: 16px;
+    font-size: $p-mobile;
   }
 }
 
@@ -260,20 +260,20 @@ a {
       max-width: 450px;
       width: 100%;
       margin: 300px 5% auto 5%;
-      font-size: 20px;
+      font-size: $p-tablet;
     }
   }
   .introquiz {
     &__glass {
       p {
-        font-size: 20px;
+        font-size: $p-tablet;
       }
     }
     &__h2 {
-      font-size: 45px;
+      font-size: $h2-tablet;
     }
     &__btn {
-      font-size: 20px;
+      font-size: $p-tablet;
     }
   }
 }
@@ -284,7 +284,7 @@ a {
       font-size: 108px;
     }
     &__txt {
-      font-size: 24px;
+      font-size: $p-desktop;
       max-width: 500px;
     }
     &__content {
@@ -294,7 +294,7 @@ a {
   }
   .nav {
     &__el {
-      font-size: 32px;
+      font-size: $p-desktop;
     }
   }
   .introquiz {

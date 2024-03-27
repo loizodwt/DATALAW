@@ -10,12 +10,16 @@
   .title {
     text-align: center;
   }
+  &__txt {
+    width: 90%;
+    margin: auto 5%;
+  }
 
   &__lois {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 16px;
+    font-size: $p-mobile;
     padding: 5%;
     margin: 0%;
   }
@@ -32,7 +36,7 @@
       padding: 5px 12px;
       text-align: center;
       text-decoration: none;
-      font-size: 16px;
+      font-size: $p-mobile;
       cursor: pointer;
       border: 1px solid #cdc7e3;
       border-radius: 10px;
@@ -55,13 +59,25 @@ canvas {
   cursor: pointer;
 }
 
+@media screen and (min-width: 481px){
+  .graphique {
+    &__lois {
+      font-size: $p-tablet;
+    }
+    button {font-size: $p-tablet;}
+    &__txt {
+      font-size: $p-tablet;
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
   .graphique__boutons {
     display: inline-block;
     justify-content: center;
   }
   .graphique__lois {
-    font-size: 20px;
+    font-size: $p-desktop;
   }
 
   button {
@@ -73,6 +89,16 @@ canvas {
   .graphique {
     &__container {
       max-height: 500px;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .graphique {
+    button {
+      margin: 5px;
+    }
+    &__txt {
+      font-size: $p-desktop;
     }
   }
 }

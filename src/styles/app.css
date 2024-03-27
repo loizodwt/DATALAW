@@ -69,6 +69,10 @@
 .graphique .title {
   text-align: center;
 }
+.graphique__txt {
+  width: 90%;
+  margin: auto 5%;
+}
 .graphique__lois {
   display: flex;
   flex-direction: column;
@@ -107,13 +111,24 @@ canvas {
   cursor: pointer;
 }
 
+@media screen and (min-width: 481px) {
+  .graphique__lois {
+    font-size: 20px;
+  }
+  .graphique button {
+    font-size: 20px;
+  }
+  .graphique__txt {
+    font-size: 20px;
+  }
+}
 @media screen and (max-width: 768px) {
   .graphique__boutons {
     display: inline-block;
     justify-content: center;
   }
   .graphique__lois {
-    font-size: 20px;
+    font-size: 24px;
   }
   button {
     margin: 5px;
@@ -122,6 +137,14 @@ canvas {
 @media screen and (min-width: 600px) {
   .graphique__container {
     max-height: 500px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .graphique button {
+    margin: 5px;
+  }
+  .graphique__txt {
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 900px) {
@@ -207,7 +230,7 @@ canvas {
 }
 .singapour__title {
   font-family: "MS-Sans-Serif-8pt-Bold";
-  font-size: 33px;
+  font-size: 36px;
   margin-top: 54px;
   margin-bottom: 33px;
 }
@@ -283,13 +306,13 @@ canvas {
 }
 @media (min-width: 1025px) {
   .singapour__h3 {
-    font-size: 48px;
+    font-size: 36px;
   }
   .singapour__title {
     font-size: 100px;
   }
   .singapour__txt {
-    font-size: 32px;
+    font-size: 24px;
   }
   .singapour__modal {
     max-width: 80%;
@@ -337,7 +360,7 @@ canvas {
   font-style: italic;
 }
 .y2k__title {
-  font-size: 61px;
+  font-size: 36px;
   font-family: radar;
   margin-top: 150px;
   -webkit-text-stroke-width: 1px;
@@ -350,7 +373,7 @@ canvas {
   margin-top: 0%;
 }
 .y2k__h3 {
-  font-size: 27px;
+  font-size: 24px;
   font-family: jura;
   margin-top: 4rem;
 }
@@ -381,7 +404,7 @@ canvas {
 }
 @media (min-width: 769px) {
   .y2k__title {
-    font-size: 61px;
+    font-size: 36px;
   }
   .y2k__txt {
     font-size: 20px;
@@ -410,7 +433,7 @@ canvas {
   }
   .y2k__title {
     margin-left: 30%;
-    font-size: 108px;
+    font-size: 81px;
     margin-top: 33px;
   }
   .y2k__chiffre {
@@ -427,13 +450,13 @@ canvas {
 }
 @media (min-width: 1025px) {
   .y2k__title {
-    font-size: 108px;
+    font-size: 81px;
   }
   .y2k__txt {
-    font-size: 32px;
+    font-size: 24px;
   }
   .y2k__h3 {
-    font-size: 48px;
+    font-size: 36px;
     margin-bottom: 0%;
   }
   .y2k__content {
@@ -478,11 +501,11 @@ canvas {
   z-index: 8;
 }
 .texas__title {
-  font-size: 61px;
+  font-size: 36px;
   margin-top: -7rem;
 }
 .texas__h3 {
-  font-size: 27px;
+  font-size: 24px;
 }
 .texas__img {
   margin-left: -33%;
@@ -532,13 +555,13 @@ canvas {
     max-width: 600px;
   }
   .texas__txt {
-    font-size: 32px;
+    font-size: 24px;
   }
   .texas__h3 {
-    font-size: 48px;
+    font-size: 36px;
   }
   .texas__title {
-    font-size: 108px;
+    font-size: 81px;
     margin-top: -150px;
   }
   .texas__chiffre {
@@ -812,7 +835,7 @@ a {
     margin: auto 10%;
   }
   .nav__el {
-    font-size: 32px;
+    font-size: 24px;
   }
   .introquiz__h2 {
     font-size: 45px;
@@ -878,7 +901,7 @@ a {
   font-family: gruppo;
 }
 .finquiz__h2 {
-  font-size: 34px;
+  font-size: 36px;
   font-family: gruppo;
   margin-top: 0px;
   text-align: center;
@@ -903,7 +926,7 @@ a {
 .finquiz__glass p {
   font-family: sato;
   color: #E6EFEB;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.6;
 }
 .finquiz__btn {
@@ -914,7 +937,7 @@ a {
 }
 .finquiz__btn--1, .finquiz__btn--2 {
   display: flex;
-  font-size: 18px;
+  font-size: 16px;
   background-color: rgba(173, 168, 233, 0.5);
   -webkit-backdrop-filter: blur(5);
           backdrop-filter: blur(5);
@@ -945,6 +968,14 @@ a {
   }
   .finquiz__glass p {
     font-size: 20px;
+  }
+}
+@media (min-width: 769px) {
+  .finquiz__h2 {
+    font-size: 81px;
+  }
+  .finquiz__glass p {
+    font-size: 24px;
   }
 }
 @media (min-width: 1225px) {
@@ -1015,7 +1046,7 @@ a {
 }
 .legendes__h2 {
   font-family: gruppo;
-  font-size: 34px;
+  font-size: 36px;
 }
 .legendes__el {
   list-style-image: url("../../assets/images/da/no.png");
@@ -1023,7 +1054,7 @@ a {
 }
 .legendes__el p {
   font-family: sato;
-  font-size: 16px;
+  font-size: 1 16px;
   line-height: 1.6;
 }
 .legendes__content {
@@ -1069,10 +1100,34 @@ a {
     margin-top: 100px;
     margin-bottom: 0%;
   }
+  .legendes__h2 {
+    font-size: 45px;
+  }
+  .legendes__el p {
+    font-size: 20px;
+  }
+  .good__h2 {
+    font-size: 45px;
+  }
+  .good__el p {
+    font-size: 20px;
+  }
 }
 @media (min-width: 769px) {
   .legendes {
     margin-top: 0px;
+  }
+  .legendes__h2 {
+    font-size: 81px;
+  }
+  .legendes__el p {
+    font-size: 24px;
+  }
+  .good__h2 {
+    font-size: 81px;
+  }
+  .good__el p {
+    font-size: 24px;
   }
 }
 @media (min-width: 1000px) {
@@ -1115,7 +1170,7 @@ a {
   font-family: gruppo;
 }
 .quiz__intro .title {
-  font-size: 34px;
+  font-size: 36px;
   font-family: gruppo;
   margin-top: 0px;
   text-align: center;
@@ -1156,7 +1211,7 @@ a {
 }
 .quiz__question {
   margin-bottom: 20px;
-  font-size: 25px;
+  font-size: 24px;
   color: black;
 }
 .quiz__button {
@@ -1544,11 +1599,11 @@ a {
   }
   .law-5__h2,
   .law-1__h2 {
-    font-size: 61px;
+    font-size: 36px;
   }
   .law-5__h3,
   .law-1__h3 {
-    font-size: 27px;
+    font-size: 24px;
   }
   .law-5__p,
   .law-1__p {
@@ -1577,11 +1632,11 @@ a {
   }
   .law-5__h2,
   .law-1__h2 {
-    font-size: 61px;
+    font-size: 36px;
   }
   .law-5__h3,
   .law-1__h3 {
-    font-size: 27px;
+    font-size: 24px;
   }
   .law-5__p,
   .law-1__p {
@@ -1613,11 +1668,11 @@ a {
   }
   .law-5__h2,
   .law-1__h2 {
-    font-size: 61px;
+    font-size: 36px;
   }
   .law-5__h3,
   .law-1__h3 {
-    font-size: 27px;
+    font-size: 24px;
   }
   .law-5__p,
   .law-1__p {
@@ -1653,15 +1708,15 @@ a {
   }
   .law-5__h2,
   .law-1__h2 {
-    font-size: 108px;
+    font-size: 81px;
   }
   .law-5__h3,
   .law-1__h3 {
-    font-size: 48px;
+    font-size: 36px;
   }
   .law-5__p,
   .law-1__p {
-    font-size: 32px;
+    font-size: 24px;
   }
   .bg-5 {
     margin-left: 80px;
@@ -1766,14 +1821,17 @@ a {
 }
 .credits__div h2 {
   margin-left: 0.5em;
+  font-size: 36px;
 }
 .credits__div ul {
   list-style: none;
   margin-left: 0.5em;
   line-height: 1.6;
+  font-size: 16px;
 }
 .credits__div p {
   margin-left: 0.5em;
+  font-size: 16px;
   max-width: 90%;
 }
 
@@ -1781,6 +1839,14 @@ footer {
   overflow-x: hidden;
 }
 
+@media (min-width: 481px) {
+  .credits h2 {
+    font-size: 45px;
+  }
+  .credits p, .credits ul {
+    font-size: 20px;
+  }
+}
 @media (min-width: 769px) {
   .credits {
     padding-left: 33px;
@@ -1789,6 +1855,12 @@ footer {
   .credits p,
   .credits ul {
     margin-left: 2rem;
+  }
+  .credits h2 {
+    font-size: 81px;
+  }
+  .credits p, .credits ul {
+    font-size: 24px;
   }
 }
 .presentation {
@@ -1842,6 +1914,7 @@ footer {
   list-style: circle;
   font-family: sato;
   line-height: 1.6;
+  font-size: 16px;
 }
 
 .context,
@@ -1872,6 +1945,30 @@ footer {
   font-family: sato;
 }
 
+@media (min-width: 481px) {
+  .context h2,
+  .present h2,
+  .difficult h2,
+  .equipe h2,
+  .pictures h2 {
+    font-size: 45px;
+  }
+  .context p,
+  .context ul,
+  .present p,
+  .present ul,
+  .difficult p,
+  .difficult ul,
+  .equipe p,
+  .equipe ul,
+  .pictures p,
+  .pictures ul {
+    font-size: 20px;
+  }
+  .pictures figcaption {
+    font-size: 16px;
+  }
+}
 @media (min-width: 769px) {
   .context,
   .present,
@@ -1884,7 +1981,7 @@ footer {
   .present h2,
   .difficult h2,
   .equipe h2 {
-    font-size: 54px;
+    font-size: 81px;
   }
   .context p,
   .context ul,
@@ -1901,7 +1998,11 @@ footer {
     margin: auto;
   }
   .pictures h2 {
+    font-size: 81px;
     text-align: center;
+  }
+  .pictures figcaption {
+    font-size: 18px;
   }
 }
 @media (min-width: 1000px) {

@@ -26,19 +26,20 @@
 .pictures {
     margin: auto 16px;
     h2 {
-        font-size: 36px;
+        font-size: $h2-mobile;
         font-family: clash;
         font-weight: normal;
     }
     p {
         line-height: 1.6;
-        font-size: 16px;
+        font-size: $p-mobile;
         font-family: sato;
     }
     ul {
         list-style: circle;
         font-family: sato;
         line-height: 1.6;
+        font-size: $p-mobile;
     }
 }
 .context,
@@ -69,6 +70,27 @@
     }
 }
 
+@media (min-width: 481px){
+    .context,
+    .present, 
+    .difficult,
+    .equipe,
+    .pictures {
+        h2 {
+            font-size: $h2-tablet;
+        }
+        p,
+        ul {
+            font-size: $p-tablet;
+        }
+    }
+    .pictures {
+        figcaption {
+            font-size: $p-mobile;
+        }
+    }
+}
+
 @media (min-width: 769px){
     .context,
     .present, 
@@ -78,11 +100,11 @@
         margin: auto 15% 250px auto;
 
         h2 {
-            font-size: 54px;
+            font-size: $h2-desktop;
         }
         p,
         ul {
-            font-size: 24px;
+            font-size: $p-desktop;
         }
     }
     .pictures {
@@ -90,7 +112,11 @@
         margin: auto;
 
         h2 {
+            font-size: $h2-desktop;
             text-align: center;
+        }
+        figcaption {
+            font-size: 18px;
         }
     }
 }

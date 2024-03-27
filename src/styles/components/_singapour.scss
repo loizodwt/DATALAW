@@ -69,12 +69,12 @@
   }
   &__title {
     font-family: "MS-Sans-Serif-8pt-Bold";
-    font-size: 33px;
+    font-size: $h2-mobile;
     margin-top: 54px;
     margin-bottom: 33px;
   }
   &__h3 {
-    font-size: 24px;
+    font-size: $h3-mobile;
     margin-top: 54px;
     font-family: "MS-Sans-Serif-8pt-Bold";
     line-height: 1.2;

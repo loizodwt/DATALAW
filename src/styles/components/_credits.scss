@@ -20,8 +20,7 @@
       color: #333333;    
       font-family: sato;
       margin: 0 16px;
-      cursor: pointer;
-  
+      cursor: pointer;  
       &:hover {
         border-bottom: 1px solid #333333;
         transition: .3s ease-out;
@@ -50,21 +49,31 @@
 
         h2 {
             margin-left: 0.5em;
+            font-size: $h2-mobile;
         }
         ul {
             list-style: none;
             margin-left: 0.5em;
             line-height: 1.6;
+            font-size: $p-mobile;
         }
         p {
-            margin-left: 0.5em;
-            max-width: 90%;
+          margin-left: 0.5em;
+          font-size: $p-mobile;
+          max-width: 90%;
         }
       }
 }
 
 footer {
     overflow-x: hidden;
+}
+
+@media (min-width: 481px) {
+  .credits {
+      h2 {font-size: $h2-tablet;}
+      p,ul {font-size: $p-tablet;}
+  }
 }
 
 @media (min-width: 769px) {
@@ -75,5 +84,7 @@ footer {
         ul {
             margin-left: 2rem;
         }
+        h2 {font-size: $h2-desktop;}
+        p,ul {font-size: $p-desktop;}
     }
 }
