@@ -30,7 +30,7 @@
   font-family: "ppgochat";
   src: url("../assets/font/PPGoshaSans-Regular.otf");
 }
-.one {
+.two {
   background-image: -webkit-image-set(url(../../assets/images/bg-quiz-one.png) 1x, url(../../assets/images/bg-quiz-one@2x.png) 2x);
   background-image: image-set(url(../../assets/images/bg-quiz-one.png) 1x, url(../../assets/images/bg-quiz-one@2x.png) 2x);
   background-repeat: no-repeat;
@@ -38,32 +38,49 @@
   width: 100%;
   height: 100vh;
 }
-.one .quiz__h2 {
+.two .quiz__h2 {
   font-family: Gensco;
   font-size: 36px;
 }
-.one .quiz__date {
+.two .quiz__date {
   font-family: Gensco;
   font-size: 36px;
 }
-.one .quiz__question {
+.two .quiz__question {
   font-family: Gensco;
   font-size: 16px;
 }
-.one .quiz__button {
+.two .quiz__button {
   font-size: 16px;
   font-family: ppgochat;
   color: black;
+  padding: 5px 10px;
+  display: flex;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
 }
-.one .quiz__button--vrai, .one .quiz__button--faux {
+.two .quiz__button--vrai, .two .quiz__button--faux {
   text-transform: uppercase;
   color: #5d491b;
+  padding: 10px;
+  border: 1px solid black;
 }
-.one .quiz__button--skip::after {
+.two .quiz__button--skip::after {
   content: url("../../assets/images/nextquiiiz.png");
+  display: flex;
+  width: 12px;
+  height: 12px;
+  margin-left: 10px;
+  margin-top: -7px;
 }
-.one .quiz__button--quit::after {
+.two .quiz__button--quit::after {
   content: url("../../assets/images/quitquiz.png");
+  display: flex;
+  width: 12px;
+  height: 12px;
+  margin-left: 10px;
+  margin-top: -7px;
 }
 
 body {

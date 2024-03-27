@@ -1,4 +1,4 @@
-.one {
+.two {
     background-image: image-set(
         url(../../assets/images/bg-quiz-one.png) 1x,
         url(../../assets/images/bg-quiz-one@2x.png) 2x,
@@ -24,20 +24,37 @@
         font-size: 16px;
         font-family: ppgochat;
         color: black;
+        padding: 5px 10px;
+        display: flex;
+        border: 1px solid black;
+        justify-content: center;
+        align-items: center;
 
         &--vrai,
         &--faux {
             text-transform: uppercase;
             color: #5d491b;
+            padding: 10px;
+            border: 1px solid black;
         }
         &--skip {
             &::after {
-                content: url("../../assets/images/nextquiiiz.png") ;
+                content: url("../../assets/images/nextquiiiz.png");
+                display: flex;
+                width: 12px;
+                height: 12px;
+                margin-left: 10px;
+                margin-top: -7px;
             }
         }
         &--quit {
             &::after {
                 content: url("../../assets/images/quitquiz.png");
+                display: flex;
+                width: 12px;
+                height: 12px;
+                margin-left: 10px;
+                margin-top: -7px;
             }
         }
     }
