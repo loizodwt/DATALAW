@@ -478,11 +478,11 @@ canvas {
   z-index: 8;
 }
 .texas__title {
-  font-size: 36px;
+  font-size: 61px;
   margin-top: -7rem;
 }
 .texas__h3 {
-  font-size: 24px;
+  font-size: 27px;
 }
 .texas__img {
   margin-left: -33%;
@@ -532,13 +532,13 @@ canvas {
     max-width: 600px;
   }
   .texas__txt {
-    font-size: 24px;
+    font-size: 32px;
   }
   .texas__h3 {
-    font-size: 36px;
+    font-size: 48px;
   }
   .texas__title {
-    font-size: 54px;
+    font-size: 108px;
     margin-top: -150px;
   }
   .texas__chiffre {

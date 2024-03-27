@@ -20,7 +20,7 @@
     }
     &__txt {
         font-family: "elite";
-        font-size: 16px;
+        font-size: $p-mobile;
         line-height: 1.6;
     }
     &__chiffre {
@@ -37,11 +37,11 @@
 
     }
     &__title {
-        font-size: 36px;
+        font-size: $h2-mobile;
         margin-top: -7rem;
     }
     &__h3 {
-        font-size: 24px;
+        font-size: $h3-mobile;
     }
     &__img {
         margin-left: -33%;
@@ -81,13 +81,13 @@
             max-width: 600px;
         }
         &__txt {
-            font-size: 20px;
+            font-size: $p-tablet;
         }
         &__h3 {
-            font-size: 30px;
+            font-size: $h3-tablet;
         }
         &__title {
-            font-size: 45px;
+            font-size: $h2-tablet;
             margin-top: -150px;
         }
         &__chiffre {
@@ -102,13 +102,13 @@
             max-width: 600px;
         }
         &__txt {
-            font-size: 24px;
+            font-size: $p-desktop;
         }
         &__h3 {
-            font-size: 36px;
+            font-size: $h3-desktop;
         }
         &__title {
-            font-size: 54px;
+            font-size: $h2-desktop;
             margin-top: -150px;
         }
         &__chiffre {
