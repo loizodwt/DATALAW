@@ -609,3 +609,38 @@ function showThings(){
 }
 
 showThings()
+
+/* ---------- ANIMATION LOGO ---------- */
+
+let logoContainer = document.getElementById("logo-container");
+let logoTexts = document.querySelectorAll("#logo-text");
+
+logoContainer.addEventListener("mouseover", function () {
+    logoTexts.forEach(logoText => {
+        let text = logoText.textContent;
+        let textLength = text.length;
+        let randomIndices = [];
+        const fontArray = ["satoshi", "w9", "pix", "gensco", "ortica", "valiant", "livingstone", "elite"];
+
+        // Generate random indices for characters to change
+        while (randomIndices.length < Math.min(4, textLength)) {
+            let randomIndex = Math.floor(Math.random() * textLength);
+            if (!randomIndices.includes(randomIndex)) {
+                randomIndices.push(randomIndex);
+            }
+        }
+
+        // Change font for random characters
+        let newText = "";
+        for (let i = 0; i < textLength; i++) {
+            if (randomIndices.includes(i)) {
+                const randomFont = fontArray[Math.floor(Math.random() * fontArray.length)];
+                newText += `<span class='${randomFont}'>` + text[i] + "</span>";
+            } else {
+                newText += text[i];
+            }
+        }
+
+        logoText.innerHTML = newText;
+    });
+});

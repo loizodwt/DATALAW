@@ -4,6 +4,7 @@
 @import "components/singapour";
 @import "components/y2k";
 @import "components/texas";
+@import "components/fontslogo";
 
 /* ------ MEDIEVAL ------ */
 
@@ -60,8 +61,8 @@ body {
 }
 .nav {
   display: flex;
-  width: 30%;
-  justify-content: flex-end;
+  width: 100%;
+  justify-content: space-between;
   background-color: transparent;
 
   .sticky {
