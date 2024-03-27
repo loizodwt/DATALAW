@@ -23,38 +23,40 @@
 
 <body>
 
-  <header>
-    <nav class="nav">
-      <ul class="nav__ul">
-        <li><a href="/index.html" class="nav__el">Accueil</a></li>
-        <li><a href="/quiz.html" class="nav__el">Quiz</a></li>
-      </ul>
-    </nav>
-  </header>
-
   <main>
 
-    <section class="section quiz quiz__intro">
-      <h1 class="title">Quiz</h1>
-      <div class="glass">
-        <p>Vous incarnez un législateur devant se prononcer sur des propositions de lois étranges, parmi lesquelles se sont glissées des légendes urbaines fausses. À vous de juger si vous les approuvez et décidez de les mettre en place officiellement !</p>
-        <button class="quiz__button quiz__button--start">Commencer le quiz</button>
+    <section class="section quiz__container">
+      <div class="quiz-top">
+        <div class="logo">DataLaws</div>
       </div>
-    </section>
+      <div class="quiz__textes">
+        <div class="quiz__pays-dates">
+          <h2 class="quiz__h2">Pays</h2>
+          <span class="quiz__date">1889</span>
+        </div>
 
+        <div class="quiz__contenu">
+          <p class="quiz__question">Ceci est une loi.</p>
+          <div class="quiz__feedback"></div>
+        </div>
 
-    <section class="section quiz quiz__container hidden">
-
-      <div class="quiz__compteur">
-        <span class="quiz__compteur--current">1</span> sur 8
       </div>
-      <h2 class="title quiz__question">Ceci est une loi.</h2>
-      <div class="quiz__buttons">
-        <button class="quiz__button quiz__button--vrai">Je vote pour</button>
-        <button class="quiz__button quiz__button--skip">Passer</button>
-        <button class="quiz__button quiz__button--faux">Je vote contre</button>
+      <div class="flex">
+        <div class="quiz__choix">
+          <button class="quiz__button quiz__button--vrai">Pour</button>
+          <button class="quiz__button quiz__button--faux">Contre</button>
+        </div>
       </div>
-      <div class="quiz__feedback"></div>
+      <div class="flex">
+        <div class="quiz__sortie">
+          <div class="quiz__counter">
+            <span class="quiz__counter--current">1</span>
+            <span class="quiz__counter--total">/8</span>
+          </div>
+          <button class="quiz__button quiz__button--quit">Quitter</button>
+          <button class="quiz__button quiz__button--skip">Passer</button>
+        </div>
+      </div>
 
     </section>
 
@@ -91,17 +93,18 @@
         </div>
       </div>
 
+      <div class="quiz__result">
+        <p class="quiz__result--score">Votre score: 0/8</p>
+        <p class="quiz__result--percent">
+          Vous avez voté à <span>x%</span> comme la majorité à l'époque de proposition de ces lois.
+        </p>
+      </div>
+
+      <button class="btn quiz__button quiz__button--restart">Recommencer le quiz</button>
+
     </section>
 
   </main>
-
-  <footer class="footer">
-    <ul class="footer__ul">
-      <li class="footer__el"><a href="https://dwt.heaj.be/">DWT</a></li>
-      <li class="footer__el"><a href="/credits.html">Crédits</a></li>
-    </ul>
-    <small>© 2024, tous droits réservés.</small>
-  </footer>
 
 </body>
 

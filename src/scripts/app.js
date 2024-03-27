@@ -78,16 +78,17 @@ if (timeline) {
 
 /* ---------- QUIZ ---------- */
 // condition : code du quiz ne se lance qui sur la page du quiz
-
 let quizSection = document.querySelector(".quiz__container");
 if (quizSection) {
+
 
   let questionElement = document.querySelector(".quiz__question");
   let vraiBtn = document.querySelector(".quiz__button--vrai");
   let fauxBtn = document.querySelector(".quiz__button--faux");
   let feedbackElement = document.querySelector(".quiz__feedback");
   let skipBtn = document.querySelector(".quiz__button--skip");
-  let counterElement = document.querySelector(".quiz__compteur--current");
+  let counterElement = document.querySelector(".quiz__counter--current");
+  let counterTotal = document.querySelector(".quiz__counter--total");
 
   let currentQuestionIndex = 0;
   let score = 0;
@@ -123,23 +124,35 @@ if (quizSection) {
     let currentQuestion = questionsData[currentQuestionIndex];
     questionElement.textContent = currentQuestion.question;
     feedbackElement.textContent = "";
+    vraiBtn.style.display = "flex";
+    fauxBtn.style.display = "flex";
     vraiBtn.disabled = false;
     fauxBtn.disabled = false;
     counterElement.textContent = `${currentQuestionIndex + 1}`;
+    counterTotal.textContent = `/ ${questionsData.length}`;
+
+    // Update country and date elements
+    let countryElement = document.querySelector(".quiz__h2");
+    let dateElement = document.querySelector(".quiz__date");
+    countryElement.textContent = currentQuestion.pays;
+    dateElement.textContent = currentQuestion.periode;
 
     // Assign class based on periode for the current question
     assignClassBasedOnPeriode(currentQuestion.periode, quizSection);
   }
 
+
   function checkAnswer(userAnswer, currentQuestion) {
-    vraiBtn.disabled = true;
-    fauxBtn.disabled = true;
+    // vraiBtn.classList.add = "hidden";
+    // fauxBtn.classList.add = "hidden";
+    vraiBtn.style.display = "none";
+    fauxBtn.style.display = "none";
 
     if (userAnswer === currentQuestion.reponse) {
-      feedbackElement.textContent = `Vous avez voté comme le peuple de l'époque: ${currentQuestion.anecdote}`;
+      feedbackElement.textContent = "Vous avez voté comme le peuple de l'époque: " + currentQuestion.anecdote;
       score++;
     } else {
-      feedbackElement.textContent = `Vous n'avez pas voté comme le peuple de l'époque: ${currentQuestion.anecdote}`;
+      feedbackElement.textContent = "Vous n'avez pas voté comme le peuple de l'époque: " + currentQuestion.anecdote;
     }
 
     // Record user's answer only if it's not a skip
@@ -148,18 +161,11 @@ if (quizSection) {
     }
   }
 
-  // NAVIGATION
+  /* ---------- NAVIGATION ---------- */
 
-  let startBtn = document.querySelector(".quiz__button--start");
-  let startSection = document.querySelector(".quiz__intro");
-  let recapSection = document.querySelector(".quiz__recap");
+  let recapSection = document.querySelector(".quiz--recap");
   let scoreElement = document.querySelector(".quiz__result--score");
   let percentElement = document.querySelector(".quiz__result--percent span");
-
-  startBtn.addEventListener("click", function () {
-    startSection.classList.add("hidden");
-    quizSection.classList.remove("hidden");
-  });
 
   function showSummary() {
     // changement de section
@@ -167,7 +173,7 @@ if (quizSection) {
     recapSection.classList.remove("hidden");
 
     // score
-    scoreElement.textContent = `Votre score: ${score}/${questionsData.length}`;
+    scoreElement.textContent = "Votre score: " + score + "/" + questionsData.length;
     // pourcentage
     let successPercentage = (score / questionsData.length) * 100;
     percentElement.textContent = `${successPercentage.toFixed(2)}%`;
@@ -216,11 +222,9 @@ if (quizSection) {
       } else {
         // For skipped questions, add them to the respective list based on their question type
         if (question.reponse === true) {
-          listItem.classList.add("skipped");
           recapTrueList.appendChild(listItem);
           hasTrueQuestions = true;
         } else {
-          listItem.classList.add("skipped");
           recapFalseList.appendChild(listItem);
           hasFalseQuestions = true;
         }
@@ -260,7 +264,8 @@ if (quizSection) {
 
     // Hide recap section and show start section
     recapSection.classList.add("hidden");
-    startSection.classList.remove("hidden");
+    // startSection.classList.remove("hidden");
+    quizSection.classList.remove("hidden");
 
     // Clear recap lists
     recapTrueList.innerHTML = "";
@@ -284,21 +289,18 @@ if (quizSection) {
       periodeClass = "two";
     } else if (periode >= 2000 && periode <= 2009) {
       periodeClass = "three";
-    } else if (periode >= 2010 && periode <= 2019) {
+    } else if (periode >= 2010) {
       periodeClass = "four";
-    } else {
-      periodeClass = "five";
     }
 
     // Remove existing classes
-    element.classList.remove("MoyenAge", "two", "three", "four", "five");
+    element.classList.remove("two", "three", "four");
 
     // Add new class
     element.classList.add(periodeClass);
   }
 
 }
-
 
 /* ---------- WATER EFFECT ---------- */
 
@@ -598,13 +600,13 @@ if (navbar && graphSection) {
 
 
 console.log('Agrandissez la fenêtre');
-function showThings(){
-    fetch('../assets/fonts/marge.txt')
+function showThings() {
+  fetch('../assets/fonts/marge.txt')
     .then(function (response) {
-        return response.text()
+      return response.text()
     })
     .then(function (text) {
-        console.log(text)
+      console.log(text)
     });
 }
 

@@ -1,0 +1,198 @@
+.two {
+    $quiz-one: #665330;
+    $quiz-one-hover: rgba(102, 83, 48, 0.7);
+
+    background-image: image-set(
+        url(../../assets/images/bg-quiz-one.png) 1x,
+        url(../../assets/images/bg-quiz-one@2x.png) 2x
+    );
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+    .quiz__h2 {
+        font-family: Gensco;
+        font-size: $h2-mobile;
+        margin-left: 5%;
+    }
+    .quiz__counter--current {
+        color: $quiz-one;
+    }
+    .quiz__date {
+        font-family: Gensco;
+        margin-right: 5%;
+        font-size: $h2-mobile;
+    }
+    .quiz__contenu {
+        font-family: Gensco;
+        font-size: $p-mobile;
+        border: 2px solid black;
+        padding: 8px;
+        max-width: 90%;
+        margin: auto 5%;
+        line-height: 1.6;
+    }
+    .quiz__textes {
+        max-width: 500px;
+    }
+    .quiz__feedback {
+        margin-top: 54px;
+    }
+    .quiz__counter {
+        font-size: $p-mobile;
+        font-family: gensco;
+
+        &--current {
+            font-size: 54px;
+        }
+        &--total {
+            font-size: 36px;
+        }
+    }
+    .quiz__button {
+        font-size: $p-mobile;
+        font-family: ppgochat;
+        color: black;
+        // padding: 5px 10px;
+        display: flex;
+        // gap: 15px;
+        border: 2px solid black;
+        justify-content: space-evenly;
+        align-items: center;
+
+        transition:
+            transform 0.2s ease,
+            background-color 0.2s ease,
+            border-color 0.3s ease;
+
+        &--vrai,
+        &--faux {
+            text-transform: uppercase;
+            color: $quiz-one;
+            padding: 10px 16px 10px 40px;
+            position: relative;
+            text-align: right;
+        }
+
+        &--vrai::before,
+        &--faux::before {
+            content: "";
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 18px; /* Largeur de l'élément :before */
+            height: 18px;
+            border-right: 2px solid black;
+
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 80%;
+        }
+        &--vrai {
+            &::before {
+                background-image: url("../../assets/images/lys@2x.png");
+                padding: 13px 22px 15px 5px;
+                margin-left: -5px;
+            }
+        }
+        &--faux {
+            &::before {
+                background-image: url("../../assets/images/epee@2x.png");
+                margin-left: -6px;
+                padding: 13px 15px 15px 5px;
+            }
+        }
+        &--vrai:hover,
+        &--faux:hover {
+            background-color: $quiz-one-hover;
+            color: white;
+        }
+        &--skip {
+            &::after {
+                content: url("../../assets/images/nextquiiiz.png");
+            }
+        }
+        &--quit {
+            &::after {
+                content: url("../../assets/images/quitquiz.png");
+            }
+        }
+        &--skip::after,
+        &--quit::after {
+            display: flex;
+            align-items: center;
+            width: 25px;
+            height: 25px;
+            // margin-left: 10px;
+        }
+        &--skip,
+        &--quit {
+            border-color: $quiz-one;
+        }
+        &--skip:hover,
+        &--quit:hover {
+            background-color: $quiz-one;
+            color: white;
+
+            &::after {
+                filter: invert(100%);
+            }
+        }
+    }
+    .logo {
+        font-family: ppgochat;
+    }
+}
+
+@media (min-width: 481px) {
+    .two {
+        .quiz__h2 {
+            font-size: $h2-tablet;
+        }
+        .quiz__contenu {
+            font-size: $p-tablet;
+        }
+        .quiz__counter {
+            font-size: $h3-tablet;
+            &--current {
+                font-size: 45px;
+            }
+            &--total {
+                font-size: 30px;
+            }
+        }
+    }
+}
+@media (min-width: 565px) {
+    .two {
+        .quiz__feedback {
+            margin-top: 36px;
+        }
+    }
+}
+@media (min-width: 1000px) {
+    .two {
+        .quiz__feedback {
+            margin-top: 24px;
+        }
+
+        .quiz__h2 {
+            font-size: $h2-desktop;
+        }
+        .quiz__contenu {
+            font-size: $p-desktop;
+        }
+        .quiz__counter {
+            font-size: $h3-desktop;
+
+            &--current {
+                font-size: 36px;
+            }
+            &--total {
+                font-size: 24px;
+            }
+        }
+    }
+}
