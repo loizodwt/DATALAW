@@ -1,0 +1,73 @@
+.three{
+
+    
+    background-image: url(../../assets/images/années200/fond.png);
+
+ .logo{
+
+    font-family: 'PPRader';
+
+ }
+
+ .quiz__textes{
+    background-color: aqua;
+    }
+
+.quiz__button--vrai {
+    background-color: transparent;
+    border: 2px solid #7FB9BE;
+    border-radius: 12px;  
+    padding: 20px 0px 40px 70px;
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-size: 16px; 
+    cursor: pointer;
+    font-family: 'PPRader';
+  
+    &:before {
+      content: "";
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px; 
+      height: 40px; 
+      background-color: #9ea9e37a;
+      background-image: url(../../assets/images/années200/etoiles.svg);
+      background-repeat: no-repeat;
+      background-position: 50%;
+      border-radius: 4px;
+      
+     
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+}
+
+
+
+
+
+
