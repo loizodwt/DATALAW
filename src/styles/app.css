@@ -73,7 +73,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 22px;
+  font-size: 16px;
   padding: 5%;
   margin: 0%;
 }
@@ -111,6 +111,9 @@ canvas {
   .graphique__boutons {
     display: inline-block;
     justify-content: center;
+  }
+  .graphique__lois {
+    font-size: 20px;
   }
   button {
     margin: 5px;
@@ -765,6 +768,16 @@ a {
     max-width: 450px;
     width: 100%;
     margin: 300px 5% auto 5%;
+    font-size: 20px;
+  }
+  .introquiz__glass p {
+    font-size: 20px;
+  }
+  .introquiz__h2 {
+    font-size: 45px;
+  }
+  .introquiz__btn {
+    font-size: 20px;
   }
 }
 @media (min-width: 769px) {
@@ -772,7 +785,7 @@ a {
     font-size: 108px;
   }
   .main__txt {
-    font-size: 20px;
+    font-size: 24px;
     max-width: 500px;
   }
   .main__content {
@@ -786,7 +799,10 @@ a {
     font-size: 45px;
   }
   .introquiz__glass p {
-    font-size: 20px;
+    font-size: 24px;
+  }
+  .introquiz__btn {
+    font-size: 24px;
   }
 }
 @media (min-width: 1225px) {
@@ -802,7 +818,7 @@ a {
     margin-top: 250px;
   }
   .main__title {
-    font-size: 250px;
+    font-size: 230px;
     line-height: 0%;
     width: 100%;
   }
@@ -1843,13 +1859,13 @@ footer {
   .difficult,
   .equipe {
     width: 70%;
-    margin: auto 15% 111px auto;
+    margin: auto 15% 250px auto;
   }
   .context h2,
   .present h2,
   .difficult h2,
   .equipe h2 {
-    font-size: 45px;
+    font-size: 54px;
   }
   .context p,
   .context ul,
@@ -1859,7 +1875,7 @@ footer {
   .difficult ul,
   .equipe p,
   .equipe ul {
-    font-size: 20px;
+    font-size: 24px;
   }
   .pictures {
     width: 500px;

@@ -15,7 +15,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 22px;
+    font-size: 16px;
     padding: 5%;
     margin: 0%;
   }
@@ -59,6 +59,9 @@ canvas {
   .graphique__boutons {
     display: inline-block;
     justify-content: center;
+  }
+  .graphique__lois {
+    font-size: 20px;
   }
 
   button {

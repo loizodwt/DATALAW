@@ -260,6 +260,20 @@ a {
       max-width: 450px;
       width: 100%;
       margin: 300px 5% auto 5%;
+      font-size: 20px;
+    }
+  }
+  .introquiz {
+    &__glass {
+      p {
+        font-size: 20px;
+      }
+    }
+    &__h2 {
+      font-size: 45px;
+    }
+    &__btn {
+      font-size: 20px;
     }
   }
 }
@@ -270,7 +284,7 @@ a {
       font-size: 108px;
     }
     &__txt {
-      font-size: 20px;
+      font-size: 24px;
       max-width: 500px;
     }
     &__content {
@@ -289,8 +303,11 @@ a {
     }
     &__glass {
       p {
-        font-size: 20px;
+        font-size: 24px;
       }
+    }
+    &__btn {
+      font-size: 24px;
     }
   }
 }
@@ -309,7 +326,7 @@ a {
       margin-top: 250px;
     }
     &__title {
-      font-size: 250px;
+      font-size: 230px;
       line-height: 0%;
       width: 100%;
     }
