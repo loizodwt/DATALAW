@@ -94,9 +94,7 @@ canvas {
   }
 
   &__question {
-    // margin-top: 25%;
     margin-bottom: 20px;
-    color: black;
   }
 
   &__choix {
@@ -403,6 +401,5 @@ a {
 
 @import "components/finquiz";
 @import "components/recapquiz";
-@import "components/quiz-glassmorphism";
 @import "components/onequiz";
 @import "components/quiz-2000";
