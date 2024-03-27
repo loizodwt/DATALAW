@@ -1,5 +1,6 @@
 @import "utils/variables";
 @import "components/type";
+@import "components/quiz-2000";
 
 
 body {
@@ -116,9 +117,7 @@ canvas {
     border: none;
     cursor: pointer;
 
-    &:hover {
-      background-color: rgb(106, 106, 106);
-    }
+
   }
 
   &__feedback {
@@ -151,31 +150,6 @@ canvas {
   justify-content: center;
 }
 
-/* ------ MEDIEVAL ------ */
-
-.one {
-  background-color: lightgreen;
-}
-
-/* ------ 1800 ------ */
-.two {
-  background-color: aquamarine;
-}
-
-/* ------ 1900 ------ */
-.three {
-  background-color: lightcoral;
-}
-
-/* ------ 2000 ------ */
-.four {
-  background-color: chocolate;
-}
-
-/* ------ 2020 ------ */
-.five {
-  background-color: cornflowerblue;
-}
 
 /* ------ EXTRA ------ */
 .hidden {
