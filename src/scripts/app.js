@@ -155,14 +155,12 @@ if (quizSection) {
   /* ---------- NAVIGATION ---------- */
 
   let recapSection = document.querySelector(".quiz--recap");
-  //let resultElement = document.querySelector(".quiz__result");
   let scoreElement = document.querySelector(".quiz__result--score");
   let percentElement = document.querySelector(".quiz__result--percent span");
 
   function showSummary() {
     quizSection.classList.add("hidden");
     recapSection.classList.remove("hidden");
-    //resultElement.textContent = `Votre score: ${score}/${questionsData.length}`;
 
     // score
     scoreElement.textContent = `Votre score: ${score}/${questionsData.length}`;
