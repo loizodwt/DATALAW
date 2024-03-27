@@ -4,6 +4,7 @@
     font-family: "Pix";
     src: url("../assets/fonts/singapour/pixM8pt.ttf");
 }
+
 @font-face {
     font-family: "W9";
     src: url("../assets/fonts/singapour/W95FA.otf");
@@ -13,6 +14,7 @@
     font-family: "Elite";
     src: url("../assets/fonts/texas/SpecialElite.ttf");
 }
+
 @font-face {
     font-family: "Gensco";
     src: url("../assets/fonts/gensco/GENSCO.otf");
@@ -30,13 +32,14 @@
 
 @font-face {
     font-family: "Livingstone";
-    src: url("../assets/fonts/livingstone.regular.ttf");
+    src: url("../../assets/fonts/Livingstone.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "ppgochat";
     src: url("../assets/font/PPGoshaSans-Regular.otf");
 }
+
 @font-face {
     font-family: "PPRader";
     src: url("../../assets/font/pprader/PPRader-Regular.otf");
@@ -49,13 +52,7 @@
 
 @font-face {
     font-family: "SpaceAge";
-    src: url("../../assets/font/spaceage/space\ age.ttf");
-}
-
-// Fonts nécessaires
-@font-face {
-    font-family: "Livingstone";
-    src: url("assets/fonts/Livingstone.ttf") format("truetype");
+    src: url("../../assets/font/spaceage/spaceage.ttf");
 }
 
 @font-face {
@@ -67,8 +64,6 @@
     font-family: "Prince Valiant";
     src: url("assets/fonts/Princevaliant.ttf") format("truetype");
 }
-
-@import url("https://fonts.googleapis.com/css2?family=BIZ+UDMincho&display=swap");
 
 @font-face {
     font-family: "Clash Display";
@@ -96,14 +91,17 @@
     font-display: swap;
     font-style: normal;
 }
+
 @font-face {
     font-family: "gruppo";
     src: url("../assets/font/Gruppo-Regular.ttf") format("truetype");
 }
+
 @font-face {
     font-family: "sato";
     src: url("../assets/font/satoshi/satoshi-Regular.otf");
 }
+
 @font-face {
     font-family: "clash";
     src: url("../assets/fonts/clash/ClashDisplay-Regular.otf");

@@ -59,7 +59,7 @@ if (timeline) {
   });
 
   // Boutons modale Singapour
-  let closeButton = document.getElementById("close");
+  let closeButton = document.querySelector("#close");
   let singapourWindow = document.querySelector(".singapour__modal");
   let datalawsIcon = document.querySelector(".singapour__datalaws");
 
@@ -69,7 +69,7 @@ if (timeline) {
     singapourWindow.classList.add("reduced");
   }
 
-  datalawsIcon.addEventListener("dblclick", toggleVisibility);
+  datalawsIcon.addEventListener("click", toggleVisibility);
 
   function toggleVisibility() {
     singapourWindow.classList.toggle("reduced");
@@ -587,7 +587,7 @@ if (navbar && graphSection) {
 
         if (dataIndex >= 0 && dataIndex < data.length) {
           loiContainer.classList.remove('hidden');
-          loiContainer.innerHTML = "<h3>Lois aléatoires:</h3><p>" + data[dataIndex].Loi + "</p>";
+          loiContainer.innerHTML = "<h3 class='title'>Lois aléatoires:</h3><p>" + data[dataIndex].Loi + "</p>";
         } else {
           loiContainer.classList.add('hidden');
         }
@@ -600,6 +600,7 @@ if (navbar && graphSection) {
   }
 }
 
+/* ---------- MARGE ---------- */
 
 console.log('Agrandissez la fenêtre');
 function showThings() {
@@ -617,34 +618,38 @@ showThings()
 /* ---------- ANIMATION LOGO ---------- */
 
 let logoContainer = document.getElementById("logo-container");
-let logoTexts = document.querySelectorAll("#logo-text");
 
-logoContainer.addEventListener("mouseover", function () {
-  logoTexts.forEach(logoText => {
-    let text = logoText.textContent;
-    let textLength = text.length;
-    let randomIndices = [];
-    const fontArray = ["satoshi", "w9", "pix", "gensco", "ortica", "valiant", "livingstone", "elite"];
+// condition : ne run que si le logo existe
+if (logoContainer) {
+  let logoTexts = document.querySelectorAll("#logo-text");
 
-    // Generate random indices for characters to change
-    while (randomIndices.length < Math.min(4, textLength)) {
-      let randomIndex = Math.floor(Math.random() * textLength);
-      if (!randomIndices.includes(randomIndex)) {
-        randomIndices.push(randomIndex);
+  logoContainer.addEventListener("mousemove", function () { // Changed event from "mouseover" to "mousemove"
+    logoTexts.forEach(logoText => {
+      let text = logoText.textContent;
+      let textLength = text.length;
+      let randomIndices = [];
+      const fontArray = ["satoshi", "w9", "pix", "gensco", "ortica", "valiant", "livingstone", "elite"];
+
+      // Generate random indices for characters to change
+      while (randomIndices.length < Math.min(4, textLength)) {
+        let randomIndex = Math.floor(Math.random() * textLength);
+        if (!randomIndices.includes(randomIndex)) {
+          randomIndices.push(randomIndex);
+        }
       }
-    }
 
-    // Change font for random characters
-    let newText = "";
-    for (let i = 0; i < textLength; i++) {
-      if (randomIndices.includes(i)) {
-        const randomFont = fontArray[Math.floor(Math.random() * fontArray.length)];
-        newText += `<span class='${randomFont}'>` + text[i] + "</span>";
-      } else {
-        newText += text[i];
+      // Change font for random characters
+      let newText = "";
+      for (let i = 0; i < textLength; i++) {
+        if (randomIndices.includes(i)) {
+          const randomFont = fontArray[Math.floor(Math.random() * fontArray.length)];
+          newText += `<span class='${randomFont}'>` + text[i] + "</span>";
+        } else {
+          newText += text[i];
+        }
       }
-    }
 
-    logoText.innerHTML = newText;
+      logoText.innerHTML = newText;
+    });
   });
-});
+}
