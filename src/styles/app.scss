@@ -1,5 +1,6 @@
 @import "utils/variables";
 @import "components/type";
+@import "components/quiz-glassmorphism";
 
 body {
   margin: 0;
@@ -114,7 +115,6 @@ canvas {
     border: none;
     cursor: pointer;
   }
-
   &__feedback {
     margin-top: 5%;
   }
@@ -135,6 +135,7 @@ canvas {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
   }
 }
