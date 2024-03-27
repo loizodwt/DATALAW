@@ -1060,8 +1060,7 @@ a {
   height: 100vh;
   width: 90%;
   max-width: 750px;
-  margin: 500px 5% 250px 5%;
-  position: relative;
+  margin: 300px auto auto auto;
   background-color: transparent;
   padding-bottom: 150px;
 }
@@ -1075,7 +1074,7 @@ a {
 }
 .legendes__el p {
   font-family: sato;
-  font-size: 1 16px;
+  font-size: 16px;
   line-height: 1.6;
 }
 .legendes__content {
@@ -1097,10 +1096,8 @@ a {
   font-family: sato;
   display: flex;
   max-width: 100px;
-  gap: 10px;
   cursor: pointer;
-  position: absolute;
-  right: 0;
+  justify-content: flex-end;
   margin-bottom: 100px;
 }
 .legendes__end:hover {
@@ -1379,7 +1376,6 @@ a {
   height: 100vh;
   width: 80%;
   max-width: 750px;
-  margin: -111px 10% auto 10%;
 }
 .legendes__h2 {
   font-family: gruppo;
@@ -1902,6 +1898,11 @@ footer {
   font-family: "clash";
   src: url("../assets/fonts/ClashDisplay-Variable.ttf");
 }
+.naavbar {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .context,
 .present,
 .difficult,

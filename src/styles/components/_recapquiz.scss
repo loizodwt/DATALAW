@@ -58,8 +58,8 @@
     height: 100vh;
     width: 90%;
     max-width: 750px;
-    margin: 500px 5% 250px 5%;
-    position: relative;
+    margin: 300px auto auto auto;
+    
     background-color: transparent;
     padding-bottom: 150px;
 
@@ -74,7 +74,7 @@
         
         p {
             font-family: sato;
-            font-size: 1$p-mobile;
+            font-size: $p-mobile;
             line-height: 1.6;
         }
     }
@@ -96,10 +96,8 @@
         font-family: sato;
         display: flex;
         max-width: 100px;
-        gap: 10px;
         cursor: pointer;
-        position: absolute;
-        right: 0;
+        justify-content: flex-end;
         
         margin-bottom: 100px;
 
