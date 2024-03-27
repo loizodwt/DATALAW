@@ -2,7 +2,6 @@
 @import "components/type";
 @import "components/quiz-2000";
 
-
 body {
   margin: 0;
 }
@@ -81,15 +80,13 @@ canvas {
 }
 
 .quiz-top {
-  display:flex; 
+  display: flex;
   justify-content: space-around;
   padding-top: 50px;
 }
 
 .quiz {
   &__container {
-    padding-left: 5vw;
-    padding-right: 5vw;
     height: 100vh;
     text-align: start;
     position: relative;
@@ -116,8 +113,6 @@ canvas {
     height: 47px;
     border: none;
     cursor: pointer;
-
-
   }
 
   &__feedback {
@@ -150,12 +145,10 @@ canvas {
   justify-content: center;
 }
 
-
 /* ------ EXTRA ------ */
 .hidden {
   display: none;
 }
-
 
 body {
   overflow-x: hidden;
@@ -164,19 +157,18 @@ body {
 }
 
 @font-face {
-  font-family: "gruppo" ;
+  font-family: "gruppo";
   src: url("../assets/font/Gruppo-Regular.ttf") format("truetype");
 }
 @font-face {
-  font-family: "sato" ;
-  src: url("../assets/font/satoshi/satoshi-Regular.otf") ;
+  font-family: "sato";
+  src: url("../assets/font/satoshi/satoshi-Regular.otf");
 }
 
 .nav {
   display: flex;
   width: 100%;
-  background-color: #E6EFEB;
-
+  background-color: #e6efeb;
 
   .sticky {
     position: fixed;
@@ -198,17 +190,14 @@ body {
   }
   &__el {
     list-style: none;
-    color: #333333;    
+    color: #333333;
     font-family: gruppo;
     margin: 0 16px;
   }
 }
 
 .main {
-  background-image: image-set(
-    url(../assets/images/da/bg-main.png) 1x,
-    url(../assets/images/da/bg-main@2x.png) 2x
-  );
+  background-image: image-set(url(../assets/images/da/bg-main.png) 1x, url(../assets/images/da/bg-main@2x.png) 2x);
   background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
@@ -225,7 +214,7 @@ body {
     justify-content: center;
     background-color: transparent;
   }
-  
+
   &__title {
     font-size: 34px;
     text-align: center;
@@ -242,7 +231,6 @@ body {
     color: #333333;
     margin-top: 111px;
     justify-content: center;
-    
   }
   #canvas {
     width: 100%;
@@ -252,13 +240,8 @@ body {
 
 // .graph {margin-top: -70px;}
 
-
-
 .introquiz {
-  background-image: image-set(
-    url(../assets/images/da/bg-main.png) 1x,
-    url(../assets/images/da/bg-main@2x.png) 2x
-  );
+  background-image: image-set(url(../assets/images/da/bg-main.png) 1x, url(../assets/images/da/bg-main@2x.png) 2x);
   background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
@@ -276,7 +259,7 @@ body {
     color: #333333;
   }
 
-  &__glass { 
+  &__glass {
     background-color: rgba(173, 168, 233, 0.5);
     width: 80%;
     border: 1px solid #9486c4;
@@ -292,7 +275,7 @@ body {
 
     p {
       font-family: sato;
-      color: #E6EFEB;
+      color: #e6efeb;
       font-size: 18px;
       line-height: 1.6;
     }
@@ -316,22 +299,19 @@ body {
       color: #333333;
     }
     &:hover {
-      background-color: rgb(148,134,196, 0.5);
+      background-color: rgb(148, 134, 196, 0.5);
       backdrop-filter: blur(5);
-      border: 2px solid #D7D4FF;
+      border: 2px solid #d7d4ff;
 
       a {
-          color: #E6EFEB;
+        color: #e6efeb;
       }
     }
   }
 }
 
-
-
-
 .footer {
-  background-color: #ACA0D6;
+  background-color: #aca0d6;
   text-align: center;
   padding: 16px;
   padding-top: 8px;
@@ -357,10 +337,8 @@ a {
   list-style: none;
 }
 
-
 @media (min-width: 481px) {
   .main {
-    
     &__txt {
       background-color: rgba(155, 150, 221, 0.5);
       padding: 10px;
@@ -395,19 +373,20 @@ a {
       font-size: 45px;
     }
     &__glass {
-      p {font-size: 20px;}
+      p {
+        font-size: 20px;
+      }
     }
   }
 }
 
 @media (min-width: 1225px) {
   .main {
-    
     &__txt {
       margin-top: 100px;
       background: none;
       border: none;
-      color: #E6EFEB;
+      color: #e6efeb;
       max-width: 500px;
     }
     &__title {
@@ -421,7 +400,6 @@ a {
     padding-top: 111px;
   }
 }
-
 
 @import "components/finquiz";
 @import "components/recapquiz";
