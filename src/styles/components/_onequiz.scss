@@ -62,7 +62,7 @@
         &--faux {
             text-transform: uppercase;
             color: $quiz-one;
-            padding: 10px 16px 10px 32px;
+            padding: 10px 16px 10px 40px;
             position: relative;
             text-align: right;
         }
@@ -83,8 +83,6 @@
             background-size: 80%;
         }
         &--vrai {
-            padding-right: 22px;
-
             &::before {
                 background-image: url("../../assets/images/lys@2x.png");
                 padding: 13px 22px 15px 5px;
