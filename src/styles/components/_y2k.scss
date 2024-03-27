@@ -1,21 +1,15 @@
 @font-face {
     font-family: "radar";
-    src:
-        url("../assets/fonts/PPRader-Italic.otf");
-  
-  }
-  
-  @font-face {
+    src: url("../assets/fonts/PPRader-Italic.otf");
+}
+
+@font-face {
     font-family: "jura";
-    src:
-        url("../assets/fonts/Jura-Regular.ttf");
-  }
+    src: url("../assets/fonts/Jura-Regular.ttf");
+}
 
 .y2k {
-    background-image: image-set(
-      url(../assets/images/y2k/bgy2k.jpg) 1x,
-      url(../assets/images/y2k/bgy2k@2x.jpg) 2x
-    );
+    background-image: image-set(url(../assets/images/y2k/bgy2k.jpg) 1x, url(../assets/images/y2k/bgy2k@2x.jpg) 2x);
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -36,7 +30,7 @@
         font-size: 182px;
         line-height: 0%;
         font-family: radar;
-        position: absolute; 
+        position: absolute;
         color: transparent;
         -webkit-text-stroke-width: 2px;
         -webkit-text-stroke-color: black;
@@ -52,7 +46,7 @@
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: black;
         -webkit-text-fill-color: transparent;
-
+        font-weight: lighter;
     }
     &__txt {
         font-size: $p-mobile;
@@ -84,7 +78,7 @@
             bottom: 10%;
             left: 45%;
         }
-        &__content  {
+        &__content {
             max-width: 550px;
         }
         &__chiffre {
@@ -162,8 +156,6 @@
         }
         &__textes {
             margin-left: 20%;
-            margin-top: -7%;
-            // width: 70%;
         }
     }
 }

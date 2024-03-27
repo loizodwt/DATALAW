@@ -1,6 +1,8 @@
 @import "utils/variables";
 @import "components/type";
-@import "components/quiz-glassmorphism";
+@import "components/glass";
+//@import "components/quiz";
+@import "components/timeline";
 @import "components/graphique";
 @import "components/singapour";
 @import "components/y2k";
@@ -9,6 +11,7 @@
 
 body {
   margin: 0;
+  background-color: $c-light;
 }
 
 html {
@@ -22,47 +25,6 @@ canvas {
   top: 0;
   left: 0;
   cursor: pointer;
-}
-
-// Timeline
-.timeline {
-  height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-
-  &__1,
-  &__2,
-  &__3,
-  &__4,
-  &__5 {
-    scroll-snap-align: start;
-    scroll-snap-stop: normal;
-    height: 100vh;
-  }
-
-  &__1 {
-    background-image: image-set(
-      url(../assets/images/background_1.jpg) 1x,
-      url(../assets/images/background_1@2x.jpg) 2x
-    );
-  }
-  &__2 {
-    background-image: image-set(
-      url(../assets/images/background_2.jpg) 1x,
-      url(../assets/images/background_2@2x.png) 2x
-    );
-    font-family: "BIZ UDMincho", serif;
-  }
-  &__3 {
-    background-color: rgb(110, 198, 110);
-  }
-  &__4 {
-    background-color: rgb(123, 225, 225);
-  }
-  &__5 {
-    background-color: rgb(221, 221, 114);
-  }
 }
 
 // Maque la scrollbar sur la timeline, ne laissant que celle du site de base
@@ -159,18 +121,6 @@ body {
   padding: 0;
 }
 
-@font-face {
-  font-family: "gruppo";
-  src: url("../assets/font/Gruppo-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "sato";
-  src: url("../assets/font/satoshi/satoshi-Regular.otf");
-}
-@font-face {
-  font-family: "clash";
-  src: url("../assets/fonts/clash/ClashDisplay-Regular.otf");
-}
 .navbar {
   display: flex;
   justify-content: flex-end;
@@ -487,11 +437,9 @@ a {
 @import "components/recapquiz";
 @import "components/onequiz";
 @import "components/quiz-2000";
-
-@import "components/glass";
-@import "components/quiz";
-@import "components/timeline";
-@import "components/media";
+@import "components/quiz-glassmorphism";
 
 @import "components/credits";
 @import "components/projet";
+
+@import "components/media";

@@ -59,7 +59,7 @@ if (timeline) {
   });
 
   // Boutons modale Singapour
-  let closeButton = document.querySelector("#close");
+  let closeButton = document.getElementById("close");
   let singapourWindow = document.querySelector(".singapour__modal");
   let datalawsIcon = document.querySelector(".singapour__datalaws");
 
@@ -69,14 +69,16 @@ if (timeline) {
     singapourWindow.classList.add("reduced");
   }
 
-  datalawsIcon.addEventListener("click", toggleVisibility);
+  datalawsIcon.addEventListener("dblclick", toggleVisibility);
 
   function toggleVisibility() {
     singapourWindow.classList.toggle("reduced");
   }
 }
 
+
 /* ---------- QUIZ ---------- */
+
 // condition : code du quiz ne se lance qui sur la page du quiz
 let quizSection = document.querySelector(".quiz__container");
 if (quizSection) {
@@ -168,7 +170,6 @@ if (quizSection) {
   let percentElement = document.querySelector(".quiz__result--percent span");
 
   function showSummary() {
-    // changement de section
     quizSection.classList.add("hidden");
     recapSection.classList.remove("hidden");
 
@@ -181,10 +182,10 @@ if (quizSection) {
     populateRecapLists();
   }
 
-  // RECAP
+  /* ---------- RECAP ---------- */
 
-  let recapTrueList = document.querySelector(".quiz__recap__true");
-  let recapFalseList = document.querySelector(".quiz__recap__false");
+  let recapTrueList = document.querySelector(".quiz--recap__true");
+  let recapFalseList = document.querySelector(".quiz--recap__false");
 
   function populateRecapLists() {
     // Clear existing content in the recap lists
@@ -204,17 +205,17 @@ if (quizSection) {
 
         if (question.reponse === true) {
           if (isCorrect) {
-            listItem.classList.add("quiz--correct");
+            listItem.classList.add("correct");
           } else {
-            listItem.classList.add("quiz--wrong");
+            listItem.classList.add("wrong");
           }
           recapTrueList.appendChild(listItem);
           hasTrueQuestions = true;
         } else {
           if (isCorrect) {
-            listItem.classList.add("quiz--correct");
+            listItem.classList.add("correct");
           } else {
-            listItem.classList.add("quiz--wrong");
+            listItem.classList.add("wrong");
           }
           recapFalseList.appendChild(listItem);
           hasFalseQuestions = true;
@@ -249,7 +250,7 @@ if (quizSection) {
 
 
 
-  // RESET QUIZ
+  /* ---------- RESET QUIZ ---------- */
 
   let restartBtn = document.querySelector(".quiz__button--restart");
 
@@ -278,7 +279,7 @@ if (quizSection) {
     showQuestion();
   }
 
-  // AUTO-CLASS
+  /* ---------- QUIZ AUTO-CLASS ---------- */
 
   function assignClassBasedOnPeriode(periode, element) {
     if (!periode || !element) return;
@@ -299,6 +300,7 @@ if (quizSection) {
     // Add new class
     element.classList.add(periodeClass);
   }
+
 
 }
 
@@ -618,31 +620,31 @@ let logoContainer = document.getElementById("logo-container");
 let logoTexts = document.querySelectorAll("#logo-text");
 
 logoContainer.addEventListener("mouseover", function () {
-    logoTexts.forEach(logoText => {
-        let text = logoText.textContent;
-        let textLength = text.length;
-        let randomIndices = [];
-        const fontArray = ["satoshi", "w9", "pix", "gensco", "ortica", "valiant", "livingstone", "elite"];
+  logoTexts.forEach(logoText => {
+    let text = logoText.textContent;
+    let textLength = text.length;
+    let randomIndices = [];
+    const fontArray = ["satoshi", "w9", "pix", "gensco", "ortica", "valiant", "livingstone", "elite"];
 
-        // Generate random indices for characters to change
-        while (randomIndices.length < Math.min(4, textLength)) {
-            let randomIndex = Math.floor(Math.random() * textLength);
-            if (!randomIndices.includes(randomIndex)) {
-                randomIndices.push(randomIndex);
-            }
-        }
+    // Generate random indices for characters to change
+    while (randomIndices.length < Math.min(4, textLength)) {
+      let randomIndex = Math.floor(Math.random() * textLength);
+      if (!randomIndices.includes(randomIndex)) {
+        randomIndices.push(randomIndex);
+      }
+    }
 
-        // Change font for random characters
-        let newText = "";
-        for (let i = 0; i < textLength; i++) {
-            if (randomIndices.includes(i)) {
-                const randomFont = fontArray[Math.floor(Math.random() * fontArray.length)];
-                newText += `<span class='${randomFont}'>` + text[i] + "</span>";
-            } else {
-                newText += text[i];
-            }
-        }
+    // Change font for random characters
+    let newText = "";
+    for (let i = 0; i < textLength; i++) {
+      if (randomIndices.includes(i)) {
+        const randomFont = fontArray[Math.floor(Math.random() * fontArray.length)];
+        newText += `<span class='${randomFont}'>` + text[i] + "</span>";
+      } else {
+        newText += text[i];
+      }
+    }
 
-        logoText.innerHTML = newText;
-    });
+    logoText.innerHTML = newText;
+  });
 });
