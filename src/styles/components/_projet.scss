@@ -1,0 +1,108 @@
+.presentation {
+    background-image: image-set(
+      url(../assets/images/da/recapquiz.png) 1x,
+      url(../assets/images/da/recapquiz@2x.png) 2x
+    );
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: "sato" ;
+    src: url("../assets/font/satoshi/satoshi-Regular.otf") ;
+}
+
+@font-face {
+    font-family: "clash" ;
+    src: url("../assets/fonts/ClashDisplay-Variable.ttf") ;
+}
+.context,
+.present, 
+.difficult,
+.equipe,
+.pictures {
+    margin: auto 16px;
+    h2 {
+        font-size: 36px;
+        font-family: clash;
+        font-weight: normal;
+    }
+    p {
+        line-height: 1.6;
+        font-size: 16px;
+        font-family: sato;
+    }
+    ul {
+        list-style: circle;
+        font-family: sato;
+        line-height: 1.6;
+    }
+}
+.context,
+.present, 
+.difficult,
+.equipe {
+    margin-bottom: 74px;
+}
+
+.pictures {
+    width: 80%;
+    margin: auto;
+    max-width: 500px;
+    img {
+        width: 100%;
+        border-radius: 15px;
+        max-width: 500px;
+        margin: auto;
+    }
+    figure {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 54px;
+    }
+    figcaption {
+        font-size: 14px;
+        font-family: sato;
+    }
+}
+
+@media (min-width: 769px){
+    .context,
+    .present, 
+    .difficult,
+    .equipe {
+        width: 70%;
+        margin: auto 15% 111px auto;
+
+        h2 {
+            font-size: 45px;
+        }
+        p,
+        ul {
+            font-size: 20px;
+        }
+    }
+    .pictures {
+        width: 500px;
+        margin: auto;
+
+        h2 {
+            text-align: center;
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    .pictures {
+        img {
+            filter: blur(2px);
+
+            &:hover {
+            filter: blur(0px);
+            }
+        }
+    }
+}

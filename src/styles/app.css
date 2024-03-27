@@ -570,7 +570,7 @@ body {
 }
 @font-face {
   font-family: "clash";
-  src: url("../assets/font/clash/ClashDisplay-Regular.otf");
+  src: url("../assets/fonts/clash/ClashDisplay-Regular.otf");
 }
 .nav {
   display: flex;
@@ -596,7 +596,7 @@ body {
 .nav__el {
   list-style: none;
   color: #333333;
-  font-family: gruppo;
+  font-family: clash;
   margin: 0 16px;
   cursor: pointer;
 }
@@ -624,6 +624,7 @@ body {
   margin: auto 5%;
   justify-content: center;
   background-color: transparent;
+  font-weight: bold;
 }
 .main__title {
   font-size: 60px;
@@ -655,11 +656,11 @@ body {
   background-size: cover;
   position: relative;
   padding: auto 16px;
-  font-family: gruppo;
+  font-family: clash;
 }
 .introquiz__h2 {
   font-size: 34px;
-  font-family: gruppo;
+  font-family: clash;
   margin-top: 0px;
   text-align: center;
   padding-top: 54px;
@@ -727,7 +728,7 @@ body {
   padding: 0%;
 }
 .footer__el {
-  font-family: gruppo;
+  font-family: clash;
   font-size: 16px;
   line-height: 1.6;
 }
@@ -739,7 +740,7 @@ body {
   color: #e6efeb;
 }
 .footer small {
-  font-family: gruppo;
+  font-family: clash;
   font-size: 16px;
 }
 
@@ -1753,5 +1754,126 @@ footer {
   .credits p,
   .credits ul {
     margin-left: 2rem;
+  }
+}
+.presentation {
+  background-image: -webkit-image-set(url(../assets/images/da/recapquiz.png) 1x, url(../assets/images/da/recapquiz@2x.png) 2x);
+  background-image: image-set(url(../assets/images/da/recapquiz.png) 1x, url(../assets/images/da/recapquiz@2x.png) 2x);
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "sato";
+  src: url("../assets/font/satoshi/satoshi-Regular.otf");
+}
+@font-face {
+  font-family: "clash";
+  src: url("../assets/fonts/ClashDisplay-Variable.ttf");
+}
+.context,
+.present,
+.difficult,
+.equipe,
+.pictures {
+  margin: auto 16px;
+}
+.context h2,
+.present h2,
+.difficult h2,
+.equipe h2,
+.pictures h2 {
+  font-size: 36px;
+  font-family: clash;
+  font-weight: normal;
+}
+.context p,
+.present p,
+.difficult p,
+.equipe p,
+.pictures p {
+  line-height: 1.6;
+  font-size: 16px;
+  font-family: sato;
+}
+.context ul,
+.present ul,
+.difficult ul,
+.equipe ul,
+.pictures ul {
+  list-style: circle;
+  font-family: sato;
+  line-height: 1.6;
+}
+
+.context,
+.present,
+.difficult,
+.equipe {
+  margin-bottom: 74px;
+}
+
+.pictures {
+  width: 80%;
+  margin: auto;
+  max-width: 500px;
+}
+.pictures img {
+  width: 100%;
+  border-radius: 15px;
+  max-width: 500px;
+  margin: auto;
+}
+.pictures figure {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 54px;
+}
+.pictures figcaption {
+  font-size: 14px;
+  font-family: sato;
+}
+
+@media (min-width: 769px) {
+  .context,
+  .present,
+  .difficult,
+  .equipe {
+    width: 70%;
+    margin: auto 15% 111px auto;
+  }
+  .context h2,
+  .present h2,
+  .difficult h2,
+  .equipe h2 {
+    font-size: 45px;
+  }
+  .context p,
+  .context ul,
+  .present p,
+  .present ul,
+  .difficult p,
+  .difficult ul,
+  .equipe p,
+  .equipe ul {
+    font-size: 20px;
+  }
+  .pictures {
+    width: 500px;
+    margin: auto;
+  }
+  .pictures h2 {
+    text-align: center;
+  }
+}
+@media (min-width: 1000px) {
+  .pictures img {
+    filter: blur(2px);
+  }
+  .pictures img:hover {
+    filter: blur(0px);
   }
 }/*# sourceMappingURL=app.css.map */

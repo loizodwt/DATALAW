@@ -52,7 +52,7 @@ body {
 }
 @font-face {
   font-family: "clash";
-  src: url("../assets/font/clash/ClashDisplay-Regular.otf");
+  src: url("../assets/fonts/clash/ClashDisplay-Regular.otf");
 }
 
 .nav {
@@ -81,7 +81,7 @@ body {
   &__el {
     list-style: none;
     color: #333333;
-    font-family: gruppo;
+    font-family: clash;
     margin: 0 16px;
     cursor: pointer;
 
@@ -110,6 +110,7 @@ body {
     margin: auto 5%;
     justify-content: center;
     background-color: transparent;
+    font-weight: bold;
   }
 
   &__title {
@@ -144,11 +145,11 @@ body {
   background-size: cover;
   position: relative;
   padding: auto 16px;
-  font-family: gruppo;
+  font-family: clash;
 
   &__h2 {
     font-size: 34px;
-    font-family: gruppo;
+    font-family: clash;
     margin-top: 0px;
     text-align: center;
     padding-top: 54px;
@@ -218,7 +219,7 @@ body {
     padding: 0%;
   }
   &__el {
-    font-family: gruppo;
+    font-family: clash;
     font-size: 16px;
     line-height: 1.6;
 
@@ -232,7 +233,7 @@ body {
     }
   }
   small {
-    font-family: gruppo;
+    font-family: clash;
     font-size: 16px;
   }
 }
