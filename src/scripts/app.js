@@ -125,8 +125,8 @@ if (quizSection) {
     let currentQuestion = questionsData[currentQuestionIndex];
     questionElement.textContent = currentQuestion.question;
     feedbackElement.textContent = "";
-    vraiBtn.style.display = "inline";
-    fauxBtn.style.display = "inline";
+    vraiBtn.classList.remove = "hidden";
+    fauxBtn.classList.remove = "hidden";
     vraiBtn.disabled = false;
     fauxBtn.disabled = false;
     counterElement.textContent = `${currentQuestionIndex + 1}/${questionsData.length}`;
@@ -136,8 +136,8 @@ if (quizSection) {
   }
 
   function checkAnswer(userAnswer, currentQuestion) {
-    vraiBtn.style.display = "none";
-    fauxBtn.style.display = "none";
+    vraiBtn.classList.add = "hidden";
+    fauxBtn.classList.add = "hidden";
 
     if (userAnswer === currentQuestion.reponse) {
       feedbackElement.textContent = `Vous avez voté comme le peuple de l'époque: ${currentQuestion.anecdote}`;
@@ -152,18 +152,10 @@ if (quizSection) {
     }
   }
 
-  /* ---------- QUIZ NAVIGATION ---------- */
-
-  // let startBtn = document.querySelector(".quiz__button--start");
-  // let startSection = document.querySelector(".quiz--start");
+  /* ---------- NAVIGATION ---------- */
 
   let recapSection = document.querySelector(".quiz--recap");
   let resultElement = document.querySelector(".quiz__result");
-
-  // startBtn.addEventListener("click", function () {
-  //   startSection.classList.add("hidden");
-  //   quizSection.classList.remove("hidden");
-  // });
 
   function showSummary() {
     quizSection.classList.add("hidden");
