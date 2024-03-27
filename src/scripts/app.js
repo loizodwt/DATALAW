@@ -89,7 +89,8 @@ if (quizSection) {
   let fauxBtn = document.querySelector(".quiz__button--faux");
   let feedbackElement = document.querySelector(".quiz__feedback");
   let skipBtn = document.querySelector(".quiz__button--skip");
-  let counterElement = document.querySelector(".quiz__counter span");
+  let counterElement = document.querySelector(".quiz__counter--current");
+  let counterTotal = document.querySelector(".quiz__counter--total");
 
   let currentQuestionIndex = 0;
   let score = 0;
@@ -130,6 +131,7 @@ if (quizSection) {
     vraiBtn.disabled = false;
     fauxBtn.disabled = false;
     counterElement.textContent = `${currentQuestionIndex + 1}`;
+    counterTotal.textContent = `/${questionsData.length}`;
 
     // Update country and date elements
     let countryElement = document.querySelector(".quiz__h2");
