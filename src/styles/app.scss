@@ -1,5 +1,6 @@
 @import "utils/variables";
 @import "components/type";
+@import "components/onequiz";
 @import "components/quiz-2000";
 
 body {
@@ -95,7 +96,6 @@ canvas {
   &__question {
     // margin-top: 25%;
     margin-bottom: 20px;
-    font-size: 25px;
     color: black;
   }
 
@@ -117,7 +117,6 @@ canvas {
 
   &__feedback {
     margin-top: 15%;
-    font-size: 20px;
   }
   &__textes {
     display: block;
@@ -134,7 +133,7 @@ canvas {
   }
   &__pays-dates {
     display: flex;
-    gap: 50px;
+    justify-content: space-evenly;
     flex-direction: row;
     align-items: center;
   }
