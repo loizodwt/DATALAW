@@ -1,7 +1,7 @@
 .two {
     background-image: image-set(
         url(../../assets/images/bg-quiz-one.png) 1x,
-        url(../../assets/images/bg-quiz-one@2x.png) 2x,
+        url(../../assets/images/bg-quiz-one@2x.png) 2x
     );
     background-repeat: no-repeat;
     background-size: cover;
@@ -48,49 +48,41 @@
         &--faux {
             text-transform: uppercase;
             color: #5d491b;
-            padding: 10px;
+            padding: 10px 16px 10px 32px;
             border: 1px solid black;
             position: relative;
             text-align: right;
-            padding-right: 16px;
+        }
+
+        &--vrai::before,
+        &--faux::before {
+            content: "";
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 18px; /* Largeur de l'élément :before */
+            height: 18px;
+            border-right: 1px solid black;
+
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 80%;
         }
         &--vrai {
             padding-right: 22px;
+
             &::before {
-                content: "";
-                position: absolute;
-                left: 10px;
-                top: 50%;
-                transform: translateY(-50%);
-                width: 18px; /* Largeur de l'élément :before */
-                height: 18px; 
-                // background-color: #9ea9e37a;
                 background-image: url("../../assets/images/lys@2x.png");
-                background-repeat: no-repeat;
-                background-position: center; 
-                background-size: 80%; 
                 padding: 13px 22px 15px 5px;
-                border-right: 1px solid black;
                 margin-left: -5px;
             }
         }
         &--faux {
             &::before {
-                content: "";
-                position: absolute;
-                left: 10px;
-                top: 50%;
-                transform: translateY(-50%);
-                width: 18px; /* Largeur de l'élément :before */
-                height: 18px; 
-                // background-color: #9ea9e37a;
                 background-image: url("../../assets/images/epee@2x.png");
-                background-repeat: no-repeat;
-                background-position: center; 
-                background-size: 80%; 
                 margin-left: -6px;
                 padding: 13px 15px 15px 5px;
-                border-right: 1px solid black;
             }
         }
         &--skip {
@@ -117,7 +109,6 @@
     .logo {
         font-family: ppgochat;
     }
-    
 }
 
 @media (min-width: 481px) {
@@ -133,17 +124,17 @@
         }
     }
 }
-@media (min-width: 565px){
+@media (min-width: 565px) {
     .two {
         .quiz__feedback {
             margin-top: 36px;
-        } 
+        }
     }
 }
-@media (min-width: 1000px){
+@media (min-width: 1000px) {
     .two {
         .quiz__feedback {
             margin-top: 24px;
-        } 
+        }
     }
 }
