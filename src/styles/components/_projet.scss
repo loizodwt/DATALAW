@@ -51,7 +51,7 @@
 }
 
 .pictures {
-    width: 80%;
+    width: 100%;
     margin: auto;
     max-width: 500px;
     img {
@@ -68,6 +68,12 @@
     figcaption {
         font-size: 14px;
         font-family: sato;
+    }
+    &__flex {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-evenly;
     }
 }
 .equipe {
@@ -154,14 +160,3 @@
     }
 }
 
-@media (min-width: 1000px) {
-    .pictures {
-        img {
-            filter: blur(2px);
-
-            &:hover {
-                filter: blur(0px);
-            }
-        }
-    }
-}

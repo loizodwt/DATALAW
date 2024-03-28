@@ -2399,7 +2399,7 @@ footer {
 }
 
 .pictures {
-  width: 80%;
+  width: 100%;
   margin: auto;
   max-width: 500px;
 }
@@ -2417,6 +2417,12 @@ footer {
 .pictures figcaption {
   font-size: 14px;
   font-family: sato;
+}
+.pictures__flex {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
 }
 
 .equipe__avatars {
@@ -2502,14 +2508,6 @@ footer {
   }
   .equipe__avatars img {
     width: 200px;
-  }
-}
-@media (min-width: 1000px) {
-  .pictures img {
-    filter: blur(2px);
-  }
-  .pictures img:hover {
-    filter: blur(0px);
   }
 }
 /* ---------- MEDIA ---------- */
