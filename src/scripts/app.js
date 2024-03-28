@@ -577,7 +577,7 @@ if (navbar && graphSection) {
             const randomIndex = Math.floor(Math.random() * laws.length);
             loiContainer.innerHTML = "<h3 class='title'>Loi aléatoire</h3><p>" + country + ": " + laws[randomIndex] + "</p>";
           } else {
-            loiContainer.innerHTML = "<h3 class='title'>Loi aléatoire</h3><p>Aucune loi trouvé pour ce pays.</p>";
+            loiContainer.innerHTML = "<h3 class='title'>Loi aléatoire</h3><p>Aucune loi trouvée pour ce pays.</p>";
           }
         } else {
           loiContainer.classList.add('hidden');
