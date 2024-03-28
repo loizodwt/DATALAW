@@ -71,6 +71,11 @@
 }
 
 @font-face {
+    font-family: "clash";
+    src: url("../assets/fonts/ClashDisplay-Variable.ttf") format("truetype");
+}
+
+@font-face {
     font-family: "Satoshi-Variable";
     src:
         url("../assets/fonts/Satoshi-Variable.woff2") format("woff2"),
@@ -100,9 +105,4 @@
 @font-face {
     font-family: "sato";
     src: url("../assets/font/satoshi/satoshi-Regular.otf");
-}
-
-@font-face {
-    font-family: "clash";
-    src: url("../assets/fonts/clash/ClashDisplay-Regular.otf");
 }
