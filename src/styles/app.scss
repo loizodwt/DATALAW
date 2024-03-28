@@ -195,19 +195,17 @@ body {
     padding: 10px;
     font-weight: lighter;
     cursor: pointer;
+    width: 220px;
 
-    a {
-      text-decoration: none;
-      color: #333333;
-    }
+    text-decoration: none;
+    color: #333333;
+
     &:hover {
       background-color: rgb(148, 134, 196, 0.5);
       backdrop-filter: blur(5);
       border: 2px solid #d7d4ff;
 
-      a {
-        color: #e6efeb;
-      }
+      color: #e6efeb;
     }
   }
 }

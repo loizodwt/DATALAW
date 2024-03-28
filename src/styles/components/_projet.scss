@@ -1,7 +1,7 @@
 .presentation {
     background-image: image-set(
-      url(../assets/images/da/recapquiz.png) 1x,
-      url(../assets/images/da/recapquiz@2x.png) 2x
+        url(../assets/images/da/recapquiz.png) 1x,
+        url(../assets/images/da/recapquiz@2x.png) 2x
     );
     background-repeat: no-repeat;
     width: 100vw;
@@ -11,21 +11,17 @@
 }
 
 @font-face {
-    font-family: "sato" ;
-    src: url("../assets/font/satoshi/satoshi-Regular.otf") ;
+    font-family: "sato";
+    src: url("../assets/font/satoshi/satoshi-Regular.otf");
 }
 
 @font-face {
-    font-family: "clash" ;
-    src: url("../assets/fonts/ClashDisplay-Variable.ttf") ;
+    font-family: "clash";
+    src: url("../assets/fonts/ClashDisplay-Variable.ttf");
 }
 
-.naavbar {
-    display: flex;
-    justify-content: flex-end;
-}
 .context,
-.present, 
+.present,
 .difficult,
 .equipe,
 .pictures {
@@ -48,7 +44,7 @@
     }
 }
 .context,
-.present, 
+.present,
 .difficult,
 .equipe {
     margin-bottom: 74px;
@@ -92,11 +88,17 @@
             margin: 16px;
         }
     }
+    &__li {
+        transition: 0.3s ease;
+        &:hover {
+            transform: scale(1.15);
+        }
+    }
 }
 
-@media (min-width: 481px){
+@media (min-width: 481px) {
     .context,
-    .present, 
+    .present,
     .difficult,
     .equipe,
     .pictures {
@@ -113,12 +115,11 @@
             font-size: $p-mobile;
         }
     }
-
 }
 
-@media (min-width: 769px){
+@media (min-width: 769px) {
     .context,
-    .present, 
+    .present,
     .difficult,
     .equipe {
         width: 70%;
@@ -149,7 +150,6 @@
             img {
                 width: 200px;
             }
-            
         }
     }
 }
@@ -160,7 +160,7 @@
             filter: blur(2px);
 
             &:hover {
-            filter: blur(0px);
+                filter: blur(0px);
             }
         }
     }
