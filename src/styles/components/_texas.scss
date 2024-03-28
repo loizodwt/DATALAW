@@ -17,6 +17,7 @@
     &__content {
         opacity: 1;
         z-index: 80;
+        max-width: 100ch;
     }
     &__txt {
         font-family: "elite";
