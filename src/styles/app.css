@@ -472,6 +472,7 @@ button {
   justify-content: center;
   font-size: 16px;
   padding: 5%;
+  padding-top: 0px;
   margin: 0%;
   height: 150px;
 }
@@ -955,6 +956,10 @@ canvas {
   width: 100vw;
 }
 
+.texaslowcow {
+  font-style: italic;
+}
+
 @media (min-width: 481px) {
   .texas {
     position: relative;
@@ -1053,6 +1058,10 @@ canvas {
 body {
   margin: 0;
   background-color: #e6efeb;
+  line-height: 140%;
+}
+body p {
+  line-height: 1.6;
 }
 
 html {
@@ -1424,7 +1433,7 @@ a {
           backdrop-filter: blur(5);
   border: 2px solid #9486c4;
   border-radius: 15px;
-  margin: 74px auto auto auto;
+  margin: auto;
   padding: 10px;
   font-weight: lighter;
   cursor: pointer;
@@ -1469,7 +1478,7 @@ a {
 }
 @media (min-width: 1225px) {
   .finquiz {
-    padding-top: 111px;
+    margin-top: 50px;
   }
 }
 .recap {
@@ -1523,13 +1532,11 @@ a {
           backdrop-filter: blur(15);
   padding: 16px;
   padding-bottom: 8px;
+  height: 550px;
 }
 
 .legendes {
   background-color: transparent;
-}
-.legendes__content {
-  margin-bottom: 50px;
 }
 .legendes__end {
   color: #3e2f60;
@@ -1624,9 +1631,6 @@ a {
   max-width: 90%;
   margin: auto 5%;
   line-height: 1.6;
-}
-.two .quiz__textes {
-  max-width: 500px;
 }
 .two .quiz__feedback {
   margin-top: 54px;
@@ -2372,7 +2376,6 @@ footer {
   background-image: image-set(url(../assets/images/da/recapquiz.png) 1x, url(../assets/images/da/recapquiz@2x.png) 2x);
   background-repeat: no-repeat;
   width: 100vw;
-  height: 100vh;
   background-size: cover;
   overflow-x: hidden;
 }
@@ -2435,13 +2438,8 @@ footer {
 }
 .pictures img {
   width: 100%;
-  border-radius: 15px;
-  max-width: 500px;
-  margin: auto;
 }
 .pictures figure {
-  width: 90%;
-  margin: auto;
   margin-bottom: 54px;
 }
 .pictures figcaption {
@@ -2451,7 +2449,6 @@ footer {
 .pictures__flex {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
   justify-content: space-evenly;
 }
 
@@ -2526,7 +2523,6 @@ footer {
     font-size: 24px;
   }
   .pictures {
-    width: 500px;
     margin: auto;
   }
   .pictures h2 {
@@ -2538,6 +2534,43 @@ footer {
   }
   .equipe__avatars img {
     width: 200px;
+  }
+}
+/* animations */
+p {
+  animation: cubic-bezier(0.77, 0, 0.175, 1) 1s slideIn;
+}
+
+h1,
+h2,
+h3 {
+  animation: cubic-bezier(0.77, 0, 0.175, 1) 0.5s slideIn;
+}
+
+html {
+  opacity: 0;
+  animation: ease 1s fadeIn;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 /* ---------- MEDIA ---------- */
