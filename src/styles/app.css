@@ -1395,6 +1395,7 @@ a {
   padding: 10px;
   font-weight: lighter;
   cursor: pointer;
+  font-family: sato;
 }
 .finquiz__btn--1 a, .finquiz__btn--2 a {
   text-decoration: none;
@@ -1405,6 +1406,7 @@ a {
   -webkit-backdrop-filter: blur(5);
           backdrop-filter: blur(5);
   border: 2px solid #d7d4ff;
+  color: #e6efeb;
 }
 .finquiz__btn--1:hover a, .finquiz__btn--2:hover a {
   color: #e6efeb;
