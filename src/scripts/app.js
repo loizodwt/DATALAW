@@ -622,7 +622,7 @@ if (logoContainer) {
       const fontArray = ["satoshi", "w9", "pix", "gensco", "ortica", "valiant", "livingstone", "elite"];
 
       // Generate random indices for characters to change
-      while (randomIndices.length < Math.min(4, textLength)) {
+      while (randomIndices.length < Math.min(8, textLength)) {
         let randomIndex = Math.floor(Math.random() * textLength);
         if (!randomIndices.includes(randomIndex)) {
           randomIndices.push(randomIndex);
