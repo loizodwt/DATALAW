@@ -87,6 +87,17 @@
 }
 
 @font-face {
+    font-family: "sato";
+    src:
+        url("../assets/fonts/Satoshi-Variable.woff2") format("woff2"),
+        url("../assets/fonts/Satoshi-Variable.woff") format("woff"),
+        url("../assets/fonts/Satoshi-Variable.ttf") format("truetype");
+    font-weight: 300 900;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
     font-family: "ClashDisplay-Variable";
     src:
         url("../assets/fonts/ClashDisplay-Variable.woff2") format("woff2"),
@@ -100,9 +111,4 @@
 @font-face {
     font-family: "gruppo";
     src: url("../assets/font/Gruppo-Regular.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: "sato";
-    src: url("../assets/font/satoshi/satoshi-Regular.otf");
 }
