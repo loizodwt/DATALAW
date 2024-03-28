@@ -9,16 +9,6 @@
     overflow-x: hidden;
 }
 
-@font-face {
-    font-family: "sato";
-    src: url("../assets/font/satoshi/satoshi-Regular.otf");
-}
-
-@font-face {
-    font-family: "clash";
-    src: url("../assets/fonts/ClashDisplay-Variable.ttf");
-}
-
 .context,
 .present,
 .difficult,
@@ -27,7 +17,7 @@
     margin: auto 16px;
     h2 {
         font-size: $h2-mobile;
-        font-family: clash;
+        font-family: "Clash Display";
         font-weight: normal;
     }
     p {
@@ -37,7 +27,7 @@
     }
     ul {
         list-style: circle;
-        font-family: sato;
+        font-family: "Satoshi-Variable";
         line-height: 1.6;
         font-size: $p-mobile;
     }
