@@ -18,12 +18,24 @@
     gap: 5px;
     flex-direction: row;
   }
-  &__modal {
+  &__modal{
     position: absolute;
     background-color: #fafafa;
     z-index: 5;
     border: 5px solid #c0c0c0;
     bottom: 20%;
+  }
+  &__modalPaint {
+    position: absolute;
+    background-color: #fafafa;
+    z-index: 5;
+    border: 5px solid #c0c0c0;
+    bottom: 20%;
+    height: 500px;
+
+    .singapour__content {
+      margin: 0%;
+    }
   }
 
   &__navbar {
@@ -133,6 +145,27 @@
 .icon-name {
   font-family: "w9";
   color: white;
+}
+
+#canvasPaint {
+  display: block;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #000;
+  cursor: crosshair; // Curseur par défaut
+
+  &.erasing {
+  cursor: url('/eraser.png'), auto; // Curseur personnalisé pour le mode gommage
+  }
+}
+
+#controls {
+  text-align: center;
+  margin-top: 10px;
+
+  input[type="color"] {
+      margin-right: 10px;
+  }
 }
 
 @media (min-width: 481px) {

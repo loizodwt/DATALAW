@@ -18,6 +18,7 @@
 
   <title>DataLaws</title>
   <link rel="stylesheet" href="styles/app.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <script src="scripts/app.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.2/dat.gui.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -112,6 +113,29 @@
           </div>
         </div>
 
+        <div class="singapour__modalPaint reduced">
+          <div class="singapour__navbar">
+            <div class="singapour__label">
+              <img class="singapour__notepad" src="./assets/images/singapour/Paint.png" srcset="./assets/images/singapour/Paint@2x.png" alt="Icône dans le style de Windows 95 d'un bloc-notes.">
+              <span class="singapour__txt--nav">Paint</span>
+            </div>
+            <div class="singapour__icons">
+              <button class="nav-button singapour__icon--close" id="closePaint">
+                <img class="singapour__icon" src="./assets/images/singapour/close.jpg" srcset="./assets/images/singapour/close@2x.jpg" alt="Icône dans le style de Windows 95 d'un bouton fermer.">
+              </button>
+            </div>
+          </div>
+          <div id="paintContent" class="singapour__content">
+            <canvas id="canvasPaint"></canvas>
+            <div id="controls">
+              <input type="color" id="colorPicker">
+              <button id="eraser"><i class="fas fa-eraser"></i></button> <!-- Utiliser l'icône de la gomme -->
+              <button id="clearCanvas"><i class="fas fa-trash-alt"></i></button> <!-- Utiliser l'icône de la corbeille pour effacer tout -->
+            </div>
+          </div>
+          
+        </div>
+
         <button class="singapour__bin singapour__grab">
           <img src="./assets/images/singapour/bin.png" srcset="./assets/images/singapour/bin@2x.png" alt="Icône dans le style de Windows 95 d'une corbeille.">
           <span class="icon-name">Corbeille</span>
@@ -120,7 +144,7 @@
           <img src="./assets/images/singapour/Documents.png" srcset="./assets/images/singapour/Documents@2x.png" alt="Icône dans le style de Windows 95 d'un dossier.">
           <span class="icon-name">Documents</span>
         </button>
-        <button class="singapour__paint singapour__grab">
+        <button id="paintico" class="singapour__paint singapour__grab">
           <img src="./assets/images/singapour/Paint.png" srcset="./assets/images/singapour/Paint@2x.png" alt="Icône dans le style de Windows 95 d'un pot de peinture.">
           <span class="icon-name">Paint</span>
         </button>

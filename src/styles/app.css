@@ -577,6 +577,17 @@ canvas {
   border: 5px solid #c0c0c0;
   bottom: 20%;
 }
+.singapour__modalPaint {
+  position: absolute;
+  background-color: #fafafa;
+  z-index: 5;
+  border: 5px solid #c0c0c0;
+  bottom: 20%;
+  height: 500px;
+}
+.singapour__modalPaint .singapour__content {
+  margin: 0%;
+}
 .singapour__navbar {
   display: flex;
   background-color: #000080;
@@ -681,6 +692,25 @@ canvas {
 .icon-name {
   font-family: "w9";
   color: white;
+}
+
+#canvasPaint {
+  display: block;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #000;
+  cursor: crosshair;
+}
+#canvasPaint.erasing {
+  cursor: url("/eraser.png"), auto;
+}
+
+#controls {
+  text-align: center;
+  margin-top: 10px;
+}
+#controls input[type=color] {
+  margin-right: 10px;
 }
 
 @media (min-width: 481px) {
