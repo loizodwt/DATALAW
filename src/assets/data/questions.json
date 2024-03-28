@@ -3,22 +3,22 @@
     "question": "Afin de lutter contre les jeux d’argent illégaux, l’usage des jeux électroniques dont les jeux-vidéos est considéré comme illégal.",
     "pays": "Grèce",
     "reponse": true,
-    "anecdote": "Visant la lutte contre les jeux d’argent en ligne, mais jugée inconstitutionnelle, la loi a été remaniée en 2003 pour uniquement interdire les jeux dans les cybercafés.",
+    "anecdote": "Jugée inconstitutionnelle, la loi a été remaniée en 2003 pour uniquement interdire les jeux dans les cybercafés.",
     "pour": "26.7%",
     "contre": "73.3%",
     "periode": "2002"
   },
   {
-    "question": "À Uxbridge, il est interdit d'avoir une connexion internet plus rapide que 56K.",
+    "question": "À Uxbridge, il est interdit d'avoir une connexion internet plus rapide que 56K afin de protéger le mode de vie rural.",
     "pays": "Canada",
     "reponse": false,
-    "anecdote": "La rumeur semble avoir commencé en 2011, lorsqu'un article a été publié sur le site web satirique “The Daily Mash”. L'article affirmait qu'Uxbridge avait adopté une loi limitant la vitesse d'internet à 56k afin de protéger le mode de vie rural.",
+    "anecdote": "La rumeur semble avoir commencé en 2011, lorsqu'un article a été publié sur le site web satirique “The Daily Mash”.",
     "pour": "53.3%",
     "contre": "46.7%",
     "periode": "2011"
   },
   {
-    "question": "Au Kentucky, il est illégal pour une femme d’apparaître en maillot de bain sur une autoroute, sauf si elle est escortée par au moins 2 policiers, blessée, qu’elle pèse moins de 45 Kg ou plus de 100 kg.",
+    "question": "Au Kentucky, il est illégal pour une femme d’apparaître en maillot de bain sur une autoroute, sauf si elle est escortée par au moins 2 policiers.",
     "pays": "États-Unis",
     "reponse": true,
     "anecdote": "Cette loi était avant tout discriminatoire, et avait pour but de restreindre la liberté vestimentaire et corporelle des femmes.",
@@ -27,10 +27,10 @@
     "periode": "1938"
   },
   {
-    "question": "Il est illégal de posséder plus de 50kg de pommes de terre.",
+    "question": "Afin d'éviter la tranmission de maladies trouvées dans le féculent, il est illégal de posséder plus de 50kg de pommes de terre.",
     "pays": "Australie",
     "reponse": false,
-    "anecdote": "Cette légende urbaine prend sa source dans les forums du début des années 2000, et ses détails varient. Parfois, il est fait mention de 100kg. Parfois, il est dit que c’était pour éviter soit les pénuries alimentaires, soit la transmission de maladies trouvées dans le féculent.",
+    "anecdote": "Cette légende urbaine prend sa source dans des forums du début des années 2000, et ses détails varient.",
     "pour": "53.3%",
     "contre": "46.7%",
     "periode": "2000"
@@ -54,7 +54,7 @@
     "periode": "1923"
   },
   {
-    "question": "La coupe mulet est interdite.",
+    "question": "La coupe mulet, et toute autre coupe de cheveux occidentale, est interdite.",
     "pays": "Iran",
     "reponse": true,
     "anecdote": "L’Iran suit la Charia, qui interdit aux hommes d’avoir leurs cheveux trop courts, en dégradé, ou trop « occidentaux » en général.",

@@ -145,16 +145,14 @@ if (quizSection) {
 
 
   function checkAnswer(userAnswer, currentQuestion) {
-    // vraiBtn.classList.add = "hidden";
-    // fauxBtn.classList.add = "hidden";
     vraiBtn.style.display = "none";
     fauxBtn.style.display = "none";
 
     if (userAnswer === currentQuestion.reponse) {
-      feedbackElement.textContent = "Vous avez voté comme le peuple de l'époque: " + currentQuestion.anecdote;
+      feedbackElement.textContent = "Correct: " + currentQuestion.anecdote;
       score++;
     } else {
-      feedbackElement.textContent = "Vous n'avez pas voté comme le peuple de l'époque: " + currentQuestion.anecdote;
+      feedbackElement.textContent = "Incorrect: " + currentQuestion.anecdote;
     }
 
     // Record user's answer only if it's not a skip
@@ -165,7 +163,7 @@ if (quizSection) {
 
   /* ---------- NAVIGATION ---------- */
 
-  let recapSection = document.querySelector(".quiz--recap");
+  let recapSection = document.querySelector(".quiz__recap");
   let scoreElement = document.querySelector(".quiz__result--score");
   let percentElement = document.querySelector(".quiz__result--percent span");
 
@@ -184,8 +182,8 @@ if (quizSection) {
 
   /* ---------- RECAP ---------- */
 
-  let recapTrueList = document.querySelector(".quiz--recap__true");
-  let recapFalseList = document.querySelector(".quiz--recap__false");
+  let recapTrueList = document.querySelector(".good__list");
+  let recapFalseList = document.querySelector(".legendes__list");
 
   function populateRecapLists() {
     // Clear existing content in the recap lists
@@ -205,17 +203,17 @@ if (quizSection) {
 
         if (question.reponse === true) {
           if (isCorrect) {
-            listItem.classList.add("correct");
+            listItem.classList.add("quiz--correct");
           } else {
-            listItem.classList.add("wrong");
+            listItem.classList.add("quiz--wrong");
           }
           recapTrueList.appendChild(listItem);
           hasTrueQuestions = true;
         } else {
           if (isCorrect) {
-            listItem.classList.add("correct");
+            listItem.classList.add("quiz--correct");
           } else {
-            listItem.classList.add("wrong");
+            listItem.classList.add("quiz--wrong");
           }
           recapFalseList.appendChild(listItem);
           hasFalseQuestions = true;
@@ -231,21 +229,6 @@ if (quizSection) {
         }
       }
     });
-
-    // Append titles only if there are corresponding questions
-    if (hasTrueQuestions) {
-      let trueTitle = document.createElement("h3");
-      trueTitle.classList.add("title");
-      trueTitle.textContent = "Les vraies lois";
-      recapTrueList.prepend(trueTitle); // Add title before the list
-    }
-
-    if (hasFalseQuestions) {
-      let falseTitle = document.createElement("h3");
-      falseTitle.classList.add("title");
-      falseTitle.textContent = "Les légendes urbaines";
-      recapFalseList.prepend(falseTitle); // Add title before the list
-    }
   }
 
 

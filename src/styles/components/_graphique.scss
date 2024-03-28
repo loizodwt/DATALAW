@@ -1,9 +1,6 @@
-.graph {
+.graphique {
   margin-top: -100px;
   padding-top: 100px;
-}
-
-.graphique {
   background-color: $c-light;
   font-family: "sato";
 
@@ -62,12 +59,8 @@ canvas {
 
 @media screen and (min-width: 481px) {
   .graphique {
-    &__lois {
-      font-size: $p-tablet;
-    }
-    button {
-      font-size: $p-tablet;
-    }
+    &__lois,
+    &__boutons button,
     &__txt {
       font-size: $p-tablet;
     }
@@ -78,13 +71,13 @@ canvas {
   .graphique__boutons {
     display: inline-block;
     justify-content: center;
+
+    button {
+      margin: 5px;
+    }
   }
   .graphique__lois {
     font-size: $p-desktop;
-  }
-
-  button {
-    margin: 5px;
   }
 }
 
@@ -96,7 +89,7 @@ canvas {
   }
 }
 @media screen and (min-width: 768px) {
-  .graphique {
+  .graphique__boutons {
     button {
       margin: 5px;
     }

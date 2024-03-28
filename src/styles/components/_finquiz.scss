@@ -1,85 +1,76 @@
 .finquiz {
-    background-image: image-set(
-      url(../assets/images/da/bg-main.png) 1x,
-      url(../assets/images/da/bg-main@2x.png) 2x
-    );
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
-    background-size: cover;
-    position: relative;
-    padding: auto 16px;
+  position: relative;
+  padding: auto 16px;
+  font-family: gruppo;
+  font-size: $p-mobile;
+
+  &__h2 {
+    font-size: $h2-mobile;
     font-family: gruppo;
-  
-    &__h2 {
-      font-size: $h2-mobile;
-      font-family: gruppo;
-      margin-top: 0px;
-      text-align: center;
-      padding-top: 54px;
+    margin-top: 0px;
+    text-align: center;
+    padding-top: 54px;
+    color: #333333;
+  }
+
+  &__glass {
+    background-color: rgba(173, 168, 233, 0.5);
+    width: 80%;
+    border: 1px solid #9486c4;
+    border-radius: 15px;
+    backdrop-filter: blur(15);
+    justify-content: center;
+    padding: 16px 33px;
+    margin: 0% auto;
+    z-index: 8;
+    align-items: center;
+    max-width: 450px;
+    margin-bottom: 54px;
+
+    p {
+      font-family: sato;
+      font-size: $p-mobile;
+      line-height: 1.6;
+    }
+  }
+  &__btn {
+    display: flex;
+    width: 60%;
+    margin: auto 20%;
+    justify-content: center;
+  }
+  &__btn--1,
+  &__btn--2 {
+    display: flex;
+    font-size: $p-mobile;
+    background-color: rgba(173, 168, 233, 0.5);
+    backdrop-filter: blur(5);
+    border: 2px solid #9486c4;
+    border-radius: 15px;
+    margin: 74px auto auto auto;
+    padding: 10px;
+    font-weight: lighter;
+    cursor: pointer;
+
+    a {
+      text-decoration: none;
       color: #333333;
     }
-  
-    &__glass { 
-      background-color: rgba(173, 168, 233, 0.5);
-      width: 80%;
-      border: 1px solid #9486c4;
-      border-radius: 15px;
-      backdrop-filter: blur(15);
-      justify-content: center;
-      padding: 16px 33px;
-      margin: 0% auto;
-      z-index: 8;
-      align-items: center;
-      max-width: 450px;
-      margin-top: 54px;
-  
-      p {
-        font-family: sato;
-        color: #E6EFEB;
-        font-size: $p-mobile;
-        line-height: 1.6;
-      }
-    }
-    &__btn {
-        display: flex;
-        width: 60%;
-        margin: auto 20%;
-        justify-content: center;
-    }
-    &__btn--1,
-    &__btn--2 {
-      display: flex;
-      font-size: $p-mobile;
-      background-color: rgba(173, 168, 233, 0.5);
+    &:hover {
+      background-color: rgb(148, 134, 196, 0.5);
       backdrop-filter: blur(5);
-      border: 2px solid #9486c4;
-      border-radius: 15px;
-      margin: 74px auto auto auto;
-      padding: 10px;
-      font-weight: lighter;
-      cursor: pointer;
+      border: 2px solid #d7d4ff;
 
       a {
-        text-decoration: none;
-        color: #333333;
-      }
-      &:hover {
-        background-color: rgb(148,134,196, 0.5);
-        backdrop-filter: blur(5);
-        border: 2px solid #D7D4FF;
-
-        a {
-            color: #E6EFEB;
-        }
+        color: #e6efeb;
       }
     }
   }
+}
 
-
-
-@media (min-width: 769px) {
+@media (min-width: 481px) {
   .finquiz {
+    font-size: $p-tablet;
     &__h2 {
       font-size: $h2-tablet;
     }
@@ -93,6 +84,7 @@
 
 @media (min-width: 769px) {
   .finquiz {
+    font-size: $p-desktop;
     &__h2 {
       font-size: $h2-desktop;
     }
@@ -104,7 +96,7 @@
   }
 }
 
-@media (min-width: 1225px) {  
+@media (min-width: 1225px) {
   .finquiz {
     padding-top: 111px;
   }

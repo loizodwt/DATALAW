@@ -26,8 +26,8 @@
   <main>
 
     <section class="section quiz__container">
-      <div class="quiz-top">
-        <div class="logo">DataLaws</div>
+      <div class="quiz__top">
+        <a class="logo" href="index.html">DataLaws</a>
       </div>
       <div class="quiz__textes">
         <div class="quiz__pays-dates">
@@ -60,30 +60,44 @@
 
     </section>
 
-    <section class="section quiz--recap hidden">
-      <h2 class="title">Récapitulatif</h2>
-      <p>Félicitations, votre rôle de législateur est maintenant terminé…jusqu’à votre retour sur le quiz !</p>
+    <section class="section quiz__recap recap hidden">
+      <h2 class="recap__title">Récapitulatif</h2>
 
-      <h2 class="title">Avez-vous trouvé les bonnes lois ?</h2>
+      <div class="recap__content">
+        <div class="good quiz__recap--true">
+          <h2 class="good__h2">Véritables lois</h2>
+          <div class="good__content">
+            <ul class="good__list">
+              <li>Ceci est une loi.</li>
+            </ul>
+          </div>
+        </div>
 
-      <div class="quiz--recap__true">
-        <h3 class="title">Les vraies lois</h3>
-        <!-- Liste VRAI -->
+        <div class="legendes quiz__recap--false">
+          <h2 class="legendes__h2">Légendes urbaines</h2>
+          <div class="legendes__content">
+            <ul class="legendes__list">
+              <li>Ceci est une loi.</li>
+            </ul>
+          </div>
+        </div>
       </div>
 
-      <div class="quiz--recap__false">
-        <h3 class="title">Les légendes urbaines</h3>
-        <!-- Liste FAUX -->
-      </div>
+      <div class="finquiz finquiz__glass">
+        <div class="quiz__result">
+          <p>Félicitations, votre rôle de législateur est maintenant terminé…jusqu’à votre retour sur le quiz !</p>
+          <p class="quiz__result--score">Votre score: 0/8</p>
+          <p class="quiz__result--percent">
+            Vous avez voté à <span>x%</span> comme la majorité à l'époque de proposition de ces lois.
+          </p>
+        </div>
 
-      <div class="quiz__result">
-        <p class="quiz__result--score">Votre score: 0/8</p>
-        <p class="quiz__result--percent">
-          Vous avez voté à <span>x%</span> comme la majorité à l'époque de proposition de ces lois.
-        </p>
-      </div>
+        <div class="finquiz__btn">
+          <button class="finquiz__btn--1 quiz__button--restart">Recommencer le quiz</button>
+          <a class="finquiz__btn--2" href="/index.html">Quitter</a>
+        </div>
 
-      <button class="btn quiz__button quiz__button--restart">Recommencer le quiz</button>
+      </div>
 
     </section>
 

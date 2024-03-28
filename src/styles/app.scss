@@ -1,7 +1,8 @@
 @import "utils/variables";
 @import "components/type";
+@import "components/reset";
 @import "components/glass";
-//@import "components/quiz";
+@import "components/quiz";
 @import "components/timeline";
 @import "components/graphique";
 @import "components/singapour";
@@ -41,83 +42,13 @@ button {
   -ms-overflow-style: none; // IE et Edge
 }
 
-// quiz
-
-.correct {
-  color: green;
-}
-
-.wrong {
-  color: red;
-}
-
-.quiz-top {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding-top: 50px;
-}
-
-.quiz {
-  &__container {
-    height: 100vh;
-    text-align: start;
-    position: relative;
-  }
-
-  &__question {
-    margin-bottom: 20px;
-  }
-
-  &__choix {
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    position: absolute;
-    bottom: 30vh;
-    width: 100%;
-  }
-
-  &__button {
-    padding: 10px 20px;
-    width: 144px;
-    height: 47px;
-    border: none;
-    cursor: pointer;
-  }
-  &__feedback {
-    margin-top: 5%;
-  }
-  &__textes {
-    display: block;
-    margin: auto;
-    max-width: 800px;
-    margin-top: 5%;
-  }
-  &__sortie {
-    display: flex;
-    justify-content: space-around;
-    position: absolute;
-    bottom: 10vh;
-    width: 100%;
-  }
-  &__pays-dates {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-}
-
-.flex {
-  display: flex;
-  justify-content: center;
-}
-
 /* ------ EXTRA ------ */
 .hidden {
   display: none;
+}
+.flex {
+  display: flex;
+  justify-content: center;
 }
 
 body {
