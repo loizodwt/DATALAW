@@ -420,7 +420,7 @@ if (canvas) {
 
 /* ---------- NAVIGATION STICKY ---------- */
 
-const navbar = document.getElementById('navbar');
+const navbar = document.querySelector('.navbar');
 const graphSection = document.querySelector('.graphique');
 
 // condition : ne run que si la navbar ET le graph existent
@@ -582,17 +582,21 @@ if (navbar && graphSection) {
       },
       onClick: (e) => {
         const canvasPosition = Chart.helpers.getRelativePosition(e, myChart);
-
         const dataX = myChart.scales.x.getValueForPixel(canvasPosition.x);
         const dataY = myChart.scales.y.getValueForPixel(canvasPosition.y);
-
         let dataIndex = Math.abs(dataY);
-
         const loiContainer = document.querySelector('.graphique__lois');
 
         if (dataIndex >= 0 && dataIndex < data.length) {
           loiContainer.classList.remove('hidden');
-          loiContainer.innerHTML = "<h3 class='title'>Lois aléatoires:</h3><p>" + data[dataIndex].Loi + "</p>";
+          const country = data[dataIndex].pays; // Get the country name
+          const laws = data[dataIndex].Loi;
+          if (laws && laws.length > 0) {
+            const randomIndex = Math.floor(Math.random() * laws.length);
+            loiContainer.innerHTML = "<h3 class='title'>Loi aléatoire</h3><p>" + country + ": " + laws[randomIndex] + "</p>";
+          } else {
+            loiContainer.innerHTML = "<h3 class='title'>Loi aléatoire</h3><p>Aucune loi trouvé pour ce pays.</p>";
+          }
         } else {
           loiContainer.classList.add('hidden');
         }
@@ -622,11 +626,11 @@ showThings()
 
 /* ---------- ANIMATION LOGO ---------- */
 
-let logoContainer = document.getElementById("logo-container");
+let logoContainer = document.querySelector(".logo__container");
 
 // condition : ne run que si le logo existe
 if (logoContainer) {
-  let logoTexts = document.querySelectorAll("#logo-text");
+  let logoTexts = document.querySelectorAll(".logo__text");
 
   logoContainer.addEventListener("mousemove", function () { // Changed event from "mouseover" to "mousemove"
     logoTexts.forEach(logoText => {

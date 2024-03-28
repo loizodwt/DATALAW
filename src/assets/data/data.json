@@ -2,137 +2,296 @@
   "continents": {
     "Europe": [
       {
-        "pays": "France",
-        "Absurdité": 5,
-        "Loi": "À Essarts-en-Bocage, il est obligatoire d’être « en joie » entre 8 et 22 heures et de faire sourire 10 personnes par jour."
-      },
-      {
-        "pays": "Roumanie",
+        "pays": "Autriche",
         "Absurdité": 4.8,
-        "Loi": "Si on est déclaré mort alors qu’on est en vie, il faut faire appel avant le délai imparti."
+        "Loi": [
+          "Jusqu’en 1946, il était interdit de nettoyer le papier peint ou le sol avec du pain. Bien qu’idéal pour enlever les taches tenaces, une famine a contraint le pays à rationner la denrée.",
+          "Il est illégal de nourrir les pigeons à Vienne à moins de leur donner des graines.",
+          "Les abricots et les fruits secs doivent impérativement être abordables.",
+          "Jusqu'en 2001, il était légal de disposer des corps de vaches décédées en les faisant exploser.",
+          "Il est illégal de faire une panne sèche sur l'autoroute."
+        ]
       },
       {
         "pays": "Belgique",
         "Absurdité": 3.4,
-        "Loi": "Jsuqu'en 2023, lors d’une saisie de biens, on ne pouvait pas prendre votre dernière vache, chèvre, cochon et vos 24 derniers poulets."
+        "Loi": [
+          "Jusqu'en 2023, lors d’une saisie de biens, on ne pouvait pas prendre votre dernière vache, chèvre, cochon et vos 24 derniers poulets.",
+          "Il est illégal de parier dans un jeu de poker à domicile.",
+          "La police n'a pas le droit de conduire une descente de police entre 21 heures et 5 heures du matin.",
+          "Depuis le 19ème siècle, la royauté Néerlandaise est formellement interdite de monter sur le trône.",
+          "Il est interdit de grimper dans un arbre à Saint-Nicolas."
+        ]
       },
       {
         "pays": "Finlande",
         "Absurdité": 2.6,
-        "Loi": "Les chauffeurs de taxi doivent payer des redevances s’ils jouent de la musique sous droit d’auteur dans leur voiture."
+        "Loi": [
+          "Les chauffeurs de taxi doivent payer des redevances s’ils jouent de la musique sous droit d’auteur dans leur voiture, qui est considérée comme un lieu public.",
+          "Il est interdit d'éteindre les phares des sa voiture, même en pleine journée.",
+          "L'alcool ne peut pas être acheté entre 21 heures et 9 heures du matin, sauf dans un bar."
+        ]
+      },
+      {
+        "pays": "France",
+        "Absurdité": 3.5,
+        "Loi": [
+          "À Essarts-en-Bocage, il est obligatoire d’être « en joie » entre 8 et 22 heures et de faire sourire 10 personnes par jour.",
+          "Il est interdit de manger sur le lieu de travail sans autorisation de l’employeur. Ah, les plaisirs du capitalisme !",
+          "Il est interdit d’être nu chez soi s’il y a un risque d’être vu. Si votre voisin vous espionne en sortant de la douche, vous commettez une atteinte à la pudeur…",
+          "Les radios françaises ont l’obligation de passer au minimum 35% de chansons françaises. Les radios dites « de patrimoine » doivent diffuser 60% de chansons françaises.",
+          "Il est légal de se marier avec un mort si la personne décédée avait exprimé le désir de se marier avant sa mort.",
+          "Dans la commune de Briollay, les moustiques sont interdits. Chaque année, la commune est envahie par les moustiques. Petit problème, grande solution ?",
+          "La consommation d’alcool est interdite sur le lieu de travail, sauf pour le cidre, la bière, le vin et le poiré, et seulement lors d’un repas. Pas de vodka avec votre sandwich, donc.",
+          "À Châteauneuf-du-Pape, les OVNI sont interdits de survol, d’atterrissage et de décollage. La commune a avoué que cette loi était un coup de pub. Elle est malgré tout toujours d’application. On respecte le dévouement.",
+          "Jusqu'en 2016, les animaux pouvaient être jugés devant les tribunaux pour des délits criminels. Le plus ancien procès d’un animal retrouvé date du 14ᵉ siècle, une truie a été pendue pour avoir mangé un nouveau-né.",
+          "Jusqu'en 2013, toute femme désirant s’habiller en homme doit se présenter à la Préfecture de police pour en obtenir l’autorisation. La loi visait à empêcher les femmes à faire un travail d’homme."
+        ]
+      },
+      {
+        "pays": "Grèce",
+        "Absurdité": 3.4,
+        "Loi": [
+          "Jouer aux jeux-vidéos est illégal. Visant la lutte contre les jeux d’argent en ligne, mais jugée inconstitutionnelle, la loi a été remaniée en 2003 pour uniquement interdire les jeux dans les cybercafés, puis abolie en 2011.",
+          "Porter des talons hauts est interdit sur divers sites historiques, dont l’Acropole. Les talons aiguilles dégradent les monuments, il vaut mieux donc venir avec des sandales confortables ou des baskets."
+        ]
+      },
+      {
+        "pays": "Italie",
+        "Absurdité": 2.3,
+        "Loi": [
+          "Il est interdit de s’asseoir sur les marches espagnoles à Rome. De la même manière, il est également interdit de s’asseoir par terre à Venise.",
+          "À Turin, il est obligatoire de promener son chien trois fois par jour.",
+          "Il est interdit de construire des châteaux de sable sur les plages d'Eraclea. Les châteaux peuvent être considérés comme un obstacle à la circulation.",
+          "Jusqu'au 18ème siècle, les prostituées de Venise devaient porter une écharpe jaune. Une femme « à marier », elle, portait une écharpe blanche."
+        ]
+      },
+      {
+        "pays": "Norvège",
+        "Absurdité": 2.3,
+        "Loi": [
+          "Il est interdit de stériliser un animal sans raison médicale valable. Les chiens sont stérilisés pour raisons médicales uniquement. Les chats, plus nombreux à l’état sauvage, le sont bien plus souvent afin d’éviter une surpopulation.",
+          "Tout alcool plus fort que 4,7 degrés ne peut pas être vendu le dimanche. De plus, le vin ne peut pas être vendu le samedi après 15 heures.",
+          "Dans l'archipel de Svalbard, il est interdit de sortir sans une arme à feu ou une personne armée à cause du grand nombre d'ours polaires dans la région."
+        ]
+      },
+      {
+        "pays": "Pays-Bas",
+        "Absurdité": 3,
+        "Loi": [
+          "S’enfuir de prison est légal et n’allongera pas la peine tant qu’aucun dégât matériel et/ou acte de violence n’est constaté. La philosophie derrière cette loi est qu’il est naturel pour un être humain de vouloir prendre sa liberté.",
+          "Il est interdit de fumer une cigarette dans un coffeeshop, mais pas du canabis. Blaze it.",
+          "Dans la province de Flevoland, dessiner à la craie sur les trottoirs est interdit.",
+          "Après un mariage, la belle-famille reste votre belle-famille, même après un divorce."
+        ]
+      },
+      {
+        "pays": "Roumanie",
+        "Absurdité": 4.8,
+        "Loi": [
+          "Si on est déclaré mort alors qu’on est en vie, il faut faire appel avant le délai imparti. Un homme en a fait les frais en 2003. Ayant fait appel trop tard, il a été déchu de tous ses droits."
+        ]
+      },
+      {
+        "pays": "Royaume-Uni",
+        "Absurdité": 3.4,
+        "Loi": [
+          "Au 16ème siècle, porter des chaussures longues et pointues était interdit. Ces chaussures étaient considérées comme un symbole de statut social élevé.",
+          "Il est interdit de porter une armure au Parlement de Londres. Bien que la loi soit techniquement toujours d’application, aucun arrêt n’a plus été fait depuis fort longtemps.",
+          "Être ivre à cheval ou dans un établissement ayant un permis de vente d’alcool constitue un délit. Vous ne pouvez pas non plus être ivre en conduisant de bétail."
+        ]
       },
       {
         "pays": "Suisse",
         "Absurdité": 2.5,
-        "Loi": "Jusqu'en 2005, il était illégal de produire, stocker, vendre ou d’échanger de l’absinthe mais légal d’en consommer."
+        "Loi": [
+          "Jusqu'en 2005, il était illégal de produire, stocker, vendre ou d’échanger de l’absinthe mais légal d’en consommer."
+        ]
       }
     ],
     "Amérique": [
       {
-        "pays": "Alabama",
-        "Absurdité": 4.6,
-        "Loi": "De 2003 à 2019, seule la position du missionnaire était autorisée. La sodomie, comme dans de nombreux Etats du Sud, était passible de prison."
+        "pays": "Canada",
+        "Absurdité": 3.7,
+        "Loi": [
+          "Il est illégal de tuer une personne malade en lui faisant peur. Les jumpscares, on va éviter donc.",
+          "Jusqu'en 2018, il était illégal de prétendre faire de la sorcellerie ou de lire l’avenir. Le plus surprenant, c’est que la loi fût abrogée si tard.",
+          "On ne peut pas traîner un cheval mort sur une voie publique le dimanche. Le lundi par contre, allez donc."
+        ]
       },
       {
-        "pays": "Wisconsin",
-        "Absurdité": 4,
-        "Loi": "De 1962 à 2019, les batailles de boules de neige étaient interdites."
+        "pays": "Caraïbes",
+        "Absurdité": 1.2,
+        "Loi": [
+          "Il est interdit de porter des tenues camouflage si on est pas dans l'armée. Si vous aimez l’esthétique Camo, il va falloir prendre sur soi."
+        ]
       },
       {
-        "pays": "Californie",
-        "Absurdité": 3.4,
-        "Loi": "A Pacific Grove, il est interdit de déloger les papillons monarques sans autorisation de la police."
-      },
-      {
-        "pays": "Texas",
-        "Absurdité": 3.2,
-        "Loi": "Entre 1866 et 1974, traire la vache d'un voisin était illégal et passible d'une amende de 10 dollars."
-      },
-      {
-        "pays": "Arizona",
+        "pays": "Chili",
         "Absurdité": 3,
-        "Loi": "Depuis 1928, il est interdit de tirer des coups de fusil sur des cactus, en particulier le Saguaro, qui est une espèce protégée."
+        "Loi": [
+          "Il est illégal d’oublier d’accrocher le drapeau national à votre maison le Jour de l’Indépendance. L’amende est doublement plus salée si le drapeau se retrouve la tête en bas."
+        ]
+      },
+      {
+        "pays": "États-Unis",
+        "Absurdité": 3.5,
+        "Loi": [
+          "Jusqu'en 2019, les batailles de boules de neige sont interdites au Wisconsin, celles-ci considérées comme des projectiles.",
+          "En Californie, il est illégal de tirer au fusil sur un animal depuis un véhicule motorisé. Mais à vélo, faites-vous plaisir.",
+          "À Pacific Grove en Californie, il est interdit de déloger des papillons monarques sans autorisation de la police. Ils y sont protégés et les perturber pendant leur migration est interdite.",
+          "Jusqu'en 2019, seule la position du missionnaire était autorisée en Alabama, et la sodomie, comme dans de nombreux États du Sud, était passible de prison.",
+          "En Arizona, il est interdit de tirer des coups de fusil sur des cactus, en particulier le Saguaro qui est protégé.",
+          "Au Kentucky, il est illégal pour une femme d’apparaître en maillot de bain sur une autoroute, sauf si elle est escortée par au moins 2 policiers, blessée, qu’elle pèse moins de 45 Kg ou plus de 100 kg. Et si elle n’est escortée que par un seul policier ?",
+          "En Utah, le mariage entre cousins est autorisé si les mariés ont aux moins 55 ans et au moins l’un d’eux est stérile. Ça, c’est ce qu’on appelle être proche de sa famille.",
+          "Au texas au 20ème siècle, il était illégal de traire la vache d’un voisin. Il n'était pas illégal de traire d'autres animaux, comme des chèvres ou des moutons.",
+          "Il est interdit de laisser des pissenlits pousser dans les limites de la ville de Pueblo, au Colorado.",
+          "Au Delaware, Une union peut être annulée si faite suite à un pari. Fiou, c’en est passé de peu !",
+          "Il est illégal de posséder une mangouste sans permis à Hawaii. Elles ont l’air mignonnes, mais elles mangent même des serpents !",
+          "En Oregon, il est interdit de chasser avec des chiens, sauf en chassant l’écureuil gris occidental. Mais qu’est-ce qu’il vous a fait, cet écureuil ?",
+          "En Pennsylvanie, un mariage est non-valide si l’un des époux est ivre pendant la demande du certificat de mariage. Un conseil: attendez d’avoir obtenu le certificat avant de faire la fête.",
+          "Au Tennessee, il est illégal de pêcher à l'arme à feu. Pas de truite au plomb pour le souper…",
+          "Une ordonnance à Newcastle, Wyoming, interdit spécifiquement les couples de faire l'amour à l'intérieur du congélateur à viande d'un magasin."
+        ]
       }
     ],
     "Asie": [
       {
-        "pays": "Israël",
-        "Absurdité": 4,
-        "Loi": "Dans la ville d'Arad, les animaux sont interdits en public."
-      },
-      {
-        "pays": "Singapour",
-        "Absurdité": 4,
-        "Loi": "Oublier de tirer la chasse en public est passible d'une amende de 1000 dollars singapouriens."
+        "pays": "Émirats Arabes Unis",
+        "Absurdité": 2.7,
+        "Loi": [
+          "Il est interdit pour un couple de s’embrasser en public à Dubaï.",
+          "Une licence est nécessaire pour consommer de l’alcool. Depuis 2023, elle peut être obtenue gratuitement pour toute personne ayant au moins 21 ans."
+        ]
       },
       {
         "pays": "Indonésie",
         "Absurdité": 3.8,
-        "Loi": "Depuis 2022, il est interdit pour un couple non-marié de vivre ensemble, sous peine de 6 mois à 1 an de prison."
-      },
-      {
-        "pays": "Thaïlande",
-        "Absurdité": 3.6,
-        "Loi": "Poser le pied sur la monnaie nationale est un crime de lèse-majesté et passible d’une peine de prison."
+        "Loi": [
+          "Depuis 2022, il est interdit pour un couple non-marié de vivre ensemble, sous peine de 6 mois à 1 an de prison. Cette loi s’applique également aux touristes."
+        ]
       },
       {
         "pays": "Iran",
         "Absurdité": 3,
-        "Loi": "Depuis 2010, la coupe mulet, ainsi que tout autre coupe trop occidentale, est formellement interdite."
+        "Loi": [
+          "Depuis 2010, la coupe mulet, ainsi que tout autre coupe trop occidentale, est formellement interdite.",
+          "Depuis 2019, promener son chien en public est interdit. La justification est que la présence de chiens en public cause de l’anxiété et de la peur auprès des habitants."
+        ]
+      },
+      {
+        "pays": "Israël",
+        "Absurdité": 4,
+        "Loi": [
+          "Dans la ville d'Arad, les animaux sont interdits en public."
+        ]
+      },
+      {
+        "pays": "Philippines",
+        "Absurdité": 2.6,
+        "Loi": [
+          "La « vexation injuste » est un crime puni ppar 1 mois de prison. Sont considérés comme de la vexation injuste: se plaindre d’un voisin sur les réseaux sociaux, insulter un policier et critiquer le gouvernement."
+        ]
+      },
+      {
+        "pays": "Russie",
+        "Absurdité": 1,
+        "Loi": [
+          "Il est interdit d’avoir une voiture sale. La loi ne vise en réalité que la plaque d’immatriculation: trop de saleté la rend illisible. Des policiers corrompus aiment cependant extorquer les conducteurs ignorants de ce détail."
+        ]
+      },
+      {
+        "pays": "Singapour",
+        "Absurdité": 2.7,
+        "Loi": [
+          "Le chewing-gum est interdit, sauf s'il est ramené d’un autre pays. Vous croyez qu’il y a un commerce illégal de chewing-gum importé ?",
+          "Oublier de tirer la chasse en public est interdit et peut coûter jusqu'à 1000 dollars Singapouriens.",
+          "Importer du tabac nécessite une licence. Il vaut mieux vous préparer si vous êtes un fumeur en vacances à Singapour.",
+          "Il est illégal de fumer dans la plupart des lieux publics. En 2018, il y a eu une tentative d’interdire la cigarette même dans les domiciles privés, mais la loi n’a pas été retenue."
+        ]
+      },
+      {
+        "pays": "Thaïlande",
+        "Absurdité": 3.2,
+        "Loi": [
+          "Poser le pied sur la monnaie nationale est un crime de lèse-majesté et passible d’une peine de prison.",
+          "Il est interdit de jeter son chewing-gum à terre. Utilisez les poubelles !",
+          "Critiquer la famille royale est un crime grave puni de 15 ans de prison.."
+        ]
       }
     ],
     "Afrique": [
       {
-        "pays": "Kenya",
-        "Absurdité": 5,
-        "Loi": "Chaque citoyen a droit à une ration mensuelle de lait de lion."
-      },
-      {
         "pays": "Afrique du Sud",
         "Absurdité": 4,
-        "Loi": "Les éléphants ont la priorité sur les routes, et tout conducteur doit s'arrêter pour les laisser passer."
+        "Loi": [
+          "Les éléphants ont la priorité sur les routes, et tout conducteur doit s'arrêter pour les laisser passer."
+        ]
       },
       {
-        "pays": "Nigeria",
-        "Absurdité": 3,
-        "Loi": "Tous les mariages doivent inclure une performance de danse afrobeat obligatoire."
-      },
-      {
-        "pays": "Égypte",
+        "pays": "Egypte",
         "Absurdité": 2,
-        "Loi": "Il est interdit de photographier les pyramides sans un selfie stick approuvé par le gouvernement."
+        "Loi": [
+          "Il est interdit de photographier les pyramides sans un selfie stick approuvé par le gouvernement."
+        ]
+      },
+      {
+        "pays": "Kenya",
+        "Absurdité": 5,
+        "Loi": [
+          "Chaque citoyen a droit à une ration mensuelle de lait de lion."
+        ]
       },
       {
         "pays": "Maroc",
         "Absurdité": 1,
-        "Loi": "Les chameaux ont le droit de vote lors des élections locales."
+        "Loi": [
+          "Les chameaux ont le droit de vote lors des élections locales."
+        ]
+      },
+      {
+        "pays": "Nigeria",
+        "Absurdité": 3,
+        "Loi": [
+          "Tous les mariages doivent inclure une performance de danse afrobeat obligatoire."
+        ]
       }
     ],
     "Océanie": [
       {
-        "pays": "Nouvelle-Guinée",
-        "Absurdité": 5,
-        "Loi": "Tout citoyen a le droit d'avoir des relations sexuelles avec une personne décédée, tant que cette personne est du sexe opposé."
-      },
-      {
         "pays": "Australie",
         "Absurdité": 4.5,
-        "Loi": "Il est illégal d’interrompre un mariage, sous peine de devoir payer 10 000 dollars australiens et deux ans de prison."
-      },
-      {
-        "pays": "Nouvelle-Zélande",
-        "Absurdité": 3.7,
-        "Loi": "Il est interdit d'avoir une adresse sur une île déserte sans prévenir les autorités."
+        "Loi": [
+          "Il est illégal d’interrompre un mariage, sous peine de devoir payer 10 000 dollars australiens et deux ans de prison."
+        ]
       },
       {
         "pays": "Fidji",
         "Absurdité": 3.2,
-        "Loi": "Il est illégal d’être ivre dans un lieu public."
+        "Loi": [
+          "Il est illégal d’être ivre dans un lieu public."
+        ]
+      },
+      {
+        "pays": "Nouvelle-Guinée",
+        "Absurdité": 5,
+        "Loi": [
+          "Tout citoyen a le droit d'avoir des relations sexuelles avec une personne décédée, tant que cette personne est du sexe opposé."
+        ]
+      },
+      {
+        "pays": "Nouvelle-Zélande",
+        "Absurdité": 3.7,
+        "Loi": [
+          "Il est interdit d'avoir une adresse sur une île déserte sans prévenir les autorités."
+        ]
       },
       {
         "pays": "Vanuatu",
         "Absurdité": 2.8,
-        "Loi": "Il est interdit de jeter des mégots dans les lieux publics sous peine d’une amende de 100 000 Vatu."
+        "Loi": [
+          "Il est interdit de jeter des mégots dans les lieux publics sous peine d’une amende de 100 000 Vatu."
+        ]
       }
     ]
   }

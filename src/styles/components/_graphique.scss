@@ -32,7 +32,7 @@
 
     button {
       background-color: rgba(245, 245, 245, 0.356);
-      color: #3e2f60;
+      color: $c-graphique;
       padding: 5px 12px;
       text-align: center;
       text-decoration: none;
@@ -59,12 +59,14 @@ canvas {
   cursor: pointer;
 }
 
-@media screen and (min-width: 481px){
+@media screen and (min-width: 481px) {
   .graphique {
     &__lois {
       font-size: $p-tablet;
     }
-    button {font-size: $p-tablet;}
+    button {
+      font-size: $p-tablet;
+    }
     &__txt {
       font-size: $p-tablet;
     }
