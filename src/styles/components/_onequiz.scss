@@ -33,9 +33,7 @@
         margin: auto 5%;
         line-height: 1.6;
     }
-    .quiz__textes {
-        max-width: 500px;
-    }
+
     .quiz__feedback {
         margin-top: 54px;
     }
@@ -54,13 +52,10 @@
         font-size: $p-mobile;
         font-family: ppgochat;
         color: black;
-        // padding: 5px 10px;
         display: flex;
-        // gap: 15px;
         border: 2px solid black;
         justify-content: space-evenly;
         align-items: center;
-
         transition:
             transform 0.2s ease,
             background-color 0.2s ease,
@@ -125,7 +120,6 @@
             align-items: center;
             width: 25px;
             height: 25px;
-            // margin-left: 10px;
         }
         &--skip,
         &--quit {
