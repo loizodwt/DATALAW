@@ -74,6 +74,25 @@
         font-family: sato;
     }
 }
+.equipe {
+    &__avatars {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 90%;
+        margin: auto 5%;
+
+        &--salwa {
+            background-color: #eeeaea;
+        }
+
+        img {
+            width: 100px;
+            border-radius: 50%;
+            margin: 16px;
+        }
+    }
+}
 
 @media (min-width: 481px){
     .context,
@@ -94,6 +113,7 @@
             font-size: $p-mobile;
         }
     }
+
 }
 
 @media (min-width: 769px){
@@ -122,6 +142,14 @@
         }
         figcaption {
             font-size: 18px;
+        }
+    }
+    .equipe {
+        &__avatars {
+            img {
+                width: 200px;
+            }
+            
         }
     }
 }
