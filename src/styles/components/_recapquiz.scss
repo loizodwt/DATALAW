@@ -51,15 +51,13 @@
         backdrop-filter: blur(15);
         padding: 16px;
         padding-bottom: 8px;
+
+        height: 550px;
     }
 }
 
 .legendes {
     background-color: transparent;
-
-    &__content {
-        margin-bottom: 50px;
-    }
     &__end {
         color: #3e2f60;
         background-color: rgb(210, 214, 214, 0.2);
