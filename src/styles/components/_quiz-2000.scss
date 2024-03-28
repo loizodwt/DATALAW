@@ -63,15 +63,14 @@
   .quiz__contenu {
     background-color: rgba(158, 170, 227, 0.1);
     margin: 0 auto; /* Ajout de cette ligne pour centrer le bloc horizontalement */
-    padding-top: 1px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
     border-radius: 10px;
     font-size: $p-mobile;
     font-family: "Jura";
-    line-height: 150%;
-    max-width: 800px;
+    line-height: 1.6;
+    width: 70%;
+    margin: auto;
+    max-width: 120ch;
+    padding: 16px 32px;
   }
 
   .quiz__counter {
@@ -127,6 +126,7 @@
   }
 
   .quiz__button--faux {
+    justify-content: center;
     background-color: transparent;
     border: 2px solid #7fb9be;
     border-radius: 15px;
@@ -204,104 +204,112 @@
     }
   }
 
-  .quiz__button--quit {
-    width: 120px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: start;
-    padding: 8px 15px 10px;
-    border-radius: 15px;
-    background-color: rgba(255, 0, 0, 0);
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-    position: relative;
-    font-family: "Jura";
-    font-size: 16px;
-    border: 2px solid #7fb9be;
-    transition:
-      background-color 0.3s ease,
-      color 0.3s ease;
+.quiz__button--quit {
+  width: 120px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: start;
+  padding: 8px 15px 10px;
+  border-radius: 15px;
+  background-color: rgba(255, 0, 0, 0);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  position: relative;
+  font-family: "Jura";
+  font-size: 16px;
+  border: 2px solid #7fb9be;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 
-    &:hover {
-      background-color: #7fb9be;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      right: 0px;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 30px;
-      height: 30px;
-      background-color: #7fb9be;
-      background-image: url("../../assets/images/années2000/etoile3.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 50%;
-      border-radius: 15px;
-      padding: 4px;
-    }
+  &:hover {
+    background-color: #7fb9be;
   }
 
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: #7fb9be;
+    background-image: url("../../assets/images/années2000/etoile3.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    border-radius: 15px;
+    padding: 4px;
+  }
+}
+
+@media screen and (min-width: 769px){
+  .three {
+      .quiz__contenu {
+        padding: 16px 32px;
+        margin-top: 54px;
+      }
+  }
+}
   ///tablette
 
-  @media screen and (min-width: 1000px) {
-    .quiz__pays-dates {
-      font-size: $h2-tablet;
-    }
-
-    .quiz__counter {
-      &--current {
-        font-size: 45px;
-      }
-      &--total {
-        font-size: 30px;
-      }
-    }
-    .quiz__contenu {
-      font-size: $p-tablet;
-    }
-    .quiz__pays-dates {
-      font-size: $h2-tablet;
-    }
+@media screen and (min-width: 1000px) {
+  .quiz__pays-dates {
+    font-size: $h2-tablet;
   }
 
-  ///desktop
-  @media screen and (min-width: 1200px) {
-    .quiz__pays-dates {
-      font-size: $h2-desktop;
+  .quiz__counter {
+    &--current {
+      font-size: 45px;
     }
+    &--total {
+      font-size: 30px;
+    }
+  }
+  .quiz__contenu {
+    font-size: $p-tablet;
+  }
+  .quiz__pays-dates {
+    font-size: $h2-tablet;
+  }
+}
 
-    .quiz__counter {
-      &--current {
-        font-size: 54px;
-      }
-      &--total {
-        font-size: 36px;
-      }
+///desktop
+@media screen and (min-width: 1200px) {
+  .quiz__pays-dates {
+    font-size: $h2-desktop;
+  }
+
+  .quiz__counter {
+    &--current {
+      font-size: 54px;
     }
-    .quiz__pays-dates {
-      font-size: $h2-desktop;
-    }
-    .quiz__contenu {
-      font-size: $p-desktop;
+    &--total {
+      font-size: 36px;
     }
   }
-  @media screen and (min-width: 1400px) {
-    .quiz__contenu::before {
-      content: "";
-      margin-left: 10vw;
-      position: absolute;
-      top: 40vh;
-      left: -20px;
-      transform: translateY(-50%);
-      width: 200px;
-      height: 200px;
-      background-image: url("../../assets/images/années2000/beforecontenu.png");
-      background-size: 100%;
-      background-position: center;
-      z-index: -1;
-    }
+  .quiz__pays-dates {
+    font-size: $h2-desktop;
   }
+  .quiz__contenu {
+    font-size: $p-desktop;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .quiz__contenu::before {
+    content: "";
+    margin-left: 10vw;
+    position: absolute;
+    top: 40vh;
+    left: -20px;
+    transform: translateY(-50%);
+    width: 200px;
+    height: 200px;
+    background-image: url("../../assets/images/années2000/beforecontenu.png");
+    background-size: 100%;
+    background-position: center;
+    z-index: -1;
+  }
+}
 }

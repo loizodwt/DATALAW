@@ -655,74 +655,77 @@ if (logoContainer) {
 let drawp = document.querySelector("#paintico");
 let paintModal = document.querySelector(".singapour__modalPaint");
 
-drawp.addEventListener("click", paint);
+if(paintModal){
+    drawp.addEventListener("click", paint);
 
-function paint(){
-  paintModal.classList.remove("reduced");
+  function paint(){
+    paintModal.classList.remove("reduced");
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const canvasp = document.querySelector('#canvasPaint');
+    const ctxp = canvasp.getContext('2d');
+    const colorPicker = document.querySelector('#colorPicker');
+    const eraserButton = document.querySelector('#eraser');
+    const clearCanvasButton = document.querySelector('#clearCanvas'); // Nouveau bouton
+    const paintContent = document.querySelector('#paintContent');
+
+    // Définir la taille du canvas
+    canvas.width = paintContent.innerWidth ;
+    canvas.height = paintContent.innerHeight ;
+
+    let painting = false;
+    let erasing = false;
+
+    function startPosition(e) {
+      painting = true;
+      draw(e);
+    }
+
+    function endPosition() {
+      painting = false;
+      ctxp.beginPath();
+    }
+
+    function draw(e) {
+      if (!painting) return;
+
+      ctxp.lineWidth = 5;
+      ctxp.lineCap = 'round';
+
+      if (erasing) {
+        ctxp.strokeStyle = '#fff'; // Utiliser la couleur blanche pour gommer
+        ctxp.lineWidth = 20; // Augmenter la taille du pinceau pour une meilleure gomme
+      } else {
+        ctxp.strokeStyle = colorPicker.value; // Utiliser la couleur sélectionnée
+      }
+
+      ctxp.lineTo(e.clientX - canvasp.offsetLeft, e.clientY - canvasp.offsetTop);
+      ctxp.stroke();
+      ctxp.beginPath();
+      ctxp.moveTo(e.clientX - canvasp.offsetLeft, e.clientY - canvasp.offsetTop);
+    }
+
+    canvasp.addEventListener('mousedown', startPosition);
+    canvasp.addEventListener('mouseup', endPosition);
+    canvasp.addEventListener('mousemove', draw);
+
+    eraserButton.addEventListener('click', () => {
+      erasing = !erasing; // Inverser l'état du mode de gommage
+      if (erasing) {
+        canvasp.classList.add('erasing');
+        eraserButton.innerHTML = '<i class="fas fa-pencil-alt"></i>'; // Utiliser l'icône du crayon quand le mode gomme est activé
+      } else {
+        canvasp.classList.remove('erasing');
+        eraserButton.innerHTML = '<i class="fas fa-eraser"></i>'; // Utiliser l'icône de la gomme quand le mode gomme est désactivé
+      }
+    });
+
+    clearCanvasButton.addEventListener('click', () => {
+      ctxp.clearRect(0, 0, canvasp.width, canvasp.height); // Effacer tout le contenu du canvas
+    });
+  });
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  const canvasp = document.querySelector('#canvasPaint');
-  const ctxp = canvasp.getContext('2d');
-  const colorPicker = document.querySelector('#colorPicker');
-  const eraserButton = document.querySelector('#eraser');
-  const clearCanvasButton = document.querySelector('#clearCanvas'); // Nouveau bouton
-  const paintContent = document.querySelector('#paintContent');
-
-  // Définir la taille du canvas
-  canvas.width = paintContent.innerWidth ;
-  canvas.height = paintContent.innerHeight ;
-
-  let painting = false;
-  let erasing = false;
-
-  function startPosition(e) {
-    painting = true;
-    draw(e);
-  }
-
-  function endPosition() {
-    painting = false;
-    ctxp.beginPath();
-  }
-
-  function draw(e) {
-    if (!painting) return;
-
-    ctxp.lineWidth = 5;
-    ctxp.lineCap = 'round';
-
-    if (erasing) {
-      ctxp.strokeStyle = '#fff'; // Utiliser la couleur blanche pour gommer
-      ctxp.lineWidth = 20; // Augmenter la taille du pinceau pour une meilleure gomme
-    } else {
-      ctxp.strokeStyle = colorPicker.value; // Utiliser la couleur sélectionnée
-    }
-
-    ctxp.lineTo(e.clientX - canvasp.offsetLeft, e.clientY - canvasp.offsetTop);
-    ctxp.stroke();
-    ctxp.beginPath();
-    ctxp.moveTo(e.clientX - canvasp.offsetLeft, e.clientY - canvasp.offsetTop);
-  }
-
-  canvasp.addEventListener('mousedown', startPosition);
-  canvasp.addEventListener('mouseup', endPosition);
-  canvasp.addEventListener('mousemove', draw);
-
-  eraserButton.addEventListener('click', () => {
-    erasing = !erasing; // Inverser l'état du mode de gommage
-    if (erasing) {
-      canvasp.classList.add('erasing');
-      eraserButton.innerHTML = '<i class="fas fa-pencil-alt"></i>'; // Utiliser l'icône du crayon quand le mode gomme est activé
-    } else {
-      canvasp.classList.remove('erasing');
-      eraserButton.innerHTML = '<i class="fas fa-eraser"></i>'; // Utiliser l'icône de la gomme quand le mode gomme est désactivé
-    }
-  });
-
-  clearCanvasButton.addEventListener('click', () => {
-    ctxp.clearRect(0, 0, canvasp.width, canvasp.height); // Effacer tout le contenu du canvas
-  });
-});
 
 

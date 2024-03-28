@@ -1,9 +1,12 @@
 .quiz {
     &__top {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
-        padding-top: 50px;
+        padding: 50px;
+        flex-direction: row;
+        width: 90%;
+        margin: 0;
     }
 
     &__container {
@@ -46,7 +49,7 @@
         justify-content: space-around;
         position: absolute;
         bottom: 10vh;
-        width: 100%;
+        width: 300px;
     }
     &__pays-dates {
         display: flex;
@@ -76,5 +79,8 @@
         background-repeat: no-repeat;
         vertical-align: middle;
         padding-left: 33px;
+    }
+    &__button--quit {
+        text-align: right;
     }
 }

@@ -2,13 +2,13 @@
 @import "components/type";
 @import "components/reset";
 @import "components/glass";
+@import "components/fontslogo";
 @import "components/quiz";
 @import "components/timeline";
 @import "components/graphique";
 @import "components/singapour";
 @import "components/y2k";
 @import "components/texas";
-@import "components/fontslogo";
 
 body {
   margin: 0;
@@ -17,6 +17,10 @@ body {
 
 p {
   line-height: 140%;
+
+  p {
+    line-height: 1.6;
+  }
 }
 
 html {

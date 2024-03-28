@@ -23,8 +23,13 @@
 .four {
     background-image: url("../../assets/images/bg-glassmorphism.svg");
     background-size: cover;
-    padding-left: 16px;
-    padding-right: 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+        line-height: 1.6;
+    }
     .quiz {
         &__h2 {
             margin: 0;
@@ -54,6 +59,11 @@
             border: 2px solid #818181;
             border-radius: 20px;
             box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+            width: 70%;
+            margin: auto;
+            margin-top: 54px;
+            max-width: 120ch;
+            padding: 16px 32px;
         }
         &__question {
             margin: 0;
@@ -182,12 +192,20 @@
         }
         &__counter {
             font-family: "ClashDisplay-Variable";
+            align-items: center;
+            line-height: 300%;
             &--current {
                 color: rgba(115, 143, 243, 1);
             }
             &--total {
                 color: #333;
             }
+        }
+        &__textes {
+            margin-top: 0;
+        }
+        &__feedback {
+            line-height: 1.6;
         }
     }
     // Mobile devices
@@ -226,7 +244,6 @@
     @media (min-width: 481px) and (max-width: 768px) {
         .quiz {
             &__contenu {
-                padding: 20px;
                 font-size: $p-tablet;
             }
             &__h2 {
@@ -260,8 +277,6 @@
         }
         .quiz {
             &__contenu {
-                padding: 20px;
-                padding: 20px;
                 font-size: $p-desktop;
             }
             &__h2 {
