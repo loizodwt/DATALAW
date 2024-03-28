@@ -13,6 +13,9 @@
 body {
   margin: 0;
   background-color: $c-light;
+}
+
+p {
   line-height: 140%;
 }
 
@@ -130,7 +133,7 @@ body {
   &__txt {
     font-size: $p-tablet;
     text-align: left;
-    font-family: sato;
+    font-family: $law5-p;
     line-height: 1.6;
     margin: auto;
     color: #333333;
@@ -179,7 +182,7 @@ body {
     margin-top: 54px;
 
     p {
-      font-family: sato;
+      font-family: $law5-p;
       color: #333333;
       font-size: $p-mobile;
       line-height: 1.6;
@@ -198,7 +201,7 @@ body {
     padding: 10px;
     font-weight: lighter;
     cursor: pointer;
-    font-family: sato;
+    font-family: $law5-p;
     width: 220px;
 
     text-decoration: none;
