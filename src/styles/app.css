@@ -1202,8 +1202,8 @@ body {
   padding: 10px;
   font-weight: lighter;
   cursor: pointer;
-}
-.introquiz__btn a {
+  font-family: sato;
+  width: 220px;
   text-decoration: none;
   color: #333333;
 }
@@ -1212,8 +1212,6 @@ body {
   -webkit-backdrop-filter: blur(5);
           backdrop-filter: blur(5);
   border: 2px solid #d7d4ff;
-}
-.introquiz__btn:hover a {
   color: #e6efeb;
 }
 
@@ -2352,11 +2350,6 @@ footer {
   font-family: "clash";
   src: url("../assets/fonts/ClashDisplay-Variable.ttf");
 }
-.naavbar {
-  display: flex;
-  justify-content: flex-end;
-}
-
 .context,
 .present,
 .difficult,
@@ -2435,6 +2428,12 @@ footer {
   width: 100px;
   border-radius: 50%;
   margin: 16px;
+}
+.equipe__li {
+  transition: 0.3s ease;
+}
+.equipe__li:hover {
+  transform: scale(1.15);
 }
 
 @media (min-width: 481px) {
