@@ -345,12 +345,11 @@ if (canvas) {
     },
   };
 
-  const canvas = document.querySelector('#canvas');
   const ctx = canvas.getContext('2d');
   const ripples = [];
 
-  const height = document.body.clientHeight;
-  const width = document.body.clientWidth;
+  const section = document.querySelector('#canvasize'); // Changement ici
+  const sectionRect = section.getBoundingClientRect();
 
   const rippleStartStatus = 'start';
 
@@ -358,22 +357,22 @@ if (canvas) {
 
   canvas.style.filter = `blur(${canvasSettings.blur}px)`;
 
-  canvas.width = width * canvasSettings.ratio;
-  canvas.height = height * canvasSettings.ratio;
+  canvas.width = sectionRect.width * canvasSettings.ratio;
+  canvas.height = sectionRect.height * canvasSettings.ratio;
 
-  canvas.style.width = `${width}px`;
-  canvas.style.height = `${height}px`;
+  canvas.style.width = `${sectionRect.width}px`;
+  canvas.style.height = `${sectionRect.height}px`;
+  canvas.style.position = 'absolute';
+  canvas.style.top = '0';
+  canvas.style.left = '0';
 
   let animationFrame;
 
-
-
-
   // Function which is executed on mouse hover on canvas
   const canvasMouseOver = (e) => {
-    const x = e.clientX * canvasSettings.ratio;
-    const y = e.clientY * canvasSettings.ratio;
-    ripples.unshift(new Ripple(x, y, 2, ctx));
+    const x = e.clientX - sectionRect.left;
+    const y = e.clientY - sectionRect.top;
+    ripples.unshift(new Ripple(x * canvasSettings.ratio, y * canvasSettings.ratio, 2, ctx));
   };
 
   const animation = () => {
@@ -396,9 +395,10 @@ if (canvas) {
   };
 
   animation();
-  canvas.addEventListener('mousemove', canvasMouseOver);
+  section.addEventListener('mousemove', canvasMouseOver);
 
 }
+
 
 
 /* ---------- NAVIGATION STICKY ---------- */
