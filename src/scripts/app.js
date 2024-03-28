@@ -562,34 +562,38 @@ if (navbar && graphSection) {
           bodyFont: commonFont,
           titleFont: commonFont
         }
-      },
-      onClick: (e) => {
-        const canvasPosition = Chart.helpers.getRelativePosition(e, myChart);
-        const dataX = myChart.scales.x.getValueForPixel(canvasPosition.x);
-        const dataY = myChart.scales.y.getValueForPixel(canvasPosition.y);
-        let dataIndex = Math.abs(dataY);
-        const loiContainer = document.querySelector('.graphique__lois');
-
-        if (dataIndex >= 0 && dataIndex < data.length) {
-          const country = data[dataIndex].pays; // Get the country name
-          const laws = data[dataIndex].Loi;
-          if (laws && laws.length > 0) {
-            const randomIndex = Math.floor(Math.random() * laws.length);
-            loiContainer.innerHTML = "<h3 class='title'>Loi aléatoire</h3><p>" + country + ": " + laws[randomIndex] + "</p>";
-          } else {
-            loiContainer.innerHTML = "<h3 class='title'>Loi aléatoire</h3><p>Aucune loi trouvée pour ce pays.</p>";
-          }
-        } else {
-          loiContainer.classList.add('hidden');
-        }
       }
     };
 
     myChart.data = chartData;
     myChart.options = options;
     myChart.update();
+
+    // Add event listener
+    ctxm.canvas.addEventListener('click', (e) => {
+      const canvasPosition = Chart.helpers.getRelativePosition(e, myChart);
+      const dataX = myChart.scales.x.getValueForPixel(canvasPosition.x);
+      const dataY = myChart.scales.y.getValueForPixel(canvasPosition.y);
+      let dataIndex = Math.abs(dataY);
+      const loiContainer = document.querySelector('.graphique__lois');
+
+      if (dataIndex >= 0 && dataIndex < data.length) {
+        const country = data[dataIndex].pays; // Get the country name
+        const laws = data[dataIndex].Loi;
+        if (laws && laws.length > 0) {
+          const randomIndex = Math.floor(Math.random() * laws.length);
+          loiContainer.innerHTML = "<h3 class='title'>Loi aléatoire</h3><p>" + country + ": " + laws[randomIndex] + "</p>";
+        } else {
+          loiContainer.innerHTML = "<h3 class='title'>Loi aléatoire</h3><p>Aucune loi trouvée pour ce pays.</p>";
+        }
+      } else {
+        loiContainer.classList.add('hidden');
+      }
+    });
   }
+
 }
+
 
 /* ---------- MARGE ---------- */
 

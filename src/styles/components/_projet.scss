@@ -5,7 +5,6 @@
     );
     background-repeat: no-repeat;
     width: 100vw;
-    height: 100vh;
     background-size: cover;
     overflow-x: hidden;
 }
@@ -56,13 +55,8 @@
     max-width: 500px;
     img {
         width: 100%;
-        border-radius: 15px;
-        max-width: 500px;
-        margin: auto;
     }
     figure {
-        width: 90%;
-        margin: auto;
         margin-bottom: 54px;
     }
     figcaption {
@@ -72,7 +66,6 @@
     &__flex {
         display: flex;
         flex-wrap: wrap;
-        width: 100%;
         justify-content: space-evenly;
     }
 }
@@ -140,7 +133,7 @@
         }
     }
     .pictures {
-        width: 500px;
+        //width: 500px;
         margin: auto;
 
         h2 {
@@ -159,4 +152,3 @@
         }
     }
 }
-
