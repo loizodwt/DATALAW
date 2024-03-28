@@ -2,10 +2,7 @@
     $quiz-one: #665330;
     $quiz-one-hover: rgba(102, 83, 48, 0.7);
 
-    background-image: image-set(
-        url(../../assets/images/bg-quiz-one.png) 1x,
-        url(../../assets/images/bg-quiz-one@2x.png) 2x
-    );
+    background-image: image-set(url(../assets/images/bg-quiz-one.png) 1x, url(../assets/images/bg-quiz-one@2x.png) 2x);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -95,14 +92,14 @@
         }
         &--vrai {
             &::before {
-                background-image: url("../../assets/images/lys@2x.png");
+                background-image: url("../assets/images/lys@2x.png");
                 padding: 13px 22px 15px 5px;
                 margin-left: -5px;
             }
         }
         &--faux {
             &::before {
-                background-image: url("../../assets/images/epee@2x.png");
+                background-image: url("../assets/images/epee@2x.png");
                 margin-left: -6px;
                 padding: 13px 15px 15px 5px;
             }
@@ -114,12 +111,12 @@
         }
         &--skip {
             &::after {
-                content: url("../../assets/images/nextquiiiz.png");
+                content: url("../assets/images/nextquiiiz.png");
             }
         }
         &--quit {
             &::after {
-                content: url("../../assets/images/quitquiz.png");
+                content: url("../assets/images/quitquiz.png");
             }
         }
         &--skip::after,

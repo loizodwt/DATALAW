@@ -1,9 +1,9 @@
 @font-face {
     font-family: "Satoshi-Variable";
     src:
-        url("../../assets/font/satoshi/Satoshi-Variable.woff2") format("woff2"),
-        url("../../assets/font/satoshi/Satoshi-Variable.woff") format("woff"),
-        url("../../assets/font/satoshi/Satoshi-Variable.ttf") format("truetype");
+        url("../assets/font/satoshi/Satoshi-Variable.woff2") format("woff2"),
+        url("../assets/font/satoshi/Satoshi-Variable.woff") format("woff"),
+        url("../assets/font/satoshi/Satoshi-Variable.ttf") format("truetype");
     font-weight: 300 900;
     font-display: swap;
     font-style: normal;
@@ -12,16 +12,16 @@
 @font-face {
     font-family: "ClashDisplay-Variable";
     src:
-        url("../../assets/font/ClashDisplay-Variable.woff2") format("woff2"),
-        url("../../assets/font/ClashDisplay-Variable.woff") format("woff"),
-        url("../../assets/font/ClashDisplay-Variable.ttf") format("truetype");
+        url("../assets/font/ClashDisplay-Variable.woff2") format("woff2"),
+        url("../assets/font/ClashDisplay-Variable.woff") format("woff"),
+        url("../assets/font/ClashDisplay-Variable.ttf") format("truetype");
     font-weight: 200 700;
     font-display: swap;
     font-style: normal;
 }
 
 .four {
-    background-image: url("../../assets/images/bg-glassmorphism.svg");
+    background-image: url("../assets/images/bg-glassmorphism.svg");
     background-size: cover;
 
     display: flex;
@@ -84,7 +84,7 @@
                     content: "";
                     width: 25px; /* Largeur de l'élément :before */
                     height: 25px;
-                    background-image: url(../../assets/images/check.svg);
+                    background-image: url(../assets/images/check.svg);
                     background-repeat: no-repeat;
                     background-position: center;
                     background-size: 80%;
@@ -111,7 +111,7 @@
                     content: "";
                     width: 20px; /* Largeur de l'élément :before */
                     height: 20px;
-                    background-image: url(../../assets/images/cross.svg);
+                    background-image: url(../assets/images/cross.svg);
                     background-repeat: no-repeat;
                     background-position: center;
                     background-size: 80%;
@@ -137,7 +137,7 @@
                     content: "";
                     width: 20px;
                     height: 20px;
-                    background-image: url(../../assets/images/quit.svg);
+                    background-image: url(../assets/images/quit.svg);
                     background-repeat: no-repeat;
                     background-position: center;
                     background-size: 80%;
@@ -146,7 +146,7 @@
                     content: "";
                     width: 20px;
                     height: 20px;
-                    background-image: url(../../assets/images/quit-hover.svg);
+                    background-image: url(../assets/images/quit-hover.svg);
                 }
                 &:hover {
                     transition:
@@ -171,7 +171,7 @@
                     content: "";
                     width: 20px; /* Largeur de l'élément :before */
                     height: 20px;
-                    background-image: url(../../assets/images/next.svg);
+                    background-image: url(../assets/images/next.svg);
                     background-repeat: no-repeat;
                     background-position: center;
                     background-size: 80%;

@@ -1,14 +1,12 @@
 @font-face {
     font-family: "SpecialElite";
-    src:
-        url("../assets/fonts/texas/SpecialElite.ttf");
-  }
-  @font-face {
+    src: url("../assets/fonts/texas/SpecialElite.ttf");
+}
+@font-face {
     font-family: "Gensco";
-    src:
-        url("../assets/fonts/gensco/GENSCO.otf");
-  }
-  
+    src: url("../assets/fonts/gensco/GENSCO.otf");
+}
+
 .texas {
     padding: 17px 32px;
     overflow-x: hidden;
@@ -30,12 +28,11 @@
         margin-left: 80%;
         margin-top: -90vh;
     }
-    &__title, 
+    &__title,
     &__h3 {
         font-family: "gensco";
         margin-top: 50px;
         z-index: 8;
-
     }
     &__title {
         font-size: $h2-mobile;
@@ -48,24 +45,22 @@
         margin-left: -33%;
 
         &--ville {
-        margin-left: -33px;
-        z-index: 5;
-        // margin-top: -10px;
-        position: absolute; // ajout
-        bottom: 0%;
-        width: 300px;
+            margin-left: -33px;
+            z-index: 5;
+            // margin-top: -10px;
+            position: absolute; // ajout
+            bottom: 0%;
+            width: 300px;
         }
-        
+
         &--papier {
             width: 100vw;
         }
-        
     }
 }
 .texaslowcow {
     font-style: italic;
 }
-
 
 @media (min-width: 481px) {
     .texas {

@@ -61,17 +61,11 @@
     }
 
     &--correct {
-        background-image: image-set(
-            url("../../assets/images/da/yes.png") 1x,
-            url("../../assets/images/da/yes@2x.png") 2x
-        );
+        background-image: image-set(url("../assets/images/da/yes.png") 1x, url("../assets/images/da/yes@2x.png") 2x);
     }
 
     &--wrong {
-        background-image: image-set(
-            url("../../assets/images/da/no.png") 1x,
-            url("../../assets/images/da/no@2x.png") 2x
-        );
+        background-image: image-set(url("../assets/images/da/no.png") 1x, url("../assets/images/da/no@2x.png") 2x);
     }
 
     &--correct,

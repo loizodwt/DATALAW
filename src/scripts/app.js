@@ -97,7 +97,7 @@ if (quizSection) {
   let questionsData = null;
   let userAnswers = [];
 
-  fetch("../assets/data/questions.json")
+  fetch("assets/data/questions.json")
     .then((response) => response.json())
     .then((data) => {
       questionsData = data;
@@ -494,7 +494,7 @@ if (navbar && graphSection) {
   // bloc pour le fetch
   async function fetchData() {
     try {
-      const response = await fetch('../assets/data/data.json');
+      const response = await fetch('assets/data/data.json');
 
       if (!response.ok) {
         throw new Error('Erreur lors de la récupération des données.');
@@ -599,7 +599,7 @@ if (navbar && graphSection) {
 
 console.log('Agrandissez la fenêtre');
 function showThings() {
-  fetch('../assets/fonts/marge.txt')
+  fetch('assets/fonts/marge.txt')
     .then(function (response) {
       return response.text()
     })

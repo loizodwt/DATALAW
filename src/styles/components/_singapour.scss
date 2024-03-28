@@ -8,7 +8,7 @@
 }
 @font-face {
   font-family: "MS-Sans-Serif-8pt-Bold";
-  src: url("../../assets/fonts/MS-Sans-Serif-8pt-bold.ttf");
+  src: url("../assets/fonts/MS-Sans-Serif-8pt-bold.ttf");
 }
 
 .singapour {
@@ -18,7 +18,7 @@
     gap: 5px;
     flex-direction: row;
   }
-  &__modal{
+  &__modal {
     position: absolute;
     background-color: #fafafa;
     z-index: 5;
@@ -48,11 +48,11 @@
   }
   &__txt {
     font-family: "w9";
-    
+
     &--bottom {
       padding-bottom: 24px;
     }
-    
+
     &--nav {
       font-family: "w9";
       font-size: 20px;
@@ -135,7 +135,7 @@
     cursor: pointer;
   }
   &__icon--close:active {
-    filter: brightness(.5);
+    filter: brightness(0.5);
   }
   .reduced {
     display: none;
@@ -155,7 +155,7 @@
   cursor: crosshair; // Curseur par défaut
 
   &.erasing {
-  cursor: url('/eraser.png'), auto; // Curseur personnalisé pour le mode gommage
+    cursor: url("/eraser.png"), auto; // Curseur personnalisé pour le mode gommage
   }
 }
 
@@ -164,7 +164,7 @@
   margin-top: 10px;
 
   input[type="color"] {
-      margin-right: 10px;
+    margin-right: 10px;
   }
 }
 
