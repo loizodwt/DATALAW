@@ -54,7 +54,9 @@
     &__5 {
         display: flex;
         align-items: center;
+        justify-content: center;
         background-image: url(../assets/images/background_5.svg);
+        background-size: 150%;
         position: relative;
     }
     &__5 svg {
@@ -99,6 +101,8 @@
     background-color: #44434370;
     border: 2px solid #888888;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+    max-width: 120ch;
+    margin: auto 10%;
 }
 
 .law-5 {
@@ -257,6 +261,9 @@
     .law-1 {
         display: flex;
         gap: 68px;
+        align-items: center;
+        padding-left: 48px;
+        padding-right: 48px;
 
         &__nbr {
             align-items: center;
@@ -271,12 +278,6 @@
         &__p {
             font-size: $p-desktop;
         }
-    }
-    .bg-5 {
-        margin-left: 80px;
-        margin-right: 80px;
-        padding-left: 80px;
-        padding-right: 80px;
     }
 }
 
