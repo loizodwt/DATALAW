@@ -120,11 +120,61 @@ button {
   margin-top: 54px;
 }
 
+.logo__container {
+  display: inline-flex;
+  flex-direction: column;
+  font-size: 24px;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+.logo__text {
+  display: inline-block;
+  font-family: "ClashDisplay-Variable", sans-serif;
+  font-weight: 400;
+  line-height: 100%;
+  transition: font-family 0.5s ease;
+}
+
+.satoshi {
+  font-family: "Satoshi-Variable", sans-serif;
+}
+
+.w9 {
+  font-family: "W9";
+}
+
+.pix {
+  font-family: "Pix";
+}
+
+.gensco {
+  font-family: "Gensco";
+}
+
+.ortica {
+  font-family: "Ortica";
+}
+
+.valiant {
+  font-family: "Valiant";
+}
+
+.livingstone {
+  font-family: "Livingstone";
+}
+
+.elite {
+  font-family: "Elite";
+}
+
 .quiz__top {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding-top: 50px;
+  padding: 50px;
+  flex-direction: row;
+  width: 90%;
+  margin: 0;
 }
 .quiz__container {
   height: 100vh;
@@ -162,7 +212,7 @@ button {
   justify-content: space-around;
   position: absolute;
   bottom: 10vh;
-  width: 100%;
+  width: 300px;
 }
 .quiz__pays-dates {
   display: flex;
@@ -184,6 +234,9 @@ button {
   background-repeat: no-repeat;
   vertical-align: middle;
   padding-left: 33px;
+}
+.quiz__button--quit {
+  text-align: right;
 }
 
 /* ---------- TIMELINE ---------- */
@@ -1008,53 +1061,6 @@ canvas {
     line-height: 0%;
   }
 }
-.logo__container {
-  display: inline-flex;
-  flex-direction: column;
-  font-size: 24px;
-  margin-left: 1rem;
-  margin-top: 1rem;
-}
-.logo__text {
-  display: inline-block;
-  font-family: "ClashDisplay-Variable", sans-serif;
-  font-weight: 400;
-  line-height: 100%;
-  transition: font-family 0.5s ease;
-}
-
-.satoshi {
-  font-family: "Satoshi-Variable", sans-serif;
-}
-
-.w9 {
-  font-family: "W9";
-}
-
-.pix {
-  font-family: "Pix";
-}
-
-.gensco {
-  font-family: "Gensco";
-}
-
-.ortica {
-  font-family: "Ortica";
-}
-
-.valiant {
-  font-family: "Valiant";
-}
-
-.livingstone {
-  font-family: "Livingstone";
-}
-
-.elite {
-  font-family: "Elite";
-}
-
 body {
   margin: 0;
   background-color: #e6efeb;
@@ -1609,10 +1615,14 @@ a {
   background-size: cover;
   width: 100%;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .two .quiz__h2 {
   font-family: Gensco;
   font-size: 36px;
+  margin-top: -54px;
   margin-left: 5%;
 }
 .two .quiz__counter--current {
@@ -1621,6 +1631,7 @@ a {
 .two .quiz__date {
   font-family: Gensco;
   margin-right: 5%;
+  margin-top: -54px;
   font-size: 36px;
 }
 .two .quiz__contenu {
@@ -1631,6 +1642,7 @@ a {
   max-width: 90%;
   margin: auto 5%;
   line-height: 1.6;
+  max-width: 120ch;
 }
 .two .quiz__feedback {
   margin-top: 54px;
@@ -1638,6 +1650,7 @@ a {
 .two .quiz__counter {
   font-size: 16px;
   font-family: gensco;
+  line-height: 120%;
 }
 .two .quiz__counter--current {
   font-size: 54px;
@@ -1737,6 +1750,11 @@ a {
     margin-top: 36px;
   }
 }
+@media (min-width: 769px) {
+  .two .quiz__contenu {
+    padding: 16px 32px;
+  }
+}
 @media (min-width: 1000px) {
   .two .quiz__feedback {
     margin-top: 24px;
@@ -1816,15 +1834,14 @@ a {
 .three .quiz__contenu {
   background-color: rgba(158, 170, 227, 0.1);
   margin: 0 auto; /* Ajout de cette ligne pour centrer le bloc horizontalement */
-  padding-top: 1px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
   border-radius: 10px;
   font-size: 16px;
   font-family: "Jura";
-  line-height: 150%;
-  max-width: 800px;
+  line-height: 1.6;
+  width: 70%;
+  margin: auto;
+  max-width: 120ch;
+  padding: 16px 32px;
 }
 .three .quiz__counter {
   font-family: "SpaceAge";
@@ -1872,6 +1889,7 @@ a {
   border-color: rgba(158, 170, 227, 0.5);
 }
 .three .quiz__button--faux {
+  justify-content: center;
   background-color: transparent;
   border: 2px solid #7fb9be;
   border-radius: 15px;
@@ -1972,6 +1990,12 @@ a {
   border-radius: 15px;
   padding: 4px;
 }
+@media screen and (min-width: 769px) {
+  .three .three .quiz__contenu {
+    padding: 16px 32px;
+    margin-top: 54px;
+  }
+}
 @media screen and (min-width: 1000px) {
   .three .quiz__pays-dates {
     font-size: 45px;
@@ -2040,8 +2064,12 @@ a {
 .four {
   background-image: url("../../assets/images/bg-glassmorphism.svg");
   background-size: cover;
-  padding-left: 16px;
-  padding-right: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.four p {
+  line-height: 1.6;
 }
 .four .quiz__h2 {
   margin: 0;
@@ -2073,6 +2101,11 @@ a {
   border: 2px solid #818181;
   border-radius: 20px;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+  width: 70%;
+  margin: auto;
+  margin-top: 54px;
+  max-width: 120ch;
+  padding: 16px 32px;
 }
 .four .quiz__question {
   margin: 0;
@@ -2189,12 +2222,20 @@ a {
 }
 .four .quiz__counter {
   font-family: "ClashDisplay-Variable";
+  align-items: center;
+  line-height: 300%;
 }
 .four .quiz__counter--current {
   color: rgb(115, 143, 243);
 }
 .four .quiz__counter--total {
   color: #333;
+}
+.four .quiz__textes {
+  margin-top: 0;
+}
+.four .quiz__feedback {
+  line-height: 1.6;
 }
 @media (min-width: 320px) and (max-width: 480px) {
   .four .quiz__contenu {
@@ -2224,7 +2265,6 @@ a {
 }
 @media (min-width: 481px) and (max-width: 768px) {
   .four .quiz__contenu {
-    padding: 20px;
     font-size: 20px;
   }
   .four .quiz__h2 {
@@ -2253,8 +2293,6 @@ a {
     background-size: contain;
   }
   .four .quiz__contenu {
-    padding: 20px;
-    padding: 20px;
     font-size: 24px;
   }
   .four .quiz__h2 {

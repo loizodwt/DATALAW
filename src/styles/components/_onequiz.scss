@@ -11,9 +11,14 @@
     width: 100%;
     height: 100vh;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     .quiz__h2 {
         font-family: Gensco;
         font-size: $h2-mobile;
+        margin-top: -54px;
         margin-left: 5%;
     }
     .quiz__counter--current {
@@ -22,6 +27,7 @@
     .quiz__date {
         font-family: Gensco;
         margin-right: 5%;
+        margin-top: -54px;
         font-size: $h2-mobile;
     }
     .quiz__contenu {
@@ -32,6 +38,7 @@
         max-width: 90%;
         margin: auto 5%;
         line-height: 1.6;
+        max-width: 120ch;
     }
 
     .quiz__feedback {
@@ -40,6 +47,7 @@
     .quiz__counter {
         font-size: $p-mobile;
         font-family: gensco;
+        line-height: 120%;
 
         &--current {
             font-size: 54px;
@@ -163,6 +171,13 @@
     .two {
         .quiz__feedback {
             margin-top: 36px;
+        }
+    }
+}
+@media (min-width: 769px) {
+    .two {
+        .quiz__contenu {
+            padding: 16px 32px;
         }
     }
 }
