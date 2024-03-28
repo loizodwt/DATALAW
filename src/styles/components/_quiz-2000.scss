@@ -25,7 +25,6 @@
     font-size: $h2-mobile;
     padding: 0%;
     margin: 0%;
-    margin-bottom: 5vh;
     color: rgba(240, 255, 255, 0);
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black; /* Pour Chrome, Safari, etc. */
@@ -51,8 +50,7 @@
   }
 
   .quiz__textes {
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-top: 0;
     height: max-content;
   }
 
@@ -75,6 +73,7 @@
 
   .quiz__counter {
     font-family: "SpaceAge";
+    line-height: 140%;
     &--current {
       font-size: 36px;
     }
