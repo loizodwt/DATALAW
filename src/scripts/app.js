@@ -588,7 +588,6 @@ if (navbar && graphSection) {
         const loiContainer = document.querySelector('.graphique__lois');
 
         if (dataIndex >= 0 && dataIndex < data.length) {
-          loiContainer.classList.remove('hidden');
           const country = data[dataIndex].pays; // Get the country name
           const laws = data[dataIndex].Loi;
           if (laws && laws.length > 0) {
